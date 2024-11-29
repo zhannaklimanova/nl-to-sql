@@ -1,0 +1,577 @@
+CREATE TABLE public.articles_article (
+id bigint NOT NULL,
+title character varying(255) NOT NULL,
+body text NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone,
+author_id integer NOT NULL
+);
+CREATE TABLE public.auth_group (
+id integer NOT NULL,
+name character varying(150) NOT NULL
+);
+CREATE TABLE public.auth_group_permissions (
+id integer NOT NULL,
+group_id integer NOT NULL,
+permission_id integer NOT NULL
+);
+CREATE TABLE public.auth_permission (
+id integer NOT NULL,
+name character varying(255) NOT NULL,
+content_type_id integer NOT NULL,
+codename character varying(100) NOT NULL
+);
+CREATE TABLE public.django_admin_log (
+id integer NOT NULL,
+action_time timestamp with time zone NOT NULL,
+object_id text,
+object_repr character varying(200) NOT NULL,
+action_flag smallint NOT NULL,
+change_message text NOT NULL,
+content_type_id integer,
+user_id integer NOT NULL,
+CONSTRAINT django_admin_log_action_flag_check CHECK ((action_flag >= 0))
+);
+CREATE TABLE public.django_content_type (
+id integer NOT NULL,
+app_label character varying(100) NOT NULL,
+model character varying(100) NOT NULL
+);
+CREATE TABLE public.django_flatpage (
+id integer NOT NULL,
+url character varying(100) NOT NULL,
+title character varying(200) NOT NULL,
+content text NOT NULL,
+enable_comments boolean NOT NULL,
+template_name character varying(70) NOT NULL,
+registration_required boolean NOT NULL
+);
+CREATE TABLE public.django_flatpage_sites (
+id integer NOT NULL,
+flatpage_id integer NOT NULL,
+site_id integer NOT NULL
+);
+CREATE TABLE public.django_migrations (
+id integer NOT NULL,
+app character varying(255) NOT NULL,
+name character varying(255) NOT NULL,
+applied timestamp with time zone NOT NULL
+);
+CREATE TABLE public.django_session (
+session_key character varying(40) NOT NULL,
+session_data text NOT NULL,
+expire_date timestamp with time zone NOT NULL
+);
+CREATE TABLE public.django_site (
+id integer NOT NULL,
+domain character varying(100) NOT NULL,
+name character varying(50) NOT NULL
+);
+CREATE TABLE public.main_app_century (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+name character varying(255) NOT NULL,
+created_by_id integer,
+last_updated_by_id integer
+);
+CREATE TABLE public.main_app_chant (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+visible_status character varying(1),
+title character varying(255),
+incipit character varying(255),
+siglum character varying(255),
+folio character varying(255),
+s_sequence character varying(255),
+rubrics character varying(255),
+analecta_hymnica character varying(255),
+indexing_notes text,
+date character varying(255),
+col1 character varying(255),
+col2 character varying(255),
+col3 character varying(255),
+ah_volume character varying(255),
+cantus_id character varying(255),
+image_link character varying(200),
+json_info jsonb,
+marginalia character varying(63),
+c_sequence integer,
+"position" character varying(63),
+mode character varying(63),
+differentia character varying(63),
+finalis character varying(63),
+extra character varying(63),
+chant_range character varying(255),
+addendum character varying(255),
+manuscript_full_text_std_spelling text,
+manuscript_full_text_std_proofread boolean,
+manuscript_full_text text,
+manuscript_full_text_proofread boolean,
+manuscript_syllabized_full_text text,
+volpiano text,
+volpiano_proofread boolean,
+volpiano_notes text,
+volpiano_intervals text,
+cao_concordances character varying(63),
+melody_id character varying(63),
+search_vector tsvector,
+content_structure character varying(64),
+feast_id integer,
+genre_id integer,
+service_id integer,
+source_id integer NOT NULL,
+differentiae_database character varying(12),
+is_last_chant_in_feast boolean,
+next_chant_id integer,
+created_by_id integer,
+last_updated_by_id integer,
+diff_db_id integer,
+cm_melody_id character varying(64),
+incipit_of_refrain character varying(255),
+later_addition character varying(255),
+liturgical_function character varying(10),
+polyphony character varying(10),
+project_id integer,
+CONSTRAINT main_app_chant_c_sequence_87f89d50_check CHECK ((c_sequence >= 0))
+);
+CREATE TABLE public.main_app_chant_proofread_by (
+id integer NOT NULL,
+chant_id integer NOT NULL,
+user_id integer NOT NULL
+);
+CREATE TABLE public.main_app_differentia (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+differentia_id character varying(255) NOT NULL,
+melodic_transcription character varying(255),
+mode character varying(255),
+created_by_id integer,
+last_updated_by_id integer
+);
+CREATE TABLE public.main_app_feast (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+name character varying(255) NOT NULL,
+description text,
+feast_code character varying(255),
+notes text,
+month integer,
+day integer,
+prefix character varying(2),
+created_by_id integer,
+last_updated_by_id integer,
+CONSTRAINT day_gte_1_lte_31 CHECK (((day >= 1) AND (day <= 31))),
+CONSTRAINT main_app_feast_day_check CHECK ((day >= 0)),
+CONSTRAINT main_app_feast_month_check CHECK ((month >= 0)),
+CONSTRAINT month_gte_1_lte_12 CHECK (((month >= 1) AND (month <= 12)))
+);
+CREATE TABLE public.main_app_genre (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+name character varying(15) NOT NULL,
+description text NOT NULL,
+mass_office character varying(63),
+created_by_id integer,
+last_updated_by_id integer
+);
+CREATE TABLE public.main_app_institution (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+name character varying(255) NOT NULL,
+siglum character varying(32),
+city character varying(64),
+created_by_id integer,
+last_updated_by_id integer,
+alternate_names text,
+region character varying(64),
+country character varying(64) NOT NULL,
+former_sigla text,
+is_private_collector boolean NOT NULL,
+private_notes text,
+migrated_identifier character varying(64),
+is_private_collection boolean NOT NULL,
+CONSTRAINT at_least_one_of_siglum_or_private_collector CHECK ((is_private_collector OR (siglum IS NOT NULL))),
+CONSTRAINT siglum_and_private_not_valid CHECK ((NOT (is_private_collector AND (siglum IS NOT NULL))))
+);
+CREATE TABLE public.main_app_institutionidentifier (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+identifier character varying(512) NOT NULL,
+identifier_type integer NOT NULL,
+created_by_id integer,
+institution_id integer NOT NULL,
+last_updated_by_id integer
+);
+CREATE TABLE public.main_app_notation (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+name character varying(63) NOT NULL,
+created_by_id integer,
+last_updated_by_id integer
+);
+CREATE TABLE public.main_app_service (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+name character varying(3) NOT NULL,
+description text NOT NULL,
+created_by_id integer,
+last_updated_by_id integer
+);
+CREATE TABLE public.main_app_project (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+name character varying(63) NOT NULL,
+created_by_id integer,
+last_updated_by_id integer
+);
+CREATE TABLE public.main_app_provenance (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+name character varying(63) NOT NULL,
+created_by_id integer,
+last_updated_by_id integer
+);
+CREATE TABLE public.main_app_segment (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+name character varying(63) NOT NULL,
+created_by_id integer,
+last_updated_by_id integer
+);
+CREATE TABLE public.main_app_sequence (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+visible_status character varying(1),
+title character varying(255),
+incipit character varying(255),
+siglum character varying(255),
+folio character varying(255),
+s_sequence character varying(255),
+rubrics character varying(255),
+analecta_hymnica character varying(255),
+indexing_notes text,
+date character varying(255),
+col1 character varying(255),
+col2 character varying(255),
+col3 character varying(255),
+ah_volume character varying(255),
+cantus_id character varying(255),
+image_link character varying(200),
+json_info jsonb,
+marginalia character varying(63),
+c_sequence integer,
+"position" character varying(63),
+mode character varying(63),
+differentia character varying(63),
+finalis character varying(63),
+extra character varying(63),
+chant_range character varying(255),
+addendum character varying(255),
+manuscript_full_text_std_spelling text,
+manuscript_full_text_std_proofread boolean,
+manuscript_full_text text,
+manuscript_full_text_proofread boolean,
+manuscript_syllabized_full_text text,
+volpiano text,
+volpiano_proofread boolean,
+volpiano_notes text,
+volpiano_intervals text,
+cao_concordances character varying(63),
+melody_id character varying(63),
+search_vector tsvector,
+content_structure character varying(64),
+feast_id integer,
+genre_id integer,
+service_id integer,
+source_id integer NOT NULL,
+differentiae_database character varying(12),
+is_last_chant_in_feast boolean,
+next_chant_id integer,
+created_by_id integer,
+last_updated_by_id integer,
+diff_db_id integer,
+cm_melody_id character varying(64),
+incipit_of_refrain character varying(255),
+later_addition character varying(255),
+liturgical_function character varying(10),
+polyphony character varying(10),
+project_id integer,
+CONSTRAINT main_app_sequence_c_sequence_9aa66a1e_check CHECK ((c_sequence >= 0))
+);
+CREATE TABLE public.main_app_sequence_proofread_by (
+id integer NOT NULL,
+sequence_id integer NOT NULL,
+user_id integer NOT NULL
+);
+CREATE TABLE public.main_app_source (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+date_updated timestamp with time zone NOT NULL,
+title character varying(255),
+siglum character varying(63),
+provenance_notes text,
+full_source boolean,
+date character varying(63),
+cursus character varying(63),
+source_status character varying(255),
+complete_inventory boolean,
+summary text,
+liturgical_occasions text,
+description text,
+selected_bibliography text,
+image_link character varying(200),
+indexing_notes text,
+indexing_date text,
+json_info jsonb,
+fragmentarium_id character varying(15),
+dact_id character varying(15),
+provenance_id integer,
+segment_id integer,
+created_by_id integer,
+published boolean NOT NULL,
+last_updated_by_id integer,
+number_of_chants integer,
+number_of_melodies integer,
+exists_on_cantus_ultimus boolean NOT NULL,
+holding_institution_id integer,
+shelfmark character varying(255) NOT NULL,
+name character varying(255),
+production_method integer NOT NULL,
+source_completeness integer NOT NULL
+);
+CREATE TABLE public.main_app_source_century (
+id integer NOT NULL,
+source_id integer NOT NULL,
+century_id integer NOT NULL
+);
+CREATE TABLE public.main_app_source_current_editors (
+id integer NOT NULL,
+source_id integer NOT NULL,
+user_id integer NOT NULL
+);
+CREATE TABLE public.main_app_source_full_text_entered_by (
+id integer NOT NULL,
+source_id integer NOT NULL,
+user_id integer NOT NULL
+);
+CREATE TABLE public.main_app_source_inventoried_by (
+id integer NOT NULL,
+source_id integer NOT NULL,
+user_id integer NOT NULL
+);
+CREATE TABLE public.main_app_source_melodies_entered_by (
+id integer NOT NULL,
+source_id integer NOT NULL,
+user_id integer NOT NULL
+);
+CREATE TABLE public.main_app_source_notation (
+id integer NOT NULL,
+source_id integer NOT NULL,
+notation_id integer NOT NULL
+);
+CREATE TABLE public.main_app_source_other_editors (
+id integer NOT NULL,
+source_id integer NOT NULL,
+user_id integer NOT NULL
+);
+CREATE TABLE public.main_app_source_proofreaders (
+id integer NOT NULL,
+source_id integer NOT NULL,
+user_id integer NOT NULL
+);
+CREATE TABLE public.main_app_source_segment_m2m (
+id integer NOT NULL,
+source_id integer NOT NULL,
+segment_id integer NOT NULL
+);
+CREATE TABLE public.main_app_sourceidentifier (
+id integer NOT NULL,
+identifier character varying(255) NOT NULL,
+type integer NOT NULL,
+note text,
+source_id integer NOT NULL
+);
+CREATE TABLE public.reversion_revision (
+id integer NOT NULL,
+date_created timestamp with time zone NOT NULL,
+comment text NOT NULL,
+user_id integer
+);
+CREATE TABLE public.reversion_version (
+id integer NOT NULL,
+object_id character varying(191) NOT NULL,
+format character varying(255) NOT NULL,
+serialized_data text NOT NULL,
+object_repr text NOT NULL,
+content_type_id integer NOT NULL,
+revision_id integer NOT NULL,
+db character varying(191) NOT NULL
+);
+CREATE TABLE public.users_user (
+id integer NOT NULL,
+password character varying(128) NOT NULL,
+last_login timestamp with time zone,
+is_superuser boolean NOT NULL,
+first_name character varying(150) NOT NULL,
+last_name character varying(150) NOT NULL,
+email character varying(254) NOT NULL,
+is_staff boolean NOT NULL,
+is_active boolean NOT NULL,
+date_joined timestamp with time zone NOT NULL,
+city character varying(255),
+country character varying(255),
+institution character varying(255),
+website character varying(200),
+full_name character varying(255),
+is_indexer boolean NOT NULL,
+old_indexer_id integer
+);
+CREATE TABLE public.users_user_groups (
+id integer NOT NULL,
+user_id integer NOT NULL,
+group_id integer NOT NULL
+);
+CREATE TABLE public.users_user_user_permissions (
+id integer NOT NULL,
+user_id integer NOT NULL,
+permission_id integer NOT NULL
+);
+ADD CONSTRAINT articles_article_pkey PRIMARY KEY (id);
+ADD CONSTRAINT auth_group_permissions_pkey PRIMARY KEY (id);
+ADD CONSTRAINT auth_group_pkey PRIMARY KEY (id);
+ADD CONSTRAINT auth_permission_pkey PRIMARY KEY (id);
+ADD CONSTRAINT django_admin_log_pkey PRIMARY KEY (id);
+ADD CONSTRAINT django_content_type_pkey PRIMARY KEY (id);
+ADD CONSTRAINT django_flatpage_pkey PRIMARY KEY (id);
+ADD CONSTRAINT django_flatpage_sites_pkey PRIMARY KEY (id);
+ADD CONSTRAINT django_migrations_pkey PRIMARY KEY (id);
+ADD CONSTRAINT django_session_pkey PRIMARY KEY (session_key);
+ADD CONSTRAINT django_site_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_century_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_chant_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_chant_proofread_by_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_differentia_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_feast_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_genre_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_institution_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_institutionidentifier_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_notation_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_office_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_project_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_provenance_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_segment_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_sequence_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_sequence_proofread_by_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_century_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_current_editors_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_full_text_entered_by_u_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_inventoried_by_u_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_melodies_entered_by_u_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_notation_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_other_editors_u_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_proofreaders_u_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_source_segment_m2m_pkey PRIMARY KEY (id);
+ADD CONSTRAINT main_app_sourceidentifier_pkey PRIMARY KEY (id);
+ADD CONSTRAINT reversion_revision_pkey PRIMARY KEY (id);
+ADD CONSTRAINT reversion_version_pkey PRIMARY KEY (id);
+ADD CONSTRAINT users_user_groups_pkey PRIMARY KEY (id);
+ADD CONSTRAINT users_user_pkey PRIMARY KEY (id);
+ADD CONSTRAINT users_user_user_permissions_pkey PRIMARY KEY (id);
+ADD CONSTRAINT articles_article_author_id_059aea7d_fk_users_user_id FOREIGN KEY (author_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT auth_group_permissio_permission_id_84c5c92e_fk_auth_perm FOREIGN KEY (permission_id) REFERENCES public.auth_permission(id);
+ADD CONSTRAINT auth_group_permissions_group_id_b120cbf9_fk_auth_group_id FOREIGN KEY (group_id) REFERENCES public.auth_group(id);
+ADD CONSTRAINT auth_permission_content_type_id_2f476e4b_fk_django_co FOREIGN KEY (content_type_id) REFERENCES public.django_content_type(id);
+ADD CONSTRAINT django_admin_log_content_type_id_c4bce8eb_fk_django_co FOREIGN KEY (content_type_id) REFERENCES public.django_content_type(id);
+ADD CONSTRAINT django_admin_log_user_id_c564eba6_fk_users_user_id FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT django_flatpage_site_flatpage_id_078bbc8b_fk_django_fl FOREIGN KEY (flatpage_id) REFERENCES public.django_flatpage(id);
+ADD CONSTRAINT django_flatpage_sites_site_id_bfd8ea84_fk_django_site_id FOREIGN KEY (site_id) REFERENCES public.django_site(id);
+ADD CONSTRAINT main_app_century_created_by_id_762264e2_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_century_last_updated_by_id_28cbdd82_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_chant_created_by_id_0cbb4847_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_chant_diff_db_id_31f3d20a_fk_main_app_differentia_id FOREIGN KEY (diff_db_id) REFERENCES public.main_app_differentia(id);
+ADD CONSTRAINT main_app_chant_feast_id_44a89235_fk_main_app_feast_id FOREIGN KEY (feast_id) REFERENCES public.main_app_feast(id);
+ADD CONSTRAINT main_app_chant_genre_id_4f1d29ab_fk_main_app_genre_id FOREIGN KEY (genre_id) REFERENCES public.main_app_genre(id);
+ADD CONSTRAINT main_app_chant_last_updated_by_id_2c499ff3_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_chant_next_chant_id_2ace4c77_fk_main_app_chant_id FOREIGN KEY (next_chant_id) REFERENCES public.main_app_chant(id);
+ADD CONSTRAINT main_app_chant_project_id_1f927792_fk_main_app_project_id FOREIGN KEY (project_id) REFERENCES public.main_app_project(id);
+ADD CONSTRAINT main_app_chant_proof_chant_id_99527fa6_fk_main_app_ FOREIGN KEY (chant_id) REFERENCES public.main_app_chant(id);
+ADD CONSTRAINT main_app_chant_proofread_by_user_id_4e5010b0_fk_users_user_id FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_chant_service_id_5dfac46f_fk_main_app_service_id FOREIGN KEY (service_id) REFERENCES public.main_app_service(id);
+ADD CONSTRAINT main_app_chant_source_id_a2a80d86_fk_main_app_source_id FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_differentia_created_by_id_e98c2f89_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_differentia_last_updated_by_id_5924c0f6_fk_users_use FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_feast_created_by_id_d13ecfde_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_feast_last_updated_by_id_bada0c9a_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_genre_created_by_id_bc221377_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_genre_last_updated_by_id_8ec95bad_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_institution_created_by_id_ba639b45_fk_users_use FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_institution_created_by_id_be4a6fa5_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_institution_institution_id_575d346c_fk_main_app_ FOREIGN KEY (institution_id) REFERENCES public.main_app_institution(id);
+ADD CONSTRAINT main_app_institution_last_updated_by_id_63c3055f_fk_users_use FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_institution_last_updated_by_id_cd7427b4_fk_users_use FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_notation_created_by_id_4f35137a_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_notation_last_updated_by_id_7624a321_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_office_created_by_id_f4abd488_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_office_last_updated_by_id_03fc7312_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_project_created_by_id_a2ec11d7_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_project_last_updated_by_id_b5ab626c_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_provenance_created_by_id_e8eb5e7a_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_provenance_last_updated_by_id_ab9cf2cb_fk_users_use FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_segment_created_by_id_d9310b73_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_segment_last_updated_by_id_f459c932_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_sequence_created_by_id_71e55e03_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_sequence_diff_db_id_ec7ba5b9_fk_main_app_ FOREIGN KEY (diff_db_id) REFERENCES public.main_app_differentia(id);
+ADD CONSTRAINT main_app_sequence_feast_id_1a2ea033_fk_main_app_feast_id FOREIGN KEY (feast_id) REFERENCES public.main_app_feast(id);
+ADD CONSTRAINT main_app_sequence_genre_id_a63a8334_fk_main_app_genre_id FOREIGN KEY (genre_id) REFERENCES public.main_app_genre(id);
+ADD CONSTRAINT main_app_sequence_last_updated_by_id_1079d479_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_sequence_next_chant_id_40647ace_fk_main_app_ FOREIGN KEY (next_chant_id) REFERENCES public.main_app_sequence(id);
+ADD CONSTRAINT main_app_sequence_pr_sequence_id_80d739f0_fk_main_app_ FOREIGN KEY (sequence_id) REFERENCES public.main_app_sequence(id);
+ADD CONSTRAINT main_app_sequence_pr_user_id_e84e3d81_fk_users_use FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_sequence_project_id_899c990b_fk_main_app_project_id FOREIGN KEY (project_id) REFERENCES public.main_app_project(id);
+ADD CONSTRAINT main_app_sequence_service_id_d6dc0b5a_fk_main_app_service_id FOREIGN KEY (service_id) REFERENCES public.main_app_service(id);
+ADD CONSTRAINT main_app_sequence_source_id_086ca663_fk_main_app_source_id FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_cent_century_id_844963cd_fk_main_app_ FOREIGN KEY (century_id) REFERENCES public.main_app_century(id);
+ADD CONSTRAINT main_app_source_cent_source_id_6b7cd6db_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_created_by_id_04da980c_fk_users_user_id FOREIGN KEY (created_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_source_curr_source_id_e7f6dbf1_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_curr_user_id_182f0775_fk_users_use FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_source_full_source_id_6686b89d_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_full_user_id_109320ac_fk_users_use FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_source_holding_institution__f39fce78_fk_main_app_ FOREIGN KEY (holding_institution_id) REFERENCES public.main_app_institution(id);
+ADD CONSTRAINT main_app_source_inve_source_id_3e91a472_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_inve_user_id_f420a17d_fk_users_use FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_source_last_updated_by_id_c61e2e8d_fk_users_user_id FOREIGN KEY (last_updated_by_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_source_melo_source_id_e83f2b81_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_melo_user_id_260f7fbd_fk_users_use FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_source_nota_notation_id_e1dba6de_fk_main_app_ FOREIGN KEY (notation_id) REFERENCES public.main_app_notation(id);
+ADD CONSTRAINT main_app_source_nota_source_id_661548ff_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_othe_source_id_cc467ad5_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_othe_user_id_86b30a55_fk_users_use FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_source_proo_source_id_a03935e9_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_proo_user_id_e6bd5647_fk_users_use FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT main_app_source_provenance_id_936e43ca_fk_main_app_ FOREIGN KEY (provenance_id) REFERENCES public.main_app_provenance(id);
+ADD CONSTRAINT main_app_source_segm_segment_id_8ac283d1_fk_main_app_ FOREIGN KEY (segment_id) REFERENCES public.main_app_segment(id);
+ADD CONSTRAINT main_app_source_segm_source_id_560c54fb_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT main_app_source_segment_id_0fb6a1e7_fk_main_app_segment_id FOREIGN KEY (segment_id) REFERENCES public.main_app_segment(id);
+ADD CONSTRAINT main_app_sourceident_source_id_ac0aa0aa_fk_main_app_ FOREIGN KEY (source_id) REFERENCES public.main_app_source(id);
+ADD CONSTRAINT reversion_revision_user_id_17095f45_fk_users_user_id FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT reversion_version_content_type_id_7d0ff25c_fk_django_co FOREIGN KEY (content_type_id) REFERENCES public.django_content_type(id);
+ADD CONSTRAINT reversion_version_revision_id_af9f6a9d_fk_reversion_revision_id FOREIGN KEY (revision_id) REFERENCES public.reversion_revision(id);
+ADD CONSTRAINT users_user_groups_group_id_9afc8d0e_fk_auth_group_id FOREIGN KEY (group_id) REFERENCES public.auth_group(id);
+ADD CONSTRAINT users_user_groups_user_id_5f6f5a90_fk_users_user_id FOREIGN KEY (user_id) REFERENCES public.users_user(id);
+ADD CONSTRAINT users_user_user_perm_permission_id_0b93982e_fk_auth_perm FOREIGN KEY (permission_id) REFERENCES public.auth_permission(id);
+ADD CONSTRAINT users_user_user_permissions_user_id_20aca447_fk_users_user_id FOREIGN KEY (user_id) REFERENCES public.users_user(id);

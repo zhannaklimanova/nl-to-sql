@@ -1,0 +1,23 @@
+[
+    {
+        "sql_query": "SELECT id FROM public.main_app_chant ORDER BY id LIMIT 100;",
+        "gold_output_path": "gold_outputs/random/m1.txt",
+        "natural_language_inputs": [
+            "List the first hundred chants in the database."
+        ]
+    },
+    {
+        "sql_query": "SELECT id FROM public.main_app_feast ORDER BY id ASC LIMIT 100;",
+        "gold_output_path": "gold_outputs/misc/m2.txt",
+        "natural_language_inputs": [
+            "List the first hundred feasts in the database."
+        ]
+    },
+    {
+        "sql_query": "SELECT id FROM public.main_app_source ORDER BY id ASC LIMIT 100;",
+        "gold_output_path": "gold_outputs/misc/m3.txt",
+        "natural_language_inputs": [
+            "List the first hundred sources in the database."
+        ]
+    }
+]
