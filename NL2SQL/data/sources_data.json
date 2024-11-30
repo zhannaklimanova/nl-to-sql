@@ -1,0 +1,23 @@
+[
+    {
+        "sql_query": "SOURCES",
+        "gold_output_path": "gold_outputs/sources/s1.txt",
+        "natural_language_inputs": [
+            "Some Queries Here"
+        ]
+    },
+    {
+        "sql_query": "SOURCES",
+        "gold_output_path": "gold_outputs/sources/s2.txt",
+        "natural_language_inputs": [
+            "Some Queries Here"
+        ]
+    },
+    {
+        "sql_query": "SOURCES",
+        "gold_output_path": "gold_outputs/sources/s3.txt",
+        "natural_language_inputs": [
+            "Some Queries Here"
+        ]
+    }
+]

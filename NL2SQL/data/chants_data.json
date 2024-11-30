@@ -1,0 +1,23 @@
+[
+    {
+        "sql_query": "CHANTS",
+        "gold_output_path": "gold_outputs/chants/c1.txt",
+        "natural_language_inputs": [
+            "Some Queries Here"
+        ]
+    },
+    {
+        "sql_query": "CHANTS",
+        "gold_output_path": "gold_outputs/chants/c2.txt",
+        "natural_language_inputs": [
+            "Some Queries Here"
+        ]
+    },
+    {
+        "sql_query": "CHANTS",
+        "gold_output_path": "gold_outputs/chants/c3.txt",
+        "natural_language_inputs": [
+            "Some Queries Here"
+        ]
+    }
+]

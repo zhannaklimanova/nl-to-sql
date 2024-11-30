@@ -1,0 +1,23 @@
+[
+    {
+        "sql_query": "FEASTS",
+        "gold_output_path": "gold_outputs/feasts/f1.txt",
+        "natural_language_inputs": [
+            "Some Queries Here"
+        ]
+    },
+    {
+        "sql_query": "FEASTS",
+        "gold_output_path": "gold_outputs/feasts/f2.txt",
+        "natural_language_inputs": [
+            "Some Queries Here"
+        ]
+    },
+    {
+        "sql_query": "FEASTS",
+        "gold_output_path": "gold_outputs/feasts/f3.txt",
+        "natural_language_inputs": [
+            "Some Queries Here"
+        ]
+    }
+]
