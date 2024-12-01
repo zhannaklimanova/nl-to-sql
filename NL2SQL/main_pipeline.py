@@ -1,4 +1,5 @@
 from data import DataManager
+from gemini import Gemini
 import os
 
 def main():
@@ -25,3 +26,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    llm = Gemini()
+    print(
+        llm.nlq_to_sql("All Chants that have an 'a' but do not contain the phrase 'ad'")
+    )
