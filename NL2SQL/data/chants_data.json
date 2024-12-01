@@ -1,6 +1,23 @@
 [
     {
         "sql_query": "CHANTS",
+        "predicted_sql_query": {
+            "gemini": {
+                "predicted_output_path": "predicted_outputs/chants/c1_gemini.txt"
+            },
+            "gpt": {
+                "predicted_output_path": "predicted_outputs/chants/c1_gpt.txt"
+            },
+            "hugging_face_chat": {
+                "predicted_output_path": "predicted_outputs/chants/c1_hugging_face_chat.txt"
+            },
+            "claude": {
+                "predicted_output_path": "predicted_outputs/chants/c1_claude.txt"
+            },
+            "microsoft_copilot": {
+                "predicted_output_path": "predicted_outputs/chants/c1_microsoft_copilot.txt"
+            }
+        },
         "gold_output_path": "gold_outputs/chants/c1.txt",
         "natural_language_inputs": [
             "Some Queries Here"
