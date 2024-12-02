@@ -1,21 +1,21 @@
 [
     {
+        "sql_query": "SELECT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix FROM main_app_feast WHERE main_app_feast.month = 11 ORDER BY LOWER(main_app_feast.name) ASC;",
+        "gold_output_path": "gold_outputs/feasts/f1.csv",
+        "natural_language_inputs": [
+            "Show me all the Feasts in the month of 'November', sorted by feast name."
+        ]
+    },
+    {
         "sql_query": "FEASTS",
-        "gold_output_path": "gold_outputs/feasts/f1.txt",
+        "gold_output_path": "gold_outputs/feasts/f2.csv",
         "natural_language_inputs": [
             "Some Queries Here"
         ]
     },
     {
         "sql_query": "FEASTS",
-        "gold_output_path": "gold_outputs/feasts/f2.txt",
-        "natural_language_inputs": [
-            "Some Queries Here"
-        ]
-    },
-    {
-        "sql_query": "FEASTS",
-        "gold_output_path": "gold_outputs/feasts/f3.txt",
+        "gold_output_path": "gold_outputs/feasts/f3.csv",
         "natural_language_inputs": [
             "Some Queries Here"
         ]

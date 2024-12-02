@@ -1,0 +1,91 @@
+id,date_created,date_updated,created_by_id,last_updated_by_id,name,description,feast_code,notes,month,day,prefix
+2801,2023-06-07 20:15:51.696265+00,2023-07-17 18:39:40.563245+00,,,Alberti Magni,"Albert the Great (Albertus Magnus), Bishop of Regensburg and ""Doctor Universalis""",14111550,"Holweck, pp. 40-41;",11,15,14
+2661,2023-06-07 20:15:54.499486+00,2023-07-17 18:39:40.579586+00,,,Andreae,"Andrew, Apostle",14113000,,11,30,14
+4172,2023-06-07 20:15:54.641202+00,2023-07-17 18:39:40.580825+00,,,Andreae Avellini,"Andrew, Avellino (Lancelotto), Confessor",14111010,"Holweck, p. 72;",11,10,14
+2662,2023-06-07 20:15:55.430437+00,2023-07-17 18:39:40.585756+00,,,Aniani,"Anianus (Aignan), Bishop of Orleans",14111710,,11,17,14
+2663,2023-06-07 20:16:09.975643+00,2023-07-17 18:39:40.652298+00,,,Benigni,"Benignus of Dijon, Martyr",14110140,,11,1,14
+4555,2023-06-07 20:16:10.809129+00,2023-07-17 18:39:40.65716+00,,,Bernwardi Episcopi Hildesheimensis,"Bernward, Bishop of Hildesheim",14112020,"Holweck, p. 156;",11,20,14
+4183,2023-06-07 20:16:12.313272+00,2023-07-17 18:39:40.665678+00,,,BMV Immaculatae a Sacro Numismate,Our Lady of the Miraculous Medal,14112700,Beatae Mariae Virginis a Sacro Numismate;,11,27,14
+2664,2023-06-07 20:16:13.509456+00,2023-07-17 18:39:40.6742+00,,,Briccii,"Brice, Bishop of Tours",14111300,,11,13,14
+2665,2023-06-07 20:16:14.658162+00,2023-07-17 18:39:40.680469+00,,,Caeciliae,"Cecilia (Cecily), Virgin Martyr",14112200,,11,22,14
+2666,2023-06-07 20:16:15.10228+00,2023-07-17 18:39:40.684226+00,,,"Caesarii, Juliani","Caesarius and Julian, Martyrs",14110130,,11,1,14
+2667,2023-06-07 20:16:16.864508+00,2023-07-17 18:39:40.695202+00,,,Catharinae,"Catherine of Alexandria, Martyr",14112500,,11,25,14
+2668,2023-06-07 20:16:18.779128+00,2023-07-17 18:39:40.708339+00,,,"Chrysanthi, Dariae","Chrysanthus, Daria, Maurus, Martyrs",14112910,,11,29,14
+2669,2023-06-07 20:16:18.985103+00,2023-07-17 18:39:40.709557+00,,,Chrysogoni,"Chrysogonus, Martyr",14112400,,11,24,14
+2670,2023-06-07 20:16:19.989111+00,2023-07-17 18:39:40.713147+00,,,Clementis,"Clement I, Pope and Martyr",14112300,,11,23,14
+4463,2023-06-07 20:16:20.122666+00,2023-07-17 18:39:40.71445+00,,,Clementis Metensis,"Clement, first Bishop of Metz",14112340,"Holweck, p. 219;",11,23,14
+2671,2023-06-07 20:16:20.921613+00,2023-07-17 18:39:40.789632+00,,,Columbani,"Columbanus (Columban), Abbot",14112330,,11,23,14
+2672,2023-06-07 20:16:40.617448+00,2023-07-17 18:39:40.799418+00,,,Conradi,"Conrad, Bishop of Constance",14112620,,11,26,14
+2673,2023-06-07 20:16:43.658879+00,2023-07-17 18:39:40.815077+00,,,Cuniberti,"Cunibertus (Quinibert), Bishop of Cologne",14111210,,11,12,14
+2674,2023-06-07 20:16:50.15588+00,2023-07-17 18:39:42.354201+00,,,De Imagine Domini,The Icon of our Lord Saviour,14110900,,11,9,14
+2675,2023-06-07 20:16:59.361707+00,2023-07-17 18:39:40.883497+00,,,Dedic. Bas. S. Petri,"Dedication of Saint Peter's, Rome",14111820,,11,18,14
+2676,2023-06-07 20:17:00.099508+00,2023-07-17 18:39:40.88469+00,,,Dedic. S. Salvatoris,Dedication of Saint Saviour's,14110940,,11,9,14
+2851,2023-06-07 20:17:02.126522+00,2023-07-17 18:39:40.892032+00,,,Didaci Confessoris,,,,11,13,
+2677,2023-06-07 20:17:39.57488+00,2023-07-17 18:39:41.070151+00,,,Edmundi,"Edmund, King and Martyr",14112000,"Holweck, p. 303",11,20,14
+4493,2023-06-07 20:17:39.710803+00,2023-07-17 18:39:42.392291+00,,,Edmundi Archiepiscopi,"Edmund of Abingdon (Edmund Rich), Archbishop of Canterbury",14111620,"Holweck, p. 303",11,16,14
+4595,2023-06-07 20:17:43.292938+00,2023-07-17 18:39:42.393491+00,,,Elisabeth Hung.,"Elizabeth of Hungary, and of Thuringia, Widow",14111900,"Holweck, p. 314 lists Nov. 19 as her death date and feast date, but other sources (including Grotefend) give Nov. 17;",11,19,14
+2679,2023-06-07 20:17:49.534087+00,2023-07-17 18:39:41.105386+00,,,Eugenii,"Eugene, Martyr, Disciple of Denis",14111500,,11,15,14
+2680,2023-06-07 20:17:50.667835+00,2023-07-17 18:39:41.113804+00,,,Eustachii,"Eustachius (Eustace), Martyr",14110200,,11,2,14
+4190,2023-06-07 20:17:53.371441+00,2023-07-17 18:39:41.12935+00,,,Felicis Valesius,"Felix of Valois, Confessor, Founder of the Trinitarians",14112010,"Holweck, p. 375;",11,20,14
+2681,2023-06-07 20:17:54.183144+00,2023-07-17 18:39:41.134301+00,,,Felicitatis,"Felicitatis, Matron and Martyr",14112310,,11,23,14
+2682,2023-06-07 20:23:17.612959+00,2023-07-17 18:39:41.348696+00,,,Findani,"Findan (Fintan) of Rheinau, Benedictine Hermit",14111530,,11,15,14
+4615,2024-07-14 22:09:34.227293+00,2024-07-14 22:09:34.227316+00,613,,"Florentii, Episc.","Florentius, Bishop of Strasbourg",14110710,"Holweck, p. 390;",11,7,14
+4561,2023-06-07 20:23:18.299414+00,2023-07-17 18:39:41.353582+00,,,Flori,"Florus, Bishop of Lodève",14110400,"Grotefend (Nov. 4); Holweck, p. 391 (Oct.30);",11,4,14
+2683,2023-06-07 20:23:18.699135+00,2023-07-17 18:39:42.363959+00,,,Florini,"Florinus, Confessor and Priest",14111720,,11,17,14
+2684,2023-06-07 20:23:23.317259+00,2023-07-17 18:39:41.386286+00,,,Genulfi,"Genulf (Gendulf, Genou), ""Bishop""",14111330,,11,13,14
+2218,2023-06-07 20:23:25.315685+00,2023-07-17 18:39:41.399422+00,,,Gertrudis,"Gertrude the Great, Cistercian nun and mystic writer",14111730,"Holweck, p. 432;",11,17,14
+2685,2023-06-07 20:23:27.606878+00,2023-07-17 18:39:41.411294+00,,,Gregorii Thauma.,"Gregory the Wonderworker, Bishop",14111700,,11,17,14
+2686,2023-06-07 20:23:38.460971+00,2023-07-17 18:39:41.471451+00,,,Huberti,"Hubert, First Bishop of Liege, Confessor",14110330,,11,3,14
+4564,2023-06-07 20:23:38.783094+00,2023-07-17 18:39:41.473887+00,,,Hugonis Episc. Lincolniensis,"Hugh, Bishop of Lincoln",14111740,"Holweck, p. 494;",11,17,14
+4464,2023-06-07 20:23:40.145705+00,2023-07-17 18:39:41.483509+00,,,Imerii,"Imerius (Himerius) of Immertal, monk, hermit, and missionary in the Swiss Jura",14111240,not in Holweck;,11,12,14
+2687,2023-06-07 20:23:44.983083+00,2023-07-17 18:39:41.507626+00,,,Inventio Antonini,Finding of Antoninus's relics,14111310,,11,13,14
+4569,2023-06-07 20:23:58.677435+00,2023-07-17 18:39:42.436951+00,,,Lauteni,"Lautein (Lothenus, Lautenus), Abbot, founder of Silèze and Maximiac abbeys in the Jura mountains",14110200,"Holweck, p. 593 (Nov 1);",11,2,14
+2688,2023-06-07 20:23:59.032764+00,2023-07-17 18:39:41.584961+00,,,Lebuini,"Lebwin (Lebuin, Liafwin, Leafwine), Confessor",14111200,,11,12,14
+2689,2023-06-07 20:23:59.579323+00,2023-07-17 18:39:41.58849+00,,,Leonardi,"Leonard, Hermit",14110610,,11,6,14
+4329,2023-06-07 20:23:59.736045+00,2023-07-17 18:39:42.438152+00,,,Leonardi a Portu Mauritio,"Leonardo of Porto Maurizio (Leonard of Port Maurice), confessor, missionary and ascetic writer (canonized 1867)",14112630,"Holweck, pp. 602-3; OCLC WorldCat Identities http://worldcat.org/identities/lccn-no2003078139/",11,26,14
+2690,2023-06-07 20:24:00.726883+00,2023-07-17 18:39:41.595634+00,,,Leopoldi,"Leopold, Margrave of Austria (Leopoldi Marchionis)",14111520,"Holweck, p. 606;",11,15,14
+4330,2023-06-07 20:24:01.171294+00,2023-07-17 18:39:41.599197+00,,,Licinii,"Licinius, Confessor, Bishop of Angers",14110150,"Holweck, p. 611;",11,1,14
+2691,2023-06-07 20:24:01.330236+00,2023-07-17 18:39:41.600393+00,,,Lini,"Linus, Bishop of Rome",14112600,,11,26,14
+2692,2023-06-07 20:24:06.336214+00,2023-07-17 18:39:41.629447+00,,,Maclovii,"Maclovius (Malo, Maclou, Machut, Maclow, Maloù, Mac'h Low, Maglovius, Machutus), Bishop of Aleth",14111510,"^formerly ""Machuti""; Holweck, p. 635;",11,15,14
+4332,2023-06-07 20:24:07.150138+00,2023-07-17 18:39:41.635395+00,,,Malachiae,"Malachy, Bishop at Armagh, Ireland",14110220,"Holweck, p.642;",11,2,14
+2693,2023-06-07 20:24:07.81392+00,2023-07-17 18:39:41.639884+00,,,Marcelli Parisiensis,"Marcellus, Bishop of Paris",14110310,,11,3,14
+2694,2023-06-07 20:24:12.874957+00,2023-07-17 18:39:41.66516+00,,,Martini,"Martin, Bishop of Tours",14111100,,11,11,14
+2941,2023-06-07 20:24:13.177967+00,2023-07-17 18:39:41.667492+00,,,"Martini, Pont.","Martin I, Pope",14111250,"Holweck, p. 668;",11,12,14
+2695,2023-06-07 20:24:14.592429+00,2023-07-17 18:39:41.673742+00,,,Maturini,"Maturin, Priest of Larchant (Sens)",14110930,,11,9,14
+2696,2023-06-07 20:24:15.689044+00,2023-07-17 18:39:41.679809+00,,,Maxellendis,"Maxellendis, Virgin Martyr",14111320,,11,13,14
+2697,2023-06-07 20:24:16.857995+00,2023-07-17 18:39:41.688193+00,,,Mennae,"Mennas, Martyr",14111110,,11,11,14
+2698,2023-06-07 20:24:18.257932+00,2023-07-17 18:39:41.694082+00,,,Mirac. Genovefae,Commemoration of Genevieve's Miracle,14112610,,11,26,14
+2699,2023-06-07 20:24:28.668396+00,2023-07-17 18:39:41.747484+00,,,Oct. Marcel. Paris.,"Octave of Marcellus, Bishop of Paris",14111000,,11,10,14
+2700,2023-06-07 20:24:29.1707+00,2023-07-17 18:39:41.74989+00,,,Oct. Om. Sanctorum,Octave of All Saints' Day,14110810,,11,8,14
+2701,2023-06-07 20:24:35.014683+00,2023-07-17 18:39:41.785031+00,,,Octava Martini,Octave of Martin,14111800,,11,18,14
+2702,2023-06-07 20:24:40.222594+00,2023-07-17 18:39:41.807376+00,,,Omnium Sanctorum,All Saints' Day,14110100,,11,1,14
+2703,2023-06-07 20:24:44.603024+00,2023-07-17 18:39:41.835241+00,,,Othmari,"Othmar (Audemar), Abbot",14111600,,11,16,14
+4605,2023-12-29 17:58:15.276733+00,2023-12-29 17:58:15.276764+00,613,,Passio Ragnulfi,"Passion of Ragnulf (Rainulf, Renon), Martyr, father of Hadulf (Bishop of Arras)",14110950,,11,9,14
+2704,2023-06-07 20:24:53.00077+00,2023-07-17 18:39:41.875014+00,,,Pirmini,"Pirminus, Abbot and Bishop",14110300,,11,3,14
+4201,2023-06-07 20:24:53.645056+00,2023-07-17 18:39:41.88043+00,,,"Pontiani, Pont.","Pontianus, Pope and Martyr",14111910,"Pope from 230-35; Holweck, p. 824;",11,19,14
+2705,2023-06-07 20:24:54.41989+00,2023-07-17 18:39:41.8842+00,,,Praesentatio Mariae,Presentation of Mary,14112100,,11,21,14
+2706,2023-06-07 20:25:04.068346+00,2023-07-17 18:39:41.946177+00,,,Quattuor Coronatorum,The Four Crowned Martyrs,14110800,,11,8,14
+4392,2023-06-07 20:25:04.386943+00,2023-07-17 18:39:42.45881+00,,,Quinque fratrum,"Five Brothers (Christian, Benedict, John, Matthew, Isaac; Camaldolese order)",14111230,"Holweck, pp.148, 209; Grotefend;",11,12,14
+2707,2023-06-07 20:25:08.426565+00,2023-07-17 18:39:41.974998+00,,,Romani Antiochiae,"Romanus of Antioch, Martyr",14111810,,11,18,14
+2708,2023-06-07 20:25:20.960281+00,2023-07-17 18:39:42.041144+00,,,Saturnini,"Saturninus, Martyr Bishop of Toulouse",14112900,,11,29,14
+2709,2023-06-07 20:25:22.45138+00,2023-07-17 18:39:42.051018+00,,,Severini,"Severinus, Monk, Teacher of St. Cloud",14112410,,11,24,14
+2710,2023-06-07 20:25:40.446886+00,2023-07-17 18:39:42.483149+00,,,Theodori Tiro,"Theodore Tiro, Martyr",14110910,,11,9,14
+2712,2023-06-07 20:25:43.597445+00,2023-07-17 18:39:42.167817+00,,,Transl. Adalberti,Moving of Adalbert (of Prague)'s relics,14110620,,11,6,14
+4410,2023-06-07 20:25:45.509658+00,2023-07-17 18:39:42.180867+00,,,Transl. Edithae,Moving of relics of Edith of Wilton,14110350,"Holweck, p. 303;",11,3,14
+4411,2023-06-07 20:25:45.995592+00,2023-07-17 18:39:42.184541+00,,,Transl. Eustachii,"Moving of relics of Eustachius (Eustasius, Eustace), Martyr",14110340,"Holweck, p. 347;",11,3,14
+4413,2023-06-07 20:25:48.349464+00,2024-07-12 04:23:41.463912+00,,613,Transl. Ludmilae,Moving of Ludmila's relics,14111020,"Holweck, p.624;",11,10,14
+2713,2023-06-07 20:25:53.055152+00,2023-07-17 18:39:42.230059+00,,,Trudonis,Trudo (Trond),14112320,,11,23,14
+2714,2023-06-07 20:25:53.761774+00,2023-07-17 18:39:42.234736+00,,,Ulgani,"Vulgan, Hermit",14110110,,11,1,14
+4581,2023-06-07 20:25:54.910039+00,2023-07-17 18:39:42.241844+00,,,"Valentini, Hylarii","Valentine (priest) and Hilary (deacon), at Viterbo",14110360,"Holweck, p. 1003;",11,3,14
+3042,2023-06-07 20:25:57.009755+00,2023-07-17 18:39:42.255253+00,,,"Victorini, Floriani",Moving of relics of Victorinus and Florianus to Muenster Cathedral (2 Nov 1164),14110210,,11,2,14
+2711,2023-06-07 20:25:57.188824+00,2023-07-17 18:39:42.256481+00,,,"Victorini, Floriani, transl.",Moving of relics of Victorinus and Florianus to Muenster Cathedral (2 Nov 1164),14110210,,11,2,14
+2715,2023-06-07 20:25:59.488004+00,2023-07-17 18:39:42.272119+00,,,Vigilia Andreae,Eve of Andrew,14112920,,11,29,14
+3043,2023-06-07 20:26:00.674201+00,2023-07-17 18:39:42.279357+00,,,Vigilia Martini,"Eve of Martin, Bishop of Tours",14111030,,11,10,14
+2716,2023-06-07 20:26:02.071158+00,2023-07-17 18:39:42.291353+00,,,Vigilia Othmari,"Vigil of Othmar (Audemar), Abbot",14111540,,11,15,14
+2717,2023-06-07 20:26:03.574868+00,2023-07-17 18:39:42.301677+00,,,Vigoris,"Vigor, Bishop of Bayeux",14110120,,11,1,14
+2718,2023-06-07 20:26:05.443505+00,2023-07-17 18:39:42.314075+00,,,Vinoci,"Winnoc (Vinocus), Abbot",14110600,,11,6,14
+3049,2023-06-07 20:26:06.176447+00,2023-07-17 18:39:42.318205+00,,,Vitalis Agricolae Mart.,,,,11,4,
+2719,2023-06-07 20:26:06.927641+00,2023-07-17 18:39:42.323421+00,,,Vitoni,"Vitonus (Vanne), Bishop of Verdun",14110920,,11,9,14
+2720,2023-06-07 20:26:07.795758+00,2023-07-17 18:39:42.3297+00,,,Wenaili,"Guenael, Abbot of Landevennec",14110320,,11,3,14
+4435,2023-06-07 20:26:08.872634+00,2023-07-17 18:39:42.337155+00,,,Willehadi,"Willehad, Bishop of Bremen",14110820,"Holweck, p. 1034-5;",11,8,14
+2721,2023-06-07 20:26:09.407833+00,2023-07-17 18:39:42.340827+00,,,Willibrordi,"Willibrord, Bishop of Utrecht",14110700,,11,7,14
