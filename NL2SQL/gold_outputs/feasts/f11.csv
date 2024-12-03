@@ -1,0 +1,80 @@
+id,date_created,date_updated,created_by_id,last_updated_by_id,name,description,feast_code,notes,month,day,prefix
+2257,2023-06-07 20:15:52.277458+00,2023-07-17 18:39:40.566933+00,,,Alexandri et sociorum,"Alexander and Eventius, Martyrs",14050310,,5,3,14
+2258,2023-06-07 20:15:53.271494+00,2023-07-17 18:39:40.574707+00,,,Amatoris,"Amator (Amatre), Bishop of Auxerre",14050130,,5,1,14
+4173,2023-06-07 20:15:55.115146+00,2023-07-17 18:39:40.583282+00,,,Angelae Mericiae,"Angela Merici, Virgin, Foundress of the Ursuline Order of Nuns",14053120,"Holweck, p. 75;",5,31,14
+4177,2023-06-07 20:15:58.575405+00,2023-07-17 18:39:40.599417+00,,,Antonini Episcopi,"Antoninus, Archbishop of Florence",14051010,"Holweck, pp. 86-7;",5,10,14
+2259,2023-06-07 20:15:59.316074+00,2023-07-17 18:39:40.603117+00,,,Appar. Michaelis,Appearing of Michael the Archangel,14050800,,5,8,14
+2260,2023-06-07 20:16:02.624843+00,2023-07-17 18:39:40.615311+00,,,Athanasii,"Athanasius, Archbishop of Alexandria",14050200,,5,2,14
+2261,2023-06-07 20:16:03.65865+00,2023-07-17 18:39:40.621481+00,,,Augustini Cant.,"Augustine (Austin), of Canterbury",14052610,,5,26,14
+4528,2023-06-07 20:16:03.800423+00,2023-07-17 18:39:40.622907+00,,,"Augustini, conv.","Conversion of Augustine, Bishop and Doctor",14050510,"Holweck, pp. 119-20;",5,5,14
+4566,2023-06-07 20:23:40.826414+00,2024-07-12 03:25:19.580465+00,,613,"Basilicae BMV de Martyribus Ulyssipponensis, in dedicatione","Dedication of the Basilica of Our Lady of the Martyrs, Lisbon",14051320,,5,13,14
+2262,2023-06-07 20:16:08.476613+00,2023-07-17 18:39:40.642553+00,,,Bedae,"The Venerable Bede, Doctor",14052600,,5,26,14
+4534,2023-06-07 20:16:10.625202+00,2023-07-17 18:39:42.425995+00,,,"Bernardini Senensis, transl.",Moving of relics of Bernardinus degl' Albizzeschi of Siena,14051710,"Holweck, p. 155 (May 18);",5,17,14
+2826,2023-06-07 20:16:12.769423+00,2023-07-17 18:39:40.669383+00,,,Bonifatii Martyris,,,,5,14,
+2263,2023-06-07 20:16:15.923488+00,2023-07-17 18:39:40.689118+00,,,Cantiorum,"Cantius, Cantianus and Cantianilla, Martyrs",14053100,,5,31,14
+2264,2023-06-07 20:16:16.374847+00,2023-07-17 18:39:40.69277+00,,,Carauni,"Caraunus, Deacon and Martyr",14052810,,5,28,14
+2265,2023-06-07 20:16:42.169099+00,2023-07-17 18:39:40.807814+00,,,Coronae,"Corona, Martyr",14051420,,5,14,14
+4616,2024-07-14 22:55:13.938733+00,2024-07-14 22:55:13.938757+00,613,,De corona domini,Crown of the Lord,14050430,Also “De spinea corona” – “feast of the Crown of Thorns” in rubrics of some sources; see CantusDB feast code “14081120” and https://usuarium.elte.hu/calendarlabel/322/view. (Apr 24 for Dominicans?),5,4,14
+4497,2023-06-07 20:17:01.948116+00,2023-07-17 18:39:40.890838+00,,,Desiderii Lingon,"Desiderius (Didier), Martyr, Bishop of Langres",14052300,"Holweck, p. 272;",5,23,14
+2266,2023-06-07 20:17:38.768102+00,2023-07-17 18:39:41.065204+00,,,Dunstani,"Dunstan, Archbishop of Canterbury",14051920,,5,19,14
+2267,2023-06-07 20:17:40.931269+00,2023-07-17 18:39:41.079892+00,,,Elev. Elis. Hung.,Elevation of Elizabeth's relics,14050210,"Holweck, p. 314;",5,2,14
+2268,2023-06-07 20:17:48.960904+00,2023-07-17 18:39:41.100608+00,,,Erici,"Eric IX of Sweden, King and Martyr",14051800,d. 1160; patron saint of Sweden,5,18,14
+2269,2023-06-07 20:17:50.962952+00,2023-07-17 18:39:41.116194+00,,,Euticii,"Euticius (Eutice, Euthycius), Martyr",14051500,,5,15,14
+4191,2023-06-07 20:17:53.671604+00,2023-07-17 18:39:42.394771+00,,,"Felicis, Pont.","Felix I, Martyr and Pope",14053000,"Holweck, p. 372;",5,30,14
+2270,2023-06-07 20:23:18.519075+00,2023-07-17 18:39:42.40674+00,,,Floriani,"Florian, Martyr",14050400,,5,4,14
+2271,2023-06-07 20:23:21.95893+00,2023-07-17 18:39:41.376717+00,,,Gangulfi,"Gangulfus (Gengoul, Gangulf, Gengulf, Gangulphus, Gangolfus, Gengulfus), Martyred Knight",14051110,,5,11,14
+2272,2023-06-07 20:23:24.967118+00,2023-07-17 18:39:41.39705+00,,,Germani Parisien.,"Germanus (Germain), Bishop of Paris",14052800,,5,28,14
+2273,2023-06-07 20:23:26.452038+00,2023-07-17 18:39:41.405339+00,,,Godehardi,"Godehard (Gothard), Bishop of Hildesheim",14050410,,5,4,14
+2274,2023-06-07 20:23:26.650225+00,2023-07-17 18:39:41.406521+00,,,"Gordiani, Epimachi","Gordian and Epimachus, Martyrs",14051000,,5,10,14
+2880,2023-06-07 20:23:27.756652+00,2023-07-17 18:39:41.412477+00,,,Gregorii VII Papae Confessoris,,,,5,25,
+2275,2023-06-07 20:23:28.429196+00,2023-07-17 18:39:41.417332+00,,,Hadulfi,"Hadulf, Abbot and Bishop of Arras",14051900,,5,19,14
+4318,2023-06-07 20:23:37.649982+00,2023-07-17 18:39:42.430901+00,,,Hilarii Arelatensis,"Hilary (Hilarius or Hilarus), Archbishop of Arles, Confessor",14050500,"check this feast to make sure it's the correct Hilary (if we index CAO - D and others); Holweck, p. 483;",5,5,14
+4454,2023-06-07 20:23:41.622219+00,2023-07-17 18:39:42.469998+00,,,In dedicatione S. Mariae,"Commemoration of the date when Boniface IV dedicated the Pantheon in Rome to the service of God in the name of ""S. Mariae semper Virginis et omnium Martyrum""",14051310,"online (Google Books): A Dictionary of Christian Antiquities, ed. William Smith and Samuel Cheetham (London: 1893)",5,13,14
+2276,2023-06-07 20:23:45.762501+00,2023-07-17 18:39:41.511311+00,,,Inventio Crucis,Finding of the Cross,14050300,,5,3,14
+4538,2023-06-07 20:23:47.972217+00,2023-07-17 18:39:41.524776+00,,,Ivonis de Kermartin,"Ivo of Kermartin (Yves Hélory, Yvo, Ives)",14051930,"Holweck, pp. 515-16;",5,19,14
+2277,2023-06-07 20:23:52.30172+00,2023-07-17 18:39:41.607428+00,,,Joannis Port. Lat.,John before the Latin Gate,14050600,,5,6,14
+2278,2023-06-07 20:23:53.16666+00,2023-07-17 18:39:41.548627+00,,,Judae Quiriaci,"Judas Quiriacus (Cyriacus), Bishop",14050420,,5,4,14
+2279,2023-06-07 20:23:55.503724+00,2023-07-17 18:39:41.565383+00,,,Juvenalis,"Juvenal, Bishop of Narni",14050320,,5,3,14
+4331,2023-06-07 20:24:06.660875+00,2023-07-17 18:39:41.631776+00,,,Mafaldae Reginae,Portuguese princess and queen; nun (Cistercian order) in the Convent of Arouca,14050230,,5,2,14
+2281,2023-06-07 20:24:07.31615+00,2023-07-17 18:39:41.636552+00,,,Mamerti,"Mamertus, Bishop of Vienne",14051100,,5,11,14
+2282,2023-06-07 20:24:16.013876+00,2023-07-17 18:39:41.682148+00,,,Maximini,"Maximinus, Bishop of Trier",14052900,,5,29,14
+2283,2023-06-07 20:24:20.881978+00,2023-07-17 18:39:41.711924+00,,,Monicae,"Monica, Mother of Augustine",14050440,,5,4,14
+2972,2023-06-07 20:24:21.036128+00,2023-07-17 18:39:41.713116+00,,,Monicae Viduae,,,,5,4,
+4346,2023-06-07 20:24:24.785755+00,2023-07-17 18:39:41.727765+00,,,"Nerei, Achillei","Nereus and Achilleus, Roman Martyrs",14051240,"Holweck, p. 733;",5,12,14
+2284,2023-06-07 20:24:29.338674+00,2023-07-17 18:39:41.751078+00,,,"Oct. Philippi,Jacobi","Octave of Philip and James, Apostles",14050830,,5,8,14
+2309,2023-06-07 20:24:32.974551+00,2023-07-17 18:39:41.772324+00,,,Octava Floriani,Octave of Florian,14051120,,5,11,14
+2285,2023-06-07 20:24:37.736157+00,2023-07-17 18:39:41.796538+00,,,Octava Servatii,Octave of Servatius,14052000,,5,20,14
+2286,2023-06-07 20:24:43.95322+00,2023-07-17 18:39:41.831723+00,,,Orientii,"Orientius (Orens), Bishop",14050120,,5,1,14
+2287,2023-06-07 20:24:44.802309+00,2023-07-17 18:39:41.83647+00,,,Pancratii et Soc.,"Pancras and Companions, Martyrs",14051210,,5,12,14
+4541,2023-06-07 20:24:45.308573+00,2023-07-17 18:39:41.839908+00,,,Paschalis Baylon,"Pascual Baylón, Confessor",14051720,"Holweck, p. 773 (May 19);",5,17,14
+4535,2023-06-07 20:24:49.730156+00,2023-07-17 18:39:41.85873+00,,,Petri de Tarentasia,"Peter II of Tarentaise, Archbishop",14050820,"Holweck, p. 793;",5,8,14
+4573,2023-06-07 20:24:50.017629+00,2023-07-17 18:39:41.861123+00,,,Petri Regalati,"Peter Regalado, Franciscan friar",14051330,"Holweck, p. 793;",5,13,14
+2288,2023-06-07 20:24:51.312118+00,2023-07-17 18:39:41.866936+00,,,Petronillae,"Petronilla, Virgin",14053110,,5,31,14
+4366,2023-06-07 20:24:51.806682+00,2023-07-17 18:39:42.455139+00,,,Philippi Nerii,"Philip Neri, Confessor, Apostle of Rome and founder of the ""Oratory""",14052620,"Holweck, p.811;",5,26,14
+2289,2023-06-07 20:24:52.263088+00,2023-07-17 18:39:41.937867+00,,,"Philippi, Jacobi","Philip and James, Apostles",14050100,,5,1,14
+2290,2023-06-07 20:24:53.817051+00,2023-07-17 18:39:41.131873+00,,,Pontii,"Pontius, Martyr",14051400,,5,14,14
+2291,2023-06-07 20:25:02.15323+00,2023-07-17 18:39:42.418917+00,,,"Pudentianae,Pudentis","Pudentiana and Pudens, Martyrs",14051910,,5,19,14
+2292,2023-06-07 20:25:05.1896+00,2023-12-30 01:23:51.740875+00,,613,Ragnulfi,"Ragnulf (Rainulf, Renon), Martyr, father of Hadulf (Bishop of Arras)",14052700,"Holweck, p. 846; In F-AS 893, there is a second feast for Ragnulph in November between Quattuor Coronatorum (Nov. 8) and Martin (Nov. 11) identified in the rubric as ""Passio sci ranulphi"".",5,27,14
+4394,2023-06-07 20:25:05.666231+00,2023-07-17 18:39:41.955798+00,,,Reginae Mariae,The Queenship of Mary,14053130,,5,31,14
+2293,2023-06-07 20:25:07.772088+00,2023-07-17 18:39:41.970255+00,,,Rictrudis,"Rictrudis, Widow",14051200,,5,12,14
+4203,2023-06-07 20:25:09.105237+00,2023-07-17 18:39:41.979608+00,,,Ruperti Bingensis,Rupert of Bingen,14051510,,5,15,14
+2294,2023-06-07 20:25:22.13108+00,2023-07-17 18:39:42.048707+00,,,Servatii,"Servais (Servatius), Bishop of Tongres",14051300,,5,13,14
+2295,2023-06-07 20:25:23.137785+00,2023-07-17 18:39:42.056288+00,,,Sigismundi,"Sigismund, King of Burgundy, Martyr",14050140,,5,1,14
+2296,2023-06-07 20:25:25.100377+00,2023-07-17 18:39:42.069553+00,,,Stanislai,"Stanislaus, Bishop of Krakow",14050710,,5,7,14
+2297,2023-06-07 20:25:26.721802+00,2023-07-17 18:39:42.078038+00,,,Subventio Martini,Hiding of Martin's relics,14051220,,5,12,14
+2099,2023-06-07 20:25:45.383396+00,2024-07-13 03:56:22.55966+00,,613,Transl. Dominici,Moving of Dominic's relics,14052400,"Holweck, p. 286;",5,24,14
+4412,2023-06-07 20:25:46.168684+00,2024-07-12 04:23:13.167418+00,,613,Transl. Francisci,The moving of Francis's relics,14052530,"Holweck, pp. 398-399;",5,25,14
+2298,2023-06-07 20:25:48.719278+00,2023-07-17 18:39:42.202561+00,,,Transl. Mauritii,Moving of Maurice's relics,14051230,,5,12,14
+2299,2023-06-07 20:25:48.934637+00,2023-07-17 18:39:42.203767+00,,,Transl. Nicolai,Moving of Nicholas's relics,14050900,,5,9,14
+2300,2023-06-07 20:25:50.283072+00,2023-07-17 18:39:42.213387+00,,,Transl. Stephani,Moving of Stephen's rellics,14050700,,5,7,14
+2301,2023-06-07 20:25:50.44981+00,2023-07-17 18:39:42.214586+00,,,Transl. Syri,Moving of Syrus's relics,14051700,,5,17,14
+2302,2023-06-07 20:25:51.132314+00,2023-07-17 18:39:42.217044+00,,,Transl. Udalrici,Moving of Ulric's relics,14051410,,5,14,14
+2303,2023-06-07 20:25:51.730175+00,2023-07-17 18:39:42.221777+00,,,Transl. Walburgae,Moving of Walburga's relics,14050150,,5,1,14
+4441,2023-06-07 20:25:52.384407+00,2023-07-17 18:39:42.22649+00,,,Translatio Wigberti,Moving of Wigbert's relics,14051520,"Holweck, p. 1033;",5,15,14
+2304,2023-06-07 20:25:52.579164+00,2023-07-17 18:39:42.227685+00,,,Tres Mariae,"Mary, Mary Cleophae, Mary Salome",14052520,,5,25,14
+2305,2023-06-07 20:25:54.085215+00,2023-07-17 18:39:42.237115+00,,,Urbani,"Urban I, Pope and Martyr",14052510,,5,25,14
+2306,2023-06-07 20:25:58.031059+00,2023-07-17 18:39:42.262532+00,,,Victoris Mauri,"Victor Maurus, Martyr",14050810,,5,8,14
+4585,2023-06-07 20:26:04.398108+00,2023-07-17 18:39:42.307276+00,,,"Vincentii, transl. in Brachara",Moving of Vincent of Saragossa's relics to Braga,14050450,,5,4,14
+2310,2023-06-07 20:26:08.368023+00,2023-07-17 18:39:42.333378+00,,,Wiboradae,"Wiborada, Virgin Martyr",14050220,later altered to May 11;,5,2,14
+2307,2023-06-07 20:26:09.560524+00,2023-07-17 18:39:42.342039+00,,,Wironi,"Wiro, ""Apostle"" of southern Netherlands",14050840,,5,8,14
+2308,2023-06-07 20:26:11.037909+00,2023-07-17 18:39:42.350545+00,,,Zenobii,"Zenobius, Bishop of Florence",14052500,,5,25,14

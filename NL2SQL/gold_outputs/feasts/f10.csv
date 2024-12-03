@@ -1,0 +1,7 @@
+id,date_created,date_updated,created_by_id,last_updated_by_id,name,description,feast_code,notes,month,day,prefix,lower
+1727,2023-06-07 20:17:58.884459+00,2023-07-17 18:39:41.15759+00,,,Fer. 2 in Letaniis,Rogation Monday,08062000,,,,08,fer. 2 in letaniis
+1756,2023-06-07 20:18:06.57989+00,2023-07-17 18:39:41.195997+00,,,Fer. 3 in Letaniis,Rogation Tuesday,08063000,,,,08,fer. 3 in letaniis
+1786,2023-06-07 20:18:14.668514+00,2023-07-17 18:39:41.23342+00,,,Fer. 4 in Letaniis,Rogation Wednesday,08064000,,,,08,fer. 4 in letaniis
+1926,2023-06-07 20:23:42.093639+00,2023-07-17 18:39:41.489455+00,,,In Letaniis,"General, Rogation Days",08068010,,,,08,in letaniis
+2238,2023-06-07 20:23:42.314093+00,2023-07-17 18:39:41.490647+00,,,In Letaniis maj.,The greater litany; The Major Rogation,08042500,"""In Letaniis majoribus""; NOTE: This feastcode uses a ""fixed date"" method of coding within the prefix ""08,"" a prefix which is designated for movable feasts.",4,25,08,in letaniis maj.
+4503,2023-06-07 20:23:48.296838+00,2024-07-12 03:21:03.106803+00,,613,"Iwigii, transl.",Moving of relics of Iwigius,17009000,sometime between Feb.24 (Matthaei) and Mar.12 (Gregorii); see Wilton Processional),,,17,"iwigii, transl."

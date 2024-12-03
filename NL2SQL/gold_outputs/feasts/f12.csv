@@ -1,0 +1,417 @@
+id,date_created,date_updated,created_by_id,last_updated_by_id,name,description,feast_code,notes,month,day,prefix
+1944,2023-06-07 20:24:01.500358+00,2024-10-25 17:24:17.56993+00,,251687,LITURA,Indicates that the liturgical occasion is unknown or missing due to an erasure in the manuscript or other removal (e.g. fragmentation) of information that was previously present.,00000001,,,,00
+1927,2023-06-07 20:23:42.83218+00,2023-07-17 18:39:41.494299+00,,,In tempore Adventus,"General, in Advent",01000000,,,,01
+1657,2023-06-07 20:17:25.610849+00,2023-07-17 18:39:41.001427+00,,,Dom. Adventus,Sundays in Advent,01001000,,,,01
+1709,2023-06-07 20:17:54.343706+00,2023-07-17 18:39:41.135502+00,,,Fer. 2 Adventus,Mondays in Advent,01002000,,,,01
+1740,2023-06-07 20:18:02.401896+00,2023-07-17 18:39:41.174285+00,,,Fer. 3 Adventus,Tuesdays in Advent,01003000,,,,01
+1769,2023-06-07 20:18:09.925102+00,2023-07-17 18:39:41.210581+00,,,Fer. 4 Adventus,Wednesdays in Advent,01004000,,,,01
+1981,2023-06-07 20:25:09.800707+00,2023-07-17 18:39:41.984269+00,,,Sabb. Adventus,Saturdays in Advent,01007000,,,,01
+1903,2023-06-07 20:23:31.317406+00,2023-07-17 18:39:41.430879+00,,,Hebd. Adventus,Weekdays in Advent,01008000,,,,01
+1581,2023-06-07 20:17:06.515258+00,2023-07-17 18:39:40.991809+00,,,Dom. 1 Adventus,1st Sunday of Advent,01011000,,,,01
+1712,2023-06-07 20:17:55.164645+00,2023-07-17 18:39:41.139099+00,,,Fer. 2 Hebd. 1 Adv.,"Monday, 1st week, Advent",01012000,,,,01
+1743,2023-06-07 20:18:03.075251+00,2023-07-17 18:39:41.177956+00,,,Fer. 3 Hebd. 1 Adv.,"Tuesday, 1st week, Advent",01013000,,,,01
+1773,2023-06-07 20:18:10.879244+00,2023-07-17 18:39:41.215337+00,,,Fer. 4 Hebd. 1 Adv.,"Wednesday, 1st week, Advent",01014000,,,,01
+1803,2023-06-07 20:22:59.494184+00,2023-07-17 18:39:41.257554+00,,,Fer. 5 Hebd. 1 Adv.,"Thursday, 1st week, Advent",01015000,,,,01
+1829,2023-06-07 20:23:07.058327+00,2023-07-17 18:39:41.291266+00,,,Fer. 6 Hebd. 1 Adv.,"Friday, 1st week, Advent",01016000,,,,01
+2004,2023-06-07 20:25:15.257755+00,2023-07-17 18:39:42.012659+00,,,Sabbato Hebd. 1 Adv.,"Saturday, 1st week, Advent",01017000,,,,01
+1890,2023-06-07 20:23:28.655942+00,2023-07-17 18:39:41.418475+00,,,Hebd. 1 Adventus,1st week of Advent,01018000,,,,01
+1606,2023-06-07 20:17:12.80779+00,2023-07-17 18:39:40.94616+00,,,Dom. 2 Adventus,2nd Sunday of Advent,01021000,,,,01
+1714,2023-06-07 20:17:55.75243+00,2023-07-17 18:39:41.141591+00,,,Fer. 2 Hebd. 2 Adv.,"Monday, 2nd week, Advent",01022000,,,,01
+1745,2023-06-07 20:18:03.608296+00,2023-07-17 18:39:41.180317+00,,,Fer. 3 Hebd. 2 Adv.,"Tuesday, 2nd week, Advent",01023000,,,,01
+1775,2023-06-07 20:18:11.37983+00,2023-07-17 18:39:41.217741+00,,,Fer. 4 Hebd. 2 Adv.,"Wednesday, 2nd week, Advent",01024000,,,,01
+1805,2023-06-07 20:23:00.034816+00,2023-07-17 18:39:41.259981+00,,,Fer. 5 Hebd. 2 Adv.,"Thursday, 2nd week, Advent",01025000,,,,01
+1831,2023-06-07 20:23:07.606528+00,2023-07-17 18:39:41.293639+00,,,Fer. 6 Hebd. 2 Adv.,"Friday, 2nd week, Advent",01026000,,,,01
+2005,2023-06-07 20:25:15.567456+00,2023-07-17 18:39:42.014976+00,,,Sabbato Hebd. 2 Adv.,"Saturday, 2nd week, Advent",01027000,,,,01
+1892,2023-06-07 20:23:29.068683+00,2023-07-17 18:39:42.428452+00,,,Hebd. 2 Adventus,2nd week of Advent,01028000,,,,01
+1977,2023-06-07 20:25:03.565082+00,2023-07-17 18:39:41.942574+00,,,Q.T. Adventus,"Ember Days, Advent",01030009,,,,01
+1628,2023-06-07 20:17:18.313429+00,2023-07-17 18:39:40.917454+00,,,Dom. 3 Adventus,3rd Sunday of Advent,01031000,,,,01
+1717,2023-06-07 20:17:56.516802+00,2023-07-17 18:39:41.145385+00,,,Fer. 2 Hebd. 3 Adv.,"Monday, 3rd week, Advent",01032000,,,,01
+1748,2023-06-07 20:18:04.28428+00,2023-07-17 18:39:41.184+00,,,Fer. 3 Hebd. 3 Adv.,"Tuesday, 3rd week, Advent",01033000,,,,01
+1778,2023-06-07 20:18:12.128239+00,2023-07-17 18:39:41.221469+00,,,Fer. 4 Hebd. 3 Adv.,"Wednesday, 3rd week, Advent",01034000,,,,01
+1795,2023-06-07 20:18:17.556987+00,2023-07-17 18:39:41.246681+00,,,Fer. 4 Q.T. Adventus,"Ember Day, Advent (Wednesday)",01034009,,,,01
+1808,2023-06-07 20:23:00.757161+00,2023-07-17 18:39:41.263569+00,,,Fer. 5 Hebd. 3 Adv.,"Thursday, 3rd week, Advent",01035000,,,,01
+1823,2023-06-07 20:23:05.7169+00,2023-07-17 18:39:42.403196+00,,,Fer. 5 Q.T. Adventus,"Ember Day, Advent (Thursday)",01035009,,,,01
+1834,2023-06-07 20:23:08.343931+00,2023-07-17 18:39:41.297236+00,,,Fer. 6 Hebd. 3 Adv.,"Friday, 3rd week, Advent",01036000,,,,01
+1850,2023-06-07 20:23:13.641523+00,2023-07-17 18:39:41.322483+00,,,Fer. 6 Q.T. Adventus,"Ember Day, Advent (Friday)",01036009,,,,01
+2006,2023-06-07 20:25:15.934618+00,2023-07-17 18:39:42.016169+00,,,Sabbato Hebd. 3 Adv.,"Saturday, 3rd week, Advent",01037000,,,,01
+1996,2023-06-07 20:25:13.787046+00,2023-07-17 18:39:42.005499+00,,,Sabb. Q.T. Adventus,"Ember Day, Advent (Saturday)",01037009,,,,01
+1895,2023-06-07 20:23:29.680668+00,2023-07-17 18:39:41.421895+00,,,Hebd. 3 Adventus,3rd week of Advent,01038000,,,,01
+1635,2023-06-07 20:17:20.542569+00,2023-07-17 18:39:40.977313+00,,,Dom. 4 Adventus,4th Sunday of Advent,01041000,,,,01
+1721,2023-06-07 20:17:57.529354+00,2023-07-17 18:39:41.150179+00,,,Fer. 2 Hebd. 4 Adv.,"Monday, 4th week, Advent",01042000,,,,01
+1752,2023-06-07 20:18:05.215874+00,2023-07-17 18:39:41.188821+00,,,Fer. 3 Hebd. 4 Adv.,"Tuesday, 4th week, Advent",01043000,,,,01
+1782,2023-06-07 20:18:13.062886+00,2023-07-17 18:39:41.226246+00,,,Fer. 4 Hebd. 4 Adv.,"Wednesday, 4th week, Advent",01044000,,,,01
+1812,2023-06-07 20:23:01.869665+00,2023-07-17 18:39:41.269612+00,,,Fer. 5 Hebd. 4 Adv.,"Thursday, 4th week, Advent",01045000,,,,01
+1837,2023-06-07 20:23:09.244798+00,2023-07-17 18:39:41.301977+00,,,Fer. 6 Hebd. 4 Adv.,"Friday, 4th week, Advent",01046000,,,,01
+2007,2023-06-07 20:25:16.228991+00,2023-07-17 18:39:42.017348+00,,,Sabbato Hebd. 4 Adv.,"Saturday, 4th week, Advent",01047000,,,,01
+1898,2023-06-07 20:23:30.367485+00,2023-07-17 18:39:41.425279+00,,,Hebd. 4 Adventus,4th week of Advent,01048000,,,,01
+1487,2023-06-07 20:15:57.4856+00,2023-07-17 18:39:40.593227+00,,,Antiphonae Majores,Great 'O' Antiphons,01048010,,,,01
+2159,2023-06-07 20:24:35.544395+00,2023-07-17 18:39:41.786162+00,,,Octava Nat. Domini,Octave of Christmas (Circumcision),02010100,,1,1,02
+1962,2023-06-07 20:24:35.746207+00,2023-07-17 18:39:41.787307+00,,,"Octava Nat. Domini,8",In week after Octave of Christmas,02010108,,,,02
+4223,2023-06-07 20:16:19.214104+00,2023-07-17 18:39:40.710732+00,,,Circumcisio Domini,The circumcision of Christ,02010110,,1,1,02
+2160,2023-06-07 20:24:38.028661+00,2023-07-17 18:39:41.798191+00,,,Octava Stephani,Octave of Stephen,02010200,,1,2,02
+2155,2023-06-07 20:24:28.151775+00,2023-07-17 18:39:41.74391+00,,,Oct. Joannis Evang.,Octave of John the Evangelist,02010300,,1,3,02
+2156,2023-06-07 20:24:28.96081+00,2023-07-17 18:39:41.748702+00,,,Oct. Nat. Innocent.,Octave of Holy Innocents,02010400,,1,4,02
+4510,2023-06-07 20:26:00.156077+00,2023-07-17 18:39:42.275709+00,,,Vigilia Epiphaniae,Eve of Epiphany,02010500,,1,5,02
+1684,2023-06-07 20:17:32.628801+00,2023-07-17 18:39:41.035246+00,,,Dom. per annum,"Sundays, Ferial Office",04001000,,,,04
+1669,2023-06-07 20:17:28.915112+00,2023-07-17 18:39:41.016075+00,,,Dom. p. Epiphaniam,Sundays after Epiphany,05001000,,,,05
+2178,2023-06-07 20:25:59.99705+00,2023-07-17 18:39:42.274508+00,,,Vigilia Epiphaniae,Eve of Epiphany,05010500,,1,5,05
+2135,2023-06-07 20:17:48.320883+00,2023-07-17 18:39:41.096824+00,,,Epiphania,Epiphany,05010600,,1,6,05
+1707,2023-06-07 20:17:48.667565+00,2023-07-17 18:39:41.098047+00,,,"Epiphania,8",In week after Epiphany,05010608,,,,05
+2126,2023-06-07 20:17:02.49875+00,2023-07-17 18:39:40.894474+00,,,Die 2 p. Epiphaniam,"1st day after Epiphany (2nd day ""of"" Epiphany)",05010700,,1,7,05
+2127,2023-06-07 20:17:02.98208+00,2023-07-17 18:39:40.898111+00,,,Die 3 p. Epiphaniam,"2nd day after Epiphany (3rd day ""of"" Epiphany)",05010800,,1,8,05
+2128,2023-06-07 20:17:03.309315+00,2023-07-17 18:39:40.900537+00,,,Die 4 p. Epiphaniam,"3rd day after Epiphany (4th day ""of"" Epiphany)",05010900,,1,9,05
+2129,2023-06-07 20:17:03.81229+00,2023-07-17 18:39:40.904124+00,,,Die 5 p. Epiphaniam,4th day after Epiphany (5th day of Epiphany),05011000,,1,10,05
+2103,2023-06-07 20:17:06.997937+00,2023-07-17 18:39:42.465081+00,,,Dom. 1 p. Epiphaniam,"1st Sunday after Epiphany (Sunday within the octave of Epiphany,  'Dom. Infra Oct. Epiph.')",05011010,,,,05
+1583,2023-06-07 20:17:06.689844+00,2023-07-17 18:39:42.383791+00,,,"Dom. 1 p. Epiph.,8",In the week following the 1st Sunday after Epiphany,05011018,,,,05
+4587,2023-06-07 20:25:20.178702+00,2023-07-17 18:39:42.03488+00,,,"Sanctae familiae Jesu, Mariae, Joseph",The Holy Family,05011020,,,,05
+2130,2023-06-07 20:17:04.330321+00,2023-07-17 18:39:40.907701+00,,,Die 6 p. Epiphaniam,"5th day after Epiphany (6th day ""of"" Epiphany",05011100,,1,11,05
+2131,2023-06-07 20:17:04.835688+00,2023-07-17 18:39:40.911331+00,,,Die 7 p. Epiphaniam,"6th day after Epiphany (7th day ""of"" Epiphany)",05011200,,1,12,05
+2158,2023-06-07 20:24:32.837115+00,2023-07-17 18:39:41.771116+00,,,Octava Epiphaniae,Octave of Epiphany,05011300,,1,13,05
+1730,2023-06-07 20:17:59.643023+00,2023-07-17 18:39:41.161171+00,,,Fer. 2 p. Epiphaniam,"Monday, 1st week after Epiphany",05012000,,,,05
+1759,2023-06-07 20:18:07.344626+00,2023-07-17 18:39:41.199666+00,,,Fer. 3 p. Epiphaniam,"Tuesday, 1st week after Epiphany",05013000,,,,05
+1790,2023-06-07 20:18:15.726929+00,2023-07-17 18:39:41.239416+00,,,Fer. 4 p. Epiphaniam,"Wednesday, 1st week after Epiphany",05014000,,,,05
+1817,2023-06-07 20:23:03.772928+00,2023-07-17 18:39:41.278097+00,,,Fer. 5 p. Epiphaniam,"Thursday, 1st week after Epiphany",05015000,,,,05
+1843,2023-06-07 20:23:11.560711+00,2023-07-17 18:39:41.314003+00,,,Fer. 6 p. Epiphaniam,"Friday, 1st week after Epiphany",05016000,,,,05
+1992,2023-06-07 20:25:12.942191+00,2023-07-17 18:39:42.000793+00,,,Sabb. p. Epiphaniam,"Saturday, 1st week after Epiphany",05017000,,,,05
+1689,2023-06-07 20:17:34.955706+00,2023-07-17 18:39:41.041777+00,,,Dom. Septuagesimae,Septuagesima Sunday,06011000,,,,06
+1737,2023-06-07 20:18:01.909892+00,2023-07-17 18:39:41.170695+00,,,Fer. 2 Septuagesimae,Septuagesima Monday,06012000,,,,06
+1766,2023-06-07 20:18:09.367602+00,2023-07-17 18:39:42.360379+00,,,Fer. 3 Septuagesimae,Septuagesima Tuesday,06013000,,,,06
+1799,2023-06-07 20:22:58.474098+00,2023-07-17 18:39:41.252628+00,,,Fer. 4 Septuagesimae,Septuagesima Wednesday,06014000,,,,06
+1825,2023-06-07 20:23:06.199212+00,2023-07-17 18:39:41.286528+00,,,Fer. 5 Septuagesimae,Septuagesima Thursday,06015000,,,,06
+1854,2023-06-07 20:23:14.401262+00,2023-07-17 18:39:41.328434+00,,,Fer. 6 Septuagesimae,Septuagesima Friday,06016000,,,,06
+1998,2023-06-07 20:25:14.125949+00,2023-07-17 18:39:42.421226+00,,,Sabb. Septuagesimae,Septuagesima Saturday,06017000,,,,06
+1916,2023-06-07 20:23:34.212034+00,2023-07-17 18:39:41.446849+00,,,Hebd. Septuagesimae,Week after Septuagesima,06018000,,,,06
+1685,2023-06-07 20:17:32.820727+00,2023-07-17 18:39:41.036697+00,,,Dom. Quadragesimae,Sundays in Lent,07001000,,,,07
+4391,2023-06-07 20:25:03.705436+00,2023-07-17 18:39:41.943754+00,,,Q.T. Quadragesimae,"Ember Days, Lent",07010009,,,,07
+1585,2023-06-07 20:17:07.874915+00,2023-07-17 18:39:40.920994+00,,,Dom. 1 Quadragesimae,1st Sunday of Lent,07011000,,,,07
+1713,2023-06-07 20:17:55.48874+00,2023-07-17 18:39:41.140296+00,,,Fer. 2 Hebd. 1 Quad.,"Monday, 1st week, Lent",07012000,,,,07
+1744,2023-06-07 20:18:03.364919+00,2023-07-17 18:39:41.179137+00,,,Fer. 3 Hebd. 1 Quad.,"Tuesday, 1st week, Lent",07013000,,,,07
+1774,2023-06-07 20:18:11.136761+00,2023-07-17 18:39:41.216514+00,,,Fer. 4 Hebd. 1 Quad.,"Wednesday, 1st week, Lent",07014000,,,,07
+1796,2023-06-07 20:18:17.861193+00,2023-07-17 18:39:41.249069+00,,,Fer. 4 Q.T. Quad.,"Ember Day, Lent (Wednesday)",07014009,,,,07
+1804,2023-06-07 20:22:59.771834+00,2023-07-17 18:39:41.258735+00,,,Fer. 5 Hebd. 1 Quad.,"Thursday, 1st week, Lent",07015000,,,,07
+1830,2023-06-07 20:23:07.352951+00,2023-07-17 18:39:41.292458+00,,,Fer. 6 Hebd. 1 Quad.,"Friday, 1st week, Lent",07016000,,,,07
+1851,2023-06-07 20:23:13.93904+00,2023-07-17 18:39:41.324871+00,,,Fer. 6 Q.T. Quad.,"Ember Day, Lent (Friday)",07016009,,,,07
+1984,2023-06-07 20:25:10.576112+00,2023-07-17 18:39:41.987876+00,,,Sabb. Hebd. 1 Quad.,"Saturday, 1st week, Lent",07017000,,,,07
+1891,2023-06-07 20:23:28.873173+00,2023-07-17 18:39:42.410465+00,,,Hebd. 1 Quad.,1st week of Lent,07018000,,,,07
+1475,2023-06-07 20:15:45.385398+00,2023-07-17 18:39:40.527269+00,,,Ad Mandatum,At the Mandatum (Foot-Washing),07065010,,,,07
+1701,2023-06-07 20:17:37.347003+00,2023-07-17 18:39:41.056678+00,,,Dominica TP,"Sundays, Eastertide",08001000,,,,08
+1688,2023-06-07 20:17:34.356579+00,2023-07-17 18:39:41.040512+00,,,Dom. Resurrectionis,Easter Sunday,08011000,,,,08
+1687,2023-06-07 20:17:33.574415+00,2023-07-17 18:39:41.039264+00,,,"Dom. Resurrect.,8",In week after Easter Sunday,08011008,,,,08
+1733,2023-06-07 20:18:00.447023+00,2023-07-17 18:39:41.164761+00,,,Fer. 2 p. Pascha,Easter Monday,08012000,,,,08
+1762,2023-06-07 20:18:08.090749+00,2023-07-17 18:39:41.203251+00,,,Fer. 3 p. Pascha,Easter Tuesday,08013000,,,,08
+1793,2023-06-07 20:18:16.492755+00,2023-07-17 18:39:41.243084+00,,,Fer. 4 p. Pascha,Easter Wednesday,08014000,,,,08
+1820,2023-06-07 20:23:04.507745+00,2023-07-17 18:39:41.281737+00,,,Fer. 5 p. Pascha,Easter Thursday,08015000,,,,08
+1847,2023-06-07 20:23:12.474799+00,2023-07-17 18:39:41.317619+00,,,Fer. 6 p. Pascha,Easter Friday,08016000,,,,08
+2008,2023-06-07 20:25:16.604262+00,2023-07-17 18:39:42.018514+00,,,Sabbato in Albis,Easter Saturday,08017000,,,,08
+1969,2023-06-07 20:24:45.152975+00,2023-07-17 18:39:41.838787+00,,,Pascha Annotinum,Memorial of past year's Easter,08020100,,,,08
+1573,2023-06-07 20:16:53.197819+00,2023-07-17 18:39:40.865417+00,,,De Sancta Lancea,The Holy Lance; on the Friday after the Octave of Easter,08026010,,,,08
+1549,2023-06-07 20:16:39.660395+00,2023-07-17 18:39:40.794532+00,,,Compassio Mariae TP,"The Sorrows of Mary, celebrated Friday after third Sun. after Easter",08046010,,,,08
+4206,2023-06-07 20:16:01.299523+00,2023-07-17 18:39:40.611677+00,,,"Ascensionis Domini, in vigilia",Eve of Ascension,08064001,"^formerly ""Vig. Ascensionis Domini""",,,08
+1926,2023-06-07 20:23:42.093639+00,2023-07-17 18:39:41.489455+00,,,In Letaniis,"General, Rogation Days",08068010,,,,08
+1648,2023-06-07 20:17:23.793768+00,2023-07-17 18:39:42.356775+00,,,Dom. 6 p. Pascha,6th Sunday after Easter,08071010,,,,08
+1678,2023-06-07 20:17:30.675463+00,2023-07-17 18:39:41.026665+00,,,Dom. p. Pent.,Sundays after Pentecost,09001000,,,,09
+1578,2023-06-07 20:16:55.697087+00,2023-07-17 18:39:40.873797+00,,,De Trinitate,Trinity Sunday,09011000,,,,09
+1579,2023-06-07 20:16:55.886382+00,2023-07-17 18:39:40.875041+00,,,"De Trinitate,8",In the week after Trinity Sunday,09011008,,,,09
+1584,2023-06-07 20:17:07.239158+00,2023-07-17 18:39:40.919822+00,,,Dom. 1 p. Pent.,1st Sunday after Pentecost,09011010,,,,09
+1739,2023-06-07 20:18:02.237025+00,2023-07-17 18:39:41.173089+00,,,Fer. 2 Trinitate,Trinity Monday,09012000,,,,09
+1768,2023-06-07 20:18:09.699719+00,2023-07-17 18:39:41.282951+00,,,Fer. 3 Trinitate,Trinity Tuesday,09013000,,,,09
+1801,2023-06-07 20:22:58.847861+00,2023-07-17 18:39:41.255007+00,,,Fer. 4 Trinitate,Trinity Wednesday,09014000,,,,09
+1551,2023-06-07 20:16:42.713319+00,2023-07-17 18:39:40.809081+00,,,Corporis Christi,"Corpus Christi (also ""Blessed Sacrament"")",09015000,,,,09
+1552,2023-06-07 20:16:42.883803+00,2023-07-17 18:39:40.810283+00,,,"Corporis Christi,8",In week after Corpus Christi,09015008,,,,09
+1827,2023-06-07 20:23:06.555317+00,2023-07-17 18:39:41.288883+00,,,Fer. 6 Cor. Christi,Friday after Corpus Christi,09016000,,,,09
+1982,2023-06-07 20:25:09.967523+00,2023-07-17 18:39:41.985578+00,,,Sabb. Cor. Christi,Saturday after Corpus Christi,09017000,,,,09
+4545,2023-06-07 20:25:12.783674+00,2023-07-17 18:39:41.99959+00,,,Sabb. p. Dom. 1 p. Pent.,Saturday in the 2nd week after Pentecost,09017010,,,,09
+1667,2023-06-07 20:17:28.590103+00,2023-07-17 18:39:41.013452+00,,,Dom. p. Cor. Christi,Sunday after Corpus Christi,09021010,,,,09
+1810,2023-06-07 20:23:01.251145+00,2023-07-17 18:39:41.267193+00,,,Fer. 5 Hebd. 3 Pent.,"Thursday, 3rd week after Pentecost",09025010,,,,09
+4575,2023-06-07 20:25:19.726865+00,2023-07-17 18:39:42.031458+00,,,Sacratissimi Cordis Jesu,"Most Sacred Heart of Jesus, on Friday after the second Sunday after Pentecost",09026010,,,,09
+4607,2024-05-18 18:45:40.476856+00,2024-05-18 18:45:40.476896+00,613,,Dom. 1 p. Oct. Corporis Christi,Sunday after the Octave of Corpus Christi,09031010,,,,09
+1586,2023-06-07 20:17:08.142648+00,2023-07-17 18:39:40.922174+00,,,Dom. 10 p. Pent.,10th Sunday after Pentecost,09101000,,,,09
+1587,2023-06-07 20:17:08.308119+00,2023-07-17 18:39:40.923349+00,,,"Dom. 10 p. Pent.,8",In 11th week after Pentecost,09101008,,,,09
+1614,2023-06-07 20:17:15.20257+00,2023-07-17 18:39:40.955835+00,,,Dom. 20 p. Pent.,20th Sunday after Pentecost,09201000,,,,09
+1615,2023-06-07 20:17:15.346164+00,2023-07-17 18:39:40.957009+00,,,"Dom. 20 p. Pent.,8",In 21st week after Pentecost,09201008,,,,09
+2090,2023-06-07 20:17:35.533023+00,2023-07-17 18:39:42.388642+00,,,Dom. ult. ante Adv.,The last Sunday before Advent,09991010,,,,09
+1700,2023-06-07 20:17:37.109308+00,2023-07-17 18:39:41.055464+00,,,Dominica in estate,Sundays in summer,10001000,,,,10
+1572,2023-06-07 20:16:52.830277+00,2023-07-17 18:39:40.863013+00,,,De Regum,"Summer Histories, from Kings",10100000,,,,10
+2088,2023-06-07 20:23:32.384874+00,2023-07-17 18:39:41.436439+00,,,Hebd. de Regum,"Summer Histories, from Kings, for weekdays",10100008,,,,10
+1857,2023-06-07 20:23:14.901415+00,2023-07-17 18:39:41.331997+00,,,Feria 2 de Regum,"Summer Histories, from Kings, for Mondays",10102000,,,,10
+1661,2023-06-07 20:17:27.417464+00,2023-07-17 18:39:41.006282+00,,,Dom. mensis Augusti,Sundays in August,11080100,,,,11
+1664,2023-06-07 20:17:27.890276+00,2023-07-17 18:39:41.009862+00,,,Dom. mensis Sept.,Sundays in September,11090100,,,,11
+1663,2023-06-07 20:17:27.755519+00,2023-07-17 18:39:41.008684+00,,,Dom. mensis Octobris,Sundays in October,11100100,,,,11
+1693,2023-06-07 20:17:35.960639+00,2023-07-17 18:39:41.046933+00,,,Dom.1 mensis Oct.,First Sunday in October,11101100,,,,11
+1662,2023-06-07 20:17:27.604273+00,2023-07-17 18:39:41.007491+00,,,Dom. mensis Nov.,Sundays in November,11110100,,,,11
+1500,2023-06-07 20:16:21.686892+00,2023-07-17 18:39:40.72425+00,,,Comm. Apostolorum,Common of Apostles,12001000,,,,12
+1503,2023-06-07 20:16:22.738466+00,2023-07-17 18:39:40.73171+00,,,"Comm. Apostolorum,8","Common of Apostles, in week of",12001008,,,,12
+4278,2023-06-07 20:16:23.958835+00,2023-07-17 18:39:40.740133+00,,,Comm. plurimorum Apostolorum in vigilia,Eve of Apostles,12001010,,,,12
+1523,2023-06-07 20:16:29.295952+00,2023-07-17 18:39:40.765279+00,,,Comm. unius Apostoli,Common of one Apostle,12001100,,,,12
+4281,2023-06-07 20:16:29.466979+00,2023-07-17 18:39:40.766476+00,,,Comm. unius Apostoli in vigilia,Eve of one Apostle,12001110,,,,12
+1507,2023-06-07 20:16:23.401983+00,2023-07-17 18:39:40.736504+00,,,Comm. duorum Apostolorum,Common of two Apostles,12001200,,,,12
+4283,2023-06-07 20:16:36.956863+00,2023-07-17 18:39:40.781297+00,,,Comm. unius Martyris in vigilia,Eve of one Martyr,12002010,,,,12
+4465,2023-06-07 20:16:26.262937+00,2023-07-17 18:39:40.748596+00,,,Comm. plurimorum Martyrum in vigilia,Eve of several Martyrs,12003010,,,,12
+4466,2023-06-07 20:16:26.40871+00,2023-07-17 18:39:40.749871+00,,,Comm. plurimorum Martyrum in vigilia,Eve of several Martyrs,12003010,,,,12
+4467,2023-06-07 20:16:26.561387+00,2023-07-17 18:39:40.751064+00,,,Comm. plurimorum Martyrum in vigilia,Eve of several Martyrs,12003010,,,,12
+4280,2023-06-07 20:16:27.969915+00,2023-07-17 18:39:40.757009+00,,,Comm. plurimorum Virginum in vigilia,Eve of several Virgins,12006010,,,,12
+1668,2023-06-07 20:17:28.727458+00,2023-07-17 18:39:41.014794+00,,,Dom. p. Ded. Eccl.,Sunday after Dedication of a Church,12008001,,,,12
+1522,2023-06-07 20:16:29.108888+00,2023-07-17 18:39:40.764096+00,,,Comm. unius Abbatis,Common of one Abbot,12010000,,,,12
+1508,2023-06-07 20:16:23.703935+00,2023-07-17 18:39:40.737707+00,,,Comm. Evangelistarum,Common of Evangelists,12011000,,,,12
+1506,2023-06-07 20:16:22.932323+00,2023-07-17 18:39:40.732916+00,,,Comm. Conjungium,Common of Holy Matrons,12012000,,,,12
+1504,2023-06-07 20:16:23.234739+00,2023-07-17 18:39:40.735318+00,,,Comm. Conjungium non Martyrum,Common of Holy Matrons (not Martyrs),12012100,,,,12
+1505,2023-06-07 20:16:23.083665+00,2023-07-17 18:39:40.734121+00,,,Comm. Conjungium Martyrum,Common of Holy Matron Martyrs,12012200,,,,12
+1554,2023-06-07 20:16:45.4899+00,2023-07-17 18:39:40.827005+00,,,De Angelis,"Memorial chants for Angels, including e.g. Missa Votiva de Angelis. Feria III.",12013000,,,,12
+1569,2023-06-07 20:16:51.841861+00,2023-07-17 18:39:40.859375+00,,,De Patronis,Memorial chants for Patrons,12014000,,,,12
+1574,2023-06-07 20:16:53.397878+00,2023-07-17 18:39:40.866617+00,,,De Sanctis,Memorial chants for Saints,12015000,,,,12
+2016,2023-06-07 20:25:24.927219+00,2023-07-17 18:39:42.068328+00,,,Ss Ord. Benedictinae,Saints of the Benedictine Order,12016000,,,,12
+2056,2023-06-07 20:25:34.776559+00,2023-07-17 18:39:42.11664+00,,,Suff. Ordinis Carm.,Suffrages for the Order of Carmelites,12017000,,,,12
+1547,2023-06-07 20:16:28.63392+00,2023-07-17 18:39:40.761733+00,,,Comm. Pontificis,Common of Popes,12018000,,,,12
+2109,2023-06-07 20:16:21.838604+00,2023-07-17 18:39:40.725468+00,,,Comm. Apostolorum et Evangelistarum,Common of Apostles and Evangelists,12019000,,,,12
+1499,2023-06-07 20:16:22.01015+00,2023-07-17 18:39:40.726692+00,,,Comm. Apostolorum post Septuagesima,"Common of Apostles, after Septuagesima",12601000,,,,12
+1502,2023-06-07 20:16:22.585942+00,2023-07-17 18:39:40.730492+00,,,Comm. Apostolorum TQ,"Common of Apostles, Lent",12701000,,,,12
+1501,2023-06-07 20:16:22.428464+00,2023-07-17 18:39:40.729257+00,,,Comm. Apostolorum TP,"Common of Apostles, Eastertide",12801000,,,,12
+1488,2023-06-07 20:16:22.174578+00,2023-07-17 18:39:40.72788+00,,,Comm. Apostolorum sive Martyrum TP,"Common of Apostles or Martyrs, Eastertide",12801100,,,,12
+1975,2023-06-07 20:24:56.744206+00,2023-07-17 18:39:41.897396+00,,,Pro defunctis,Chants for the Dead,13001000,,,,13
+4356,2023-06-07 20:24:42.575025+00,2023-07-17 18:39:41.821077+00,,,Ordo de parvulo defuncto,Rite for a dead child,13010000,,,,13
+4373,2023-06-07 20:24:57.057103+00,2023-07-17 18:39:41.899761+00,,,Pro defunctis Sacerdotibus,For the death of priests,13011000,,,,13
+4357,2023-06-07 20:24:42.734264+00,2023-07-17 18:39:41.822206+00,,,Ordo de patribus et fratribus defunctis,Rite for dead parents and siblings,13012000,,,,13
+2122,2023-06-07 20:16:08.188625+00,2023-07-17 18:39:40.640119+00,,,Basilii,"Basil of Ancyra, Martyr",14010200,,1,2,14
+4506,2023-06-07 20:16:45.305032+00,2023-07-17 18:39:40.82584+00,,,De allatione reliquiarum in ecclesia Pragensis,"Showing of relics in St Vitus's Cathedral, Prague",14010210,local feast; not in Holweck,1,2,14
+4552,2023-06-07 20:15:46.97134+00,2023-07-17 18:39:40.539227+00,,,Adalhardi Corbeiensis,"Adalard (Adalhard) of Corbie, Abbot",14010220,"Holweck, p. 14;",1,2,14
+2140,2023-06-07 20:23:23.134678+00,2023-07-17 18:39:41.385097+00,,,Genovefae,"Genevieve (Genovefa), Virgin",14010300,,1,3,14
+4588,2023-06-07 20:16:17.708982+00,2023-07-17 18:39:40.69997+00,,,Celsi Treverensis,"Celsus, Confessor, reputed 5th Bishop of Trier (Treves)",14010400,"Holweck, p. 201;",1,4,14
+2171,2023-06-07 20:25:23.599222+00,2023-07-17 18:39:42.059415+00,,,Simeonis Stylitae,Simeon the Stylite,14010500,,1,5,14
+2161,2023-06-07 20:24:38.187304+00,2023-07-17 18:39:42.44907+00,,,Octava Thomae Cant.,"Octave of Thomas Becket, Bishop of Canterbury",14010510,,1,5,14
+2132,2023-06-07 20:17:40.032214+00,2023-07-17 18:39:41.072598+00,,,"Edwardi, Conf., de morte","Death of Edward III, Confessor, King of England (son of Ethelred the Unready)",14010520,"Holweck, p. 304;",1,5,14
+2170,2023-06-07 20:25:22.610431+00,2023-07-17 18:39:42.052213+00,,,"Severini, Apost.","Severinus, ""Apostle"" of Noricum",14010530,,1,5,14
+2136,2023-06-07 20:17:52.0079+00,2023-07-17 18:39:41.122211+00,,,Exceptio Marcelli,Reception of the Relics of Pope Marcellus I at Cluny,14010540,,1,5,14
+2176,2023-06-07 20:25:54.703376+00,2023-07-17 18:39:42.240617+00,,,"Valentini, Epi.","Valentine, Bishop",14010700,,1,7,14
+2181,2023-06-07 20:26:09.939593+00,2023-07-17 18:39:42.344444+00,,,Wulsini,"Wulsin, Bishop of Sherborne",14010800,,1,8,14
+2141,2023-06-07 20:23:28.105621+00,2023-07-17 18:39:41.414964+00,,,Gudulae,"Gudula, Virgin",14010810,,1,8,14
+4508,2023-06-07 20:16:54.465877+00,2023-07-17 18:39:40.870211+00,,,De secunda allatione reliquiarum in ecclesia Pragensis,"A second showing of relics in St Vitus's Cathedral, Prague",14010820,local feast; not in Holweck,1,8,14
+2123,2023-06-07 20:16:17.970219+00,2023-07-17 18:39:40.702369+00,,,"Celsi, Juliani","Celsus and Julian, Martyrs",14010900,,1,9,14
+2180,2023-06-07 20:26:09.022658+00,2023-07-17 18:39:42.338375+00,,,Willelmi,"William, Archbishop of Bourges",14011000,,1,10,14
+2163,2023-06-07 20:24:46.65268+00,2023-07-17 18:39:41.845766+00,,,Pauli Heremitae,Paul the Hermit,14011010,,1,10,14
+2143,2023-06-07 20:23:37.496634+00,2023-07-17 18:39:41.466675+00,,,Hilarii,"Hilary, Bishop of Poitiers, Doctor",14011400,,1,14,14
+2138,2023-06-07 20:17:53.244074+00,2023-07-17 18:39:41.128169+00,,,Felicis Nolani,"Felix of Nola, Confessor",14011410,,1,14,14
+2165,2023-06-07 20:24:53.487323+00,2023-07-17 18:39:41.878927+00,,,Pontiani,"Pontianus, Martyr at Spoleto",14011420,,1,14,14
+2154,2023-06-07 20:24:26.767513+00,2023-07-17 18:39:41.806252+00,,,Nominis Jesu,The Holy Name of Jesus,14011430,,1,14,14
+2168,2023-06-07 20:25:07.433404+00,2023-07-17 18:39:42.473619+00,,,"Remigii, Hilarii","Remigius, Bishop of Reims, Confessor & Hilary, Bishop of Poitiers, Doctor",14011440,LOCAL (Reims) feastdate for Remigius (see Oct.1),1,14,14
+2152,2023-06-07 20:24:14.816117+00,2023-07-17 18:39:41.675031+00,,,Mauri,"Maurus, Abbot",14011510,,1,15,14
+1952,2023-06-07 20:24:14.984364+00,2023-07-17 18:39:41.676248+00,,,"Mauri,8",In week after Maurus,14011518,,,,14
+2144,2023-06-07 20:23:46.27255+00,2023-07-17 18:39:41.51496+00,,,Inventio Firmini,Finding of Firminus's relics,14011520,,1,15,14
+2149,2023-06-07 20:24:05.944937+00,2023-07-17 18:39:41.627163+00,,,Macarii,"Macarius the Elder, Hermit",14011530,,1,15,14
+2150,2023-06-07 20:24:08.163573+00,2023-07-17 18:39:41.642259+00,,,"Marcelli, Pont.","Marcellus I, Pope and Martyr",14011600,,1,16,14
+2139,2023-06-07 20:23:20.827172+00,2023-07-17 18:39:41.36947+00,,,Fursei,"Fursey, Abbot",14011610,,1,16,14
+4399,2023-06-07 20:25:24.56154+00,2023-07-17 18:39:42.065887+00,,,Sophiae viduae,"Sophia, widow",14011620,"Holweck, p. 927;",1,16,14
+4576,2023-06-07 20:25:20.766152+00,2023-07-17 18:39:42.039891+00,,,Sanctorum Quinque Martyrum Ordinis Minorum,Five Martyrs of Morocco,14011630,,1,16,14
+2119,2023-06-07 20:15:57.697457+00,2023-07-17 18:39:40.594454+00,,,Antonii,"Antony, Abbot",14011700,,1,17,14
+2169,2023-06-07 20:25:19.408419+00,2023-07-17 18:39:42.030326+00,,,Sabini,"Sabinus, Bishop of Piacenza",14011710,,1,17,14
+2172,2023-06-07 20:25:24.721101+00,2023-07-17 18:39:42.067129+00,,,Speusippi,"Speusippus and Meleusippus, Martyrs",14011720,,1,17,14
+2167,2023-06-07 20:24:55.169438+00,2023-07-17 18:39:41.88778+00,,,Priscae,"Prisca, Virgin Martyr",14011800,,1,18,14
+2120,2023-06-07 20:15:59.47356+00,2023-07-17 18:39:40.60433+00,,,"Aquilae, Priscae","Aquila and Prisca, Virgin Martyrs",14011810,,1,18,14
+2151,2023-06-07 20:24:11.261368+00,2023-07-17 18:39:41.657136+00,,,"Marii, Marthae","Marius, Martha, et al., Martyrs",14011900,,1,19,14
+2175,2023-06-07 20:25:46.867381+00,2023-07-17 18:39:42.189321+00,,,Transl. Hugonis,Moving of Hugo's relics,14011910,,1,19,14
+2182,2023-06-07 20:26:10.167211+00,2023-07-17 18:39:42.345686+00,,,Wulstani,"Wulfstan, Bishop of Worcester",14011920,,1,19,14
+2085,2023-06-07 20:26:10.347686+00,2023-07-17 18:39:42.346895+00,,,"Wulstani,8",In week after Wulfstan,14011928,,,,14
+2148,2023-06-07 20:23:57.719951+00,2023-07-17 18:39:41.580161+00,,,Launomari,"Launomarus, Abbot of Corbie",14011930,,1,19,14
+2142,2023-06-07 20:23:35.531993+00,2023-07-17 18:39:41.453767+00,,,Henrici,"Henry of Uppsala, Bishop and Martyr, Patron Saint of Finland",14011940,d. 1150; as witnessed in Sweden and Poland,1,19,14
+2137,2023-06-07 20:17:52.676036+00,2023-07-17 18:39:41.124579+00,,,"Fabiani, Sebastiani","Pope Fabian and Sebastian, Martyrs",14012000,,1,20,14
+2116,2023-06-07 20:15:50.720411+00,2023-07-17 18:39:40.555868+00,,,Agnetis,"Agnes, Virgin Martyr",14012100,,1,21,14
+1484,2023-06-07 20:15:51.06708+00,2023-07-17 18:39:40.558333+00,,,"Agnetis,8",In week after Agnes,14012108,,,,14
+2153,2023-06-07 20:24:16.505159+00,2023-07-17 18:39:41.68578+00,,,Meginrati,"Meinrad, Hermit of Einsiedeln",14012110,,1,21,14
+2179,2023-06-07 20:26:03.988893+00,2023-07-17 18:39:42.303083+00,,,Vincentii,"Vincent of Saragossa, Martyr",14012200,,1,22,14
+2081,2023-06-07 20:26:04.56309+00,2023-07-17 18:39:42.308645+00,,,"Vincentii,8",In week after Vincent,14012208,,,,14
+2118,2023-06-07 20:15:53.847357+00,2023-07-17 18:39:40.578382+00,,,Anastasii,"Anastasius the Persian, Martyr",14012210,,1,22,14
+2773,2023-06-07 20:23:22.287188+00,2023-07-17 18:39:41.379129+00,,,Gaudentii,"Gaudentius, Bishop of Novara",14012220,"Holweck, p. 415;",1,22,14
+4583,2023-06-07 20:26:04.13141+00,2023-07-17 18:39:42.304556+00,,,"Vincentii, Orontii, Victoris","Vincentius, Orontius (brothers), and Victor, Martyrs, killed near Gerona",14012230,"Holweck, p. 1021;",1,22,14
+2134,2023-06-07 20:17:47.29925+00,2023-07-17 18:39:41.093233+00,,,Emerentianae,"Emerentiana, Virgin Martyr",14012300,,1,23,14
+4319,2023-06-07 20:23:39.984429+00,2023-07-17 18:39:41.482316+00,,,Ildefonsi,"Ildephonsus, Archbishop of Toledo",14012301,"Holweck, pp. 503-4;",1,23,14
+2174,2023-06-07 20:25:42.280026+00,2023-07-17 18:39:42.159507+00,,,Timothei,"Timothy, Disciple of Paul, Bishop",14012400,,1,24,14
+2133,2023-06-07 20:17:41.258755+00,2023-07-17 18:39:41.082341+00,,,Elevat. Auberti,Elevation of Aubertus's relics,14012410,,1,24,14
+4601,2023-08-15 19:52:09.428447+00,2023-08-15 19:52:09.428475+00,613,,Babylae,"Babylas, Martyr, 12th Bishop of Antioch",14012420,"Holweck, p. 127;",1,24,14
+2124,2023-06-07 20:16:41.648163+00,2023-07-17 18:39:40.804238+00,,,Conversio Pauli,Conversion of Paul,14012500,,1,25,14
+2166,2023-06-07 20:24:54.172368+00,2023-07-17 18:39:41.882954+00,,,Praejecti,"Praejectus (Prix), Bishop Martyr",14012510,,1,25,14
+2164,2023-06-07 20:24:53.322092+00,2023-07-17 18:39:41.877676+00,,,Polycarpi,"Polycarp, Bishop of Smyrna, Martyr",14012600,,1,26,14
+2162,2023-06-07 20:24:45.831426+00,2023-07-17 18:39:41.843391+00,,,Paulae,"Paula, Widow",14012610,,1,26,14
+2145,2023-06-07 20:23:50.909366+00,2023-07-17 18:39:41.5415+00,,,Joannis Chrysostomi,"John Chrysostom, Doctor",14012700,,1,27,14
+2146,2023-06-07 20:23:53.900552+00,2023-07-17 18:39:41.553438+00,,,"Juliani, Epi.","Julian, Bishop of Le Mans",14012710,,1,27,14
+2157,2023-06-07 20:24:30.24854+00,2023-07-17 18:39:41.757134+00,,,Octava Agnetis,Octave of Agnes,14012800,,1,28,14
+2147,2023-06-07 20:23:55.829144+00,2023-07-17 18:39:41.56785+00,,,Karoli Magni,"Charlemagne, Emperor and Confessor",14012810,,1,28,14
+4185,2023-06-07 20:16:44.848598+00,2023-07-17 18:39:42.377537+00,,,Cyrilli Alexandrini,"Cyril (Cyrillus), Confessor, Patriarch of Alexandria and Doctor of the Church",14012820,"feast date changed to Feb.9 in 1882; other feast dates include Jun.8, Jun.9, Jun.18, Jun.27 (Holweck, p. 255);",1,28,14
+4567,2023-06-07 20:23:49.561553+00,2023-07-17 18:39:41.535499+00,,,Joannis Abbatis Reomensis,"John of Réome, abbot",14012830,"Holweck, pp. 533-34;",1,28,14
+4612,2024-07-13 04:38:16.435817+00,2024-07-13 04:38:16.435835+00,613,,Agnetis secundo,"The memory of Agnes (""a remnant of an ancient octave,"" Holweck, p. 33)",14012840,"Holweck, p. 33;",1,28,14
+2177,2023-06-07 20:25:55.431902+00,2023-07-17 18:39:42.245443+00,,,Valerii,"Valerius, Bishop of Saragossa",14012900,,1,29,14
+2173,2023-06-07 20:25:38.317828+00,2023-07-17 18:39:42.140358+00,,,Sulpicii Severi,"Sulpicius Severus, Bishop of Bourges",14012910,,1,29,14
+2115,2023-06-07 20:16:40.779002+00,2023-07-17 18:39:40.800607+00,,,Constantii,"Constantius, Bishop of Perugia",14012920,,1,29,14
+4315,2023-06-07 20:23:20.245513+00,2023-07-17 18:39:41.364659+00,,,Francisci Salesii,"Francis de Sales, Confessor, Bishop of Geneva and Doctor of the Church (canonized 1665)",14012930,"Holweck, p. 397; Grotefend",1,29,14
+2117,2023-06-07 20:15:52.022604+00,2023-07-17 18:39:40.56569+00,,,Aldegundis,"Aldegundis, Virgin",14013000,,1,30,14
+2121,2023-06-07 20:16:07.051752+00,2023-07-17 18:39:40.632734+00,,,Balthildis,"Balthildis (Bathildis), Queen",14013010,,1,30,14
+2940,2023-06-07 20:24:12.318972+00,2024-06-19 17:33:03.777812+00,,613,Martinae,"Martina, Virgin Martyr (said to have been beheaded in Rome under Emperor Alexander Severus, 1 January 228)",14013020,"Holweck, p. 669 (Jan 1, and since 1635 on Nov 28 or Jan 30);",1,30,14
+2125,2023-06-07 20:16:44.172368+00,2023-07-17 18:39:40.818662+00,,,"Cyri, Joannis","Cyrus and John, Martyrs",14013100,,1,31,14
+2189,2023-06-07 20:16:13.827671+00,2023-07-17 18:39:40.67678+00,,,Brigidae,"Brigid (Bride), Abbess",14020100,,2,1,14
+2193,2023-06-07 20:23:39.858539+00,2023-07-17 18:39:41.481108+00,,,Ignatii,"Ignatius, Bishop of Antioch, Martyr",14020110,,2,1,14
+2207,2023-06-07 20:25:55.268295+00,2023-07-17 18:39:42.244263+00,,,Valerici,"Valericus, Hermit",14020120,,2,1,14
+4487,2023-06-07 20:25:03.096619+00,2023-07-17 18:39:41.939066+00,,,"Purificatio Mariae, Vigilia",Eve of Purification of Mary,14020130,,2,1,14
+1681,2023-06-07 20:17:31.132705+00,2023-07-17 18:39:41.030283+00,,,Dom. p. Vedasti,Sunday after Vaast,14020601,,,,14
+2199,2023-06-07 20:24:31.755257+00,2023-07-17 18:39:41.765313+00,,,Octava Blasii,Octave of Blaise,14021010,,2,10,14
+2210,2023-06-07 20:15:51.849539+00,2023-07-17 18:39:40.564462+00,,,"Albini, Epi.","Albinus (Aubin), Bishop of Angers",14030100,,3,1,14
+2216,2023-06-07 20:16:45.175411+00,2023-07-17 18:39:40.824638+00,,,David,"David of Wales, Monk and Bishop",14030110,,3,1,14
+4234,2023-06-07 20:23:36.03751+00,2023-07-17 18:39:41.457126+00,,,Herculani Perusini,"Herculanus, Martyr, Bishop of Perugia",14030120,,3,1,14
+2221,2023-06-07 20:23:49.411092+00,2023-07-17 18:39:41.534287+00,,,Joachimi,"Joachim, the father of Mary",14032010,"see Holweck for various dates (abrogations/restorations, etc.)",3,20,14
+4492,2023-06-07 20:15:56.506867+00,2023-07-17 18:39:42.286485+00,,,"Annuntiatio Mariae, Dom. infra oct.",Sunday after Annunciation of Mary,14032501,,,,14
+4617,2024-08-27 18:29:32.116317+00,2024-08-27 18:29:32.116345+00,12877,,Alphegi,"Alphege (Aelfeah, Elphege, Aelfeach),Archbishop of Canterbury (1006-1012)",14041920,"Holweck, p.316;",4,19,14
+2233,2023-06-07 20:17:51.109803+00,2023-07-17 18:39:41.117402+00,,,Eutropii,"Eutropius, Bishop of Saintes, Martyr",14043010,,4,30,14
+2289,2023-06-07 20:24:52.263088+00,2023-07-17 18:39:41.937867+00,,,"Philippi, Jacobi","Philip and James, Apostles",14050100,,5,1,14
+1974,2023-06-07 20:24:52.424575+00,2023-07-17 18:39:41.870539+00,,,"Philippi, Jacobi,8",In week after Philip and James,14050108,,,,14
+2286,2023-06-07 20:24:43.95322+00,2023-07-17 18:39:41.831723+00,,,Orientii,"Orientius (Orens), Bishop",14050120,,5,1,14
+2258,2023-06-07 20:15:53.271494+00,2023-07-17 18:39:40.574707+00,,,Amatoris,"Amator (Amatre), Bishop of Auxerre",14050130,,5,1,14
+2295,2023-06-07 20:25:23.137785+00,2023-07-17 18:39:42.056288+00,,,Sigismundi,"Sigismund, King of Burgundy, Martyr",14050140,,5,1,14
+2303,2023-06-07 20:25:51.730175+00,2023-07-17 18:39:42.221777+00,,,Transl. Walburgae,Moving of Walburga's relics,14050150,,5,1,14
+4177,2023-06-07 20:15:58.575405+00,2023-07-17 18:39:40.599417+00,,,Antonini Episcopi,"Antoninus, Archbishop of Florence",14051010,"Holweck, pp. 86-7;",5,10,14
+4266,2023-06-07 20:16:10.442453+00,2023-07-17 18:39:40.655977+00,,,Bernardini Senensis,"Bernardinus degl' Albizzeschi of Siena, Confessor",14052010,,,,14
+2342,2023-06-07 20:24:41.373458+00,2023-07-17 18:39:41.814263+00,,,Ordinatio Oswaldi,Ordination of Oswald,14060100,,6,1,14
+4273,2023-06-07 20:16:16.062142+00,2023-07-17 18:39:40.690346+00,,,"Caprasii, Abb.","Caprasius, Abbot of Lerins",14060110,,,,14
+2348,2023-06-07 20:17:40.311369+00,2023-07-17 18:39:41.075053+00,,,"Edwardi, Mart., transl.",Moving of Edward the Martyr's relics (son of King Edgar the Peaceful),14062010,"Holweck, p. 304; ^formerly ""Transl. Edwardi, Mart.""",6,20,14
+1672,2023-06-07 20:17:29.388753+00,2023-07-17 18:39:41.019758+00,,,Dom. p. Jo. Bapt.,Sunday after John the Baptist,14062401,,,,14
+1660,2023-06-07 20:17:27.112445+00,2023-07-17 18:39:41.003801+00,,,Dom. inf. Oct.Apost.,Sunday after Peter and Paul,14062901,,,,14
+2338,2023-06-07 20:24:12.162313+00,2024-07-13 03:19:46.604285+00,,613,"Martialis, Epi.","Martial, Bishop of Limoges",14063010,"Holweck, p. 666; Jun.16 (Dominican)",6,30,14
+2397,2023-06-07 20:24:33.891367+00,2023-07-17 18:39:41.77818+00,,,Octava Joannis Bapt.,Octave of John the Baptist,14070100,,7,1,14
+4202,2023-06-07 20:24:54.77041+00,2023-07-17 18:39:42.456358+00,,,Pretiosissimi Sanguinis,Feast of the Most Precious Blood (of Jesus Christ),14070110,celebrated in Spain in the 16th century; at one time on the first Sunday after Jun.30; ,7,1,14
+2408,2023-06-07 20:25:08.755405+00,2023-07-17 18:39:41.977275+00,,,"Rufinae, Secundae","Rufina and Secunda, Virgin Martyrs",14071010,,7,10,14
+1679,2023-06-07 20:17:30.816849+00,2023-07-17 18:39:41.027837+00,,,Dom. p. Rel. Ved.,Sunday after Return of Vaast's relics,14071501,,,,14
+2386,2023-06-07 20:24:09.696598+00,2023-07-17 18:39:41.649087+00,,,Margaritae,"Margaret (Marina), Virgin Martyr",14072010,,7,20,14
+1673,2023-06-07 20:17:29.562284+00,2023-07-17 18:39:41.02093+00,,,Dom. p. Mariae Mag.,Sunday after Mary Magdalene,14072201,,,,14
+1671,2023-06-07 20:17:29.226742+00,2023-07-17 18:39:41.018572+00,,,Dom. p. Jacobi,Sunday after James the Greater,14072501,,,,14
+2515,2023-06-07 20:26:04.958074+00,2023-07-17 18:39:42.310069+00,,,Vincula Petri,Peter in Chains,14080100,,8,1,14
+2082,2023-06-07 20:26:05.139845+00,2023-07-17 18:39:42.311483+00,,,"Vincula Petri,8",In week after Peter in Chains,14080108,,,,14
+2490,2023-06-07 20:24:33.629991+00,2023-07-17 18:39:41.777054+00,,,Octava Jacobi,Octave of James the Greater,14080110,,8,1,14
+2482,2023-06-07 20:24:06.158299+00,2023-07-17 18:39:41.628317+00,,,Machabaeorum,"Holy Maccabees, Martyrs",14080120,,8,1,14
+2458,2023-06-07 20:17:49.237637+00,2023-07-17 18:39:41.103011+00,,,Ethelwoldi,"Ethelwold, Bishop of Wincester",14080130,,8,1,14
+2463,2023-06-07 20:23:17.301737+00,2023-07-17 18:39:41.346301+00,,,Fidei et Soc.,"Faith and Companions, Martyrs",14080140,,8,1,14
+1666,2023-06-07 20:17:28.400496+00,2023-07-17 18:39:41.012273+00,,,Dom. p. Assumptionem,Sunday after Assumption of Mary,14081501,,,,14
+2444,2023-06-07 20:16:10.162077+00,2023-07-17 18:39:40.653586+00,,,Bernardi,"Bernard, Abbot and Doctor",14082010,,8,20,14
+1495,2023-06-07 20:16:10.304309+00,2023-07-17 18:39:40.654796+00,,,"Bernardi,8",In week after Bernard,14082018,,,,14
+4269,2023-06-07 20:16:12.912181+00,2023-07-17 18:39:40.670568+00,,,Bononii,"Bononius, Abbot, Disciple of Romuald",14083010,,,,14
+2517,2023-06-07 20:15:48.304027+00,2023-07-17 18:39:40.545736+00,,,Aegidii,"Aegidius (Giles), Abbot",14090100,,9,1,14
+2550,2023-06-07 20:24:05.352301+00,2023-07-17 18:39:41.623833+00,,,Lupi,"Lupus (Leu), Bishop of Sens",14090110,,9,1,14
+2566,2023-06-07 20:24:55.329262+00,2023-07-17 18:39:41.888954+00,,,Prisci,"Priscus, Bishop of Capua",14090120,,9,1,14
+2577,2023-06-07 20:25:56.173665+00,2023-07-17 18:39:42.250341+00,,,Verenae,"Verena, Virgin",14090130,,9,1,14
+2528,2023-06-07 20:17:38.933788+00,2023-07-17 18:39:41.06643+00,,,Duodecim Fratrum,"Twelve Brothers, Martyrs",14090140,,9,1,14
+2542,2023-06-07 20:23:54.550287+00,2023-07-17 18:39:41.558193+00,,,"Justi, Epi.","Justus, Bishop of Lyons",14090150,,9,1,14
+4324,2023-06-07 20:23:47.677388+00,2023-07-17 18:39:41.522377+00,,,Isabelle,"Isabel, Virgin, Sister of King Louis IX of France (daughter of King Louis VIII), founder of a convent at Longchamp",14090160,"Holweck, p. 511;",9,1,14
+1676,2023-06-07 20:17:30.303735+00,2023-07-17 18:39:41.024379+00,,,Dom. p. Nat. Mariae,Sunday after Birthday of Mary,14090801,,,,14
+4406,2023-06-07 20:25:40.254062+00,2023-07-17 18:39:42.481937+00,,,Theodardi,"Martyr, Bishop of Maestricht",14091010,"Holweck, p. 957; Grotefend;",9,10,14
+4540,2023-06-07 20:23:37.96925+00,2023-07-17 18:39:41.46906+00,,,Hildegardis Bingensis,"Hildegard of Bingen, Abbess",14091701,,9,17,14
+4476,2023-06-07 20:17:50.461168+00,2023-07-17 18:39:41.112615+00,,,Eustachii,"Eustachius (Eustasius, Eustace), Martyr",14092010,"Holweck, p. 347;",9,20,14
+2545,2023-06-07 20:24:00.526812+00,2023-07-17 18:39:41.594476+00,,,Leopardi,"Leopardus, Martyr",14093010,,9,30,14
+2639,2023-06-07 20:25:07.261289+00,2023-07-17 18:39:41.967582+00,,,Remigii,"Remigius (Remi), Bishop of Reims",14100100,,10,1,14
+2603,2023-06-07 20:23:25.152149+00,2024-03-09 00:38:32.411574+00,,12877,"Germani, Vedasti","Germanus and Vedastus, Confessors",14100110,,10,1,14
+2622,2023-06-07 20:24:16.667736+00,2023-07-17 18:39:41.687003+00,,,Melori,"Melorus (Melar, Mylor), Martyr",14100120,,10,1,14
+4494,2023-06-07 20:24:52.738376+00,2023-07-17 18:39:41.872867+00,,,Piati,"Piatus of Tournai (Piat de Seclin, Piaton, Platon, Piato), Martyr",14100130,"Holweck, p. 817;",10,1,14
+4608,2024-06-01 01:57:24.609371+00,2024-06-01 01:57:24.609394+00,613,,Bavonis,"Bavo (Aldowin, Allowin) of Ghent",14100140,"Holweck, p. 143;",10,1,14
+1680,2023-06-07 20:17:30.969974+00,2023-07-17 18:39:41.029017+00,,,Dom. p. Tr. Vedasti,Sunday after Vaast's Translation,14100501,,,,14
+2602,2023-06-07 20:23:24.435405+00,2023-07-17 18:39:41.393485+00,,,Gereonis et Soc.,"Gereon and Companions, Martyrs",14101000,,10,10,14
+2633,2023-06-07 20:24:47.170277+00,2023-07-17 18:39:41.849313+00,,,Paulini Ebor.,"Paulinus, Archbishop of York",14101010,,10,10,14
+1971,2023-06-07 20:24:48.346609+00,2023-07-17 18:39:41.850502+00,,,"Paulini Ebor.,8",In week after Paulinus of York,14101018,,,,14
+2605,2023-06-07 20:23:26.994519+00,2023-07-17 18:39:41.408921+00,,,Gratiarum Actionis,Thanksgiving,14101020,according to Sibert's ordinal,10,10,14
+4193,2023-06-07 20:23:19.835309+00,2023-07-17 18:39:41.362281+00,,,Francisci Borgiae,"Francis Borgia (Borja),  Confessor, Third General of the Society of Jesus",14101030,,10,10,14
+2655,2023-06-07 20:25:55.976677+00,2023-07-17 18:39:42.249129+00,,,Venantii,"Venantius, Hermit",14101100,,10,11,14
+2635,2023-06-07 20:25:01.257442+00,2023-07-17 18:39:41.931943+00,,,"Probi, Tarachi","Probus and Tarachus, Martyrs",14101110,,10,11,14
+2647,2023-06-07 20:25:43.945734+00,2023-07-17 18:39:42.170194+00,,,Transl. Augustini,Moving of Augustine's relics,14101120,,10,11,14
+2625,2023-06-07 20:24:25.150607+00,2023-07-17 18:39:41.730267+00,,,Nicasii et Soc.,"Nicasius of Rouen, alleged Bishop of Rouen",14101130,,10,11,14
+4556,2023-06-07 20:16:15.748911+00,2023-07-17 18:39:40.687833+00,,,Canici,"Cainnech of Aghaboe (Canice, Cannicus, Kenneth, Kenny), Abbot",14101140,"Holweck, p. 188;",10,11,14
+2630,2023-06-07 20:24:40.534144+00,2023-07-17 18:39:41.809645+00,,,Opilii,"Opilius, Deacon",14101200,,10,12,14
+2629,2023-06-07 20:24:38.574385+00,2023-07-17 18:39:41.800512+00,,,Octava Tr. Vedasti,Octave of Vaast's Translation,14101210,,10,12,14
+2621,2023-06-07 20:24:15.838688+00,2023-07-17 18:39:41.680978+00,,,Maximiliani,"Maximilian, Bishop of Lorch",14101220,,10,12,14
+2657,2023-06-07 20:26:08.733956+00,2023-07-17 18:39:42.335912+00,,,Wilfridi,"Wilfrid, Archbishop of York",14101230,,10,12,14
+2601,2023-06-07 20:23:23.934704+00,2023-07-17 18:39:41.389905+00,,,Geraldi,Gerald of Aurillac,14101300,,10,13,14
+2596,2023-06-07 20:17:38.346609+00,2023-07-17 18:39:41.062741+00,,,Donatiani,"Donatianus, Bishop of Reims",14101310,,10,13,14
+2589,2023-06-07 20:16:20.604885+00,2023-07-17 18:39:42.369966+00,,,Colomanni,"Coloman, Martyr",14101320,,10,13,14
+2648,2023-06-07 20:17:39.880198+00,2023-07-17 18:39:41.071399+00,,,"Edwardi, Conf.","Edward III, Confessor, King of England (son of Ethelred the Unready)",14101330,"Holweck, p. 304;",10,13,14
+2593,2023-06-07 20:17:00.861522+00,2023-07-17 18:39:40.886036+00,,,"Dedic. S.Salv., Mar.","Dedication of the Church of the Holy Saviour, St. Martial (Limoges)",14101340,,10,13,14
+2646,2023-06-07 20:25:24.005554+00,2023-07-17 18:39:42.062004+00,,,Simperti,"Simpert (Sintbert), Abbot of Murbach and Bishop of Augsburg",14101350,,10,13,14
+2588,2023-06-07 20:16:15.333343+00,2023-07-17 18:39:40.685451+00,,,Callisti,"Callistus (Calixtus) I, Pope",14101400,,10,14,14
+2660,2023-06-07 20:16:14.12752+00,2023-07-17 18:39:40.679238+00,,,Burchardi,"Burchard (Burkhard), Bishop and Confessor",14101410,,10,14,14
+4439,2023-06-07 20:23:19.030327+00,2023-07-17 18:39:42.407951+00,,,Fortunatae et sociorum,"Fortunata (Virgin Martyr), and her brothers Carponius, Evaristus, and Priscianus",14101420,"Holweck, p. 393;",10,14,14
+4440,2023-06-07 20:23:19.173269+00,2023-07-17 18:39:41.357206+00,,,"Fortunatae et sociorum,8",In week after Fortunata,14101428,,,,14
+4405,2023-06-07 20:25:39.589962+00,2023-07-17 18:39:42.480748+00,,,Teresiae Avilensis,"Teresa (Teresia), Virgin, reformer of the Carmelite Order and ascetical write (canonized in 1622)",14101500,"Holweck, pp. 949-950;",10,15,14
+4614,2024-07-14 22:01:30.537534+00,2024-07-14 22:01:46.331296+00,613,613,Aureliae Argentoratensis,"Aurelia, Virgin (4th century)",14101510,"Holweck, p. 121;",10,15,14
+2600,2023-06-07 20:23:21.635151+00,2023-07-17 18:39:41.374215+00,,,Galli,"Gall, Hermit",14101600,,10,16,14
+4194,2023-06-07 20:23:21.787446+00,2023-07-17 18:39:41.375395+00,,,"Galli,8",In week after Gall,14101608,,,,14
+2627,2023-06-07 20:24:32.453756+00,2023-07-17 18:39:41.769933+00,,,Octava Dionysii,"Octave of Denis, Bishop of Paris",14101610,,10,16,14
+2616,2023-06-07 20:24:04.477895+00,2023-07-17 18:39:41.617943+00,,,Luciani et Soc.,"Lucianus and Companions, Martyrs",14101620,,10,16,14
+2592,2023-06-07 20:16:58.334797+00,2023-07-17 18:39:40.882273+00,,,Ded.Mont.S.Michaelis,Dedication of Mont-Saint-Michel,14101630,,10,16,14
+2606,2023-06-07 20:23:34.870662+00,2023-07-17 18:39:41.450325+00,,,Hedwigis,"Hedwig, Matron and Duchess of Silesia",14101640,,10,16,14
+2614,2023-06-07 20:24:03.258457+00,2023-07-17 18:39:41.610971+00,,,Lucae,"Luke, Evangelist",14101800,,10,18,14
+1945,2023-06-07 20:24:03.409769+00,2023-07-17 18:39:41.612155+00,,,"Lucae,8",In week after Luke,14101808,,,,14
+2610,2023-06-07 20:23:54.389422+00,2023-07-17 18:39:41.557031+00,,,Justi,"Justus of Beauvais, Martyr",14101810,,10,18,14
+2607,2023-06-07 20:23:35.861235+00,2023-07-17 18:39:41.456003+00,,,Herblandi,"Hermeland, Abbot of Aindre (Nantes)",14101820,,10,18,14
+2583,2023-06-07 20:15:53.110205+00,2023-07-17 18:39:40.573473+00,,,Amati,"Amatus, Bishop of Sens",14101900,,10,19,14
+2609,2023-06-07 20:23:49.251239+00,2023-07-17 18:39:41.533107+00,,,Januarii et Soc.,"Januarius, Faustus, and Martialis, Martyrs (the ""Three Crowns of Cordova"")",14101910,,10,19,14
+2634,2023-06-07 20:24:49.41407+00,2023-07-17 18:39:41.856261+00,,,Petri Alcantarae,"Peter of Alcantara, Founder",14101920,,10,19,14
+4577,2023-06-07 20:25:19.578005+00,2023-07-17 18:39:42.474812+00,,,"Sabiniani, Potentiani","Sabinianus (Savinien) and Potentianus (Potentien), Bishops of Sens",14101930,"Holweck, p. 877;",10,19,14
+4565,2023-06-07 20:23:47.479099+00,2023-07-17 18:39:41.521177+00,,,Irenes,Irene of Santarém (Portugal),14102010,"Holweck, p. 509;",10,20,14
+4586,2023-06-07 20:16:56.328714+00,2023-07-17 18:39:42.463826+00,,,De victoriae christianorum apud Salado,"Commemoration of the victory of the Christians at the Battle of Rio Salado (also known as the Battle of Tarifa), 30 October 1340",14103010,,10,30,14
+2702,2023-06-07 20:24:40.222594+00,2023-07-17 18:39:41.807376+00,,,Omnium Sanctorum,All Saints' Day,14110100,,11,1,14
+1699,2023-06-07 20:17:36.892961+00,2023-07-17 18:39:41.05425+00,,,Dom.p.Om.Sanctorum,Sunday after All Saints' Day,14110101,,,,14
+1967,2023-06-07 20:24:40.378118+00,2023-07-17 18:39:41.808515+00,,,"Omnium Sanctorum,8",In week after All Saints' Day,14110108,,,,14
+2714,2023-06-07 20:25:53.761774+00,2023-07-17 18:39:42.234736+00,,,Ulgani,"Vulgan, Hermit",14110110,,11,1,14
+2717,2023-06-07 20:26:03.574868+00,2023-07-17 18:39:42.301677+00,,,Vigoris,"Vigor, Bishop of Bayeux",14110120,,11,1,14
+2666,2023-06-07 20:16:15.10228+00,2023-07-17 18:39:40.684226+00,,,"Caesarii, Juliani","Caesarius and Julian, Martyrs",14110130,,11,1,14
+2663,2023-06-07 20:16:09.975643+00,2023-07-17 18:39:40.652298+00,,,Benigni,"Benignus of Dijon, Martyr",14110140,,11,1,14
+4330,2023-06-07 20:24:01.171294+00,2023-07-17 18:39:41.599197+00,,,Licinii,"Licinius, Confessor, Bishop of Angers",14110150,"Holweck, p. 611;",11,1,14
+4265,2023-06-07 20:16:05.625212+00,2023-07-17 18:39:40.627867+00,,,Austremonii,"Austremonius (Stremoine), Bishop, Martyr, Apostle of Auvergne",14110160,,,,14
+4172,2023-06-07 20:15:54.641202+00,2023-07-17 18:39:40.580825+00,,,Andreae Avellini,"Andrew, Avellino (Lancelotto), Confessor",14111010,"Holweck, p. 72;",11,10,14
+1674,2023-06-07 20:17:29.721824+00,2023-07-17 18:39:41.022094+00,,,Dom. p. Martini,Sunday after Martin,14111101,,,,14
+4190,2023-06-07 20:17:53.371441+00,2023-07-17 18:39:41.12935+00,,,Felicis Valesius,"Felix of Valois, Confessor, Founder of the Trinitarians",14112010,"Holweck, p. 375;",11,20,14
+2734,2023-06-07 20:17:42.042677+00,2023-07-17 18:39:41.088421+00,,,Eligii,"Eligius (Eloi), Bishop of Noyon",14120100,,12,1,14
+4272,2023-06-07 20:16:15.596112+00,2023-07-17 18:39:40.686625+00,,,Candidi,"Candidus, Martyr, at Innichen, diocese of Brixen, Tyrol",14120110,,,,14
+2763,2023-06-07 20:25:49.426977+00,2023-07-17 18:39:42.207323+00,,,Transl. Patrocli,Moving of Patroclus' relics (Muenster),14120901,,12,9,14
+4557,2023-06-07 20:17:49.670295+00,2023-07-17 18:39:41.106561+00,,,Eulaliae Emeritensis,"Eulalia of Mérida, Virgin Martyr",14121010,"Holweck, pp. 337-38;",12,10,14
+4618,2024-10-08 20:08:25.030529+00,2024-10-08 20:13:51.073831+00,613,613,Dominici Silensis,"Dominic of Silos, Abbot",14122010,Holweck p. 286;,12,20,14
+2753,2023-06-07 20:24:48.84329+00,2023-07-17 18:39:41.853977+00,,,Perpetui,"Perpetuus, Bishop of Tours",14123010,,12,30,14
+2062,2023-06-07 20:25:35.984987+00,2023-07-17 18:39:42.123814+00,,,Suff. pro Pace,Memorial chants for peace,15001000,,,,15
+2063,2023-06-07 20:25:36.126964+00,2023-07-17 18:39:42.125009+00,,,Suff. pro Pace TP,"Memorial chants for peace, Eastertide",15001080,,,,15
+1557,2023-06-07 20:16:46.179388+00,2023-07-17 18:39:40.830532+00,,,De BMV Adv.,"Votive Office for Mary, Advent",15008010,,,,15
+4341,2023-06-07 20:24:19.935463+00,2023-07-17 18:39:41.704844+00,,,Missa votiva omnimoda,Votive Mass,15009010,,,,15
+4344,2023-06-07 20:24:20.351429+00,2023-07-17 18:39:41.708407+00,,,Missa votiva singularis,Votive Mass on behalf of one person,15009011,,,,15
+4342,2023-06-07 20:24:20.083209+00,2023-07-17 18:39:41.706038+00,,,Missa votiva pluralis,Votive Mass on behalf of several people,15009012,,,,15
+2070,2023-06-07 20:25:37.833446+00,2023-07-17 18:39:42.136819+00,,,Suff. Virginum,Memorial chants for Virgins,15010000,,,,15
+2031,2023-06-07 20:25:29.439007+00,2023-07-17 18:39:42.095065+00,,,Suff. Genovefae,Memorial chants for Genevieve,15010300,,,,15
+4287,2023-06-07 20:16:52.993006+00,2023-07-17 18:39:40.864213+00,,,De Sancta Cruce,"Votive Mass/Office for the Holy Cross, including e.g. Missa Votiva de Sancta Cruce. Fer. VI.",15011000,,,,15
+2019,2023-06-07 20:25:27.204294+00,2023-07-17 18:39:42.081605+00,,,Suff. Agnetis,Memorial chants for Agnes,15012100,,,,15
+2028,2023-06-07 20:25:28.947365+00,2023-07-17 18:39:42.091439+00,,,Suff. David,Memorial chants for David,15030100,,,,15
+2055,2023-06-07 20:25:34.619025+00,2023-07-17 18:39:42.115466+00,,,Suff. Om. Sanctorum,Memorial chants for All Saints,15110100,,,,15
+2052,2023-06-07 20:25:33.952622+00,2023-07-17 18:39:42.111869+00,,,Suff. Om. Sanct. Adv,"Memorial chants for All Saints, Advent",15110110,,,,15
+2053,2023-06-07 20:25:34.134796+00,2023-07-17 18:39:42.113097+00,,,Suff. Om. Sanct. Nat,"Memorial chants for All Saints, Christmas",15110130,,,,15
+2054,2023-06-07 20:25:34.378003+00,2023-07-17 18:39:42.114287+00,,,Suff. Om. Sanct. TP,"Memorial chants for All Saints, Eastertide",15110180,,,,15
+1471,2023-06-07 20:15:44.424517+00,2023-07-17 18:39:40.52005+00,,,Ad Benedicite,Antiphons for the Benedicite canticle,16001000,,,,16
+1470,2023-06-07 20:15:43.910344+00,2023-07-17 18:39:42.281726+00,,,Ad aquam benedictio,Chants for the blessing of water,16010000,"RENAME TO ""Benedictio aquae""?",,,16
+1922,2023-06-07 20:23:40.328756+00,2023-07-17 18:39:42.432119+00,,,In Dedic. Altaris,Commemoration of an Altar's Dedication,16011000,,,,16
+1476,2023-06-07 20:15:45.616372+00,2023-07-17 18:39:40.528622+00,,,Ad Missam,Mass chants appearing as a group,16012000,,,,16
+4549,2023-06-07 20:24:18.558458+00,2023-07-17 18:39:41.695257+00,,,Missa in dominicis diebus,Mass on Sundays,16012700,,,,16
+1480,2023-06-07 20:15:46.468803+00,2023-07-17 18:39:40.535334+00,,,Ad visitandum infirmum,Chants for the visiting of the sick,16013000,,,,16
+4353,2023-06-07 20:24:42.140643+00,2023-07-17 18:39:42.452713+00,,,Ordo ad visitandum vel perunguendum infirmum,Rite for the visiting or anointing of the sick,16013010,Old-Hispanic,,,16
+4388,2023-06-07 20:25:00.949892+00,2023-07-17 18:39:41.929307+00,,,Pro uno infirmo,Chants for one who is sick,16013020,,,,16
+4375,2023-06-07 20:24:57.498168+00,2023-07-17 18:39:41.903256+00,,,Pro infirmis,Chants for many who are sick,16013030,,,,16
+1876,2023-06-07 20:23:16.639878+00,2023-07-17 18:39:41.341513+00,,,Festi 9 lectionum,Feasts of nine lessons,16014000,,,,16
+1878,2023-06-07 20:23:16.967486+00,2023-07-17 18:39:41.343879+00,,,"Festi 9 lectionum,8",In week after feasts of nine lessons,16014008,,,,16
+1877,2023-06-07 20:23:16.803942+00,2023-07-17 18:39:41.342688+00,,,Festi 9 lectionum TP,Feasts of nine lessons in Eastertide,16014080,,,,16
+1885,2023-06-07 20:16:49.484897+00,2023-07-17 18:39:40.850936+00,,,De festis semiduplicibus,Chants for feasts of semiduplex rank,16015000,,,,16
+1884,2023-06-07 20:16:49.64826+00,2023-07-17 18:39:40.852135+00,,,De festis semiduplicibus TP,Chants for feasts of semiduplex rank in Eastertide,16015080,,,,16
+1881,2023-06-07 20:16:48.623995+00,2023-07-17 18:39:40.844994+00,,,De festis duplicibus,Chants for feasts of duplex rank,16016000,,,,16
+1883,2023-06-07 20:16:49.105884+00,2023-07-17 18:39:40.848551+00,,,De festis duplicibus minoribus,Chants for feasts of duplex minor rank,16016001,,,,16
+1882,2023-06-07 20:16:48.790152+00,2023-07-17 18:39:40.846189+00,,,De festis duplicibus majoribus,Chants for feasts of duplex major rank,16016002,,,,16
+1880,2023-06-07 20:16:49.304346+00,2023-07-17 18:39:40.849753+00,,,De festis duplicibus minoribus TP,Chants for feasts of duplex minor rank in Eastertide,16016081,,,,16
+1879,2023-06-07 20:16:48.94614+00,2023-07-17 18:39:40.847371+00,,,De festis duplicibus majoribus TP,Chants for feasts of duplex major rank in Eastertide,16016082,,,,16
+1875,2023-06-07 20:23:16.467074+00,2023-07-17 18:39:41.340302+00,,,Festi 3 lectionum,Feasts of three lessons,16017000,,,,16
+2105,2023-06-07 20:23:42.588787+00,2023-07-17 18:39:41.49311+00,,,In Temp Pestilentiae,Chants in time of the plague,16018000,,,,16
+2106,2023-06-07 20:24:58.777212+00,2023-07-17 18:39:41.912812+00,,,Pro pace regni,Chants for the peace of the realm and the church,16019000,,,,16
+4379,2023-06-07 20:24:58.62304+00,2023-07-17 18:39:41.911629+00,,,Pro pace,Chants for peace,16019010,,,,16
+4415,2023-06-07 20:25:53.898665+00,2023-07-17 18:39:42.235924+00,,,Unius in tribulatione,Chants for one in tribulation,16026010,,,,16
+4369,2023-06-07 20:24:55.785819+00,2023-07-17 18:39:41.892642+00,,,Pro Archiepiscopo,Chants for the Archbishop,16028010,,,,16
+4452,2023-06-07 20:24:58.316619+00,2023-07-17 18:39:41.909222+00,,,Pro ordinatione Episcopi,Chants for the ordination of a bishop,16033010,,,,16
+4389,2023-06-07 20:25:01.103262+00,2023-07-17 18:39:41.930467+00,,,Pro uno paenitente,Chants for one penitent,16038010,,,,16
+4364,2023-06-07 20:24:43.774671+00,2023-07-17 18:39:41.830578+00,,,Ordo votivo energumeno id est daemonia sustinens,Votive ordo for a possessed person who is sustained by a demon,16041010,Old-Hispanic,,,16
+4448,2023-06-07 20:24:56.131979+00,2023-07-17 18:39:41.895011+00,,,Pro consecratione crucis,Chants for the consecration of the cross,16048010,,,,16
+1481,2023-06-07 20:15:47.502982+00,2023-11-02 19:35:40.579674+00,,12877,Additamenta,"Added or Miscellaneous Items
+
+To be used when the feast designation is unknown/unknowable because it was not provided by the scribe(s).",17001000,,,,17
+4606,2024-03-15 19:48:25.134819+00,2024-03-15 19:48:25.134847+00,613,,Ordo virtutum Hildegardiensis,Hildegard of Bingen's Ordo virtutum.,17010000,,,,17

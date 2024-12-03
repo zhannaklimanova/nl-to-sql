@@ -1,0 +1,11 @@
+id,date_created,date_updated,created_by_id,last_updated_by_id,name,description,feast_code,notes,month,day,prefix
+2728,2023-06-07 20:17:02.668055+00,2023-07-17 18:39:40.895697+00,,,Die 3 a. Nat. Domini,The third day before Christmas,02122300,,12,23,02
+2729,2023-06-07 20:17:03.464436+00,2023-07-17 18:39:40.901736+00,,,Die 5 a. Nat. Domini,The fifth day before Christmas,02122100,"in later times, this conflicts with the office of Thomas;",12,21,02
+2730,2023-06-07 20:17:04.012209+00,2023-07-17 18:39:40.905321+00,,,Die 5 p. Nat. Domini,4th day after Christmas,02122900,,12,29,02
+2731,2023-06-07 20:17:04.524789+00,2023-07-17 18:39:40.908907+00,,,Die 6 p. Nat. Domini,5th day after Christmas,02123000,,12,30,02
+2732,2023-06-07 20:17:04.992224+00,2023-07-17 18:39:40.912544+00,,,Die 7 p. Nat. Domini,6th day after Christmas,02123100,,12,31,02
+2740,2023-06-07 20:23:51.643682+00,2023-07-17 18:39:42.434537+00,,,Joannis Evang.,John the Evangelist,02122700,,12,27,02
+2744,2023-06-07 20:24:22.080503+00,2023-07-17 18:39:41.717912+00,,,Nat. Innocentium,Holy Innocents,02122800,,12,28,02
+2745,2023-06-07 20:24:23.095588+00,2023-07-17 18:39:41.720361+00,,,Nativitas Domini,Christmas Day,02122500,,12,25,02
+2757,2023-06-07 20:25:25.693999+00,2023-07-17 18:39:42.070786+00,,,Stephani,Stephen the First Martyr,02122600,,12,26,02
+2768,2023-06-07 20:26:01.747219+00,2023-07-17 18:39:42.288852+00,,,Vigilia Nat. Domini,Christmas Eve,02122400,,12,24,02
