@@ -1,0 +1,635 @@
+id,title,siglum,shelfmark
+123931,"Graz, Universitätsbibliothek, 1584",A-Gu 1584,1584
+124052,"Graz, Universitätsbibliothek, Cod. 17  (37/9 f.)",A-Gu 17,Cod. 17  (37/9 f.)
+123957,"Graz, Universitätsbibliothek, 281",A-Gu 281,281
+123610,"Graz, Universitätsbibliothek, 29 (olim 38/8 f.)",A-Gu 29,29 (olim 38/8 f.)
+123611,"Graz, Universitätsbibliothek, 30 (olim 38/9 f.)",A-Gu 30,30 (olim 38/9 f.)
+123902,"Graz, Universitätsbibliothek, 479",A-Gu 479,479
+123932,"Graz, Universitätsbibliothek, 761",A-Gu 761,761
+123988,"Graz, Universitätsbibliothek, 767",A-Gu 767,767
+123930,"Graz, Universitätsbibliothek, 769",A-Gu 769,769
+1000103,"Graz, Universitätsbibliothek, MS 756",A-Gu MS 756,MS 756
+653927,"Graz, Universitätsbibliothek, Ms. 211",A-Gu Ms. 211,Ms. 211
+123989,"Klosterneuburg, Augustiner-Chorherrenstift - Bibliothek, 588",A-KN 588,588
+123653,"Klosterneuburg, Augustiner-Chorherrenstift - Bibliothek, CCl 1010",A-KN CCl 1010,CCl 1010
+123654,"Klosterneuburg, Augustiner-Chorherrenstift - Bibliothek, CCl 1011",A-KN CCl 1011,CCl 1011
+123613,"Klosterneuburg, Augustiner-Chorherrenstift - Bibliothek, CCl 1012",A-KN CCl 1012,CCl 1012
+123614,"Klosterneuburg, Augustiner-Chorherrenstift - Bibliothek, CCl 1013",A-KN CCl 1013,CCl 1013
+123655,"Klosterneuburg, Augustiner-Chorherrenstift - Bibliothek, CCl 1015",A-KN CCl 1015,CCl 1015
+123615,"Klosterneuburg, Augustiner-Chorherrenstift - Bibliothek, CCl 1017",A-KN CCl 1017,CCl 1017
+123616,"Klosterneuburg, Augustiner-Chorherrenstift - Bibliothek, CCl 1018",A-KN CCl 1018,CCl 1018
+123656,"Klosterneuburg, Augustiner-Chorherrenstift - Bibliothek, CCl 589",A-KN CCl 589,CCl 589
+123660,"Kremsmünster, Benediktiner-Stift Kremsmünster - Musikarchiv, Schachtel VI/258",A-KR VI/258,Schachtel VI/258
+123897,"Linz, Oberösterreichische Landesbibliothek, 286",A-LIb 286,286
+123617,"Linz, Oberösterreichische Landesbibliothek, 290 (olim 183; olim Gamma p 19)",A-LIb 290,290 (olim 183; olim Gamma p 19)
+123858,"Linz, Oberösterreichische Landesbibliothek, 466",A-LIb 466,466
+124011,"Linz, Oberösterreichische Landesbibliothek, 466 - ff. 234-254",A-LIb 466b,466 - ff. 234-254
+123977,"Melk, Stiftsbibliothek, 109 (olim 1056)",A-M 109,109 (olim 1056)
+123658,"Sankt Florian, Augustiner-Chorherrenstift - Bibliothek und Musikarchiv, XI 480",A-SF XI 480,XI 480
+124005,"Vorau, Stiftsbibliothek, 121 (XXX)",A-VOR 121,121 (XXX)
+123933,"Vorau, Stiftsbibliothek, 177 (XC)",A-VOR 177,177 (XC)
+123643,"Vorau, Stiftsbibliothek, 287 (olim XXIX)",A-VOR 287,287 (olim XXIX)
+123915,"Vorau, Stiftsbibliothek, 303 (XXXVII)",A-VOR 303,303 (XXXVII)
+123644,"Wien, Diözesanarchiv, C-10",A-Wda C-10,C-10
+123645,"Wien, Diözesanarchiv, C-11",A-Wda C-11,C-11
+123649,"Wien, Diözesanarchiv, D-4",A-Wda D-4,D-4
+123852,"Wien, Österreichische Nationalbibliothek, Cpv 1043",A-Wn 1043,Cpv 1043
+123859,"Wien, Österreichische Nationalbibliothek, Cpv 13 314",A-Wn 13314,Cpv 13 314
+123667,"Wien, Österreichische Nationalbibliothek - Handschriftensammlung, 1799**",A-Wn 1799**,1799**
+123799,"Wien, Österreichische Nationalbibliothek, Cpv 1845",A-Wn 1845,Cpv 1845
+701515,"Wien, Österreichische Nationalbibliothek, Cod. 1707",A-Wn Cod. 1707,Cod. 1707
+123713,"Wien, Österreichische Nationalbibliothek - Musiksammlung, Cod. 1890",A-Wn Cod. 1890,Cod. 1890
+123759,"Wien, Österreichische Nationalbibliothek, Mus.Hs.15489",A-Wn Mus.Hs.15489,Mus.Hs.15489
+123898,"Wien, Österreichische Nationalbibliothek,  Ser. Nov. 2700",A-Wn sn2700,Ser. Nov. 2700
+123745,"Melbourne, State Library of Victoria, 096.1/R66A (""The Poissy Antiphonal"")",AUS-Msl 096.1/R66A,"096.1/R66A (""The Poissy Antiphonal"")"
+669163,"Sydney, University of Sydney - Fisher Library - Rare Books & Special Collections, Add. Ms. 413 (olim Add. Ms. Fol.1)",AUS-Sfl Add. Ms. 413,Add. Ms. 413 (olim Add. Ms. Fol.1)
+674508,"Sydney, University of Sydney - Fisher Library - Rare Books & Special Collections, Add.Ms. 327",AUS-Sfl Add.Ms. 327,Add.Ms. 327
+674218,"Sydney, University of Sydney - Fisher Library - Rare Books & Special Collections, Add.Ms. 376",AUS-Sfl Add.Ms. 376,Add.Ms. 376
+674352,"Sydney, University of Sydney - Fisher Library - Rare Books & Special Collections, Add.Ms. 379",AUS-Sfl Add.Ms. 379,Add.Ms. 379
+674790,"Sydney, University of Sydney - Fisher Library - Rare Books and Special Collections, Add.Ms. 380",AUS-Sfl Add.Ms. 380,Add.Ms. 380
+715246,"Sydney, State Library New South Wales, SAFE/RB/MSS X001",AUS-Ssl X001,SAFE/RB/MSS X001
+706711,"Averbode, Norbertijnenabdij, IV.413",B-AVna IV.413,IV.413
+124012,"Bruxelles, Bibliothèque royale, 11396",B-Br 11396,11396
+124069,"Bruxelles, Bibliothèque royale, 15073",B-Br 15073,15073
+123923,"Bruxelles, Bibliothèque royale, 19389",B-Br 19389,19389
+123804,"Bruxelles, Bibliothèque royale, 2031-32",B-Br 2031-32,2031-32
+124088,"Bruxelles, Bibliothèque royale, 4767",B-Br 4767,4767
+123873,"Bruxelles, Bibliothèque royale, II 3823 (Fétis 1172)",B-Br II 3823,II 3823 (Fétis 1172)
+124065,"Bruxelles, Bibliothèque royale, II 3825 (Fétis 1174)",B-Br II 3825,II 3825 (Fétis 1174)
+588309,"Dendermonde, Sint-Pieters-en Paulusabdij, ms. 9",B-DEa 9,ms. 9
+702611,"Gent, Universiteitsbibliotheek, Hs BKT.006 (""Tsgrooten Antiphoner"")",B-Gu Hs BKT.006,"Hs BKT.006 (""Tsgrooten Antiphoner"")"
+123754,"Tongeren, Onze-Lieve-Vrouw-Kerk (Our Lady's Church), 152",B-TOb 152,152
+123664,"Tongeren, Onze-Lieve-Vrouw-Kerk (Our Lady's Church), 63 (olim V)",B-TOb olv 63,63 (olim V)
+123665,"Tongeren, Onze-Lieve-Vrouw-Kerk (Our Lady's Church), 64 (olim IV)",B-TOb olv 64,64 (olim IV)
+123723,"Halifax (Canada), St. Mary’s University - Patrick Power Library, M2149.L4 1554",CDN-Hsmu M2149.L4,M2149.L4 1554
+710654,"London (ON), University of Western Ontario - Archives and Research Collections Centre (ARCC), no shelf-mark yet",CDN-Lu Olim 39,no shelf-mark yet
+693577,"Montréal, McGill University - Rare Books and Special Collections - Manuscript Collection, MS Medieval 0093",CDN-Mlr MS Medieval 0093,MS Medieval 0093
+676545,"Montréal, McGill University - Rare Books and Special Collections - Manuscript Collection, MS Medieval 0111",CDN-Mlr MS Medieval 0111,MS Medieval 0111
+678936,"Montréal, McGill University - Rare Books and Special Collections - Manuscript Collection, MS Medieval 0234",CDN-Mlr MS Medieval 0234,MS Medieval 0234
+666846,"Ottawa, Carleton University - MacOdrum Library - Archives and Research Collection, ms. 1",CDN-Oc 1,ms. 1
+666847,"Ottawa, Carleton University - MacOdrum Library - Archives and Research Collection, ms. 2",CDN-Oc 2,ms. 2
+687359,"Quebec, Séminaire de Québec, Le Paroissien Noté",CDN-Qsl Chaperon,Le Paroissien Noté
+694888,"Toronto, University of Toronto - Thomas Fisher Rare Book Library, MSS 09700",CDN-Ttfl MSS 09700,MSS 09700
+706646,"Toronto, Faculty of Music Library, musi MSS 0019",CDN-Tu 0019,musi MSS 0019
+700992,"Winnipeg (Manitoba), University of Manitoba Libraries - The Dysart Memorial Collection, MS 1",CDN-W Dysart MS 1,MS 1
+589057,"Waterloo, Wilfrid Laurier University Library, M2142.L2 N6 RB88",CDN-WAwlul M2142.L2 N6 RB88,M2142.L2 N6 RB88
+1000071,"Calgary, Private Collection, D-04sqa",CDN-pc(AB) D-04sqa,D:04sqa
+123928,"Bern, Burgerbibliotek, 620",CH-BEb 620,620
+123927,"Bern, Burgerbibliotek, A. 421",CH-BEb A421,A. 421
+710973,"Bourg-Saint-Pierre, Hospice du Grand-Saint-Bernard - Bibliothèque, MS 7",CH-BSPh MS 7,MS 7
+710710,"Cologny, Fondation Martin Bodmer, Cod. Bodmer 74",CH-CObodmer 74,Cod. Bodmer 74
+123841,"Einsiedeln, Stiftsbibliothek, cod. 113 (466)",CH-E 113,cod. 113 (466)
+123883,"Einsiedeln, Stiftsbibliothek, cod. 114",CH-E 114,cod. 114
+666647,"Einsiedeln, Stiftsbibliothek, Codex 121",CH-E 121,Codex 121
+123779,"Einsiedeln, Stiftsbibliothek, cod. 121",CH-E 121,cod. 121
+123895,"Einsiedeln, Stiftsbibliothek, cod. 366",CH-E 366,cod. 366
+123606,"Einsiedeln, Stiftsbibliothek, 611",CH-E 611,611
+1000101,"Engelberg, Stiftsbibliothek, 1003",CH-EN 1003,1003
+1000091,"Engelberg, Stiftsbibliothek, 102",CH-EN 102,102
+1000080,"Engelberg, Stiftsbibliothek, 314",CH-EN 314,314
+124002,"Engelberg, Stiftsbibliothek, cod. 314",CH-EN 314,cod. 314
+123725,"Engelberg, Benediktinerkloster - Stiftsbibliothek, Cod. 103",CH-ENstb Cod. 103,Cod. 103
+123672,"Fribourg, Bibliothèque des Cordeliers, Ms. 2",CH-Fco Ms. 2,Ms. 2
+675783,"Fribourg, Bibliothèque des Cordeliers, Ms. 9",CH-Fco Ms. 9,Ms. 9
+638308,"Porrentruy, Bibliothèque cantonale jurassienne, 18",CH-P 18,18
+672485,"Sankt-Gallen, Stiftsbibliothek, Cod. Sang. 359",CH-SGs 359,Cod. Sang. 359
+123896,"Sankt-Gallen, Stiftsbibliothek, cod. 375",CH-SGs 375,cod. 375
+123832,"Sankt-Gallen, Stiftsbibliothek, cod. 376",CH-SGs 376,cod. 376
+123833,"Sankt-Gallen, Stiftsbibliothek, cod. 378",CH-SGs 378,cod. 378
+123842,"Sankt-Gallen, Stiftsbibliothek, cod. 380",CH-SGs 380,cod. 380
+123790,"Sankt-Gallen, Stiftsbibliothek, cod. 381",CH-SGs 381,cod. 381
+123843,"Sankt-Gallen, Stiftsbibliothek, cod. 382",CH-SGs 382,cod. 382
+123750,"Sankt-Gallen, Stiftsbibliothek, 388",CH-SGs 388,388
+123717,"Sankt-Gallen, Stiftsbibliothek, 390",CH-SGs 390,390
+123718,"Sankt-Gallen, Stiftsbibliothek, 391",CH-SGs 391,391
+123789,"Sankt-Gallen, Stiftsbibliothek, cod. 484",CH-SGs 484,cod. 484
+123803,"Sankt-Gallen, Stiftsbibliothek, cod. 898",CH-SGs 898,cod. 898
+123784,"Sankt-Gallen, Kantonsbibliothek, Vadiana 317",CH-SGv 317,Vadiana 317
+123913,"Schaffhausen, Stadtbibliothek, 95",CH-SH 95,95
+123997,"Zurich, Schweizerisches Landesmuseum, 26117",CH-Zm 26117,26117
+123731,"Zürich, Zentralbibliothek, Rh. 80",CH-Zz Rh 80,Rh. 80
+123869,"Zürich, Zentralbibliothek, Rh. 125",CH-Zz Rh. 125,Rh. 125
+123952,"Zürich, Zentralbibliothek, Rh. 14",CH-Zz Rh. 14,Rh. 14
+123929,"Zürich, Zentralbibliothek, Rh. 55",CH-Zz Rh. 55,Rh. 55
+123844,"Zürich, Zentralbibliothek, Rh. 132",CH-Zz Rh.132,Rh. 132
+123760,"Brno, Moravská zemská knihovna v Brně, Rajhrad 387",CZ-Bu R 387,Rajhrad 387
+123746,"Hradec Králové, Muzeum Východních Čech v Hradci Králové, Antiphonary II A 1",CZ-HKm II A 1,Antiphonary II A 1
+123975,"Prague, Knihovna metropolitni kapituly sv. Vita, P VIII",CZ-Pap P VIII,P VIII
+649450,"Prague, Strahovská knihovna (Library of the Royal Canonry of Premonstratensians at Strahov), DE I 7",CZ-Pst DE I 7,DE I 7
+706031,"Prague, Národní knihovna České republiky (National Library), I G 17",CZ-Pu I.G.17,I G 17
+123727,"Prague, Národní knihovna České republiky (National Library), VI.E.4c",CZ-Pu VI.E.4c,VI.E.4c
+588729,"Prague, University Library, XI C 3",CZ-Pu XI C 3,XI C 3
+1000005,"Prague, University Library, XI C 3",CZ-Pu XI C 3,XI C 3
+123735,"Prague, Národní knihovna České republiky (National Library), XIII.C.4",CZ-Pu XIII.C.4,XIII.C.4
+123730,"Prague, Národní knihovna České republiky (National Library), XIV.B.13",CZ-Pu XIV B 13,XIV.B.13
+124053,"Augsburg, Ratdolt, D-A/imp:1498 (Print)",D-A/imp:1498,D-A/imp:1498
+123935,"Aachen, Bischöfliche Diözesanbibliothek, 13 (XII)",D-AAd 13,13 (XII)
+123934,"Aachen, Bischöfliche Diözesanbibliothek, 13 (XII)",D-AAd 13,13 (XII)
+123714,"Aachen (Aix-la-Chapelle), Domarchiv, G 20",D-AAm G 20,G 20
+124013,"Berlin, Staatsbibliothek Preussischer Kulturbesitz, MUS. MS. 40608",D-B 40608,MUS. MS. 40608
+123916,"Berlin, Staatsbibliothek Preussischer Kulturbesitz, th.lat.4o  664",D-B 664,th.lat.4o  664
+123811,"Berlin, Staatsbibliothek Preussischer Kulturbesitz, th.lat.4o  11",D-B IV. 11,th.lat.4o  11
+123688,"Berlin, Staatsbibliothek Preussischer Kulturbesitz, Mus. 40047",D-B Mus. 40047,Mus. 40047
+713701,"Berlin, Staatsbibliothek Preussischer Kulturbesitz, Mus. ms. 40 222",D-B Mus. ms. 40 222,Mus. ms. 40 222
+123958,"Bamberg, Staatsbibliothek, lit. 12",D-BAs 12,lit. 12
+123812,"Bamberg, Staatsbibliothek, lit. 5",D-BAs 5,lit. 5
+123791,"Bamberg, Staatsbibliothek, lit. 6",D-BAs 6,lit. 6
+123594,"Bamberg, Staatsbibliothek, Msc.Lit.25 (olim Ed.IV.11)",D-BAs Msc.Lit.25,Msc.Lit.25 (olim Ed.IV.11)
+588716,"Bamberg, Staatsbibliothek, Msc.Lit.27",D-BAs Msc.Lit.27,Msc.Lit.27
+123917,"Berlin, Deutsche Staatsbibliothek, mus. 40078 (Z. 78)",D-Bds 40078,mus. 40078 (Z. 78)
+123922,"Darmstadt, Hessische Landes- und Hochschulbibliothek, 545",D-DS 545,545
+123936,"Darmstadt, Hessische Landes- und Hochschulbibliothek, 868",D-DS 868,868
+123924,"Dresden, Sächsische Landesbibliothek, A. 122",D-Dl A122,A. 122
+123685,"Fulda, Hessische Landesbibliothek, Aa 55",D-FUl Aa 55,Aa 55
+682632,"Göttingen, Stadtarchiv, AB III 9",D-Gsta AB III 9,AB III 9
+123612,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, Aug. LX",D-KA Aug. LX,Aug. LX
+123978,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, Aug. 209",D-KA Aug209,Aug. 209
+124007,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, B. 102",D-KA B102,B. 102
+124014,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, Sankt-Georgen 3",D-KA Geo3,Sankt-Georgen 3
+123979,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, Sankt-Georgen 31",D-KA Geo31,Sankt-Georgen 31
+123990,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, L[ichtenthal]. 5",D-KA L5,L[ichtenthal]. 5
+124092,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, L[ichtenthal]. 60",D-KA L60,L[ichtenthal]. 60
+123991,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, St. Peter 14a",D-KA P14a,St. Peter 14a
+124026,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, S. Peter 15",D-KA P15,S. Peter 15
+124006,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, St. Peter 16",D-KA P16,St. Peter 16
+124003,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, S. Peter 44",D-KA P44,S. Peter 44
+124015,"Karlsruhe, Badische Landesbibliothek - Musiksammlung, UH1",D-KA UH1,UH1
+123965,"Köln, Historisches Archiv, W. f. 270",D-KNa W270,W. f. 270
+601861,"Köln, Erzbischöfliche Diözesan- und Dombibliothek, 1161",D-KNd 1161,1161
+123741,"Köln, Erzbischöfliche Diözesan- und Dombibliothek, 215",D-KNd 215,215
+123999,"Köln, Erzbischöfliche Diözesan- und Dombibliothek, 226",D-KNd 226,226
+123972,"Kassel, Landesbibliothek, 4o theol. 5",D-Kl  5,4o theol. 5
+123874,"Kassel, Landesbibliothek, 4o theol. 15",D-Kl 15,4o theol. 15
+123959,"Leipzig, Universitätsbibliothek, 391",D-LEu 391,391
+641834,"Leipzig, Universitätsbibliothek, Rep. I 93",D-LEu Rep. I 93,Rep. I 93
+123620,"Mainz, Bischöfliches Dom- und Diözesanmuseum, A",D-MZb A,A
+123621,"Mainz, Bischöfliches Dom- und Diözesanmuseum, B",D-MZb B,B
+123622,"Mainz, Bischöfliches Dom- und Diözesanmuseum, C",D-MZb C,C
+123623,"Mainz, Bischöfliches Dom- und Diözesanmuseum, D",D-MZb D,D
+123624,"Mainz, Bischöfliches Dom- und Diözesanmuseum, E",D-MZb E,E
+123673,"München, Franziskanerkloster St. Anna - Bibliothek, 12o Cmm 1",D-Ma 12o Cmm 1,12o Cmm 1
+123918,"München, Bayerische Staatsbibliothek, Clm 19242",D-Mbs 19242,Clm 19242
+124080,"München, Bayerische Staatsbibliothek, Clm 27020",D-Mbs 27020,Clm 27020
+123877,"München, Bayerische Staatsbibliothek, Clm 27130",D-Mbs 27130,Clm 27130
+123786,"München, Bayerische Staatsbibliothek, Clm 29308(1",D-Mbs 29308(1,Clm 29308(1
+123785,"München, Bayerische Staatsbibliothek, Clm 29308(1",D-Mbs 29308(1,Clm 29308(1
+123861,"München, Bayerische Staatsbibliothek, Clm 29308(18",D-Mbs 29308(18,Clm 29308(18
+123813,"München, Bayerische Staatsbibliothek, Clm 29308(2",D-Mbs 29308(2,Clm 29308(2
+123823,"München, Bayerische Staatsbibliothek, Clm 29308(5",D-Mbs 29308(5,Clm 29308(5
+123875,"München, Bayerische Staatsbibliothek, Clm 3008",D-Mbs 3008,Clm 3008
+124041,"München, Bayerische Staatsbibliothek, Clm 3311",D-Mbs 3311,Clm 3311
+123980,"München, Bayerische Staatsbibliothek, Clm 3906",D-Mbs 3906,Clm 3906
+123867,"München, Bayerische Staatsbibliothek, Clm 3914",D-Mbs 3914,Clm 3914
+124054,"München, Bayerische Staatsbibliothek, Clm 4101",D-Mbs 4101,Clm 4101
+124055,"München, Bayerische Staatsbibliothek, Clm 4519",D-Mbs 4519,Clm 4519
+124027,"München, Bayerische Staatsbibliothek, Clm 4548",D-Mbs 4548,Clm 4548
+124056,"München, Bayerische Staatsbibliothek, Clm 5023",D-Mbs 5023,Clm 5023
+124042,"München, Bayerische Staatsbibliothek, Clm 6913",D-Mbs 6913,Clm 6913
+124058,"München, Bayerische Staatsbibliothek, Clm 7815",D-Mbs 7815,Clm 7815
+123961,"München, Bayerische Staatsbibliothek, Clm 7919",D-Mbs 7919,Clm 7919
+124008,"München, Bayerische Staatsbibliothek, Clm 8710",D-Mbs 8710,Clm 8710
+124043,"München, Bayerische Staatsbibliothek, Clm 9508",D-Mbs 9508,Clm 9508
+123937,"München, Bayerische Staatsbibliothek, Clm 10075",D-Mbs Clm 10075,Clm 10075
+123878,"München, Bayerische Staatsbibliothek, Clm 11004",D-Mbs Clm 11004,Clm 11004
+123911,"München, Bayerische Staatsbibliothek, Clm 13125",D-Mbs Clm 13125,Clm 13125
+124018,"München, Bayerische Staatsbibliothek, Clm 14013",D-Mbs Clm 14013,Clm 14013
+124029,"München, Bayerische Staatsbibliothek, Clm 14045",D-Mbs Clm 14045,Clm 14045
+123821,"München, Bayerische Staatsbibliothek, Clm 14083",D-Mbs Clm 14083,Clm 14083
+123822,"München, Bayerische Staatsbibliothek, Clm 14322",D-Mbs Clm 14322,Clm 14322
+123976,"München, Bayerische Staatsbibliothek, Clm 14343",D-Mbs Clm 14343,Clm 14343
+123780,"München, Bayerische Staatsbibliothek, Clm 14843",D-Mbs Clm 14843,Clm 14843
+123880,"München, Bayerische Staatsbibliothek, Clm 14845",D-Mbs Clm 14845,Clm 14845
+124019,"München, Bayerische Staatsbibliothek, Clm 14926",D-Mbs Clm 14926,Clm 14926
+123992,"München, Bayerische Staatsbibliothek, Clm 15730",D-Mbs Clm 15730,Clm 15730
+124044,"München, Bayerische Staatsbibliothek, Clm 17018",D-Mbs Clm 17018,Clm 17018
+123834,"München, Bayerische Staatsbibliothek, Clm 17019",D-Mbs Clm 17019,Clm 17019
+124045,"München, Bayerische Staatsbibliothek, Clm 17021",D-Mbs Clm 17021,Clm 17021
+123960,"München, Bayerische Staatsbibliothek, Clm 17025",D-Mbs Clm 17025,Clm 17025
+123938,"München, Bayerische Staatsbibliothek, Clm 17100",D-Mbs Clm 17100,Clm 17100
+123860,"München, Bayerische Staatsbibliothek, Clm 17212",D-Mbs Clm 17212,Clm 17212
+123993,"München, Bayerische Staatsbibliothek, Clm  18392",D-Mbs Clm 18392,Clm  18392
+123853,"München, Bayerische Staatsbibliothek, Clm 18955",D-Mbs Clm 18955,Clm 18955
+123800,"München, Bayerische Staatsbibliothek, Clm 18956",D-Mbs Clm 18956,Clm 18956
+123770,"München, Bayerische Staatsbibliothek, Clm 19162",D-Mbs Clm 19162,Clm 19162
+124076,"München, Bayerische Staatsbibliothek, Clm 19266",D-Mbs Clm 19266,Clm 19266
+124057,"München, Bayerische Staatsbibliothek, Clm 19267",D-Mbs Clm 19267,Clm 19267
+124016,"München, Bayerische Staatsbibliothek, Clm 23001",D-Mbs Clm 23001,Clm 23001
+124070,"München, Bayerische Staatsbibliothek, Clm 23026",D-Mbs Clm 23026,Clm 23026
+124078,"München, Bayerische Staatsbibliothek, Clm 23044",D-Mbs Clm 23044,Clm 23044
+124079,"München, Bayerische Staatsbibliothek, Clm 23045",D-Mbs Clm 23045,Clm 23045
+123879,"München, Bayerische Staatsbibliothek, Clm 23063",D-Mbs Clm 23063,Clm 23063
+123910,"München, Bayerische Staatsbibliothek, Clm 23270",D-Mbs Clm 23270,Clm 23270
+124017,"München, Bayerische Staatsbibliothek, Clm 23284",D-Mbs Clm 23284,Clm 23284
+123876,"München, Bayerische Staatsbibliothek, Clm 23285",D-Mbs Clm 23285,Clm 23285
+123981,"München, Bayerische Staatsbibliothek, Clm 23286",D-Mbs Clm 23286,Clm 23286
+124028,"München, Bayerische Staatsbibliothek, Clm 23287",D-Mbs Clm 23287,Clm 23287
+123681,"München, Bayerische Staatsbibliothek, Clm 4303",D-Mbs Clm 4303,Clm 4303
+123682,"München, Bayerische Staatsbibliothek, Clm 4304",D-Mbs Clm 4304,Clm 4304
+123683,"München, Bayerische Staatsbibliothek, Clm 4305",D-Mbs Clm 4305,Clm 4305
+123684,"München, Bayerische Staatsbibliothek, Clm 4306",D-Mbs Clm 4306,Clm 4306
+1000094,"Munich, Bayerische Staatsbibliothek, Clm. 5539",D-Mbs Clm. 5539,Clm. 5539
+124030,"München, Bayerische Staatsbibliothek, Cgm 716",D-Mbs g716,Cgm 716
+124000,"München, Universitätsbibliothek, MS 2° 156",D-Mu MS 2° 156,MS 2° 156
+124037,"Münster, Universitäts- und Landesbibliothek, Hs 41",D-MÜu 41,Hs 41
+124081,"Passau:  Imp: Graduale Pataviense (Wien, 1511)",D-P/imp1511,D-P/imp1511
+123982,"Regensburg, Staatliche Bibliothek, 4o Liturg. 19",D-Rs 4o lit. 19,4o Liturg. 19
+124093,"Regensburg,  Fürst Thurn und Taxis Hofbibliothek, F.K. mus. 1/II",D-Rtt 1/II,F.K. mus. 1/II
+124082,"Regensburg,  Fürst Thurn und Taxis Hofbibliothek, F.K. mus. 42/II",D-Rtt 42/II,F.K. mus. 42/II
+124097,"Regensburg,  Fürst Thurn und Taxis Hofbibliothek, F.K. mus. 43/II",D-Rtt 43/II,F.K. mus. 43/II
+124089,"Regensburg,  Fürst Thurn und Taxis Hofbibliothek, F.K. mus. 5/II",D-Rtt 5/II,F.K. mus. 5/II
+124071,"Regensburg,  Fürst Thurn und Taxis Hofbibliothek, F.K. mus. 68 & 69",D-Rtt 68-69,F.K. mus. 68 & 69
+124083,"Regensburg,  Fürst Thurn und Taxis Hofbibliothek, F.K. mus. 7/11",D-Rtt 7/II,F.K. mus. 7/11
+124101,"Regensburg,  Fürst Thurn und Taxis Hofbibliothek, F.K. mus. 84",D-Rtt 84,F.K. mus. 84
+123912,"Stuttgart, Württembergische Landesbibliothek, cod. bibl., 2o 20",D-Sl 20,"cod. bibl., 2o 20"
+123881,"Stuttgart, Württembergische Landesbibliothek, Cod. bibl. 4o 36",D-Sl 36,Cod. bibl. 4o 36
+123994,"Stuttgart, Württembergische Landesbibliothek, Cod. bibl. 2o 38",D-Sl 38,Cod. bibl. 2o 38
+1000082,"Stuttgart, Württembergische Landesbibliothek, HB I, Asc. 95","D-Sl HB I, Asc. 95","HB I, Asc. 95"
+123637,"Stuttgart, Württembergische Landesbibliothek, HB.I.55",D-Sl HB.I.55,HB.I.55
+123862,"Stuttgart, Württembergische Landesbibliothek, Cod. brev. 160",D-Sl brev. 160,Cod. brev. 160
+124020,"Stuttgart, Württembergische Landesbibliothek, Cod. mus. 2o 65",D-Sl mus65,Cod. mus. 2o 65
+123757,"Trier, Bistumsarchiv, Abt. 95, Nr. 5","D-TRb Abt. 95, Nr. 5","Abt. 95, Nr. 5"
+651162,"Trier, Stadtbibliothek Weberbach, 1245 / 597 (original)",D-TRs 1245 / 597 (original),1245 / 597 (original)
+662398,"Trier, Stadtbibliothek Weberbach, 1245 / 597 (revised)",D-TRs 1245 / 597 (rev),1245 / 597 (revised)
+123946,"Trier, Stadtbibliothek Weberbach, 2254 (Codex Bohm)",D-TRs 2254,2254 (Codex Bohm)
+123716,"Wolfenbüttel, Herzog August Bibliothek, Cod. Guelf. 28 Helmst. (Heinemann-Nr. 31)",D-W 28 Helmst.,Cod. Guelf. 28 Helmst. (Heinemann-Nr. 31)
+123715,"Wolfenbüttel, Herzog August Bibliothek, Cod. Guelf. 29 Helmst. (Heinemann-Nr. 32)",D-W 29 Helmst.,Cod. Guelf. 29 Helmst. (Heinemann-Nr. 32)
+123966,"Wolfenbüttel, Herzog August Bibliothek, 45 (Helmst. 40)",D-W 45 (40),45 (Helmst. 40)
+588308,"Wiesbaden, Hochschul- und Landesbibliothek RheinMain, 2 (Riesencodex)",D-WIl 2,2 (Riesencodex)
+124098,Graduale Herbipolense iussu atque authoritate ,D-WÜ/imp1583,D-WÜ/imp1583
+124102,"Würzburg, Universitätsbibliothek, M. ch. f. 283",D-WÜu 283,M. ch. f. 283
+124059,"Xanten, Stiftsarchiv und -bibliothek St. Viktor, H 109",D-X H109,H 109
+124077,"Xanten, Stiftsarchiv und -bibliothek St. Viktor, H 140 (3)",D-X H140(3),H 140 (3)
+123689,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449, 8o [01] I",DK-Kk 3449 8o [01] I,"Gl. Kgl. S. 3449, 8o [01] I"
+123690,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [02] II",DK-Kk 3449 8o [02] II,Gl. Kgl. S. 3449 8o [02] II
+123691,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [03] III",DK-Kk 3449 8o [03] III,Gl. Kgl. S. 3449 8o [03] III
+123692,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [04] IV",DK-Kk 3449 8o [04] IV,Gl. Kgl. S. 3449 8o [04] IV
+123693,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [05] V",DK-Kk 3449 8o [05] V,Gl. Kgl. S. 3449 8o [05] V
+123694,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [06] VI",DK-Kk 3449 8o [06] VI,Gl. Kgl. S. 3449 8o [06] VI
+123695,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [07] VII",DK-Kk 3449 8o [07] VII,Gl. Kgl. S. 3449 8o [07] VII
+123696,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [08] VIII",DK-Kk 3449 8o [08] VIII,Gl. Kgl. S. 3449 8o [08] VIII
+123697,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [09] IX",DK-Kk 3449 8o [09] IX,Gl. Kgl. S. 3449 8o [09] IX
+123698,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [10] X",DK-Kk 3449 8o [10] X,Gl. Kgl. S. 3449 8o [10] X
+123699,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [11] XI",DK-Kk 3449 8o [11] XI,Gl. Kgl. S. 3449 8o [11] XI
+123700,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [12] XII",DK-Kk 3449 8o [12] XII,Gl. Kgl. S. 3449 8o [12] XII
+123701,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [13] XIII",DK-Kk 3449 8o [13] XIII,Gl. Kgl. S. 3449 8o [13] XIII
+123702,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [14] XIV",DK-Kk 3449 8o [14] XIV,Gl. Kgl. S. 3449 8o [14] XIV
+123703,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [15] XV",DK-Kk 3449 8o [15] XV,Gl. Kgl. S. 3449 8o [15] XV
+123704,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [16] XVI",DK-Kk 3449 8o [16] XVI,Gl. Kgl. S. 3449 8o [16] XVI
+123705,"København (Copenhagen), Det kongelige Bibliotek Slotsholmen, Gl. Kgl. S. 3449 8o [17] XVII",DK-Kk 3449 8o [17] XVII,Gl. Kgl. S. 3449 8o [17] XVII
+123899,"Madrid, Biblioteca Nacional, 19421",E-Mn 19421,19421
+123882,"Madrid, Biblioteca Nacional, 288",E-Mn 288,288
+123892,"Madrid, Biblioteca Nacional, 289",E-Mn 289,289
+123893,"Madrid, Biblioteca Nacional, V.20-4",E-Mn V. 20-4,V.20-4
+123650,"Salamanca, Catedral - Archivo Musical, 6",E-SA 6,6
+123651,"Salamanca, Catedral - Archivo Musical, 7",E-SA 7,7
+123652,"Salamanca, Catedral - Archivo Musical, 8",E-SA 8,8
+123967,"Toledo, Catedral - Archivo y Biblioteca Capitulares, ms 35.10",E-Tc 35.10,ms 35.10
+123638,"Toledo, Catedral - Archivo y Biblioteca Capitulares, 44.1",E-Tc 44.1,44.1
+123639,"Toledo, Catedral - Archivo y Biblioteca Capitulares, 44.2",E-Tc 44.2,44.2
+123939,"Toledo, Catedral - Archivo y Biblioteca Capitulares, ms 52.11",E-Tc 52.11,ms 52.11
+1000014,"Zamora, Archivo Histórico Provincial de Zamora, AHP 'Book 1'",E-ZAahp 'Book 1',AHP 'Book 1'
+123679,"Albi, Bibliothèque municipale Rochegude, 44",F-AI 44,44
+123792,"Angers, Bibliothèque municipale, 144 (136)",F-AN 144,144 (136)
+123925,"Arras, Bibliothèque municipale, 437, (1011)",F-AS 437,"437, (1011)"
+123962,"Arras, Bibliothèque municipale, 444 (888, sic in AH)",F-AS 444,"444 (888, sic in AH)"
+123593,"Arras, Mediathèque de l'Abbaye Saint-Vaast, 465 (CGM 893)",F-AS 465 (CGM 893),465 (CGM 893)
+123781,"Autun, Bibliothèque municipale, 28 S",F-AUT 28S,28 S
+123601,"Cambrai, Bibliothèque municipale, 38 (olim 40)",F-CA 38,38 (olim 40)
+123863,"Cambrai, Bibliothèque municipale, ms 60",F-CA 60,ms 60
+123814,"Cambrai, Bibliothèque municipale, 75",F-CA 75,75
+123854,"Cambrai, Bibliothèque municipale, ms 78(79)",F-CA 78,ms 78(79)
+123602,"Cambrai, Bibliothèque municipale, Impr. XVI C 4",F-CA Impr. XVI C 4,Impr. XVI C 4
+123782,"Chartres, Bibliothèque municipale, Ms47",F-CHRm 47,Ms47
+123947,"Chartres, Bibliothèque municipale, 520 (destroyed)",F-CHRm 520,520 (destroyed)
+123940,"Colmar, Bibliothèque municipale, 409",F-CO 409,409
+124021,"Douai, Bibliothèque municipale, 113",F-DOU 113,113
+124001,"Douai, Bibliothèque municipale, 114",F-DOU 114,114
+124066,"Douai, Bibliothèque municipale, ms. 123",F-DOU 123,ms. 123
+124099,"Douai, Bibliothèque municipale, ms. 124",F-DOU 124,ms. 124
+123995,"Douai, Bibliothèque municipale, 69",F-DOU 69,69
+672072,"Grenoble, Bibliothèque Municipale, ms. 867 (91)",F-G 867,ms. 867 (91)
+123903,"Laon, Bibliothèque municipale, ms 263",F-LA 263,ms 263
+123983,"Limoges, Bibliothèque municipale, 2 (17)",F-LG 2,2 (17)
+123968,"Le Mans, Bibliotheque municipale, 437",F-LM 437,437
+123835,"Metz, Bibliothèque municipale,  ms 452",F-ME 452,ms 452
+123984,"Montpellier, Bibliotheque municipale, 20",F-MO 20,20
+123973,"Orléans, Bibliothèque municipale, 129 (107)",F-O 129,129 (107)
+1000011,"Orléans, Bibliothèque municipale, Ms. 64 (61)",F-O 64 (61),Ms. 64 (61)
+123941,"Provins, Bibliothèque municipale, 12",F-PR 12,12
+123948,"Paris, Bibliotheque Mazarine, 526",F-Pm 526,526
+123894,"Paris, Bibliothèque nationale, fonds lat. 10508",F-Pn 10508,fonds lat. 10508
+123837,"Paris, Bibliothèque nationale, lat. 10510",F-Pn 10510,lat. 10510
+124072,"Paris, Bibliothèque nationale, lat. 10513",F-Pn 10513,lat. 10513
+123783,"Paris, Bibliothèque nationale, fonds lat. 10587",F-Pn 10587,fonds lat. 10587
+123794,"Paris, Bibliothèque nationale, fond lat. 1084",F-Pn 1084,fond lat. 1084
+123904,"Paris, Bibliothèque nationale, lat. 1086",F-Pn 1086,lat. 1086
+123969,"Paris, Bibliothèque nationale, lat. 1101",F-Pn 1101,lat. 1101
+123954,"Paris, Bibliothèque nationale, 1107",F-Pn 1107,1107
+123795,"Paris, Bibliothèque nationale, fond lat. 1118",F-Pn 1118,fond lat. 1118
+123818,"Paris, Bibliothèque nationale, lat. 1120",F-Pn 1120,lat. 1120
+123817,"Paris, Bibliothèque nationale, fond lat. 1121",F-Pn 1121,fond lat. 1121
+123839,"Paris, Bibliothèque nationale, lat. 1132",F-Pn 1132,lat. 1132
+123840,"Paris, Bibliothèque nationale, lat. 1133",F-Pn 1133,lat. 1133
+123838,"Paris, Bibliothèque nationale, lat. 1134",F-Pn 1134,lat. 1134
+123801,"Paris, Bibliothèque nationale,  lat. 1135",F-Pn 1135,lat. 1135
+123802,"Paris, Bibliothèque nationale, lat. 1136",F-Pn 1136,lat. 1136
+123826,"Paris, Bibliothèque nationale, Lat. 1137",F-Pn 1137,Lat. 1137
+123816,"Paris, Bibliothèque nationale, Lat. 1138 & 1338",F-Pn 1138/1338,Lat. 1138 & 1338
+123868,"Paris, Bibliotheque nationale, Lat. 1139",F-Pn 1139,Lat. 1139
+123774,"Paris, Bibliothèque nationale, Lat. 1154",F-Pn 1154,Lat. 1154
+123787,"Paris, Bibliothèque nationale, Lat. 1240",F-Pn 1240,Lat. 1240
+123974,"Paris, Bibliothèque nationale, Lat. 13254",F-Pn 13254,Lat. 13254
+123949,"Paris, Bibliothèque nationale, Lat. 17312",F-Pn 17312,Lat. 17312
+123778,"Paris, Bibliothèque nationale, Lat. 17436",F-Pn 17436,Lat. 17436
+123829,"Paris, Bibliothèque nationale, lat. 779",F-Pn 779,lat. 779
+123815,"Paris, Bibliothèque nationale, fond lat. 887",F-Pn 887,fond lat. 887
+123849,"Paris, Bibliothèque nationale, lat. 903",F-Pn 903,lat. 903
+123926,"Paris, Bibliothèque nationale, lat. 904",F-Pn 904,lat. 904
+124067,"Paris, Bibliothèque nationale, lat. 905",F-Pn 905,lat. 905
+123825,"Paris, Bibliothèque nationale, fond lat. 909",F-Pn 909,fond lat. 909
+123824,"Paris, Bibliothèque nationale, lat. 9436",F-Pn 9436,lat. 9436
+123793,"Paris, Bibliothèque nationale, fonds lat. 9448",F-Pn 9448,fonds lat. 9448
+123830,"Paris, Bibliothèque nationale, lat. 9449",F-Pn 9449,lat. 9449
+123663,"Paris, Bibliothèque nationale de France - Département des Manuscrits, Latin 1085",F-Pn Lat. 1085,Latin 1085
+123627,"Paris, Bibliothèque nationale de France - Département des Manuscrits, Latin 1090",F-Pn Lat. 1090,Latin 1090
+676377,"Paris, Bibliothèque nationale de France - Département des manuscrits, Latin 1112",F-Pn Lat. 1112,Latin 1112
+123628,"Paris, Bibliothèque nationale de France - Département des Manuscrits, Latin 12044",F-Pn Lat. 12044,Latin 12044
+675815,"Paris, Bibliothèque Nationale de France, 12054",F-Pn Lat. 12054,12054
+123629,"Paris, Bibliothèque nationale de France - Département des Manuscrits, Latin 1240",F-Pn Lat. 1240,Latin 1240
+123630,"Paris, Bibliothèque nationale de France - Département des Manuscrits, Latin 12601",F-Pn Lat. 12601,Latin 12601
+123631,"Paris, Bibliothèque nationale de France - Département des Manuscrits, Latin 15181",F-Pn Lat. 15181,Latin 15181
+123632,"Paris, Bibliothèque nationale de France - Département des Manuscrits, Latin 15182",F-Pn Lat. 15182,Latin 15182
+664930,"Paris, Bibliothèque Nationale de France, Latin 776",F-Pn Lat. 776,Latin 776
+666639,"Paris, Bibliothèque nationale de France - Département des Manuscrits, Latin 776",F-Pn Lat. 776,Latin 776
+674721,"Paris, Bibliothèque Nationale de France, Latin 8884",F-Pn Lat. 8884,Latin 8884
+672486,"Paris, Bibliothèque nationale de France - Département des manuscrits, Latin 943",F-Pn Lat. 943,Latin 943
+123677,"Paris, Bibliothèque nationale de France - Département des manuscrits, NAL 1411",F-Pn NAL 1411,NAL 1411
+123678,"Paris, Bibliothèque nationale de France - Département des Manuscrits, NAL 1412",F-Pn NAL 1412,NAL 1412
+123633,"Paris, Bibliothèque nationale de France - Département des Manuscrits, NAL 1535",F-Pn NAL 1535,NAL 1535
+698765,"Paris, Bibliothèque nationale de France, NAL 2318, ff. 79-80",F-Pn NAL 2318 ff. 79-80,"NAL 2318, ff. 79-80"
+666487,"Paris, Bibliothèque nationale de France, Ms. lat. 776  (olim Colbert 873 ; Regius 3661)",F-Pn lat. 776 ,Ms. lat. 776  (olim Colbert 873 ; Regius 3661)
+123836,"Paris, Bibliothèque nationale, nouv. acq. lat. 1177",F-Pn na 1177,nouv. acq. lat. 1177
+123864,"Paris, Bibliothèque nationale, nouv. acq. lat. 1235",F-Pn na 1235,nouv. acq. lat. 1235
+123777,"Paris, Bibliothèque nationale, nouv. acq. 1618",F-Pn na 1618,nouv. acq. 1618
+123855,"Paris, Bibliothèque nationale, nouv. acq. lat. 1871",F-Pn na 1871,nouv. acq. lat. 1871
+123900,"Paris, Bibliothèque nationale, nouv. acq. lat. 3126",F-Pn na 3126,nouv. acq. lat. 3126
+123662,"Rouen, Bibliothèque municipale, 248 (olim  A. 339)",F-R 248,248 (olim  A. 339)
+123985,"Rouen, Bibliothèque municipale, ms 249 (A. 280)",F-R 249,ms 249 (A. 280)
+123996,"Reims, Bibliothèque municipale, 224",F-RS 224,224
+123950,"Reims, Bibliothèque municipale, 227 (122)",F-RS 227,227 (122)
+124022,"Reims, Bibliothèque municipale, 285 (169)",F-RS 285,285 (169)
+620437,"Solesmes, Abbaye de Saint-Pierre, 596 (The Wilton Processional)",F-SO 596,596 (The Wilton Processional)
+123747,"Troyes, Bibliothèque municipale, 571",F-T 571,571
+123640,"Tours, Bibliothèque municipale, 149",F-TOm 149,149
+123642,"Valenciennes, Bibliothèque municipale, 114",F-VAL 114,114
+123970,"Verdun, Bibliothèque Municipale, 759",F-VN 759,759
+714807,"Helsinki, National Library, F.m.I.17",FIN-Hy F.m.I.17,F.m.I.17
+1000012,"Helsinki, National Library, F.m.I.86",FIN-Hy F.m.I.86,F.m.I.86
+714693,"Helsinki, National Library, F.m.IV.132",FIN-Hy F.m.IV.132,F.m.IV.132
+711223,"Helsinki, National Library, MS A.ö.II.41",FIN-Hy MS A.ö.II.41,MS A.ö.II.41
+123592,"Aberystwyth, Llyfrgell Genedlaethol Cymru (National Library of Wales), 20541 E",GB-AB 20541 E,20541 E
+123796,"Cambridge, Corpus Christi College, 473",GB-Ccc 473,473
+674988,"Cambridge, Corpus Christi College, MS. 146",GB-Ccc MS. 146,MS. 146
+1000017,"Cambridge, Fitzwilliam Museum, MS 369",GB-Cfm MS 369,MS 369
+123603,"Cambridge, University Library, Mm.ii.9",GB-Cu Mm.ii.9,Mm.ii.9
+123955,"Cambridge, University Library, additional 710",GB-Cu add710,additional 710
+123906,"London, British Library, Royal 2.B.IV",GB-Lbl 2.B.IV,Royal 2.B.IV
+123805,"London, British Library, Royal 8 C. XIII",GB-Lbl 8.C.XIII,Royal 8 C. XIII
+637892,"London, British Library, Additional 23935",GB-Lbl Add 23935,Additional 23935
+1000015,"London, British Library, Additional MSS 43405 and 43406",GB-Lbl Add 43405 and 43406,Additional MSS 43405 and 43406
+673643,"London, British Library, Additional Collection, MS. 57337",GB-Lbl Add. 57337,"Additional Collection, MS. 57337"
+123905,"London, British Library, Cotton MS Caligula A.xiv",GB-Lbl Cot.Cal A.xiv,Cotton MS Caligula A.xiv
+123668,"London, British Library, printed book IB.6753 (Augsburg Antiphoner 1495, olim AA Impr. 1495)",GB-Lbl IB.6753,"printed book IB.6753 (Augsburg Antiphoner 1495, olim AA Impr. 1495)"
+124009,"London, British Library, add. 11414",GB-Lbl add.11414,add. 11414
+123951,"London, British Library, add. 12194",GB-Lbl add.12194,add. 12194
+123986,"London, British Library, add. 16905",GB-Lbl add.16905,add. 16905
+123942,"London, British Library, add. 18031",GB-Lbl add.18031,add. 18031
+123943,"London, British Library, add. 18032",GB-Lbl add.18032,add. 18032
+123788,"London, British Library, add. 19768",GB-Lbl add.19768,add. 19768
+123850,"London, British Library, Add. 19768t",GB-Lbl add.19768t,Add. 19768t
+123865,"London, British Library, add. 24680",GB-Lbl add.24680,add. 24680
+712829,"Newcastle upon Tyne, Philip Robinson Library, ROB405",GB-NTu ROB405,ROB405
+123827,"Oxford, Bodleian Library, MS. Bodley 775",GB-Ob MS. Bodley 775,MS. Bodley 775
+123687,"Oxford, Bodleian Library, MS. Canon. Liturg. 202",GB-Ob MS. Canon. Liturg. 202,MS. Canon. Liturg. 202
+123944,"Oxford, Bodleian Library, MS. Canon. Liturg. 340",GB-Ob MS. Canon. Liturg. 340,MS. Canon. Liturg. 340
+123907,"Oxford, Bodleian Library, MS. Canon. Liturg. 341",GB-Ob MS. Canon. Liturg. 341,MS. Canon. Liturg. 341
+123901,"Oxford, Bodleian Library, MS. Canon. Liturg. 354",GB-Ob MS. Canon. Liturg. 354,MS. Canon. Liturg. 354
+123856,"Oxford, Bodleian Library, MS. Douce 222",GB-Ob MS. Douce 222,MS. Douce 222
+680956,"Oxford, Bodleian Library, MS. Lat. liturg. b. 14",GB-Ob MS. Lat. liturg. b. 14,MS. Lat. liturg. b. 14
+124023,"Oxford, Bodleian Library, MS. Lat. liturg. b. 5",GB-Ob MS. Lat. liturg. b. 5,MS. Lat. liturg. b. 5
+709880,"Oxford, Bodleian Library, MS. Lat. liturg. e. 13",GB-Ob MS. Lat. liturg. e. 13,MS. Lat. liturg. e. 13
+123707,"Oxford, Bodleian Library, MS. Laud Misc. 284",GB-Ob MS. Laud Misc. 284,MS. Laud Misc. 284
+123797,"Oxford, Bodleian Library, MS. Selden Supra 27",GB-Ob MS. Selden Supra 27,MS. Selden Supra 27
+123647,"Worcester, Cathedral - Music Library, F.160 (olim 1247) (with hymnal)",GB-WO F.160,F.160 (olim 1247) (with hymnal)
+123646,"Worcester, Cathedral - Music Library, F.160 (olim 1247) (facsimile)",GB-WO F.160 (Facs),F.160 (olim 1247) (facsimile)
+123597,"Budapest, Egyetemi Könyvtár (University Library), lat. 118",H-Bu lat. 118,lat. 118
+123598,"Budapest, Egyetemi Könyvtár (University Library), lat. 119",H-Bu lat. 119,lat. 119
+123599,"Budapest, Egyetemi Könyvtár (University Library), lat. 121",H-Bu lat. 121,lat. 121
+123600,"Budapest, Egyetemi Könyvtár (University Library), lat. 122",H-Bu lat. 122,lat. 122
+123737,"Dubrovnik, Franjevacki samostan, Codex Badija III",HR-Dsmbb III,Codex Badija III
+123738,"Dubrovnik, Franjevacki samostan, Codex Badija V",HR-Dsmbb V,Codex Badija V
+123739,"Dubrovnik, Franjevacki samostan, Codex Badija X",HR-Dsmbb X,Codex Badija X
+123740,"Dubrovnik, Franjevacki samostan, Codex Badija XI",HR-Dsmbb XI,Codex Badija XI
+123719,"Dubrovnik, Franjevački Samostan (Franciscan Monastery), Cod. C Nr. 4",HR-Hf Cod. C,Cod. C Nr. 4
+123720,"Dubrovnik, Franjevački Samostan (Franciscan Monastery), Cod. D Nr. 5",HR-Hf Cod. D,Cod. D Nr. 5
+123721,"Dubrovnik, Franjevački Samostan (Franciscan Monastery), Cod. E Nr. 3",HR-Hf Cod. E,Cod. E Nr. 3
+123722,"Dubrovnik, Franjevački Samostan (Franciscan Monastery), Cod. F Nr. 6",HR-Hf Cod. F,Cod. F Nr. 6
+691025,"Zagreb, Metropolitanska Knjižnica, MR 72",HR-Zmk MR 72,MR 72
+123831,"Šibenik, Franciscan Monastery, sine signo",HR-ŠIBf sn,sine signo
+123666,"Aosta, Seminario Maggiore - Biblioteca, 6",I-AO 6,6
+1000078,"Aosta, Biblioteca del Seminario Maggiore, Cod. 11",I-AO Cod. 11,Cod. 11
+1000079,"Aosta, Biblioteca del Seminario Maggiore, Cod. 13",I-AO Cod. 13,Cod. 13
+123670,"Assisi, Biblioteca Comunale, 693",I-Ac 693,693
+123669,"Assisi, Biblioteca Comunale, 694",I-Ac 694,694
+123963,"Assisi, Biblioteca Comunale, 695",I-Ac 695,695
+123675,"Assisi, Cattedrale San Rufino - Archivio e Biblioteca, 5",I-Ad 5,5
+123956,"Bari, Biblioteca Capitolare, (199)",I-BAca (199),(199)
+123885,"Benevento, Biblioteca capitolare, VI 34",I-BV 34,VI 34
+123886,"Benevento, Biblioteca capitolare, VI 35",I-BV 35,VI 35
+123819,"Benevento, Biblioteca capitolare, cod. VI 38",I-BV 38,cod. VI 38
+123845,"Benevento, Biblioteca capitolare, VI 39",I-BV 39,VI 39
+123595,"Benevento, Biblioteca capitolare, V 19",I-BV V 19,V 19
+123596,"Benevento, Biblioteca capitolare, V 20",I-BV V 20,V 20
+123870,"Bologna, Biblioteca universitaria, 2748",I-Bu 2748,2748
+123884,"Bologna, Biblioteca universitaria, 2824",I-Bu 2824,2824
+123987,"Cividale del Friuli, Archivio Capitolare, LVI",I-CF 56,LVI
+124024,"Cividale del Friuli, Archivio Capitolare, LVIII",I-CF 58,LVIII
+1000077,"Cividale, Museo Archeologico Nazionale, LVI",I-CFm 56,LVI
+123604,"Chiavenna, Tesoro della Collegiata di S. Lorenzo - Museo Capitolare, s.c.",I-CHV s.c.,s.c.
+123607,"Firenze (Florence), Arcivescovado - Biblioteca, s.c.",I-Far s.c.,s.c.
+123608,"Firenze (Florence), Biblioteca Medicea-Laurenziana, Conv. sopp. 560",I-Fl Conv. sopp. 560,Conv. sopp. 560
+123887,"Intra, Archivio Parrocchiale, ms 5",I-INp 5,ms 5
+123807,"Ivrea, Biblioteca capitolare, 60",I-IV 60,60
+123680,"Lucca, Biblioteca Capitolare Feliniana e Biblioteca Arcivescovile, 601",I-Lc 601,601
+671867,"Lucca, Biblioteca Arcivescovile, MS 5",I-Lcr 5,MS 5
+123625,"Montecassino, Monumento Nazionale di Montecassino - Biblioteca, 542",I-MC 542,542
+123945,"Modena, Biblioteca capitolare, O,I.16",I-MOd O.I.16,"O,I.16"
+123846,"Modena, Biblioteca capitolare, O. I. 7",I-MOd O.I.7,O. I. 7
+123626,"Monza, Biblioteca capitolare, 15/79",I-MZ 15/79,15/79
+123808,"Monza, Biblioteca capitolare, c. 13/76",I-MZ 76,c. 13/76
+123908,"Monza, Biblioteca capitolare, c. 14/77",I-MZ 77,c. 14/77
+124025,"Milano, Biblioteca nazionale Braidense, AE XIV 12",I-Mb AE XIV 12,AE XIV 12
+712326,"Naples, Biblioteca Nazionale Vittorio Emanuele III, VI.g.38",I-Nn VI.g.38,VI.g.38
+712790,"Naples, Biblioteca Nazionale Vittorio Emanuele III, XVI AA 39",I-Nn XVI AA 39,XVI AA 39
+123674,"Naples, Biblioteca Nazionale Vittorio Emanuele III, vi. E. 20",I-Nn vi.E.20,vi. E. 20
+123909,"Piacenza, Archivio e Biblioteca Capitolare della Cattedrale, 65",I-PCd 65,65
+123634,"Piacenza, Archivio e Biblioteca Capitolare della Cattedrale, cod. 65",I-PCd cod. 65,cod. 65
+123866,"Pistoia, Biblioteca capitolare, 121",I-PS 121,121
+123888,"Padova, Biblioteca Capitolare, A. 47",I-Pc 47,A. 47
+690764,"Padova, Biblioteca Capitolare, B16*",I-Pc B16*,B16*
+672573,"Padova, Biblioteca Capitolare, MS C.55",I-Pc C55,MS C.55
+123889,"Padova, Biblioteca del Seminario vescovile, 697",I-Ps 697,697
+123809,"Roma, Biblioteca Angelica, 123",I-Ra 123,123
+123857,"Roma, Biblioteca nazionale, 1343",I-Rn 1343,1343
+123755,"Rome, Santa Sabina - Archivum Generale Ordinis Praedicatorum, XIV L1 (""Humbert"" codex)",I-Rss XIV L1 (Antiphonale),"XIV L1 (""Humbert"" codex)"
+674599,"Rome, Santa Sabina - Archivum Generale Ordinis Praedicatorum, XIV L1",I-Rss XIV L1 (Graduale),XIV L1
+123635,"Roma, Biblioteca Vallicelliana, C.5",I-Rv C.5,C.5
+701804,"Schio, Biblioteca Civica, cod. 10 (E)",I-SCHc cod. 10 (E),cod. 10 (E)
+123871,"Torino, Biblioteca nazionale, F. IV. 18",I-Tn F. IV. 18,F. IV. 18
+123810,"Torino, Biblioteca nazionale, G. V. 20",I-Tn G. V. 20,G. V. 20
+674494,"Udine, Biblioteca del Seminario Arcivescovile, Codice 7",I-UDs Codice 7,Codice 7
+123890,"Vercelli, Biblioteca Capitolare, 146",I-VCd 146,146
+123848,"Vercelli, Biblioteca Capitolare, 161",I-VCd 161,161
+123872,"Vercelli, Biblioteca Capitolare, 162",I-VCd 162,162
+123766,"Vercelli, Biblioteca Capitolare, CLXX",I-VCd CLXX,CLXX
+123758,"Vercelli, Biblioteca Capitolare, LXII",I-VCd LXII,LXII
+123763,"Vercelli, Biblioteca Capitolare, LXIV",I-VCd LXIV,LXIV
+123762,"Vercelli, Biblioteca Capitolare, LXX",I-VCd LXX,LXX
+123765,"Vercelli, Biblioteca Capitolare, LXXIX",I-VCd LXXIX,LXXIX
+123764,"Vercelli, Biblioteca Capitolare, XXXVII",I-VCd XXXVII,XXXVII
+123851,"Verona, Biblioteca Capitolare, CVII [107]",I-VEcap 107,CVII [107]
+123775,"Verona, Biblioteca Capitolare, XC (85)",I-VEcap 90,XC (85)
+689850,"Venezia, Biblioteca della Fondazione Ugo e Olga Levi “Gianni Milner”, CF D 21",I-Vlevi CF D 21,CF D 21
+1000035,"Venezia, Biblioteca Nazionale Marciana, RARI VEN. 709",I-Vnm RARI VEN. 709,RARI VEN. 709
+1000037,"Venezia, Biblioteca Nazionale Marciana, Rari Ven. 710-713",I-Vnm Rari Ven. 710-713,Rari Ven. 710-713
+1000036,"Venezia, Biblioteca Nazionale Marciana, Rari Ven. 711",I-Vnm Rari Ven. 711,Rari Ven. 711
+1000104,Trinity College Dublin,IRL-Dt-78,78
+124060,"Dublin, Trinity College, ms 100",IRL-Dtc 100,ms 100
+124046,"Dublin, Trinity College, ms 81",IRL-Dtc 81,ms 81
+123724,Münster Antiphoner (1537),MA Impr. 1537,MA Impr. 1537
+124036,Nidaros Missale,N-N.miss.imp.1519,N-N.miss.imp.1519
+124031,"Amsterdam, Toonkunst-Bibliotheek, 206 A 11",NL-At 206 A 11,206 A 11
+124095,"Amsterdam, Universiteitsbibliotheek, I. A. 8",NL-Au I A 8,I. A. 8
+124094,"Amsterdam, Universiteitsbibliotheek, I. C. 17",NL-Au I C 17,I. C. 17
+123914,"Deventer, Athenaeum-Bibliotheek, 10 T 3",NL-D 10 T 3,10 T 3
+124047,"Deventer, Athenaeum-Bibliotheek, 11 L 2",NL-D 11 L 2,11 L 2
+124032,"Den Haag, Koninklije Bibliotheek, 128 D 29",NL-DHk 128 D 29,128 D 29
+123657,"Den Haag, Koninklije Bibliotheek, 70 E 4",NL-DHk 70 E 4,70 E 4
+124085,"Den Haag, Koninklije Bibliotheek, 71 A 21",NL-DHk 71 A 21,71 A 21
+124061,"Den Haag, Koninklije Bibliotheek, KB  71 A 4",NL-DHk 71 A 4,KB  71 A 4
+124068,"Den Haag, Koninklije Bibliotheek, 76 D 14",NL-DHk 76 D 14,76 D 14
+666893,"Den Haag, Koninklije Bibliotheek, 76 E 18",NL-DHk 76 E 18,76 E 18
+124048,"Den Haag, Koninklije Bibliotheek, 76 E 2",NL-DHk 76 E 2,76 E 2
+124084,"Den Haag, Koninklije Bibliotheek, 78 A 33",NL-DHk 78 A 33,78 A 33
+124062,"Haarlem, Bischopse Museum, BMH h 20",NL-Hbm BMH 20,BMH h 20
+124086,"Haarlem, Stadsbibliotheek, 184 C 1",NL-Hs 184 C 1,184 C 1
+124033,"Haarlem, Stadsbibliotheek, 184 C 2",NL-Hs 184 C 2,184 C 2
+123998,"Haarlem, Stadsbibliotheek, 184 C 7",NL-Hs 184 C 7,184 C 7
+124038,"Haarlem, Stadsbibliotheek, 187 C 17",NL-Hs 187 C 17,187 C 17
+124096,"Leiden, Universiteitsbibliotheek, BPL 2777",NL-Lu BPL 2777,BPL 2777
+124039,"Leiden, Universiteitsbibliotheek, BPL 2879",NL-Lu BPL 2879,BPL 2879
+124090,"’s-Hertogenbosch , Erfgoed 's-Hertogenbosch (Stadsarchief)- Archiefnummer 1117 (Oude werken Sint-Jan), 216-02",NL-SHae 216-02,216-02
+123920,"Utrecht, Rijksarchief - Rechterlijke archieven vóór1811, Nr. 166-41",NL-Ur 166-41,Nr. 166-41
+123971,"Utrecht, Catharijneconvent, ABM h 62",NL-Urc ABM 62,ABM h 62
+124100,"Utrecht, Catharijneconvent, BMH h. 149",NL-Urc BHM 149,BMH h. 149
+124087,"Utrecht, Catharijneconvent,  BMH h. 21",NL-Urc BMH 21,BMH h. 21
+124063,"Utrecht, Catharijneconvent, BMH h 8",NL-Urc BMH 8,BMH h 8
+124034,"Utrecht, Catharijneconvent, BMH Warm h 92 H 1",NL-Urc BMH Warm h 92 H 1,BMH Warm h 92 H 1
+124040,"Utrecht, Universiteitsbibliotheek, 402 (V. A. 13)",NL-Uu 402,402 (V. A. 13)
+124073,"Utrecht, Universiteitsbibliotheek, 403 (VIII. B. 2)",NL-Uu 403,403 (VIII. B. 2)
+124049,"Utrecht, Universiteitsbibliotheek, 405 (III. K. 3)",NL-Uu 405,405 (III. K. 3)
+124010,"Utrecht, Universiteitsbibliotheek, MS 406 (shelfmark 3 J 7)",NL-Uu 406 (3 J 7),MS 406 (shelfmark 3 J 7)
+123641,"Utrecht, Universiteitsbibliotheek, Ms. 406 (shelfmark 3 J 7)",NL-Uu 406 (3 J 7),Ms. 406 (shelfmark 3 J 7)
+124035,"Utrecht, Universiteitsbibliotheek, 407 (3 J 6)",NL-Uu 407,407 (3 J 6)
+124064,"Utrecht, Universiteitsbibliotheek, 413",NL-Uu 413,413
+124074,"Utrecht, Universiteitsbibliotheek, 415 (VI. A. 1)",NL-Uu 415,415 (VI. A. 1)
+123964,"Utrecht, Universiteitsbibliotheek, 417 (5. C. 19)",NL-Uu 417,417 (5. C. 19)
+124075,"Zutphen, Stadsarchief en Stedelijke Bibliotheek, 2",NL-ZUa 2,2
+123648,"Zutphen, Stadsarchief en Stedelijke Bibliotheek, 6",NL-ZUa 6,6
+599679,"Wellington (New Zealand), The Alexander Turnbull Library - Rare Books, MSR-03",NZ-Wt MSR-03,MSR-03
+123726,"Braga, Biblioteca Pública, 1",P-BRp 1,1
+123734,"Braga, Biblioteca Pública, ADB 949 (Braga Codex)",P-BRp 949,ADB 949 (Braga Codex)
+123732,"Braga, Arquivo da Sé, 18",P-BRs 18,18
+123728,"Braga, Arquivo da Sé, 23",P-BRs 23,23
+123752,"Braga, Arquivo da Sé, Antiphoner from the Cathedral of Braga, nº32",P-BRs Nº32,"Antiphoner from the Cathedral of Braga, nº32"
+123749,"Coimbra, Biblioteca Geral da Universidade, MM45",P-Cug MM45,MM45
+123729,"Lamego, Arquivo da Sé, 1084 4-b",P-LA 1084 4-b,1084 4-b
+123591,"Porto, Biblioteca Municipal, 1151",P-Pm 1151,1151
+123891,"Gniezno, Archiwum Archidiecezjalne, 149",PL-GNd 149,149
+123736,"Kielce, Biblioteka Kapituły Katedralnej, Ms. 1",PL-KIk 1,Ms. 1
+123686,"Kraków, Klastor OO. Karmelitów na Piasku (Carmelite Convent), Ms.1 (rkp. Perg. 12)",PL-Kkar 1 (Rkp 12),Ms.1 (rkp. Perg. 12)
+123708,"Kraków, Klastor OO. Karmelitów na Piasku (Carmelite Convent), Ms.2 (rkp. Perg. 14)",PL-Kkar 2 (Rkp 14),Ms.2 (rkp. Perg. 14)
+123709,"Kraków, Klastor OO. Karmelitów na Piasku (Carmelite Convent), Ms.3 (rkp. Perg. 15)",PL-Kkar 3 (Rkp 15),Ms.3 (rkp. Perg. 15)
+123710,"Kraków, Klastor OO. Karmelitów na Piasku (Carmelite Convent), Ms.4 (rkp. Perg. 20)",PL-Kkar 4 (Rkp 20),Ms.4 (rkp. Perg. 20)
+123711,"Kraków, Klastor OO. Karmelitów na Piasku (Carmelite Convent), Ms.5 (rkp. Perg. 13)",PL-Kkar 5 (Rkp 13),Ms.5 (rkp. Perg. 13)
+589069,"Wroclaw, Biblioteka Uniwersytecka, I F 401",PL-WRu I F 401,I F 401
+124050,"Wroclaw, Biblioteka Uniwersytecka, IV.Q.81",PL-WRu IV.Q.81,IV.Q.81
+123756,"Wroclaw, Biblioteka Uniwersytecka, Ms. R 503",PL-WRu R 503,Ms. R 503
+123712,"Wrocław, Zakład Narodowy im. Ossolińskich - Biblioteka, Rkp. 12025/IV",PL-WRzno 12025/IV,Rkp. 12025/IV
+1000069,"Umeå, University Library, Ink. 4",S-UMsdl Ink. 4,Ink. 4
+123618,"Ljubljana, Nadškofijski arhiv (Archiepiscopal Archives), 18 (olim 17)",SI-Lna 18 (olim 17),18 (olim 17)
+123659,"Ljubljana, Nadškofijski arhiv (Archiepiscopal Archives), 19 (olim 18)",SI-Lna 19 (olim 18),19 (olim 18)
+124103,"Bratislava, State Archive Bratislava, EC.Lad.3",SK-BRa BMI EC Lad.3 EL18,EC.Lad.3
+123742,"Bratislava, Archív hlavného mesta SR Bratislavy, EC Lad. 4, ba (Bratislava Antiphonary IIb)","SK-BRm EC Lad. 4, ba","EC Lad. 4, ba (Bratislava Antiphonary IIb)"
+1000040,"New Taipei City, Fu Jen University, Book 1, Test - Chinese Catholic Plainchant",T-NTCfj GO vol.1,"Book 1, Test - Chinese Catholic Plainchant"
+1000093,"Halifax, Cantus, Learning Volpiano Practice Source",TODO,Learning Volpiano Practice Source
+123706,"Istanbul, Topkapı Sarayı Müzesi, Deissmann 42",TR-Itks 42,Deissmann 42
+1000074,"Lucas City (Test Sources Land), Test Sources, Test",Test,Test
+1000000,"Annapolis  (Test Sources Land),  Test Sources, Test Source IV: Return of the Test Source",Test-Test IV,Test Source IV: Return of the Test Source
+710075,"Austin, Harry Ransom Center, HRC 145",US-AUS 145,HRC 145
+709973,"Austin, Harry Ransom Center, 21",US-AUS 21,21
+673035,"Austin, Harry Ransom Center, HRC 13",US-AUS HRC 13,HRC 13
+702358,"Baltimore, Walters Art Museum, W 759",US-BAw W 759,W 759
+702359,"Baltimore, Walters Art Museum, W 760",US-BAw W 760,W 760
+588733,"Bryn Mawr, Bryn Mawr College Special Collection, 50",US-BM 50,50
+699263,"Boston (Massachusetts USA), Private collections, D-0r3s1",US-BosMApc D-0r3s1,D:0r3s1
+656252,"Chestnut Hill (MA), Boston College University Libraries - John J. Burns Library, MS.1996.097",US-CHNbcbl MS.1996.097,MS.1996.097
+669030,"Chicago, Art Institute of Chicago - Mrs. William E. Kelley Collection, 1911.142b",US-Cai 1911.142b,1911.142b
+123953,"Chicago, The Newberry Library, case 181",US-Cn 181,case 181
+123671,"Chicago, The Newberry Library, 24",US-Cn 24,24
+124051,"Chicago, The Newberry Library, case 59.1",US-Cn 59.1,case 59.1
+711199,"Iowa City, University of Iowa Rita Benton Music Library Rare Book Room, M2149.6 1475",US-IO M2149.6 1475,M2149.6 1475
+712836,"Iowa City, University of Iowa Libraries Special Collections and Archives, MSC0542, xMMS.Po1","US-IOspca MSC0542, xMMS.Po1","MSC0542, xMMS.Po1"
+699262,"Kansas City (MO), University of Missouri-Kansas City - LaBudde Special Collections - Miller Nichols Library, M2147.C53 1500z",US-KClbsc M2147.C53 1500z,M2147.C53 1500z
+710152,"Kansas City (MO), University of Missouri-Kansas City - LaBudde Special Collections - Miller Nichols Library, M2149.2 .V4 1629",US-KClbsc M2149.2 .V4 1629,M2149.2 .V4 1629
+711438,"Kansas City (MO), University of Missouri-Kansas City - LaBudde Special Collections - Miller Nichols Library, MS 0285 Object 4",US-KClbsc MS 0285 Object 4,MS 0285 Object 4
+123921,"Los Angeles, J. Paul Getty Museum, Ms. 64",US-LAgmmd Ms.64,Ms. 64
+712288,"Milwaukee, Raynor Archive at Marquette University, BX1999.85.82 1562 Volume 1",US-Mu BX1999.85.82 1562 Volume 1,BX1999.85.82 1562 Volume 1
+712319,"Milwaukee, Raynor Archive at Marquette University, BX1999.85.82 1562 Volume 2",US-Mu BX1999.85.82 1562 Volume 2,BX1999.85.82 1562 Volume 2
+712320,"Milwaukee, Raynor Archive at Marquette University, BX1999.85.82 1562 Volume 3",US-Mu BX1999.85.82 1562 Volume 3,BX1999.85.82 1562 Volume 3
+1000039,"Milwaukee, Raynor Archive at Marquette University, BX1999.85.82 1562 Volume 4",US-Mu BX1999.85.82 1562 Volume 4,BX1999.85.82 1562 Volume 4
+1000044,"Milwaukee, Raynor Archive at Marquette University, BX1999.85.82 1562 Volume 9",US-Mu BX1999.85.82 1562 Volume 9,BX1999.85.82 1562 Volume 9
+123767,"Notre Dame, University of Notre Dame - Music Library, Lat. a. 12",US-NDu Lat. a. 12,Lat. a. 12
+123744,"Notre Dame, University of Notre Dame - Music Library, lat. b.4",US-NDu lat. b.4,lat. b.4
+604043,"New York City (NY), Columbia University - Rare Book and Manuscript Library, Plimpton MS 034",US-NYcub Plimpton MS 034,Plimpton MS 034
+589026,"New York City (NY), Columbia University - Rare Book and Manuscript Library, Plimpton MS 041",US-NYcub Plimpton MS 041,Plimpton MS 041
+706333,"New York City (NY), Columbia University - Rare Book and Manuscript Library, Western MS 097",US-NYcub Western MS 097,Western MS 097
+683940,"New York City (NY), Columbia University - Barnard College Library, MS 1",US-NYcubl MS 1,MS 1
+713017,"Princeton, Princeton University Library, Garrett MS. 169",US-PRu 169,Garrett MS. 169
+1000050,"Princeton, Princeton University Library, 67.4",US-PRu 67.4,67.4
+691366,"Princeton, Princeton University Library, Princeton MS. 245",US-PRu Princeton MS. 245,Princeton MS. 245
+693859,"Stanford, Stanford University - Green Library - Department of Special Collections, M2223, Item 42","US-STu M2223, Item 42","M2223, Item 42"
+1000019,"Stanford, Stanford University - Green Library - Department of Special Collections, MSS CODEX 0734 FF",US-STu MSS CODEX 0734 FF,MSS CODEX 0734 FF
+1000057,"Los Angeles (USA), Private Collection, D-0poon",US-pc(CA) D-0poon,D:0poon
+1000064,"McClean (USA), Private Collection, D-00jf0",US-pc(VA) D-00jf0,D:00jf0
+1000003,Unknown Source (Chants),Unknown Source (Chants),Unknown Source (Chants)
+1000004,Unknown Source (Sequences),Unknown Source (Sequences),Unknown Source (Sequences)
+123847,"Città del Vaticano, Biblioteca Apostolica Vaticana, Vat. lat. 5319",V-CVbav 5319,Vat. lat. 5319
+123661,"Città del Vaticano, Biblioteca Apostolica Vaticana, San Pietro B.79",V-CVbav B.79,San Pietro B.79
+123605,"Città del Vaticano, Biblioteca Apostolica Vaticana, Cappella Sistina 27",V-CVbav Capp.Sist. 27,Cappella Sistina 27
+123798,"Città del Vaticano, Biblioteca Apostolica Vaticana, Reg. lat. 1529",V-CVbav Reg1529,Reg. lat. 1529
+123828,"Città del Vaticano, Biblioteca Apostolica Vaticana, Reg. lat. 318",V-CVbav Reg318,Reg. lat. 318
+123676,"Città del Vaticano, Biblioteca Apostolica Vaticana, lat. 8737",V-CVbav Vat.lat. 8737,lat. 8737
+124091,"Cape Town, National Library of South Africa, Grey 4c7",ZA-Csa Grey 3c23,Grey 4c7
+1000118,,,F-Pa 944
+1000116,,,F-R 249 (olim A. 280)
+1000114,,,GB-Cu Additional 710
+1000115,,,GB-Ob Rawl. C. 892
+1000112,,,GB-Ob Rawl. liturg. d. 4
+1000111,,,IRL-Dm Z.4.2.20
+1000113,,,IRL-Dtc 109
+1000109,,,IRL-Dtc 77
+1000110,,,IRL-Dtc 79
+1000108,,,IRL-Dtc 80
+1000107,,,VI G 10a
+1000126,,,VII G 16
