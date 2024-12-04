@@ -4,7 +4,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id AS chant_id, c.title, c.incipit, g.name AS genre_name, s.siglum AS source_siglum, i.siglum AS institution_siglum FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE g.name = 'A' AND (c.incipit ILIKE '%alle%' OR c.title ILIKE '%alle%' OR c.manuscript_full_text ILIKE '%alle%') ORDER BY i.siglum;",
-                "predicted_output_path": "predicted_outputs/chants/c1_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c1.csv"
             }
         },
         "gold_output_path": "gold_outputs/chants/c1.csv",
@@ -17,7 +17,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id AS chant_id, c.title, c.incipit, g.name AS genre_name, s.siglum AS source_siglum, i.siglum AS institution_siglum FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE LOWER(c.incipit) LIKE 'domine%' OR LOWER(c.title) LIKE 'domine%' ORDER BY c.id;",
-                "predicted_output_path": "predicted_outputs/chants/c2_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c2.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c2.csv",
@@ -30,7 +30,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id AS chant_id, c.title, c.incipit, g.name AS genre_name, s.siglum AS source_siglum, i.siglum AS institution_siglum FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE LOWER(c.incipit) LIKE 'domine%' OR LOWER(c.title) LIKE 'domine%' ORDER BY c.id;",
-                "predicted_output_path": "predicted_outputs/chants/c3_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c3.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c3.csv",
@@ -43,7 +43,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id AS chant_id, c.title, c.incipit, g.name AS genre_name, s.siglum AS source_siglum, i.siglum AS institution_siglum FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE LOWER(c.incipit) LIKE 'domine%' OR LOWER(c.title) LIKE 'domine%' ORDER BY c.id;",
-                "predicted_output_path": "predicted_outputs/chants/c4_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c4.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c4.csv",
@@ -56,7 +56,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id AS chant_id, c.title, c.incipit, f.name AS feast_name, c.cantus_id FROM main_app_chant c JOIN main_app_feast f ON c.feast_id = f.id WHERE f.name LIKE '%Dominici%' AND c.cantus_id = '909000';",
-                "predicted_output_path": "predicted_outputs/chants/c5_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c5.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c5.csv",
@@ -69,7 +69,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id AS chant_id, c.title, c.incipit, c.mode, c.position, c.volpiano, g.name AS genre_name FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id WHERE g.name = 'A' AND c.mode = '4' AND c.position = '12' AND c.volpiano IS NOT NULL AND c.volpiano != '';",
-                "predicted_output_path": "predicted_outputs/chants/c6_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c6.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c6.csv",
@@ -82,7 +82,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id AS chant_id, c.title, c.incipit, s.name AS service_name, c.mode, f.name AS feast_name FROM main_app_chant c JOIN main_app_service s ON c.service_id = s.id JOIN main_app_feast f ON c.feast_id = f.id WHERE s.name = 'M' AND c.mode = '?' AND f.name LIKE '%pro%';",
-                "predicted_output_path": "predicted_outputs/chants/c7_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c7.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c7.csv",
@@ -95,7 +95,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id, c.title, s.siglum as source_siglum, i.siglum as institution_siglum, c.manuscript_full_text FROM main_app_chant c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE c.manuscript_full_text ILIKE '%benedicte dominio%' UNION SELECT seq.id, seq.title, s.siglum as source_siglum, i.siglum as institution_siglum, seq.manuscript_full_text FROM main_app_sequence seq JOIN main_app_source s ON seq.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE seq.manuscript_full_text ILIKE '%benedicte dominio%' ORDER BY institution_siglum ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs/chants/c8_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c8.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c8.csv",
@@ -108,7 +108,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id, c.title, g.name as genre_name, c.manuscript_full_text FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id WHERE c.manuscript_full_text ILIKE '%lucas%' UNION SELECT seq.id, seq.title, g.name as genre_name, seq.manuscript_full_text FROM main_app_sequence seq JOIN main_app_genre g ON seq.genre_id = g.id WHERE seq.manuscript_full_text ILIKE '%lucas%' ORDER BY genre_name DESC, id ASC;",
-                "predicted_output_path": "predicted_outputs/chants/c9_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c9.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c9.csv",
@@ -121,7 +121,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT c.id, c.title, c.mode, s.name as service_name, c.manuscript_full_text FROM main_app_chant c JOIN main_app_service s ON c.service_id = s.id WHERE c.manuscript_full_text ILIKE 'Beata%' AND s.name = 'V2' UNION SELECT seq.id, seq.title, seq.mode, s.name as service_name, seq.manuscript_full_text FROM main_app_sequence seq JOIN main_app_service s ON seq.service_id = s.id WHERE seq.manuscript_full_text ILIKE 'Beata%' AND s.name = 'V2' ORDER BY mode ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs/chants/c10_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c10.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c10.csv",
@@ -134,7 +134,7 @@
         "predicted_sql_query": {
             "claude": {
                 "sql_query": "SELECT * FROM (SELECT * FROM main_app_chant WHERE (incipit LIKE 'Alleluia%' OR manuscript_full_text LIKE 'Alleluia%') AND service_id = (SELECT id FROM main_app_service WHERE name = 'L') AND cantus_id = '001331' UNION SELECT * FROM main_app_sequence WHERE (incipit LIKE 'Alleluia%' OR manuscript_full_text LIKE 'Alleluia%') AND service_id = (SELECT id FROM main_app_service WHERE name = 'L') AND cantus_id = '001331') AS combined_results ORDER BY manuscript_full_text DESC, id ASC;",
-                "predicted_output_path": "predicted_outputs/chants/c11_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/c11.csv"
             }
         }, 
         "gold_output_path": "gold_outputs/chants/c11.csv",
