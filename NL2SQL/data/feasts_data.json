@@ -1,11 +1,11 @@
 [
     {
         "natural_language_inputs": [
-            "All the feasts"
+            "Given this database schema, generate a SQL query to show all the feasts"
         ],
         "predicted_sql_query": {
             "grok": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM public.main_app_feast;",
                 "predicted_output_path": "predicted_outputs/feasts/f1_grok.csv"
             }
         },
@@ -14,7 +14,7 @@
     },
     {
         "natural_language_inputs": [
-            "All temporale feasts"
+            "Given this database schema, generate a SQL query to show all temporale feasts"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -27,7 +27,7 @@
     },
     {
         "natural_language_inputs": [
-            "All temporale feasts for December"
+            "Given this database schema, generate a SQL query to show all temporale feasts for December"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -40,7 +40,7 @@
     },
     {
         "natural_language_inputs": [
-            "All sanctorale feasts for December"
+            "Given this database schema, generate a SQL query to show all sanctorale feasts for December"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -53,7 +53,7 @@
     },
     {
         "natural_language_inputs": [
-            "All feasts that have contain the word 'Thomas' in the name or description"
+            "Given this database schema, generate a SQL query to show all feasts that have contain the word 'Thomas' in the name or description"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -66,7 +66,7 @@
     },
     {
         "natural_language_inputs": [
-            "All sanctorale feasts for March that have the letters 'aq' in either the name or description"
+            "Given this database schema, generate a SQL query to show all sanctorale feasts for March that have the letters 'aq' in either the name or description"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -79,7 +79,7 @@
     },
     {
         "natural_language_inputs": [
-            "All feasts sorted by feast code"
+            "Given this database schema, generate a SQL query to show all feasts sorted by feast code"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -92,7 +92,7 @@
     },
     {
         "natural_language_inputs": [
-            "All feasts that contain the letter L in the feast name or description"
+            "Given this database schema, generate a SQL query to show all feasts that contain the letter L in the feast name or description"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -105,7 +105,7 @@
     },
     {
         "natural_language_inputs": [
-            "All feasts that contain the phrase 'Ad aspersionem' in the name or description"
+            "Given this database schema, generate a SQL query to show all feasts that contain the phrase 'Ad aspersionem' in the name or description"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -118,7 +118,7 @@
     },
     {
         "natural_language_inputs": [
-            "All temporale feasts that contain 'ii' in either name or description"
+            "Given this database schema, generate a SQL query to show all temporale feasts that contain 'ii' in either name or description"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -131,7 +131,7 @@
     },
     {
         "natural_language_inputs": [
-            "All May feasts"
+            "Given this database schema, generate a SQL query to show all May feasts"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -144,7 +144,7 @@
     },
     {
         "natural_language_inputs": [
-            "All feasts that have '01' in the feast code, name, or description ordered by feast code"
+            "Given this database schema, generate a SQL query to show all feasts that have '01' in the feast code, name, or description ordered by feast code"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -157,7 +157,7 @@
     },
     {
         "natural_language_inputs": [
-            "All feasts with a comma in the name or description"
+            "Given this database schema, generate a SQL query to show all feasts with a comma in the name or description"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -170,7 +170,7 @@
     },
     {
         "natural_language_inputs": [
-            "All feasts with an 8 in either the name, description, or feast code sorted by feast code"
+            "Given this database schema, generate a SQL query to show all feasts with an 8 in either the name, description, or feast code sorted by feast code"
         ],
         "predicted_sql_query": {
             "grok": {
@@ -183,7 +183,7 @@
     },
     {
         "natural_language_inputs": [
-            "All sanctorale feasts that have the word 'Easter' in either name or description"
+            "Given this database schema, generate a SQL query to show all sanctorale feasts that have the word 'Easter' in either name or description"
         ],
         "predicted_sql_query": {
             "grok": {
