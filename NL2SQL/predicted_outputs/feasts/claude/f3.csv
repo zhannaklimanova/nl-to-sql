@@ -1,0 +1,11 @@
+id,name,month,day,feast_code,description
+2729,Die 5 a. Nat. Domini,12,21,02122100,The fifth day before Christmas
+2728,Die 3 a. Nat. Domini,12,23,02122300,The third day before Christmas
+2768,Vigilia Nat. Domini,12,24,02122400,Christmas Eve
+2745,Nativitas Domini,12,25,02122500,Christmas Day
+2757,Stephani,12,26,02122600,Stephen the First Martyr
+2740,Joannis Evang.,12,27,02122700,John the Evangelist
+2744,Nat. Innocentium,12,28,02122800,Holy Innocents
+2730,Die 5 p. Nat. Domini,12,29,02122900,4th day after Christmas
+2731,Die 6 p. Nat. Domini,12,30,02123000,5th day after Christmas
+2732,Die 7 p. Nat. Domini,12,31,02123100,6th day after Christmas
