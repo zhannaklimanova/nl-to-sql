@@ -178,7 +178,7 @@
             },
             "claude": {
                 "sql_query": "SELECT * FROM (SELECT * FROM main_app_chant WHERE (incipit LIKE 'Alleluia%' OR manuscript_full_text LIKE 'Alleluia%') AND service_id = (SELECT id FROM main_app_service WHERE name = 'L') AND cantus_id = '001331' UNION SELECT * FROM main_app_sequence WHERE (incipit LIKE 'Alleluia%' OR manuscript_full_text LIKE 'Alleluia%') AND service_id = (SELECT id FROM main_app_service WHERE name = 'L') AND cantus_id = '001331') AS combined_results ORDER BY manuscript_full_text DESC, id ASC;",
-                "predicted_output_path": "predicted_outputs/chants/c11.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c11.csv"
             }
         },
         "gold_output_path": "gold_outputs/chants/c11.csv",
@@ -195,7 +195,7 @@
             },
             "claude": {
                 "sql_query": "SELECT * FROM (SELECT * FROM main_app_chant WHERE manuscript_full_text LIKE '%custodit%' OR manuscript_syllabized_full_text LIKE '%custodit%' OR manuscript_full_text_std_spelling LIKE '%custodit%' UNION SELECT * FROM main_app_sequence WHERE manuscript_full_text LIKE '%custodit%' OR manuscript_syllabized_full_text LIKE '%custodit%' OR manuscript_full_text_std_spelling LIKE '%custodit%') AS combined_results ORDER BY siglum ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs/chants/c12_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c12.csv"
             }
         },
         "gold_output_path": "gold_outputs/chants/c12.csv",
@@ -212,7 +212,7 @@
             },
             "claude": {
                 "sql_query": "SELECT * FROM (SELECT * FROM main_app_chant WHERE genre_id = (SELECT id FROM main_app_genre WHERE name = '[?]') UNION SELECT * FROM main_app_sequence WHERE genre_id = (SELECT id FROM main_app_genre WHERE name = '[?]')) AS combined_results ORDER BY image_link DESC, id ASC;",
-                "predicted_output_path": "predicted_outputs/chants/c13_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c13.csv"
             }
         },
         "gold_output_path": "gold_outputs/chants/c13.csv",
@@ -229,7 +229,7 @@
             },
             "claude": {
                 "sql_query": "SELECT * FROM (SELECT * FROM main_app_chant WHERE manuscript_full_text LIKE '%Gaude mater luminis%' OR manuscript_syllabized_full_text LIKE '%Gaude mater luminis%' OR manuscript_full_text_std_spelling LIKE '%Gaude mater luminis%' OR incipit LIKE '%Gaude mater luminis%' UNION SELECT * FROM main_app_sequence WHERE manuscript_full_text LIKE '%Gaude mater luminis%' OR manuscript_syllabized_full_text LIKE '%Gaude mater luminis%' OR manuscript_full_text_std_spelling LIKE '%Gaude mater luminis%' OR incipit LIKE '%Gaude mater luminis%') AS combined_results ORDER BY siglum ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs/chants/c14_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c14.csv"
             }
         },
         "gold_output_path": "gold_outputs/chants/c14.csv",
@@ -246,7 +246,7 @@
             },
             "claude": {
                 "sql_query": "SELECT * FROM (SELECT * FROM main_app_chant WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007' UNION SELECT * FROM main_app_sequence WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007') AS combined_results ORDER BY siglum ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs/chants/c15_claude.csv"
+                "predicted_output_path": "predicted_outputs/chants/claude/c15.csv"
             }
         },
         "gold_output_path": "gold_outputs/chants/c15.csv",
