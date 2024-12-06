@@ -245,6 +245,10 @@
             "grok": {
                 "sql_query": "",
                 "predicted_output_path": "predicted_outputs/feasts/f15_grok.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT * FROM main_app_feast WHERE (name LIKE '%Easter%' OR description LIKE '%Easter%') AND prefix IN ('12', '13', '14', '15');",
+                "predicted_output_path": "predicted_outputs/feasts/claude/f15.csv"
             }
         },
         "gold_output_path": "gold_outputs/feasts/f15.csv",
