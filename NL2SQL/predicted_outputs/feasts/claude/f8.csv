@@ -1,0 +1,881 @@
+id,name,month,day,feast_code,description
+1471,Ad Benedicite,,,16001000,Antiphons for the Benedicite canticle
+1472,Ad Benedictus,,,16002000,Antiphons for the Benedictus canticle
+1473,Ad Completorium,,,16006000,For Compline
+1474,Ad Magnificat,,,16003000,Antiphons for the Magnificat canticle
+1477,Ad Nunc Dimittis,,,16005000,Antiphons for the Nunc Dimittis canticle
+2104,Ad Nunc Dimittis TP,,,16005080,"Antiphons for the Nunc Dimittis canticle, Eastertide"
+1479,Ad Suffragium,,,15000000,Memorial chants
+1470,Ad aquam benedictio,,,16010000,Chants for the blessing of water
+2797,Ad aspersionem aquae benedictae,,,16023000,For the sprinkling of Holy Water
+2798,Ad aspersionem aquae benedictae TP,,,16023080,For the sprinkling of Holy Water in Eastertide
+2800,Ad lavandum altaria,,,16024000,Chants for the washing of the altar
+2228,Adalberti,4,23,14042310,"Adalbert of Prague, Bishop and Martyr"
+2092,"Adalberti,8",,,14042318,In week after Adalbert
+4552,Adalhardi Corbeiensis,1,2,14010220,"Adalard (Adalhard) of Corbie, Abbot"
+2722,Adalheidae,12,16,14121600,"Adelaide, Empress"
+1481,Additamenta,,,17001000,"Added or Miscellaneous Items
+
+To be used when the feast designation is unknown/unknowable because it was not provided by the scribe(s)."
+2582,Adventus Ewaldorum,10,29,14102910,Arrival of the Ewald brothers' relics (heads) in Muenster
+2434,Adventus Walburgae,8,4,14080410,The Departure of Walburga from England (to found a religious house in Bischofsheim)
+2517,Aegidii,9,1,14090100,"Aegidius (Giles), Abbot"
+4263,Aemiliani Cucullati,,,14111220,"Aemilianus Cucullatus, Confessor, Relics in San Millan de la Cogolla"
+4264,Agnetis Assisiensis,,,14111610,"Agnes of Assisi, younger sister to Clare"
+4612,Agnetis secundo,1,28,14012840,"The memory of Agnes (""a remnant of an ancient octave,"" Holweck, p. 33)"
+2312,"Albani, Mart.",6,21,14062100,"Albanus (Alban) of Mainz, Martyr"
+2437,Alberti,8,7,14080720,"Albert of Trapani, Confessor and Carmelite Friar"
+2801,Alberti Magni,11,15,14111550,"Albert the Great (Albertus Magnus), Bishop of Regensburg and ""Doctor Universalis"""
+2210,"Albini, Epi.",3,1,14030100,"Albinus (Aubin), Bishop of Angers"
+2117,Aldegundis,1,30,14013000,"Aldegundis, Virgin"
+2257,Alexandri et sociorum,5,3,14050310,"Alexander and Eventius, Martyrs"
+2361,Alexis,7,17,14071700,"Alexis, the Man of God"
+4170,Aloisii Gonzagae,6,21,14062120,"Aloysius (Luigi) Gonzaga, Confessor, Patron of youthful Catholic students"
+4617,Alphegi,4,19,14041920,"Alphege (Aelfeah, Elphege, Aelfeach),Archbishop of Canterbury (1006-1012)"
+4171,Alphonsi Mariae de Ligorio,8,2,14080210,"Alphonsus Maria de Liguori, Bishop, Confessor, Doctor of the Church"
+2229,Ambrosii,4,4,14040400,"Ambrose, Bishop of Milan, Doctor"
+2661,Andreae,11,30,14113000,"Andrew, Apostle"
+4172,Andreae Avellini,11,10,14111010,"Andrew, Avellino (Lancelotto), Confessor"
+2185,Andreae Corsini,2,4,14020400,"Andrew Corsini, Carmelite ""apostle of Florence"""
+4173,Angelae Mericiae,5,31,14053120,"Angela Merici, Virgin, Foundress of the Ursuline Order of Nuns"
+2584,Angeli Custodis,10,2,14100220,For Guardian Angels
+2662,Aniani,11,17,14111710,"Anianus (Aignan), Bishop of Orleans"
+2211,Annuntiatio Mariae,3,25,14032500,Annunciation of Mary (Lady Day)
+4174,Anselmi,4,21,14042100,"Anselm, Bishop, Confessor, Doctor of the Church"
+4175,Antonii Mariae Claret,10,23,14102330,"Antonio Maria Claret y Clara, Bishop, Confessor, Spanish Prelate and Missionary"
+4176,Antonii Mariae Zaccaria,7,5,14070500,"Antonio Maria Zaccaria, Confessor, Founder of the Clerks Regular of St. Paul (Barnabites)"
+4177,Antonini Episcopi,5,10,14051010,"Antoninus, Archbishop of Florence"
+2363,Apollinaris,7,23,14072320,"Apollinaris, Bishop of Ravenna"
+4178,Apolloniae,2,9,14020900,"Apollonia, Virgin Martyr"
+2259,Appar. Michaelis,5,8,14050800,Appearing of Michael the Archangel
+2120,"Aquilae, Priscae",1,18,14011810,"Aquila and Prisca, Virgin Martyrs"
+2438,Arnulfi,8,16,14081600,"Arnulf, Bishop of Metz"
+2364,Arnulfi Metensis,7,18,14071810,"Arnulfus (Arnoul), Bishop of Metz"
+4206,"Ascensionis Domini, in vigilia",,,08064001,Eve of Ascension
+2260,Athanasii,5,2,14050200,"Athanasius, Archbishop of Alexandria"
+4611,Attalae,12,3,14120310,"Attala (Atala, Attalia, Attale) of Strasbourg, first abbess of convent of St Stephen"
+4614,Aureliae Argentoratensis,10,15,14101510,"Aurelia, Virgin (4th century)"
+4265,Austremonii,,,14110160,"Austremonius (Stremoine), Bishop, Martyr, Apostle of Auvergne"
+4489,Aviti,6,17,14061720,"Avitus, Abbot and Confessor, born at Aurillac"
+4183,BMV Immaculatae a Sacro Numismate,11,27,14112700,Our Lady of the Miraculous Medal
+4179,BMV a Rosario,10,7,14100730,Our Lady of the Rosary
+4267,BMV ab Exilio,,,15031050,Our Lady of Exile (on the third Sunday after Epiphany)
+4180,BMV de Bono Consilio,4,26,14042600,Our Lady of Good Counsel
+4181,BMV de Guadalupe,12,12,14121210,Our Lady of Guadalupe
+4268,BMV de Monte Carmelo,,,14071610,Our Lady of Mount Carmel
+4182,BMV de Perpetuo Succursu,6,27,14062730,Our Lady of Perpetual Help
+2314,Baboleni,6,26,14062610,"Babolenus, Abbot"
+4601,Babylae,1,24,14012420,"Babylas, Martyr, 12th Bishop of Antioch"
+4602,Babylae Pampilonensis,10,30,14103020,"Babylas, Bishop of Pamplona"
+2442,Balbinae,8,28,14082850,"Balbina, Virgin Martyr"
+2121,Balthildis,1,30,14013010,"Balthildis (Bathildis), Queen"
+2315,Barnabae,6,11,14061100,"Barnabas, Apostle"
+2443,Bartholomaei,8,24,14082400,"Bartholomew, Apostle"
+4566,"Basilicae BMV de Martyribus Ulyssipponensis, in dedicatione",5,13,14051320,"Dedication of the Basilica of Our Lady of the Martyrs, Lisbon"
+2316,Basilidis et Soc.,6,12,14061200,"Basilides and Companions, Martyrs"
+2122,Basilii,1,2,14010200,"Basil of Ancyra, Martyr"
+2317,"Basilii, Doct.",6,14,14061400,"Basil the Great, Doctor"
+4608,Bavonis,10,1,14100140,"Bavo (Aldowin, Allowin) of Ghent"
+2262,Bedae,5,26,14052600,"The Venerable Bede, Doctor"
+4445,Benedictio crucis,,,16048000,Chants for the blessing of the cross
+4266,Bernardini Senensis,,,14052010,"Bernardinus degl' Albizzeschi of Siena, Confessor"
+4534,"Bernardini Senensis, transl.",5,17,14051710,Moving of relics of Bernardinus degl' Albizzeschi of Siena
+4555,Bernwardi Episcopi Hildesheimensis,11,20,14112020,"Bernward, Bishop of Hildesheim"
+2188,Blasii,2,3,14020300,"Blaise, Bishop of Sebastea, Martyr"
+1496,"Blasii,8",,,14020308,In week after Blaise
+4269,Bononii,,,14083010,"Bononius, Abbot, Disciple of Romuald"
+4270,Botulphi,,,14061710,"Botulph, Abbot, founder of Ikanhoe monastery"
+2665,Caeciliae,11,22,14112200,"Cecilia (Cecily), Virgin Martyr"
+1497,"Caeciliae,8",,,14112208,In week after Cecilia
+4537,Caesarii Arelatensis,8,27,14082700,"Caesarius, Archbishop of Arles"
+2666,"Caesarii, Juliani",11,1,14110130,"Caesarius and Julian, Martyrs"
+2588,Callisti,10,14,14101400,"Callistus (Calixtus) I, Pope"
+4551,Camilli de Lellis,7,18,14071820,"Camillus de Lellis, Confessor, Founder of the Canons Regular of a Good Death (Infirmis Ministrantium)"
+4272,Candidi,,,14120110,"Candidus, Martyr, at Innichen, diocese of Brixen, Tyrol"
+2263,Cantiorum,5,31,14053100,"Cantius, Cantianus and Cantianilla, Martyrs"
+4273,"Caprasii, Abb.",,,14060110,"Caprasius, Abbot of Lerins"
+4275,Castuli,,,14032610,"Castulus, Martyr"
+2667,Catharinae,11,25,14112500,"Catherine of Alexandria, Martyr"
+4276,Catharinae Bononiensis,,,14030920,"Catharine of Bologna, Poor Clare and mystical writer (canonized 1712)"
+4588,Celsi Treverensis,1,4,14010400,"Celsus, Confessor, reputed 5th Bishop of Trier (Treves)"
+4589,"Celsi Treverensis, invent.",2,23,14022320,Finding of Celsus of Trier's relics (in 980)
+2123,"Celsi, Juliani",1,9,14010900,"Celsus and Julian, Martyrs"
+2521,Chlodoaldi,9,7,14090720,"Chlodoaldus (Cloud), Frankish prince"
+4526,Chlotildis Regina,6,3,14060310,"Chlothildis (Clotilda, Clotilde), Queen of France"
+2445,Clarae,8,12,14081200,"Clare of Assisi, Foundress"
+4322,"Clarae, inventio",9,23,14092310,The finding of Clare's relics
+4490,"Claudii commentariensis, Symphoriani, Nicostrati et sociorum",7,7,14070740,"Claudius, his sons Felicissimus and Symphorianus, his brother Victorinus, and Castor the brother of the jailer Nicostratus, Roman Martyrs"
+2670,Clementis,11,23,14112300,"Clement I, Pope and Martyr"
+4463,Clementis Metensis,11,23,14112340,"Clement, first Bishop of Metz"
+1498,"Clementis,8",,,14112308,In week after Clement
+2522,Cleophae,9,25,14092510,"Cleophas, father of James the Less"
+2589,Colomanni,10,13,14101320,"Coloman, Martyr"
+2725,Columbae,12,31,14123110,"Columba of Sens, Virgin Martyr"
+2671,Columbani,11,23,14112330,"Columbanus (Columban), Abbot"
+1500,Comm. Apostolorum,,,12001000,Common of Apostles
+1501,Comm. Apostolorum TP,,,12801000,"Common of Apostles, Eastertide"
+1502,Comm. Apostolorum TQ,,,12701000,"Common of Apostles, Lent"
+2109,Comm. Apostolorum et Evangelistarum,,,12019000,Common of Apostles and Evangelists
+1499,Comm. Apostolorum post Septuagesima,,,12601000,"Common of Apostles, after Septuagesima"
+1488,Comm. Apostolorum sive Martyrum TP,,,12801100,"Common of Apostles or Martyrs, Eastertide"
+1503,"Comm. Apostolorum,8",,,12001008,"Common of Apostles, in week of"
+1506,Comm. Conjungium,,,12012000,Common of Holy Matrons
+1505,Comm. Conjungium Martyrum,,,12012200,Common of Holy Matron Martyrs
+1504,Comm. Conjungium non Martyrum,,,12012100,Common of Holy Matrons (not Martyrs)
+1508,Comm. Evangelistarum,,,12011000,Common of Evangelists
+2093,Comm. Evangelistarum TP,,,12811000,"Common of Evangelists, Eastertide"
+1507,Comm. duorum Apostolorum,,,12001200,Common of two Apostles
+4278,Comm. plurimorum Apostolorum in vigilia,,,12001010,Eve of Apostles
+1512,Comm. plurimorum Confessorum,,,12005000,Common of several Confessors
+1511,Comm. plurimorum Confessorum Pontificum,,,12005100,Common of several Confessors (Popes)
+1509,Comm. plurimorum Confessorum TP,,,12805000,"Common of several Confessors, Eastertide"
+1510,Comm. plurimorum Confessorum et Doctorum,,,12005300,Common of several Confessors (Doctors)
+1535,Comm. plurimorum Confessorum non Pontificum,,,12005200,Common of several Confessors (not Popes)
+1534,Comm. plurimorum Confessorum non Pontificum TP,,,12805200,"Common of several Confessors (not Popes), Eastertide"
+1513,Comm. plurimorum Martyrum,,,12003000,Common of several Martyrs
+1514,Comm. plurimorum Martyrum TP,,,12803000,"Common of several Martyrs, Eastertide"
+4467,Comm. plurimorum Martyrum in vigilia,,,12003010,Eve of several Martyrs
+4466,Comm. plurimorum Martyrum in vigilia,,,12003010,Eve of several Martyrs
+4465,Comm. plurimorum Martyrum in vigilia,,,12003010,Eve of several Martyrs
+4279,Comm. plurimorum Martyrum non Virginum,,,12003100,Common of several Martyrs (not Virgins)
+1515,"Comm. plurimorum Martyrum,8",,,12003008,"Common of several Martyrs, in week of"
+1531,Comm. plurimorum Virginum,,,12006000,Common of several Virgins
+1530,Comm. plurimorum Virginum Martyrum,,,12006100,Common of several Virgin Martyrs
+1532,Comm. plurimorum Virginum TP,,,12806000,"Common of several Virgins, Eastertide"
+4280,Comm. plurimorum Virginum in vigilia,,,12006010,Eve of several Virgins
+4472,Comm. plurimorum Virginum non Martyrum,,,12006200,Common of several Virgins (not Martyrs)
+1523,Comm. unius Apostoli,,,12001100,Common of one Apostle
+4281,Comm. unius Apostoli in vigilia,,,12001110,Eve of one Apostle
+4283,Comm. unius Martyris in vigilia,,,12002010,Eve of one Martyr
+4282,Comm. unius electae,,,12022000,"Common of those chosen (not Virgins, not Martyrs)"
+1544,Commem. Dom. Res.,,,09991000,Commemoration of Easter (last Sunday before Advent)
+4285,Commem. Francisci,,,14041600,The commemoration of Francis of Assisi; anniversary of religious profession;&nbsp; anniversary of Papal approval for the first Franciscan Rule
+1545,Commendat. Animae,,,13002000,Chants for the commendation of souls
+1549,Compassio Mariae TP,,,08046010,"The Sorrows of Mary, celebrated Friday after third Sun. after Easter"
+2726,Conceptio Mariae,12,8,14120800,Immaculate Conception of Mary
+2124,Conversio Pauli,1,25,14012500,Conversion of Paul
+2525,"Cornelii, Cypriani",9,16,14091600,"Cornelius and Cyprian, Martyrs"
+1551,Corporis Christi,,,09015000,"Corpus Christi (also ""Blessed Sacrament"")"
+2673,Cuniberti,11,12,14111210,"Cunibertus (Quinibert), Bishop of Cologne"
+2215,Cuthberti,3,20,14032000,"Cuthbert, Bishop of Lindisfarne"
+2320,Cyrici,6,16,14061600,"Cyricus and Julitta, Martyrs"
+4185,Cyrilli Alexandrini,1,28,14012820,"Cyril (Cyrillus), Confessor, Patriarch of Alexandria and Doctor of the Church"
+2216,David,3,1,14030110,"David of Wales, Monk and Bishop"
+1554,De Angelis,,,12013000,"Memorial chants for Angels, including e.g. Missa Votiva de Angelis. Feria III."
+1555,De Angelis TP,,,12813000,"Memorial chants for Angels, Eastertide"
+2674,De Imagine Domini,11,9,14110900,The Icon of our Lord Saviour
+4186,De Patriarchis,,,12020000,"Memorial chants for Patriarchs (Abraham, Isaac, Jacob)"
+1569,De Patronis,,,12014000,Memorial chants for Patrons
+1570,De Plur. Sanctis TP,,,12815100,"Common of several Saints, Eastertide"
+4287,De Sancta Cruce,,,15011000,"Votive Mass/Office for the Holy Cross, including e.g. Missa Votiva de Sancta Cruce. Fer. VI."
+1573,De Sancta Lancea,,,08026010,The Holy Lance; on the Friday after the Octave of Easter
+1574,De Sanctis,,,12015000,Memorial chants for Saints
+4288,De Spiritu Sancto,,,15002000,"Votive Mass/Office for the Holy Spirit, including, e.g. Missa Votiva de Spiritu Sancto. Feria V."
+4187,De Viduarum,,,12021000,Memorial chants for widows
+4506,De allatione reliquiarum in ecclesia Pragensis,1,2,14010210,"Showing of relics in St Vitus's Cathedral, Prague"
+4616,De corona domini,5,4,14050430,Crown of the Lord
+1881,De festis duplicibus,,,16016000,Chants for feasts of duplex rank
+1882,De festis duplicibus majoribus,,,16016002,Chants for feasts of duplex major rank
+1879,De festis duplicibus majoribus TP,,,16016082,Chants for feasts of duplex major rank in Eastertide
+1883,De festis duplicibus minoribus,,,16016001,Chants for feasts of duplex minor rank
+1880,De festis duplicibus minoribus TP,,,16016081,Chants for feasts of duplex minor rank in Eastertide
+1885,De festis semiduplicibus,,,16015000,Chants for feasts of semiduplex rank
+1884,De festis semiduplicibus TP,,,16015080,Chants for feasts of semiduplex rank in Eastertide
+2863,De festis simplicibus,,,16039000,Chants for feasts of simple rank
+4550,De festis sollemnibus,,,16051000,Chants for solemn feasts
+4442,De quinque vulneribus Christi,,,09026000,The Five Wounds of Christ (celebrated on the Friday after the octave of Corpus Christi in Mainz and on a variety of other days in different locations)
+4508,De secunda allatione reliquiarum in ecclesia Pragensis,1,8,14010820,"A second showing of relics in St Vitus's Cathedral, Prague"
+4586,De victoriae christianorum apud Salado,10,30,14103010,"Commemoration of the victory of the Christians at the Battle of Rio Salado (also known as the Battle of Tarifa), 30 October 1340"
+4290,Decem Millium Martyrum,,,14062240,Ten Thousand Martyrs (crucified on Mount Ararat)
+2369,Decoll. Antonini,7,4,14070410,Beheading of Antoninus
+2449,Decoll. Jo. Bapt.,8,29,14082900,Beheading of John the Baptist
+2592,Ded.Mont.S.Michaelis,10,16,14101630,Dedication of Mont-Saint-Michel
+2676,Dedic. S. Salvatoris,11,9,14110940,Dedication of Saint Saviour's
+2593,"Dedic. S.Salv., Mar.",10,13,14101340,"Dedication of the Church of the Holy Saviour, St. Martial (Limoges)"
+2527,Depositio Emerici,9,2,14090210,"Commemoration of the Burial of Emeric, Confessor, Son of King Stephen of Hungary"
+2231,Depositio Ludgeri,4,24,14042420,Commemoration of the Burial of Ludger
+4497,Desiderii Lingon,5,23,14052300,"Desiderius (Didier), Martyr, Bishop of Langres"
+2370,Divisio Apostolorum,7,15,14071510,Sending forth of the Apostles
+1585,Dom. 1 Quadragesimae,,,07011000,1st Sunday of Lent
+1583,"Dom. 1 p. Epiph.,8",,,05011018,In the week following the 1st Sunday after Epiphany
+1613,Dom. 2 Quadragesimae,,,07021000,2nd Sunday of Lent
+1608,"Dom. 2 p. Epiph.,8",,,05021008,In the week following the 2nd Sunday after Epiphany
+1611,Dom. 2 p. Pent.,,,09021000,"2nd Sunday after Pentecost (also ""Dom. 1 p. Oct. Pent."")"
+1634,Dom. 3 Quadragesimae,,,07031000,3rd Sunday of Lent
+1641,Dom. 4 Quadragesimae,,,07041000,4th Sunday of Lent
+1682,Dom. Pentecostes,,,08081000,"Pentecost Sunday (also ""Whitsunday"")"
+1685,Dom. Quadragesimae,,,07001000,Sundays in Lent
+1658,Dom. de Passione,,,07051000,5th Sunday of Lent (Passion Sunday)
+1659,Dom. in Palmis,,,07061000,Palm Sunday
+1660,Dom. inf. Oct.Apost.,,,14062901,Sunday after Peter and Paul
+1668,Dom. p. Ded. Eccl.,,,12008001,Sunday after Dedication of a Church
+1673,Dom. p. Mariae Mag.,,,14072201,Sunday after Mary Magdalene
+1679,Dom. p. Rel. Ved.,,,14071501,Sunday after Return of Vaast's relics
+1680,Dom. p. Tr. Vedasti,,,14100501,Sunday after Vaast's Translation
+1684,Dom. per annum,,,04001000,"Sundays, Ferial Office"
+2090,Dom. ult. ante Adv.,,,09991010,The last Sunday before Advent
+1699,Dom.p.Om.Sanctorum,,,14110101,Sunday after All Saints' Day
+4618,Dominici Silensis,12,20,14122010,"Dominic of Silos, Abbot"
+2528,Duodecim Fratrum,9,1,14090140,"Twelve Brothers, Martyrs"
+4293,Edithae,,,14091640,"Edith (Eadgith) of Wilton, Virgin, Daughter of King Edgar"
+2648,"Edwardi, Conf.",10,13,14101330,"Edward III, Confessor, King of England (son of Ethelred the Unready)"
+2132,"Edwardi, Conf., de morte",1,5,14010520,"Death of Edward III, Confessor, King of England (son of Ethelred the Unready)"
+4295,"Edwardi, Mart.",3,18,14031810,"Edward ""the Martyr"" (son of King Edgar the Peaceful)"
+2348,"Edwardi, Mart., transl.",6,20,14062010,Moving of Edward the Martyr's relics (son of King Edgar the Peaceful)
+2267,Elev. Elis. Hung.,5,2,14050210,Elevation of Elizabeth's relics
+1703,"Elev. Elis. Hung.,8",,,14050218,In week after Elizabeth's Elevation
+2133,Elevat. Auberti,1,24,14012410,Elevation of Aubertus's relics
+2529,Elevat. Gaugerici,9,24,14092400,Elevation of Gaugericus's relics
+2530,Elevatio Amandi,9,20,14092000,Elevation of Amand's relics
+2371,Eliae,7,20,14072020,"Elijah, Prophet"
+1704,"Eliae,8",,,14072028,In week after Elijah
+2734,Eligii,12,1,14120100,"Eligius (Eloi), Bishop of Noyon"
+4595,Elisabeth Hung.,11,19,14111900,"Elizabeth of Hungary, and of Thuringia, Widow"
+1705,"Elisabeth Hung.,8",,,14111908,In week after Elizabeth of Hungary
+2854,Elisabeth Reginae Portugalliae,7,8,14070830,"Elisabeth (Isabel), Widow, Queen of Portugal"
+2322,Elisei,6,14,14061410,"Elisha, Prophet"
+1706,"Elisei,8",,,14061418,In week after Elisha
+2324,Eskilli,6,12,14061220,"Eskill, Bishop of Northanscog and Martyr"
+2458,Ethelwoldi,8,1,14080130,"Ethelwold, Bishop of Wincester"
+2679,Eugenii,11,15,14111500,"Eugene, Martyr, Disciple of Denis"
+4557,Eulaliae Emeritensis,12,10,14121010,"Eulalia of Mérida, Virgin Martyr"
+2459,"Eupli, Leucii",8,12,14081210,"Euplus, Deacon Martyr; and Leucius, Bishop Confessor"
+4297,Eusebii Episcopi,,,14121610,"Eusebius, Bishop of Vercelli"
+2735,Eustratii et Soc.,12,13,14121350,"Eustratius et al, Martyrs"
+1708,"Exalt. Crucis,8",,,14091408,In week after Holy Cross Day
+2534,Exaltatio Crucis,9,14,14091400,Holy Cross Day (Exaltation of the Cross)
+2136,Exceptio Marcelli,1,5,14010540,Reception of the Relics of Pope Marcellus I at Cluny
+2372,Felicis,7,29,14072900,"Felix, Bishop and Martyr (falsely called Pope Felix II)"
+2138,Felicis Nolani,1,14,14011410,"Felix of Nola, Confessor"
+4190,Felicis Valesius,11,20,14112010,"Felix of Valois, Confessor, Founder of the Trinitarians"
+2461,"Felicis, Adaucti",8,30,14083000,"Felix and Adauctus, Martyrs"
+4191,"Felicis, Pont.",5,30,14053000,"Felix I, Martyr and Pope"
+2535,"Felicis, Regulae",9,11,14091110,"Felix and Regula, Martyrs"
+2462,"Felicissimi, Agapiti",8,6,14080620,"Felicissimus and Agapetus, Marytrs"
+2681,Felicitatis,11,23,14112310,"Felicitatis, Matron and Martyr"
+1713,Fer. 2 Hebd. 1 Quad.,,,07012000,"Monday, 1st week, Lent"
+1716,Fer. 2 Hebd. 2 Quad.,,,07022000,"Monday, 2nd week, Lent"
+1720,Fer. 2 Hebd. 3 Quad.,,,07032000,"Monday, 3rd week, Lent"
+1724,Fer. 2 Hebd. 4 Quad.,,,07042000,"Monday, 4th week, Lent"
+1728,Fer. 2 Maj. Hebd.,,,07062000,"Monday, Holy Week"
+1735,Fer. 2 Quadragesimae,,,07002000,Mondays in Lent
+1711,Fer. 2 de Passione,,,07052000,"Monday, 5th week, Lent"
+1727,Fer. 2 in Letaniis,,,08062000,Rogation Monday
+1859,Fer. 2 per annum,,,04002000,"Mondays, Ferial Office"
+1744,Fer. 3 Hebd. 1 Quad.,,,07013000,"Tuesday, 1st week, Lent"
+1747,Fer. 3 Hebd. 2 Quad.,,,07023000,"Tuesday, 2nd week, Lent"
+1751,Fer. 3 Hebd. 3 Quad.,,,07033000,"Tuesday, 3rd week, Lent"
+1754,Fer. 3 Hebd. 4 Quad.,,,07043000,"Tuesday, 4th week, Lent"
+1757,Fer. 3 Maj. Hebd.,,,07063000,"Tuesday, Holy Week"
+1764,Fer. 3 Quadragesimae,,,07003000,Tuesdays in Lent
+1742,Fer. 3 de Passione,,,07053000,"Tuesday, 5th week, Lent"
+1756,Fer. 3 in Letaniis,,,08063000,Rogation Tuesday
+1863,Fer. 3 per annum,,,04003000,"Tuesdays, Ferial Office"
+1774,Fer. 4 Hebd. 1 Quad.,,,07014000,"Wednesday, 1st week, Lent"
+1777,Fer. 4 Hebd. 2 Quad.,,,07024000,"Wednesday, 2nd week, Lent"
+1781,Fer. 4 Hebd. 3 Quad.,,,07034000,"Wednesday, 3rd week, Lent"
+1784,Fer. 4 Hebd. 4 Quad.,,,07044000,"Wednesday, 4th week, Lent"
+1788,Fer. 4 Maj. Hebd.,,,07064000,"Wednesday, Holy Week"
+1796,Fer. 4 Q.T. Quad.,,,07014009,"Ember Day, Lent (Wednesday)"
+1798,Fer. 4 Quadragesimae,,,07004000,Wednesdays in Lent
+1772,Fer. 4 de Passione,,,07054000,"Wednesday, 5th week, Lent"
+1786,Fer. 4 in Letaniis,,,08064000,Rogation Wednesday
+1866,Fer. 4 per annum,,,04004000,"Wednesdays, Ferial Office"
+1804,Fer. 5 Hebd. 1 Quad.,,,07015000,"Thursday, 1st week, Lent"
+1807,Fer. 5 Hebd. 2 Quad.,,,07025000,"Thursday, 2nd week, Lent"
+1811,Fer. 5 Hebd. 3 Quad.,,,07035000,"Thursday, 3rd week, Lent"
+1814,Fer. 5 Hebd. 4 Quad.,,,07045000,"Thursday, 4th week, Lent"
+1824,Fer. 5 Quadragesimae,,,07005000,Thursdays in Lent
+1802,Fer. 5 de Passione,,,07055000,"Thursday, 5th week, Lent"
+1816,Fer. 5 in Cena Dom.,,,07065000,Holy Thursday (Maundy Thursday)
+1869,Fer. 5 per annum,,,04005000,"Thursdays, Ferial Office"
+1830,Fer. 6 Hebd. 1 Quad.,,,07016000,"Friday, 1st week, Lent"
+1833,Fer. 6 Hebd. 2 Quad.,,,07026000,"Friday, 2nd week, Lent"
+1836,Fer. 6 Hebd. 3 Quad.,,,07036000,"Friday, 3rd week, Lent"
+1839,Fer. 6 Hebd. 4 Quad.,,,07046000,"Friday, 4th week, Lent"
+1851,Fer. 6 Q.T. Quad.,,,07016009,"Ember Day, Lent (Friday)"
+1853,Fer. 6 Quadragesimae,,,07006000,Fridays in Lent
+1828,Fer. 6 de Passione,,,07056000,"Friday, 5th week, Lent"
+1872,Fer. 6 per annum,,,04006000,"Fridays, Ferial Office"
+1874,Fest. per annum,,,04000000,For unspecified or miscellaneous ferial days throughout the year
+1875,Festi 3 lectionum,,,16017000,Feasts of three lessons
+1876,Festi 9 lectionum,,,16014000,Feasts of nine lessons
+1877,Festi 9 lectionum TP,,,16014080,Feasts of nine lessons in Eastertide
+1878,"Festi 9 lectionum,8",,,16014008,In week after feasts of nine lessons
+1886,Festum Sanguinis,,,17007000,The Revelation of the Blood of Christ
+4615,"Florentii, Episc.",11,7,14110710,"Florentius, Bishop of Strasbourg"
+4561,Flori,11,4,14110400,"Florus, Bishop of Lodève"
+2270,Floriani,5,4,14050400,"Florian, Martyr"
+2683,Florini,11,17,14111720,"Florinus, Confessor and Priest"
+2598,Foliani,10,31,14103110,"Foillan (Folianus), Abbot"
+4562,Franchae,4,27,14042700,"Franca Visalta, Virgin and Abbess, at Piacenza"
+4192,Franciscae Romanae,3,9,14030910,"Frances of Rome, Widow, Matron and Foundress of the Oblates of Tor de' Specchi in Rome;"
+4193,Francisci Borgiae,10,10,14101030,"Francis Borgia (Borja),  Confessor, Third General of the Society of Jesus"
+4313,Francisci Carracciolo,6,4,14060400,"Francis (Ascanio) Carracciolo, confessor (canonized in 1807)"
+4315,Francisci Salesii,1,29,14012930,"Francis de Sales, Confessor, Bishop of Geneva and Doctor of the Church (canonized 1665)"
+4316,Francisci Xaverii,12,3,14120300,"Francis Xavier, Confessor, Apostle of India and Japan (canonized in 1622)"
+4314,Francisci de Paola,4,2,14040220,"Francis de Paola (also ""de Paula"") Confessor, founder of the Order of the Minims"
+2737,Gabrielis,12,10,14121000,Gabriel
+2217,"Gabrielis, Archang.",3,18,14031800,Gabriel the Archangel
+2600,Galli,10,16,14101600,"Gall, Hermit"
+4194,"Galli,8",,,14101608,In week after Gall
+2271,Gangulfi,5,11,14051110,"Gangulfus (Gengoul, Gangulf, Gengulf, Gangulphus, Gangolfus, Gengulfus), Martyred Knight"
+2684,Genulfi,11,13,14111330,"Genulf (Gendulf, Genou), ""Bishop"""
+2325,"Georgii, Adalberti",6,20,14062000,"George and Adalbert, Martyrs"
+2601,Geraldi,10,13,14101300,Gerald of Aurillac
+4559,Geraldi Archiepiscopi Bracharensis,12,5,14120510,"Gerald (Girald), Archbishop of Braga"
+4195,Gertrudis Nivellensis,3,17,14031700,"Gertrude of Nivelles, Virgin"
+4511,"Geruntii Italicensis, Epi.",8,25,14082540,"Geruntius, Bishop of Italica (Talco), near Seville"
+2604,Gisleni,10,9,14100910,"Gislenus (Ghislain), Abbot"
+2273,Godehardi,5,4,14050410,"Godehard (Gothard), Bishop of Hildesheim"
+2739,"Gregorii, Mart.",12,24,14122400,"Gregory of Spoleto, Martyr"
+2141,Gudulae,1,8,14010810,"Gudula, Virgin"
+2235,Guthlaci,4,11,14041100,"Guthlac, Hermit of Croyland"
+2275,Hadulfi,5,19,14051900,"Hadulf, Abbot and Bishop of Arras"
+1891,Hebd. 1 Quad.,,,07018000,1st week of Lent
+1894,Hebd. 2 Quad.,,,07028000,2nd week of Lent
+1897,Hebd. 3 Quad.,,,07038000,3rd week of Lent
+1900,Hebd. 4 Quad.,,,07048000,4th week of Lent
+1913,Hebd. Quadragesimae,,,07008000,Weekdays in Lent
+1915,Hebd. Sancta,,,07068000,Holy Week
+1907,Hebd. de Passione,,,07058000,5th week of Lent
+1912,Hebd. per annum,,,04008000,"Weekdays, Ferial Office"
+2606,Hedwigis,10,16,14101640,"Hedwig, Matron and Duchess of Silesia"
+2220,"Helari, Tatiani",3,16,14031600,"Hilary (Bishop of Aquileia) and Tatianus, Martyrs"
+2468,Helenae,8,18,14081830,"Helen, Finder of the True Cross, Mother of Constantine the Great"
+2375,Helenae Schedviensis,7,31,14073110,"Helen of Skoefde (Sweden), Martyr"
+2142,Henrici,1,19,14011940,"Henry of Uppsala, Bishop and Martyr, Patron Saint of Finland"
+4196,Henrici Imperatoris,7,13,14071300,"Henry II, Confessor; German King and Roman Emperor; died Jul.13, 1024"
+2607,Herblandi,10,18,14101820,"Hermeland, Abbot of Aindre (Nantes)"
+4234,Herculani Perusini,3,1,14030120,"Herculanus, Martyr, Bishop of Perugia"
+2884,Hermenegildi Martyris,4,13,,
+2470,Hilariae et Soc.,8,12,14081230,"Hilaria, Martyr, Mother of Afra, Matron at Augsburg"
+2143,Hilarii,1,14,14011400,"Hilary, Bishop of Poitiers, Doctor"
+4318,Hilarii Arelatensis,5,5,14050500,"Hilary (Hilarius or Hilarus), Archbishop of Arles, Confessor"
+2608,Hilarionis,10,21,14102120,"Hilarion, Abbot"
+4540,Hildegardis Bingensis,9,17,14091701,"Hildegard of Bingen, Abbess"
+2471,Hippolyti,8,13,14081300,"Hippolytus, Martyr"
+2686,Huberti,11,3,14110330,"Hubert, First Bishop of Liege, Confessor"
+4564,Hugonis Episc. Lincolniensis,11,17,14111740,"Hugh, Bishop of Lincoln"
+4563,Humbelinae,2,12,14021200,"Humbelina (Humbleline), matron, sister of Bernard of Clairvaux"
+4319,Ildefonsi,1,23,14012301,"Ildephonsus, Archbishop of Toledo"
+4464,Imerii,11,12,14111240,"Imerius (Himerius) of Immertal, monk, hermit, and missionary in the Swiss Jura"
+1922,In Dedic. Altaris,,,16011000,Commemoration of an Altar's Dedication
+2091,In Dedicat. Eccl. TP,,,12008080,"Dedication of a Church, in Eastertide"
+1923,"In Dedicat. Eccl.,8",,,12008008,In week after Dedication of Church
+1924,In Dedicatione Eccl.,,,12008000,Dedication of a Church
+1926,In Letaniis,,,08068010,"General, Rogation Days"
+2238,In Letaniis maj.,4,25,08042500,The greater litany; The Major Rogation
+2105,In Temp Pestilentiae,,,16018000,Chants in time of the plague
+1932,In Triduum,,,07069000,"General, during the Triduum"
+1925,In estate,,,10000000,"General, in summer"
+1927,In tempore Adventus,,,01000000,"General, in Advent"
+1928,In tempore Epiph.,,,05000000,"General, after Epiphany"
+1929,In tempore Nat.,,,03000000,"General, in Christmastide"
+1930,In tempore Paschae,,,08000000,"General, Eastertide"
+1931,In tempore Quad.,,,07000000,"General, in Lent"
+4197,In tempore belli contra Sarracenos,,,16021000,Chants in time of war against the Saracens
+4321,Ingenuini et Albuini,2,5,14020510,"Ingenuinus (Genuinus), Bishop of Seben in Tyrol, and Albuinus, Bishop of Brixen"
+1933,Inventio Afrae,,,17004000,The finding of Afra's relics
+2687,Inventio Antonini,11,13,14111310,Finding of Antoninus's relics
+4247,Inventio Catharinae,,,,Finding of Catherine of Alexandria's relics
+2239,Inventio Dionysii,4,22,14042200,Finding of Denis's relics
+2144,Inventio Firmini,1,15,14011520,Finding of Firminus's relics
+4323,Inventio Francisci,12,12,14121220,The finding of Francis's relics
+2473,Inventio Stephani,8,3,14080300,Finding of Stephen's relics (First Martyr)
+1935,Inventio Udalrici,,,17005000,The finding of Ulric's relics
+1936,Invitatoria,,,16004000,Invitatory Antiphons or Psalms
+4565,Irenes,10,20,14102010,Irene of Santarém (Portugal)
+4324,Isabelle,9,1,14090160,"Isabel, Virgin, Sister of King Louis IX of France (daughter of King Louis VIII), founder of a convent at Longchamp"
+2240,Ivonis,4,24,14042410,"Ivo, Bishop of unknown origin (Persia?), came to England in the 7th century"
+4538,Ivonis de Kermartin,5,19,14051930,"Ivo of Kermartin (Yves Hélory, Yvo, Ives)"
+4325,Iwigii,10,8,14100860,"Iwigius (Ywi, Iwig, Ivi, Ywy, Ivy, Iwie), Deacon, Hermit, of Lindisfarne"
+4503,"Iwigii, transl.",,,17009000,Moving of relics of Iwigius
+2378,Jacobi,7,25,14072500,"James the Greater, Apostle"
+4599,"Jacobi, miracula",10,4,14100420,Miracles of James (in wars under Alfonso VI and Sancho)
+2609,Januarii et Soc.,10,19,14101910,"Januarius, Faustus, and Martialis, Martyrs (the ""Three Crowns of Cordova"")"
+2740,Joannis Evang.,12,27,02122700,John the Evangelist
+1939,"Joannis Evang.,8",,,02122708,In week after John the Evangelist
+4326,Joannis Francisci Regis,6,16,14061610,"Jean-François Régis (also ""John Francis Regis"" and ""St Regis""), priest of the Society of Jesus, canonized in 1737"
+2277,Joannis Port. Lat.,5,6,14050600,John before the Latin Gate
+4507,Joannis de Husinec,7,6,14070640,"Jan Hus (d. 1415, Council of Constance), venerated as a saint in 15th- and 16th-century Bohemia"
+2328,"Joannis, Pauli",6,26,14062600,"John and Paul, Martyrs"
+4327,Josephi Prophetae,3,8,14030800,"Joseph, son of Jacob and Rachel"
+2194,Julianae,2,16,14021600,"Juliana, Virgin Martyr"
+2474,Juliani,8,28,14082810,"Julian of Brioude, Martyr"
+2146,"Juliani, Epi.",1,27,14012710,"Julian, Bishop of Le Mans"
+2475,"Juliani, Hermetis",8,28,14082860,"Julian of Brioude and Hermes, Martyrs"
+4501,Justae et Rufinae,7,17,14071730,"Justa and Rufina, Virgin Martyrs, patronesses of Seville"
+2542,"Justi, Epi.",9,1,14090150,"Justus, Bishop of Lyons"
+4568,"Justi, Pastoris",8,6,14080630,"Justus and Pastor, Martyrs at Alcalá de Henares (Complutum)"
+2476,Justini,8,8,14080810,"Justin, child martyred near Paris"
+2279,Juvenalis,5,3,14050320,"Juvenal, Bishop of Narni"
+2147,Karoli Magni,1,28,14012810,"Charlemagne, Emperor and Confessor"
+2380,Kenelmi,7,17,14071710,"Kenelm, Prince of Mercian Royal Family"
+2381,Kiliani et Soc.,7,8,14070810,"Kilian and Companions, Martyrs"
+1941,LACUNA,,,00000000,Indicates missing page(s) in MS
+1944,LITURA,,,00000001,Indicates that the liturgical occasion is unknown or missing due to an erasure in the manuscript or other removal (e.g. fragmentation) of information that was previously present.
+2546,LOCAL:Adriani,9,8,14090830,"Adrian, Martyr, as witnessed at Augsburg"
+2478,LOCAL:Afrae,8,7,14080710,"Afra, Martyr, as witnessed at Augsburg and Muenster"
+2479,LOCAL:Annae,8,16,14081650,"Anne, as witnessed in Muenster (after 1510)"
+2383,"LOCAL:Annae,Zutfania",7,19,14071900,"Anne, as witnessed at Zutphen"
+2547,LOCAL:Hieronimi,9,28,14092810,"Jerome, as witnessed in Muenster"
+2334,LOCAL:Sept.Dorm.Eph.,6,27,14062710,"Seven Sleepers of Ephesus, as witnessed at Muenster"
+2613,"LOCAL:Sulpit.,Sever.",10,3,14100310,"Sulpitius (Sulpitianus, Simplicius) and Servilianus, Martyrs, as witnessed at Augsburg"
+2384,LOCAL:Tr.Trium Regum,7,26,14072620,"Moving of relics of the Three Kings (the Magi) to Cologne in the 12th Century, as witnessed in Muenster"
+2335,LOCAL:Transl. Serva.,6,7,14060710,Moving of Servatius's relics
+2329,Ladislai,6,27,14062700,"Ladislaus, King of Hungary"
+2544,Lamberti,9,17,14091700,"Lambert, Bishop of Maestricht"
+1942,"Lamberti,8",,,14091708,In week after Lambert
+2330,Landelini,6,15,14061520,"Landelinus, Abbot"
+2331,Landerici,6,10,14061000,"Landericus (Landry), Bishop of Paris"
+2148,Launomari,1,19,14011930,"Launomarus, Abbot of Corbie"
+2477,Laurentii,8,10,14081000,"Laurence, Martyr"
+1943,"Laurentii,8",,,14081008,In week after Laurence
+4569,Lauteni,11,2,14110200,"Lautein (Lothenus, Lautenus), Abbot, founder of Silèze and Maximiac abbeys in the Jura mountains"
+2742,Lazari,12,17,14121700,"Lazarus of Bethany, ""Bp."" Marseilles"
+2688,Lebuini,11,12,14111200,"Lebwin (Lebuin, Liafwin, Leafwine), Confessor"
+4591,Leocadiae,12,9,14120920,"Leocadia of Toledo, Virgin Martyr"
+2611,Leodegarii,10,2,14100200,"Leodegarius (Leger), Bishop Martyr"
+2689,Leonardi,11,6,14110610,"Leonard, Hermit"
+4329,Leonardi a Portu Mauritio,11,26,14112630,"Leonardo of Porto Maurizio (Leonard of Port Maurice), confessor, missionary and ascetic writer (canonized 1867)"
+2332,Leonis,6,28,14062800,"Leo the Great, Pope"
+2934,"Leonis I Papae, Confessoris et Ecclesiae Doctoris",4,11,,
+2241,"Leonis, Pont.",4,19,14041900,"Leo IX, Pope"
+2242,"Leonis, Pont., Quad.",4,19,14041910,"Leo IX, Pope, when the feast occurs during Lent"
+2545,Leopardi,9,30,14093010,"Leopardus, Martyr"
+2690,Leopoldi,11,15,14111520,"Leopold, Margrave of Austria (Leopoldi Marchionis)"
+4604,"Leopoldi, transl.",2,15,14021520,"Moving of Leopold, Margrave of Austria's relics (Leopoldi Marchionis)"
+2333,Leutfredi,6,21,14062110,"Leufred (Leufroy), Abbot"
+2382,Liborii,7,23,14072300,"Liborius, Confessor and Bishop of Lemans"
+4330,Licinii,11,1,14110150,"Licinius, Confessor, Bishop of Angers"
+2691,Lini,11,26,14112600,"Linus, Bishop of Rome"
+2614,Lucae,10,18,14101800,"Luke, Evangelist"
+1945,"Lucae,8",,,14101808,In week after Luke
+2615,Lucani,10,30,14103000,"Lucanus of Gascony, Martyr"
+2743,Luciae,12,13,14121300,"Lucy (Lucia), Virgin Martyr"
+2548,"Luciae, Germiniani",9,16,14091620,"Lucy and Germinianus, Martyrs"
+1946,"Luciae,8",,,14121308,In week after Lucy
+2616,Luciani et Soc.,10,16,14101620,"Lucianus and Companions, Martyrs"
+2224,Ludgeri,3,26,14032600,"Ludger (Liudger), First Bishop of Muenster"
+2549,Ludmillae,9,16,14091630,"Ludmilla, Matron and Martyr"
+2480,Ludovici,8,25,14082500,"Louis IX, King of France"
+2481,Ludovici Toul.,8,19,14081900,"Louis, Bishop of Toulouse"
+2550,Lupi,9,1,14090110,"Lupus (Leu), Bishop of Sens"
+2617,Lupi Bajocensis,10,25,14102520,"Lupus, Bishop of Bayeux"
+4570,Lutgardae,6,16,14061620,"Lutgard, Virgin, Mystic, Cistercian Order"
+2149,Macarii,1,15,14011530,"Macarius the Elder, Hermit"
+2482,Machabaeorum,8,1,14080120,"Holy Maccabees, Martyrs"
+2692,Maclovii,11,15,14111510,"Maclovius (Malo, Maclou, Machut, Maclow, Maloù, Mac'h Low, Maglovius, Machutus), Bishop of Aleth"
+2385,Madelgari,7,14,14071400,"Vincent (ne Madelgar), Abbot"
+4331,Mafaldae Reginae,5,2,14050230,Portuguese princess and queen; nun (Cistercian order) in the Convent of Arouca
+2618,Maglorii,10,24,14102400,"Magloire (Maelor), Bishop of Dol"
+2551,Magni,9,6,14090610,"Magnus, ""Apostle"" of Bavaria"
+4332,Malachiae,11,2,14110220,"Malachy, Bishop at Armagh, Ireland"
+2552,Marcelli,9,4,14090420,"Marcellus, Martyr"
+1947,"Marcelli Parisien.,8",,,14110318,In week after Marcellus of Paris
+2693,Marcelli Parisiensis,11,3,14110310,"Marcellus, Bishop of Paris"
+2619,"Marcelli, Apuleii",10,7,14100710,"Marcellus and Apulejus, Martyrs"
+2150,"Marcelli, Pont.",1,16,14011600,"Marcellus I, Pope and Martyr"
+2336,"Marcellini, Petri",6,2,14060200,"Marcellinus and Peter, Martyrs"
+2243,Marci,4,25,14042500,"Mark, Evangelist"
+2337,"Marci, Marcellini",6,18,14061800,"Mark and Marcellian, Martyrs"
+4479,"Marci,8",,,14042508,"In week after Mark, Evangelist"
+1948,"Mariae Mag.,8",,,14072208,In week after Mary Magdalene
+2387,Mariae Magdalenae,7,22,14072200,Mary Magdalene
+4571,Mariae Salome,10,22,14102210,Mary Salome
+2151,"Marii, Marthae",1,19,14011900,"Marius, Martha, et al., Martyrs"
+2390,"Martialis, Apost.",7,8,14070800,"Martial, ""Apostle"" of Limoges"
+2338,"Martialis, Epi.",6,30,14063010,"Martial, Bishop of Limoges"
+2940,Martinae,1,30,14013020,"Martina, Virgin Martyr (said to have been beheaded in Rome under Emperor Alexander Severus, 1 January 228)"
+2553,Materni,9,19,14091910,"Maternus, Bishop of Cologne"
+2554,Matris dolorosae,9,15,14091550,The Seven Sorrows of Mary
+2555,Matthaei,9,21,14092100,"Matthew, Apostle and Evangelist"
+2195,Matthiae,2,24,14022400,"Matthias, Apostle"
+2695,Maturini,11,9,14110930,"Maturin, Priest of Larchant (Sens)"
+2556,Maurilii,9,13,14091300,"Maurilius, Bishop of Angers"
+2696,Maxellendis,11,13,14111320,"Maxellendis, Virgin Martyr"
+2621,Maximiliani,10,12,14101220,"Maximilian, Bishop of Lorch"
+2153,Meginrati,1,21,14012110,"Meinrad, Hermit of Einsiedeln"
+2622,Melori,10,1,14100120,"Melorus (Melar, Mylor), Martyr"
+2558,Michaelis,9,29,14092900,Michael the Archangel (Michaelmas)
+2196,Milburgae,2,23,14022300,"Milburga, Abbess of Wenlock"
+2391,Mildrithae,7,13,14071310,"Mildred, Abbess of Minster-in-Thanet"
+2698,Mirac. Genovefae,11,26,14112610,Commemoration of Genevieve's Miracle
+4457,Miraculi sanctae crucis,,,17008000,The miracle of the Holy Cross (celebrated at Wilton Abbey)
+4334,Missa in gratiarum actione pro expulsa tribulatione vel egritudine et reddit prosperitate atque salute,,,15009080,Thanksgiving mass for the grace of the expelling of distress or disease and the recovering of prosperity and health
+4335,Missa pro solo Episcopo dicenda,,,15009070,Mass said by the Bishop alone
+2969,Missa pro vitanda mortalitate,,,,
+4336,Missa quam Sacerdos pro se dicere debeat,,,15009050,Mass which the priest must say for himself
+4337,Missa quam Sacerdos pro se dicere debeat digeritur hoc modo,,,15009040,Mass which the priest must say for himself in this way
+4338,Missa quam Sacerdos pro se in tribulatione dicere debeat,,,15009060,Mass which the priest in distress must say for himself
+4339,Missa votiva de omnibus Apostolis,,,15009021,Votive Mass for all the Apostles
+4342,Missa votiva pluralis,,,15009012,Votive Mass on behalf of several people
+4344,Missa votiva singularis,,,15009011,Votive Mass on behalf of one person
+4345,Multorum in tribulatione,,,16026020,Chants for many in tribulation
+2392,"Mustiolae, Irenaei",7,3,14070310,"Mustiola and Irenaeus, Martyrs"
+2744,Nat. Innocentium,12,28,02122800,Holy Innocents
+1953,"Nat. Innocentium,8",,,02122808,In week after Holy Innocents
+2393,"Nazarii, Celsi",7,28,14072800,"Nazarius and Celsus, Martyrs"
+4346,"Nerei, Achillei",5,12,14051240,"Nereus and Achilleus, Roman Martyrs"
+2625,Nicasii et Soc.,10,11,14101130,"Nicasius of Rouen, alleged Bishop of Rouen"
+2747,Nicolai,12,6,14120600,"Nicholas of Bari, Bishop of Myra"
+4347,Nicolai Pici et sociorum,7,9,14070920,"Nicholas Pieck (Nicolaus Picus) and 18 companions, Martyrs"
+1956,"Nicolai,8",,,14120608,In week after Nicholas
+2561,"Nicomedis, Valeriani",9,15,14091540,"Nicomedes and Valerianus, Martyrs"
+4546,Nominis BMV,,,14090811,"The Holy Name of Mary, celebrated on the Sunday after the Nativity of Mary"
+2154,Nominis Jesu,1,14,14011430,The Holy Name of Jesus
+2245,Oct. Adalberti,4,30,14043020,Octave of Adalbert
+2394,"Oct. Apost, Die 3",7,8,14070820,The third day after the Octave of Peter and Paul
+1957,"Oct. Apostolorum,8",,,14070608,In week after Octave of Peter and Paul
+1959,Oct. Dedicat. Eccl.,,,12008100,Octave of Dedication of Church
+2155,Oct. Joannis Evang.,1,3,02010300,Octave of John the Evangelist
+4480,"Oct. Joannis, Pauli",7,3,14070320,Octave of John and Paul
+2699,Oct. Marcel. Paris.,11,10,14111000,"Octave of Marcellus, Bishop of Paris"
+2156,Oct. Nat. Innocent.,1,4,02010400,Octave of Holy Innocents
+2700,Oct. Om. Sanctorum,11,8,14110810,Octave of All Saints' Day
+2284,"Oct. Philippi,Jacobi",5,8,14050830,"Octave of Philip and James, Apostles"
+4348,Oct. Wenceslai,10,5,14100520,Octave of Wenceslas
+2396,Octava Apostolorum,7,6,14070600,Octave of Peter and Paul
+2488,Octava Bartholomaei,8,31,14083130,Octave of Bartholomew
+2199,Octava Blasii,2,10,14021010,Octave of Blaise
+2309,Octava Floriani,5,11,14051120,Octave of Florian
+2628,Octava Galli,10,23,14102320,"Octave of Gall, Hermit"
+2563,Octava Lamberti,9,24,14092410,Octave of Lambert
+2491,Octava Laurentii,8,17,14081700,Octave of Laurence
+2247,Octava Ludgeri,4,2,14040210,The Octave of Ludger
+2398,Octava Mariae Mag.,7,29,14072910,Octave of Mary Magdalene
+2399,Octava Martialis,7,6,14070630,Octave of Martial
+2750,Octava Nicolai,12,13,14121320,Octave of Nicholas
+1963,Octava Paschae,,,08021000,"Octave of Easter (also ""Dominica in Albis"")"
+2400,Octava Rel. Vedasti,7,22,14072210,Octave of Return of Vaast's relics
+2401,Octava Tr. Benedicti,7,18,14071800,Octave of Benedict's Translation
+2629,Octava Tr. Vedasti,10,12,14101210,Octave of Vaast's Translation
+2402,Octava Udalrici,7,11,14071110,Octave of Ulric
+2752,Odiliae,12,13,14121340,"Odilia (Ottilia), Abbess"
+2403,Olavi,7,29,14072940,"Olaf of Norway, King and Martyr"
+2702,Omnium Sanctorum,11,1,14110100,All Saints' Day
+1967,"Omnium Sanctorum,8",,,14110108,In week after All Saints' Day
+2630,Opilii,10,12,14101200,"Opilius, Deacon"
+2342,Ordinatio Oswaldi,6,1,14060100,Ordination of Oswald
+4350,Ordo ad consecrandum novum sepulcrum,,,13005000,Rite for the consecration of a new sepulchre
+4351,Ordo ad corpus parvuli commendandum,,,13006000,Rite for the commendation of the corpse of a child
+4352,Ordo ad reconciliandum paenitentes,,,16038020,Rite for reconciling with the penitents
+4353,Ordo ad visitandum vel perunguendum infirmum,,,16013010,Rite for the visiting or anointing of the sick
+4354,Ordo celebrandus super eum qui ab spiritu inmundo vexatur,,,16036000,Rite for someone possessed by an evil spirit
+4356,Ordo de parvulo defuncto,,,13010000,Rite for a dead child
+4357,Ordo de patribus et fratribus defunctis,,,13012000,Rite for dead parents and siblings
+4359,Ordo in finem hominis diei,,,13004000,Last rites (including extreme unction)
+4360,Ordo quando rex cum exercitu ad prelium egreditur,,,16040000,Rite when the king goes out to battle with his army
+4361,Ordo quando sal ante altare ponitur antequam exorcizetur,,,16035000,Rite when the salt is placed before the altar for its exorcism
+4363,Ordo super sepulcrum quando clamore proclamatur,,,13008000,Rite over the sepulchre when the clamor is proclaimed
+4606,Ordo virtutum Hildegardiensis,,,17010000,Hildegard of Bingen's Ordo virtutum.
+2201,"Oswaldi, Epi.",2,28,14022800,"Oswald, Bishop of Worcester"
+2492,"Oswaldi, Reg.",8,5,14080510,"Oswald, King of Northumbria"
+2404,Pantaleonis,7,27,14072700,"Pantaleon (Panteleimon), Martyr"
+1969,Pascha Annotinum,,,08020100,Memorial of past year's Easter
+4541,Paschalis Baylon,5,17,14051720,"Pascual Baylón, Confessor"
+2493,Passio Laurentiae,8,16,14081630,Passion of Laurentia
+4605,Passio Ragnulfi,11,9,14110950,"Passion of Ragnulf (Rainulf, Renon), Martyr, father of Hadulf (Bishop of Arras)"
+2162,Paulae,1,26,14012610,"Paula, Widow"
+2343,Pauli,6,30,14063000,"Paul, Apostle"
+2163,Pauli Heremitae,1,10,14011010,Paul the Hermit
+1970,"Pauli,8",,,14063008,In week after Paul (Apostle)
+2494,Paulini,8,31,14083110,"Paulinus, Bishop of Trier"
+2633,Paulini Ebor.,10,10,14101010,"Paulinus, Archbishop of York"
+1971,"Paulini Ebor.,8",,,14101018,In week after Paulinus of York
+2344,Paulini Nolansis,6,22,14062200,"Paulinus, Bishop of Nola"
+2495,Pelagii,8,28,14082840,"Pelagius, Martyr"
+2345,Petri,6,29,14062910,"Peter, Apostle"
+2634,Petri Alcantarae,10,19,14101920,"Peter of Alcantara, Founder"
+4574,Petri Gundisalvi,4,14,14041410,"Peter González, Dominican friar"
+4573,Petri Regalati,5,13,14051330,"Peter Regalado, Franciscan friar"
+2346,"Petri, Pauli",6,29,14062900,"Peter and Paul, Apostles"
+1972,"Petri, Pauli,8",,,14062908,In week after Peter and Paul
+1973,"Petri,8",,,14062918,In week after Peter (Apostle)
+2288,Petronillae,5,31,14053110,"Petronilla, Virgin"
+2496,Philiberti,8,20,14082000,"Philibert, Abbot"
+4365,Philippi Benitii,8,23,14082310,"Philip Benitius (Filippo Benizzi), Confessor"
+4366,Philippi Nerii,5,26,14052620,"Philip Neri, Confessor, Apostle of Rome and founder of the ""Oratory"""
+2289,"Philippi, Jacobi",5,1,14050100,"Philip and James, Apostles"
+1974,"Philippi, Jacobi,8",,,14050108,In week after Philip and James
+4525,Photini Episc. et soc.,6,2,14060210,"Photinus (Pothinus), First Bishop of Lyons"
+4494,Piati,10,1,14100130,"Piatus of Tournai (Piat de Seclin, Piaton, Platon, Piato), Martyr"
+4200,Placidi et Soc.,10,5,14100510,"Placidus and Companions, Martyrs (Placidus, Eutychius, Victorinus, Flavia, and 30 companions)"
+2164,Polycarpi,1,26,14012600,"Polycarp, Bishop of Smyrna, Martyr"
+2165,Pontiani,1,14,14011420,"Pontianus, Martyr at Spoleto"
+4367,Potentianae virginis,4,17,14041700,"Potentiana, Virgin (sepulchre found at Villanueva, Spain)"
+4202,Pretiosissimi Sanguinis,7,1,14070110,Feast of the Most Precious Blood (of Jesus Christ)
+2347,"Primi, Feliciani",6,9,14060900,"Primus and Felician, Martyrs"
+4600,Pro adversitate ecclesiae,,,16052000,Chants for the adversity of the church (Votive Mass)
+4543,Pro familiaribus,,,16044000,Chants for family members
+4376,Pro iter agentibus,,,16030000,"Chants for travellers, pilgrims"
+4377,Pro omni populo christiano,,,16043000,Chants for all the Christian people
+4453,Pro ordinatione Episcoporum,,,16033020,Chants for the ordination of several bishops
+4378,Pro ordinatione clerici,,,16033000,Chants for the ordination of a cleric
+2106,Pro pace regni,,,16019000,Chants for the peace of the realm and the church
+4380,Pro paenitente,,,16038000,Rite for repenting (not specifically for one or several penitents)
+4381,Pro paenitentibus,,,16038030,Chants for several pentitents
+2107,Pro pluvia,,,16020000,Chants for rain
+2967,Pro quacumque necessitate,,,16050000,For all needs
+4444,Pro reconciliatione ecclesiae,,,16047000,Chants for the restoration of churches and sacred places
+4384,Pro salute vivorum,,,16027000,Chants for the health of the living
+4469,Pro stabilitate loci,,,16049000,For stability of place
+4468,Pro stabilitate loci,,,16049000,For stability of place
+4387,Pro tribulatione,,,16026000,Chants for distress
+4610,Procopii megalomartyris,7,8,14070840,"Procopius Megalomartyr, Procopius of Scythopolis, martyr of Caesarea of Palestine, the ascete and Roman general"
+2771,Prosperi,6,25,14062520,"Prosper, Confessor, Bishop of Reggio in Emilia"
+2202,Purificatio Mariae,2,2,14020200,Purification of Mary (Candlemas)
+4487,"Purificatio Mariae, Vigilia",2,1,14020130,Eve of Purification of Mary
+4391,Q.T. Quadragesimae,,,07010009,"Ember Days, Lent"
+2568,Quattuor Virginum,9,19,14091920,"Euphemia, Dorothea, Thecla, and Erasma, Virgin Martyrs"
+4392,Quinque fratrum,11,12,14111230,"Five Brothers (Christian, Benedict, John, Matthew, Isaac; Camaldolese order)"
+2292,Ragnulfi,5,27,14052700,"Ragnulf (Rainulf, Renon), Martyr, father of Hadulf (Bishop of Arras)"
+2638,"Raphaelis, Archang.",10,24,14102410,Raphael the Archangel
+1978,Recollectio Mariae,,,15081520,Recollection of Feasts of Mary
+4496,Reguli Silvanecti,4,30,14043040,"Regulus of Senlis (Rieule), Confessor, Bishop of Senlis"
+4495,"Reguli Silvanecti, transl.",3,30,14033000,Moving of Regulus of Senlis's relics 
+2754,Relatio Martini,12,14,14121410,Return of Martin's relics
+2407,Relatio Vedasti,7,15,14071500,Return of Vaast's relics
+1979,"Relatio Vedasti,8",,,14071508,In week after Return of Vaast
+2569,Reliquiarum,9,15,14091500,Feast of Relics
+1980,"Reliquiarum,8",,,14091508,In week after Feast of Relics
+2570,Remacli,9,3,14090300,"Remaclus, Bishop"
+2168,"Remigii, Hilarii",1,14,14011440,"Remigius, Bishop of Reims, Confessor & Hilary, Bishop of Poitiers, Doctor"
+2250,Roberti,4,29,14042910,"Robert of Molesmes, Abbot"
+4395,Ruperti Salisburgii,3,27,14032700,"Rupert (Rubert) of Salzburg, Bishop"
+3009,Rustici et Eleutherii Martyrum,10,9,,
+1984,Sabb. Hebd. 1 Quad.,,,07017000,"Saturday, 1st week, Lent"
+1986,Sabb. Hebd. 2 Quad.,,,07027000,"Saturday, 2nd week, Lent"
+1988,Sabb. Hebd. 3 Quad.,,,07037000,"Saturday, 3rd week, Lent"
+1990,Sabb. Hebd. 4 Quad.,,,07047000,"Saturday, 4th week, Lent"
+1997,Sabb. Quadragesimae,,,07007000,Saturdays in Lent
+1983,Sabb. de Passione,,,07057000,"Saturday, 5th week, Lent"
+2014,Sabbato Sancto,,,07067000,Holy Saturday
+2008,Sabbato in Albis,,,08017000,Easter Saturday
+2011,Sabbato per annum,,,04007000,"Saturdays, Ferial Office"
+4486,"Salvii, Epi.",9,10,14091020,"Salvius, Bishop of Albi"
+2409,Samsonis,7,28,14072810,"Samson, Bishop of Dol"
+4587,"Sanctae familiae Jesu, Mariae, Joseph",,,05011020,The Holy Family
+3014,Sanctissimi Nominis BMV,9,12,14091200,The Most Holy Name of Mary
+3016,Sanctorum Angelorum Custodum,10,2,,
+2708,Saturnini,11,29,14112900,"Saturninus, Martyr Bishop of Toulouse"
+2203,Scholasticae,2,10,14021000,"Scholastica, Virgin"
+2410,Sept. Dorm. Eph.,7,27,14072710,Seven Sleepers of Ephesus
+2709,Severini,11,24,14112410,"Severinus, Monk, Teacher of St. Cloud"
+2170,"Severini, Apost.",1,5,14010530,"Severinus, ""Apostle"" of Noricum"
+2644,"Severini, Epi.",10,23,14102300,"Severinus, Confessor and Bishop of Cologne"
+2756,Silvestri,12,31,14123100,"Silvester I, Pope"
+2171,Simeonis Stylitae,1,5,14010500,Simeon the Stylite
+2645,"Simonis, Judae",10,28,14102800,"Simon, Jude (Thaddeus), Apostles"
+2412,Simplicii et Soc.,7,29,14072920,"Simplicius and Companions, Martyrs"
+2172,Speusippi,1,17,14011720,"Speusippus and Meleusippus, Martyrs"
+2296,Stanislai,5,7,14050710,"Stanislaus, Bishop of Krakow"
+2504,"Stephani, Reg.",8,20,14082030,"Stephen I, King and Apostle of Hungary"
+2297,Subventio Martini,5,12,14051220,Hiding of Martin's relics
+4400,Suff. Adalberti,,,15042310,Memorial chants for Adalbert
+2018,Suff. Afrae,,,15080500,Memorial chants for Afra
+2019,Suff. Agnetis,,,15012100,Memorial chants for Agnes
+2020,Suff. Annae,,,15072600,Memorial chants for Anne
+2021,Suff. Annae TP,,,15072680,"Memorial chants for Anne, Eastertide"
+2022,Suff. Apostolorum,,,15004000,Memorial chants for Apostles
+2023,Suff. Benedicti,,,15032100,Memorial chants for Benedict
+2097,Suff. Caeciliae,,,15112200,Memorial chants for Cecilia
+2024,Suff. Confessorum,,,15005000,Memorial chants for Confessors
+4204,Suff. Corporis Christi,,,15915000,Memorial chants for Corpus Christi
+2026,Suff. Crucis,,,15050300,Memorial chants for the Holy Cross
+2027,Suff. Crucis TP,,,15050380,"Memorial chants for the Holy Cross, Eastertide"
+2028,Suff. David,,,15030100,Memorial chants for David
+2029,Suff. Exalt. Crucis,,,15091400,Memorial chants for the Exaltation of the Cross
+2030,Suff. Francisci,,,15100400,Memorial chants for Francis
+2031,Suff. Genovefae,,,15010300,Memorial chants for Genevieve
+4401,Suff. Georgii,,,15042300,Memorial chants for George
+2032,Suff. Hermagorae,,,15071200,Memorial chants for Hermagoras
+2033,Suff. Jo. Bapt. Adv.,,,15062410,"Memorial chants for John the Baptist, Advent"
+2034,Suff. Jo. Bapt. Nat.,,,15062430,"Memorial chants for John the Baptist, Christmas"
+2035,Suff. Jo. Bapt. TP,,,15062480,"Memorial chants for John the Baptist, Eastertide"
+2036,Suff. Joannis Bapt.,,,15062400,Memorial chants for John the Baptist
+2100,Suff. Joannis Evang.,,,15122700,Memorial chants for John the Evangelist
+2037,Suff. Justinae,,,15092600,Memorial chants for Justina
+2038,Suff. Justinae TP,,,15092680,"Memorial chants for Justina, Eastertide"
+2039,Suff. Lamberti,,,15091700,Memorial chants for Lambert
+2040,Suff. Laurentii,,,15081000,Memorial chants for Laurence
+2041,Suff. Ludgeri,,,15032600,Memorial Chants for Ludger
+4402,Suff. Ludmilae,,,15091630,Memorial chants for Ludmila
+2042,Suff. Marcelli Par.,,,15110300,Memorial chants for Marcellus of Paris
+2043,Suff. Mariae,,,15081500,Memorial chants for Mary
+2044,Suff. Mariae Adv.,,,15081510,"Memorial chants for Mary, Advent"
+4403,Suff. Mariae Mag.,,,15072200,Memorial chants for Mary Magdalene
+2045,Suff. Mariae Nat.,,,15081530,"Memorial chants for Mary, Christmas"
+2046,Suff. Mariae TP,,,15081580,"Memorial chants for Mary, Eastertide"
+2047,Suff. Martini,,,15111100,Memorial chants for Martin of Tours
+2048,Suff. Martyrorum,,,15007000,Memorial chants for Martyrs
+2049,Suff. Mauritii,,,15092200,Memorial chants for Maurice
+2050,Suff. Michaelis,,,15092900,Memorial chants for Michael
+2051,Suff. Nicolai,,,15120600,Memorial chants for Nicholas
+2052,Suff. Om. Sanct. Adv,,,15110110,"Memorial chants for All Saints, Advent"
+2053,Suff. Om. Sanct. Nat,,,15110130,"Memorial chants for All Saints, Christmas"
+2054,Suff. Om. Sanct. TP,,,15110180,"Memorial chants for All Saints, Eastertide"
+2055,Suff. Om. Sanctorum,,,15110100,Memorial chants for All Saints
+2056,Suff. Ordinis Carm.,,,12017000,Suffrages for the Order of Carmelites
+2057,"Suff. Oswaldi,Wulst.",,,15022800,"Memorial chants for Oswald (Feb.28) and Wulfstan (Jan.19), Bishops of Worcester"
+2058,Suff. Paschae,,,15811000,Memorial chants for Easter
+2059,Suff. Pauli,,,15063000,Memorial chants for Paul
+2113,"Suff. Perpetuae, Felicitatis",,,15030710,Memorial Chants for Perpetua and Felicity
+2060,Suff. Petri,,,15062910,Memorial chants for Peter
+2061,"Suff. Petri, Pauli",,,15062900,Memorial chants for Peter and Paul
+2065,Suff. Reliquiarum,,,15120400,Memorial chants for Relics
+2066,Suff. Stephani,,,15122600,Memorial chants for Stephen
+2112,Suff. Thomae Apost.,,,15122100,Memorial Chants for Thomas the Apostle
+2067,Suff. Udalrici,,,15070400,Memorial chants for Ulric
+2069,Suff. Vedasti,,,15020600,Memorial chants for Vaast
+2070,Suff. Virginum,,,15010000,Memorial chants for Virgins
+2071,Suff. Walburgae,,,15022500,Memorial chants for Walburga
+4404,Suff. Wenceslai,,,15092800,Memorial chants for Wenceslas
+2062,Suff. pro Pace,,,15001000,Memorial chants for peace
+2063,Suff. pro Pace TP,,,15001080,"Memorial chants for peace, Eastertide"
+2064,Suff. pro Penitent.,,,15003000,Memorial chants for penitence
+2068,Suff. un. Mart. TP,,,15006080,"Memorial chants for one Martyr, Eastertide"
+2102,Suff. unius Conf.,,,15005100,Memorial chants for one Confessor
+2101,Suff. unius Mart.,,,15006000,Memorial chants for one Martyr
+2173,Sulpicii Severi,1,29,14012910,"Sulpicius Severus, Bishop of Bourges"
+2251,"Sulpitii, Serviliani",4,20,14042000,"Sulpitius (Sulpitianus, Simplicius) and Servilianus, Martyrs"
+2758,Suscept. Reliquiarum,12,4,14120410,"Feast of Relics (Notre Dame, Paris)"
+4405,Teresiae Avilensis,10,15,14101500,"Teresa (Teresia), Virgin, reformer of the Carmelite Order and ascetical write (canonized in 1622)"
+2507,Tertullini,8,4,14080400,"Tertullinus, Martyr"
+2573,Theclae,9,23,14092300,"Thecla of Iconium, Virgin Martyr"
+2760,Thomae Apost.,12,21,14122100,"Thomas, Apostle"
+4542,Tiburtii (filius Chromatii),8,11,14081140,"Tiburtius (son of Chromatius in Rome), Martyr"
+2252,"Tiburtii, Valeriani, Maximi",4,14,14041400,"Tiburtius, Valerian and Maximus, Martyrs"
+2174,Timothei,1,24,14012400,"Timothy, Disciple of Paul, Bishop"
+2509,"Timothei, Apollinaris",8,23,14082300,"Timothy and Apollinaris, Martyrs"
+2073,Tr. Christophori,,,17002000,Moving of Christopher's relics
+2414,"Tr. Germani, Juliani",7,25,14072520,"Moving of Germanus, Julianus relics"
+2574,Tr. Kunegundis,9,9,14090910,Moving of Cunegund's relics
+2415,Tr. Marcelli Paris.,7,26,14072600,Moving of relics of Marcellus (Paris)
+2712,Transl. Adalberti,11,6,14110620,Moving of Adalbert (of Prague)'s relics
+2349,Transl. Aichardi,6,17,14061700,Moving of Aichardus's relics
+2647,Transl. Augustini,10,11,14101120,Moving of Augustine's relics
+2762,Transl. Baboleni,12,7,14120720,Moving of Babolenus' relics
+2778,Transl. Bartholomaei,2,13,14021320,Moving of Bartholomew's relics to Lipari
+2416,Transl. Benedicti,7,11,14071100,Moving of Benedict's relics
+2074,"Transl. Benedicti,8",,,14071108,In week after Benedict's Translation
+4408,Transl. Candidi,8,24,14082420,"Moving of Candidus's relics (Martyr, at Innichen)"
+4409,Transl. Clarae,10,3,14100340,The moving of Clare's relics
+2575,Transl. Cuthberti,9,4,14090410,Moving of Cuthbert's relics
+2099,Transl. Dominici,5,24,14052400,Moving of Dominic's relics
+4410,Transl. Edithae,11,3,14110350,Moving of relics of Edith of Wilton
+2576,Transl. Egwini,9,8,14090810,Moving of Egwin's relics
+2350,Transl. Eligii,6,25,14062500,Moving of Eligius's relics
+4411,Transl. Eustachii,11,3,14110340,"Moving of relics of Eustachius (Eustasius, Eustace), Martyr"
+4412,Transl. Francisci,5,25,14052530,The moving of Francis's relics
+2205,Transl. Gerardi,2,24,14022410,Moving of Gerard Sagredo's relics
+2417,Transl. Gudulae,7,6,14070620,Moving of Gudula's relics
+2511,Transl. Hadulfi,8,31,14083100,Moving of Hadulf's relics
+2175,Transl. Hugonis,1,19,14011910,Moving of Hugo's relics
+2086,Transl. Jacobi,12,30,14123020,Translation of James the Apostle
+2649,Transl. Januarii,10,23,14102310,Moving of Januarius of Benevento's relics
+2418,Transl. Justae,7,9,14070910,Moving of Justa's relics
+2512,Transl. Justinae,8,17,14081710,Moving of Justina's relics
+2419,Transl. Karoli Magni,7,27,14072720,Moving of Charlemagne's relics
+2253,Transl. Lamberti,4,28,14042820,Moving of Lambert's relics
+2351,Transl. Lebuini,6,25,14062510,Moving of Liafwin's relics
+2650,Transl. Ludgeri,10,3,14100320,Moving of Ludger's relics
+4413,Transl. Ludmilae,11,10,14111020,Moving of Ludmila's relics
+2420,Transl. Martini,7,4,14070400,Moving of Martin's relics
+2298,Transl. Mauritii,5,12,14051230,Moving of Maurice's relics
+2299,Transl. Nicolai,5,9,14050900,Moving of Nicholas's relics
+2651,Transl. Oswaldi,10,8,14100830,Moving of Oswald's relics
+2075,"Transl. Oswaldi,8",,,14100838,In week after Oswald's Translation
+2763,Transl. Patrocli,12,9,14120901,Moving of Patroclus' relics (Muenster)
+2254,Transl. Petri Alcan.,4,28,14042810,Moving of Peter of Alcantara's Relics
+2421,Transl. Servatii,7,7,14070720,Moving of Servatius's relics
+2076,Transl. Simperti,,,17003000,Moving of Simpert's relics
+2581,Transl. Stanislai,9,27,14092710,Moving of Stanislaus's relics (Bishop of Krakow)
+2300,Transl. Stephani,5,7,14050700,Moving of Stephen's rellics
+2301,Transl. Syri,5,17,14051700,Moving of Syrus's relics
+2422,Transl. Thomae,7,3,14070300,Moving of Thomas's relics
+2423,Transl. Thomae Cant.,7,7,14070710,Moving of Thomas Becket's Relics
+2424,Transl. Trium Regum,7,23,14072330,Moving of relics of the Three Kings (the Magi) to Cologne in the 12th Century
+2302,Transl. Udalrici,5,14,14051410,Moving of Ulric's relics
+4414,Transl. Valentini Epi.,8,4,14080420,Translation of Valentinus's relics
+2652,Transl. Vedasti,10,5,14100500,Moving of Vaast's relics
+2077,"Transl. Vedasti,8",,,14100508,In week after Vaast's Translation
+2303,Transl. Walburgae,5,1,14050150,Moving of Walburga's relics
+2087,Transl. Wenceslai,3,4,14030400,Moving of Wenceslas's relics
+2653,Transl. Wolfgangi,10,7,14100720,Moving of Wolfgang's relics
+2352,Transl. Wulstani,6,7,14060700,Moving of Wulfstan's relics
+4441,Translatio Wigberti,5,15,14051520,Moving of Wigbert's relics
+2304,Tres Mariae,5,25,14052520,"Mary, Mary Cleophae, Mary Salome"
+4580,Triumphi Sanctae Crucis apud Navas Tolosae,7,17,14071730,Triumph of the Holy Cross in Las Navas de Tolosa (Battle of Las Navas de Tolosa or Battle of Al-Uqab)
+2764,Trophimi,12,29,14122910,"Trophimus, Bishop of Arles"
+2425,Udalrici,7,4,14070420,"Ulric (Udalricus), Bishop of Augsburg"
+2078,"Udalrici,8",,,14070428,In week after Ulric
+2714,Ulgani,11,1,14110110,"Vulgan, Hermit"
+4415,Unius in tribulatione,,,16026010,Chants for one in tribulation
+2654,Ursulae,10,21,14102110,"Ursula, Virgin Martyr"
+2206,Valentini,2,14,14021400,"S. Valentine, Martyr"
+2176,"Valentini, Epi.",1,7,14010700,"Valentine, Bishop"
+4581,"Valentini, Hylarii",11,3,14110360,"Valentine (priest) and Hilary (deacon), at Viterbo"
+2765,Valeriae,12,12,14121200,"Valeria of Limoges, Virgin Martyr"
+2207,Valerici,2,1,14020120,"Valericus, Hermit"
+2177,Valerii,1,29,14012900,"Valerius, Bishop of Saragossa"
+2225,"Vibiae Perpetuae, Felicitatis",3,7,14030710,"Perpetua (Vibia Perpetua) and Felicity,  Martyrs at Carthage"
+2353,Victoria Pauli,6,27,14062720,"Victory of Paul, at Muenster"
+2766,"Victoriae, Anatoliae",12,23,14122300,"Victoria and Anatolia, Virgin Martyrs"
+3042,"Victorini, Floriani",11,2,14110210,Moving of relics of Victorinus and Florianus to Muenster Cathedral (2 Nov 1164)
+2711,"Victorini, Floriani, transl.",11,2,14110210,Moving of relics of Victorinus and Florianus to Muenster Cathedral (2 Nov 1164)
+2578,"Victorini, Mart.",9,5,14090500,"Victorinus, Martyr; exiled with Nereus and Achilleus, killed under Domitian"
+2426,Victoris et Soc.,7,21,14072110,"Victor of Marseilles et al., Martyrs"
+2433,Vig. Kiliani et Soc.,7,7,14070730,"Vigil of Kilian and Companions, Martyrs"
+2656,Vig. Om. Sanctorum,10,31,14103120,Eve of All Saints' Day
+2427,Vig. Relatio Vedasti,7,14,14071410,Eve of Return of Vaast's relics
+4418,Vig. Stephani Reg.,8,19,14081920,"Eve of Stephen I, King and Apostle of Hungary"
+2785,Vigil. Dionysii,,,,
+2715,Vigilia Andreae,11,29,14112920,Eve of Andrew
+4419,Vigilia Bartholomaei,8,23,14082320,Eve of Bartholomew
+2178,Vigilia Epiphaniae,1,5,05010500,Eve of Epiphany
+4510,Vigilia Epiphaniae,1,5,02010500,Eve of Epiphany
+4421,Vigilia Jacobi,7,24,14072410,"Eve of James the Greater, Apostle"
+2514,Vigilia Laurentii,8,9,14080910,Eve of Laurence
+3043,Vigilia Martini,11,10,14111030,"Eve of Martin, Bishop of Tours"
+3044,Vigilia Matthaei,,,14092020,"Eve of Matthew, Apostle and Evangelist"
+4422,Vigilia Matthiae,2,23,14022310,"Eve of Matthias, Apostle"
+2768,Vigilia Nat. Domini,12,24,02122400,Christmas Eve
+2579,Vigilia Nat. Mariae,9,7,14090710,Eve of Birthday of Mary
+2716,Vigilia Othmari,11,15,14111540,"Vigil of Othmar (Audemar), Abbot"
+2080,Vigilia Pentecostes,,,08077000,Eve of Pentecost
+2356,Vigilia Petri,6,28,14062820,Eve of Peter
+2357,"Vigilia Petri, Pauli",6,28,14062810,Eve of Peter and Paul
+4424,"Vigilia Philippi, Jacobi",4,30,14043030,Eve of Philip and James
+3045,"Vigilia Simonis, Judae",10,27,14102700,
+4425,Vigilia Thomae Apost.,12,20,14122000,Eve of Thomas the Apostle
+4426,Vigilii,6,26,14062620,"Vigilius, Martyr, Bishop of Trent"
+4583,"Vincentii, Orontii, Victoris",1,22,14012230,"Vincentius, Orontius (brothers), and Victor, Martyrs, killed near Gerona"
+4584,"Vincentii, transl.",9,15,14091560,Moving of Vincent of Saragossa's relics to Lisbon
+4585,"Vincentii, transl. in Brachara",5,4,14050450,Moving of Vincent of Saragossa's relics to Braga
+2515,Vincula Petri,8,1,14080100,Peter in Chains
+2082,"Vincula Petri,8",,,14080108,In week after Peter in Chains
+3049,Vitalis Agricolae Mart.,11,4,,
+2255,"Vitalis, Valeriae",4,28,14042800,"Vitalis and Valeria, Martyrs"
+2429,Vulmari,7,20,14072000,"Vulmar, Abbot"
+2209,Walburgae,2,25,14022500,"Walburga, Virgin Abbess"
+2256,Waldetrudis,4,9,14040900,"Waldetrudis (Waudru), Widow"
+2430,Wandregisili,7,22,14072220,"Wandregisilus, Abbot of Fontenelle"
+2720,Wenaili,11,3,14110320,"Guenael, Abbot of Landevennec"
+2580,Wenceslai,9,28,14092800,"Wenceslaus of Bohemia, Martyr"
+4434,"Wenceslai,8",,,14092808,In week after Wenceslas
+2795,Wigberti,8,13,14081320,"Wigbert, Confessor, Abbot of Fritzlar"
+2657,Wilfridi,10,12,14101230,"Wilfrid, Archbishop of York"
+4435,Willehadi,11,8,14110820,"Willehad, Bishop of Bremen"
+2180,Willelmi,1,10,14011000,"William, Archbishop of Bourges"
+2431,Willibaldi,7,7,14070700,"Willibald, Bishop"
+2721,Willibrordi,11,7,14110700,"Willibrord, Bishop of Utrecht"
+2307,Wironi,5,8,14050840,"Wiro, ""Apostle"" of southern Netherlands"
+2658,Wolfgangi,10,31,14103130,"Wolfgangus, Bishop of Regensburg"
+2181,Wulsini,1,8,14010800,"Wulsin, Bishop of Sherborne"
+2182,Wulstani,1,19,14011920,"Wulfstan, Bishop of Worcester"
+2085,"Wulstani,8",,,14011928,In week after Wulfstan
+4216,Wunnibaldi,12,18,14121820,
+2659,XI milium Virginum,10,21,14102100,"11,000 Virgin Martyrs of Cologne"
+2308,Zenobii,5,25,14052500,"Zenobius, Bishop of Florence"
