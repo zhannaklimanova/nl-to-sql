@@ -53,7 +53,7 @@
                 "predicted_output_path": "predicted_outputs/feasts/claude/f3.csv"
             },
             "grok": {
-                "sql_query": "SELECT * FROM main_app_feast WHERE month = 12 AND prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17');",
+                "sql_query": "SELECT * FROM main_app_feast WHERE prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') AND month = 12;",
                 "predicted_output_path": "predicted_outputs/feasts/grok/f3.csv"
             }
         },
@@ -74,7 +74,7 @@
                 "predicted_output_path": "predicted_outputs/feasts/claude/f4.csv"
             },
             "grok": {
-                "sql_query": "SELECT * FROM main_app_feast WHERE month = 12 AND prefix IN ('12', '13', '14', '15');",
+                "sql_query": "SELECT * FROM main_app_feast WHERE prefix IN ('12', '13', '14', '15') AND month = 12;",
                 "predicted_output_path": "predicted_outputs/feasts/grok/f4.csv"
             }
         },
@@ -116,7 +116,7 @@
                 "predicted_output_path": "predicted_outputs/feasts/claude/f6.csv"
             },
             "grok": {
-                "sql_query": "SELECT * FROM main_app_feast WHERE month = 3 AND (name LIKE '%aq%' OR description LIKE '%aq%');",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (month = 3) AND (name LIKE '%aq%' OR description LIKE '%aq%') AND prefix IN ('12', '13', '14', '15');",
                 "predicted_output_path": "predicted_outputs/feasts/grok/f6.csv"
             }
         },
@@ -137,7 +137,7 @@
                 "predicted_output_path": "predicted_outputs/feasts/claude/f7.csv"
             },
             "grok": {
-                "sql_query": "SELECT * FROM main_app_feast ORDER BY feast_code;",
+                "sql_query": "SELECT * FROM public.main_app_feast ORDER BY feast_code;",
                 "predicted_output_path": "predicted_outputs/feasts/grok/f7.csv"
             }
         },
@@ -152,7 +152,7 @@
         ],
         "predicted_sql_query": {
             "grok": {
-                "sql_query": "SELECT * FROM main_app_feast WHERE name ILIKE '%L%' OR description ILIKE '%L%';",
+                "sql_query": "SELECT * FROM main_app_feast WHERE name LIKE '%L%' OR description LIKE '%L%';",
                 "predicted_output_path": "predicted_outputs/feasts/grok/f8.csv"
             },
             "claude": {
@@ -196,7 +196,7 @@
                 "predicted_output_path": "predicted_outputs/feasts/claude/f10.csv"
             },
             "grok": {
-                "sql_query": "SELECT * FROM main_app_feast WHERE name ILIKE '%ii%' OR description ILIKE '%ii%';",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') OR prefix IS NULL) AND (name ILIKE '%ii%' OR description ILIKE '%ii%');",
                 "predicted_output_path": "predicted_outputs/feasts/grok/f10.csv"
             }
         },
@@ -301,7 +301,7 @@
                 "predicted_output_path": "predicted_outputs/feasts/claude/f15.csv"
             },
             "grok": {
-                "sql_query": "SELECT * FROM main_app_feast WHERE name ILIKE '%Easter%' OR description ILIKE '%Easter%';",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (month IN (12,13,14,15) OR prefix IN ('12','13','14','15')) AND (name ILIKE '%Easter%' OR description ILIKE '%Easter%');",
                 "predicted_output_path": "predicted_outputs/feasts/grok/f15.csv"
             }
         },
