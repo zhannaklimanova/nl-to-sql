@@ -242,7 +242,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s12.csv"
             },
             "grok": {
-                "sql_query": "SELECT DISTINCT s.title, s.shelfmark, i.siglum, i.name AS institution_name, c.name AS century_name FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id WHERE i.country = 'United States' AND seg.name = 'CANTUS Database' AND c.name =",
+                "sql_query": "SELECT s.title, s.shelfmark, i.siglum, i.name AS institution_name, c.name AS century_name FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id WHERE seg.name = 'CANTUS Database' AND i.country = 'United States' AND c.name = '14th century (1350-1375)' ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s12.csv"
             }
         },
