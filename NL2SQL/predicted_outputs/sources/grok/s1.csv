@@ -1,5 +1,5 @@
-title,siglum,shelfmark,institution_siglum
-"Montréal, McGill University - Rare Books and Special Collections - Manuscript Collection, MS Medieval 0239",CDN-Mlr MS Medieval 0239,MS Medieval 0239,CDN-Mlr
-,,MS Medieval 0239 early layer,CDN-Mlr
-,,MS Medieval 0239 late layer,CDN-Mlr
-Trinity College Dublin,IRL-Dt-78,78,IRL-Dtc
+id,title,institution_siglum,shelfmark
+1000102,"Montréal, McGill University - Rare Books and Special Collections - Manuscript Collection, MS Medieval 0239",CDN-Mlr,MS Medieval 0239
+1000105,,CDN-Mlr,MS Medieval 0239 early layer
+1000106,,CDN-Mlr,MS Medieval 0239 late layer
+1000104,Trinity College Dublin,IRL-Dtc,78

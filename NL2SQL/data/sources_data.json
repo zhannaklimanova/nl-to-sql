@@ -11,7 +11,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s1.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.siglum, s.shelfmark, i.siglum AS institution_siglum FROM main_app_source s JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE seg.name = 'CANTUS Database' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.id, s.title, i.siglum AS institution_siglum, s.shelfmark FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ss ON s.id = ss.source_id JOIN main_app_segment seg ON ss.segment_id = seg.id WHERE seg.name = 'CANTUS Database' ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s1.csv"
             }
         },
@@ -32,7 +32,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s2.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.shelfmark, i.siglum, i.name AS institution_name, i.country FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id WHERE i.country = 'Australia' AND seg.name = 'CANTUS Database' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT main_app_source.id, main_app_source.shelfmark, main_app_institution.siglum FROM main_app_source JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id LEFT JOIN main_app_source_segment_m2m as source_segment_m2m ON main_app_source.id = source_segment_m2m.source_id LEFT JOIN main_app_segment ON main_app_segment.id = source_segment_m2m.segment_id WHERE main_app_segment.name = 'CANTUS Database' AND main_app_institution.country = 'Australia' ORDER BY main_app_institution.siglum, main_app_source.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s2.csv"
             }
         },
@@ -53,7 +53,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s3.csv"
             },
             "grok": {
-                "sql_query": "SELECT DISTINCT s.id, s.title, s.shelfmark, i.siglum AS institution_siglum, i.name AS institution_name, c.name AS century_name FROM main_app_source s JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id WHERE seg.name = 'CANTUS Database' AND i.country = 'Australia' AND c.name = '16th century (2nd half)' ORDER BY i;",
+                "sql_query": "SELECT DISTINCT s.id, s.title, s.shelfmark, i.siglum AS institution_siglum, i.name AS institution_name, c.name AS century FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ss ON s.id = ss.source_id JOIN main_app_segment se ON ss.segment_id = se.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id WHERE i.country = 'Australia' AND c.name = '16th century (2nd half)' AND se.name = 'CANTUS Database' ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s3.csv"
             }
         },
@@ -74,7 +74,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s4.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.shelfmark, i.siglum, i.name AS institution_name, p.name AS provenance_name, i.country FROM main_app_source s JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_provenance p ON s.provenance_id = p.id WHERE seg.name = 'CANTUS Database' AND i.country IS NOT NULL AND p.name = 'Kirnberg' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.id, s.title, ins.siglum AS institution_siglum, s.shelfmark FROM main_app_source s JOIN main_app_institution ins ON s.holding_institution_id = ins.id JOIN main_app_provenance prov ON s.provenance_id = prov.id WHERE s.segment_id = (SELECT id FROM main_app_segment WHERE name = 'CANTUS Database') AND prov.name = 'Kirnberg' ORDER BY ins.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s4.csv"
             }
         },
@@ -95,7 +95,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s5.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.shelfmark, i.siglum FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id WHERE seg.name = 'CANTUS Database' AND s.source_completeness = 2 ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.id, i.siglum, s.shelfmark FROM main_app_source s JOIN main_app_source_segment_m2m m ON s.id = m.source_id JOIN main_app_segment seg ON m.segment_id = seg.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE seg.name = 'CANTUS Database' AND s.source_completeness = 2 ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s5.csv"
             }
         },
@@ -116,7 +116,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s6.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.siglum, s.shelfmark, i.siglum AS institution_siglum FROM main_app_source s JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE seg.name = 'CANTUS Database' AND s.source_completeness = 1 ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT * FROM main_app_source WHERE segment_id = (SELECT id FROM main_app_segment WHERE name = 'CANTUS Database') AND source_completeness = 1 ORDER BY holding_institution_id, shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s6.csv"
             }
         },
@@ -137,7 +137,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s7.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.shelfmark, i.siglum, c.name AS century_name FROM main_app_source s JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE seg.name = 'CANTUS Database' AND s.source_completeness = 1 AND c.name = '17th century' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.id, s.siglum, s.shelfmark, i.siglum AS institution_siglum FROM main_app_source s JOIN main_app_source_segment_m2m ss ON s.id = ss.source_id JOIN main_app_segment seg ON ss.segment_id = seg.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE seg.name = 'CANTUS Database' AND s.source_completeness = 1 AND c.name = '17th century' ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s7.csv"
             }
         },
@@ -158,7 +158,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s8.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.siglum, s.shelfmark, i.siglum AS institution_siglum, i.name AS institution_name FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_provenance p ON s.provenance_id = p.id JOIN main_app_segment seg ON s.segment_id = seg.id WHERE seg.name = 'CANTUS Database' AND s.source_completeness = 1 AND i.country = 'Germany' AND p.name = 'Aachen' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.id, s.title, i.siglum AS institution_siglum, s.shelfmark FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_provenance p ON s.provenance_id = p.id JOIN main_app_segment seg ON s.segment_id = seg.id WHERE seg.name = 'CANTUS Database' AND i.country = 'Germany' AND p.name = 'Aachen' AND s.source_completeness = 1 ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s8.csv"
             }
         },
@@ -179,7 +179,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s9.csv"
             },
             "grok": {
-                "sql_query": "SELECT DISTINCT s.id, s.title, s.shelfmark, i.siglum AS institution_siglum, i.name AS institution_name FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_provenance p ON s.provenance_id = p.id WHERE s.source_completeness = 1 AND seg.name = 'Bower Sequence Database' AND i.country = 'Germany' AND p.name = 'Aachen' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.id, s.siglum, ins.siglum AS institution_siglum, s.shelfmark FROM main_app_source s JOIN main_app_institution ins ON s.holding_institution_id = ins.id JOIN main_app_provenance prov ON s.provenance_id = prov.id JOIN main_app_segment seg ON s.segment_id = seg.id WHERE s.source_completeness = 1 AND ins.country = 'Germany' AND prov.name = 'Aachen' AND seg.name = 'Bower Sequence Database' ORDER BY ins.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s9.csv"
             }
         },
@@ -200,7 +200,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s10.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.shelfmark, i.siglum, i.country FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id WHERE seg.name = 'CANTUS Database' AND i.country = 'Unknown' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.id, s.title, s.siglum, s.shelfmark, i.siglum AS institution_siglum, i.country FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ssm ON ssm.source_id = s.id JOIN main_app_segment seg ON seg.id = ssm.segment_id AND seg.name = 'CANTUS Database' WHERE i.country = 'Unknown' ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s10.csv"
             }
         },
@@ -221,7 +221,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s11.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.siglum, s.shelfmark, i.siglum AS institution_siglum, c.name AS century_name, p.name AS provenance_name FROM main_app_source s JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id JOIN main_app_provenance p ON s.provenance_id = p.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE seg.name = 'CANTUS Database' AND p.name = 'Burgos (?)' AND c.name = '16th century' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT main_app_source.id, main_app_source.siglum, main_app_source.shelfmark, main_app_institution.siglum AS institution_siglum FROM main_app_source JOIN main_app_source_segment_m2m ON main_app_source.id = main_app_source_segment_m2m.source_id JOIN main_app_segment ON main_app_source_segment_m2m.segment_id = main_app_segment.id JOIN main_app_provenance ON main_app_source.provenance_id = main_app_provenance.id JOIN main_app_source_century ON main_app_source.id = main_app_source_century.source_id JOIN main_app_century ON main_app_source_century.century_id = main_app_century.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_segment.name = 'CANTUS Database' AND main_app_provenance.name = 'Burgos (?)' AND main_app_institution.siglum IS NOT NULL AND main_app_century.name = '16th century' ORDER BY main_app_institution.siglum, main_app_source.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s11.csv"
             }
         },
@@ -242,7 +242,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s12.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.shelfmark, i.siglum, i.name AS institution_name, c.name AS century_name FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id WHERE seg.name = 'CANTUS Database' AND i.country = 'United States' AND c.name = '14th century (1350-1375)' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT sources.id, sources.siglum, institutions.siglum AS institution_siglum, sources.shelfmark FROM main_app_source AS sources JOIN main_app_institution AS institutions ON sources.holding_institution_id = institutions.id JOIN main_app_source_segment_m2m AS source_segments ON source_segments.source_id = sources.id JOIN main_app_segment AS segments ON source_segments.segment_id = segments.id JOIN main_app_source_century AS source_centuries ON sources.id = source_centuries.source_id JOIN main_app_century AS centuries ON source_centuries.century_id = centuries.id WHERE segments.name = 'CANTUS Database' AND institutions.country = 'United States' AND centuries.name = '14th century (1350-1375)' ORDER BY institutions.siglum, sources.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s12.csv"
             }
         },
@@ -263,7 +263,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s13.csv"
             },
             "grok": {
-                "sql_query": "SELECT DISTINCT s.id, s.title, s.siglum, s.shelfmark, i.siglum AS institution_siglum, i.name AS institution_name FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id WHERE seg.name = 'CANTUS Database' AND s.description LIKE '%Clm 4501-4663 neu beschrieben%' AND i.country = 'Germany' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT main_app_source.id, main_app_source.siglum, main_app_source.shelfmark, main_app_institution.name, main_app_institution.siglum AS institution_siglum, main_app_source.description FROM main_app_source INNER JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_source.segment_id = (SELECT id FROM main_app_segment WHERE name = 'CANTUS Database') AND main_app_source.description LIKE '%Clm 4501-4663 neu beschrieben%' AND main_app_institution.country = 'Germany' ORDER BY main_app_institution.siglum, main_app_source.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s13.csv"
             }
         },
@@ -284,7 +284,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s14.csv"
             },
             "grok": {
-                "sql_query": "SELECT DISTINCT s.id, s.title, s.shelfmark, i.siglum AS institution_siglum, c.name AS century_name FROM main_app_source s JOIN main_app_source_segment_m2m ssm ON s.id = ssm.source_id JOIN main_app_segment seg ON ssm.segment_id = seg.id JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id WHERE seg.name = 'Bower Sequence Database' AND s.search_vector @@ to_tsquery('Iowa City') AND c.name = '12th century (1125-1150)' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.id, s.siglum, s.shelfmark, i.siglum AS institution_siglum FROM main_app_source s JOIN main_app_source_segment_m2m sm ON s.id = sm.source_id JOIN main_app_segment seg ON sm.segment_id = seg.id JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON sc.century_id = c.id WHERE seg.name = 'Bower Sequence Database' AND i.city ILIKE '%Iowa City%' AND c.name = '12th century (1125-1150)' ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s14.csv"
             }
         },
@@ -305,7 +305,7 @@
                 "predicted_output_path": "predicted_outputs/sources/claude/s15.csv"
             },
             "grok": {
-                "sql_query": "SELECT s.title, s.siglum, s.shelfmark, s.indexing_notes, i.siglum AS institution_siglum FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_provenance p ON s.provenance_id = p.id JOIN main_app_segment_m2m sm ON s.id = sm.source_id JOIN main_app_segment seg ON sm.segment_id = seg.id WHERE seg.name = 'CANTUS Database' AND s.indexing_notes LIKE '%GB-Ojec MS. 4%' AND p.name = 'Arras' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT ms.id, ms.siglum, i.siglum AS institution_siglum, ms.shelfmark, ms.indexing_notes FROM main_app_source AS ms JOIN main_app_institution AS i ON ms.holding_institution_id = i.id JOIN main_app_provenance AS p ON ms.provenance_id = p.id WHERE ms.segment_id = (SELECT id FROM main_app_segment WHERE LOWER(name) = 'cantus database') AND ms.indexing_notes LIKE '%GB-Ojec MS. 4%' AND p.name = 'Arras' ORDER BY i.siglum, ms.shelfmark;",
                 "predicted_output_path": "predicted_outputs/sources/grok/s15.csv"
             }
         },
