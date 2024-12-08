@@ -24,7 +24,7 @@
         "sql_query": "SELECT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix FROM main_app_feast WHERE main_app_feast.prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SELECT * FROM public.main_app_feast WHERE prefix = 'T';",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE feast_code = 'Temporale';",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f2.csv"
             },
             "claude": {
@@ -45,7 +45,7 @@
         "sql_query": "SELECT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix FROM main_app_feast WHERE (main_app_feast.prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') AND main_app_feast.month = 12) ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE feast_code = 'Temporale' AND month = 12;",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f3.csv"
             },
             "claude": {
@@ -59,14 +59,14 @@
         },
         "gold_output_path": "gold_outputs/feasts/f3.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Temporale' for the month 'December'. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Temporale' for the Month 'December'. Format your response without any formatting or newlines."
         ]
     },
     {
         "sql_query": "SELECT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix FROM main_app_feast WHERE (main_app_feast.prefix IN ('12', '13', '14', '15') AND main_app_feast.month = 12) ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE feast_code = 'Sanctorale' AND month = 12;",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f4.csv"
             },
             "claude": {
@@ -80,14 +80,14 @@
         },
         "gold_output_path": "gold_outputs/feasts/f4.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' for the month 'December'. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' for the Month 'December'. Format your response without any formatting or newlines."
         ]
     },
     {
         "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix, LOWER(main_app_feast.name) FROM main_app_feast WHERE (UPPER(main_app_feast.name::text) LIKE UPPER('%Thomas%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%Thomas%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%Thomas%')) ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE name ILIKE '%Thomas%' OR description ILIKE '%Thomas%';",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f5.csv"
             },
             "claude": {
@@ -108,7 +108,7 @@
         "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix, LOWER(main_app_feast.name) FROM main_app_feast WHERE ((UPPER(main_app_feast.name::text) LIKE UPPER('%aq%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%aq%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%aq%')) AND main_app_feast.prefix IN ('12', '13', '14', '15') AND main_app_feast.month = 3) ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM main_app_feast WHERE month = 3 AND feast_code = 'Sanctorale' AND (LOWER(name) LIKE '%aq%' OR LOWER(description) LIKE '%aq%');",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f6.csv"
             },
             "claude": {
@@ -122,14 +122,14 @@
         },
         "gold_output_path": "gold_outputs/feasts/f6.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' for the month 'March' that have the letters 'aq' in either the name or description. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' for the Month 'March' that have the letters 'aq' in either the name or description. Format your response without any formatting or newlines."
         ]
     },
     {
         "sql_query": "SELECT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix FROM main_app_feast ORDER BY main_app_feast.feast_code ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast ORDER BY feast_code;",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f7.csv"
             },
             "claude": {
@@ -147,27 +147,31 @@
         ]
     },
     {
-        "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts that contain the letter 'L' in the feast name or description. Format your response without any formatting or newlines."
-        ],
+        "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix, LOWER(main_app_feast.name) FROM main_app_feast WHERE (UPPER(main_app_feast.name::text) LIKE UPPER('%L%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%L%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%L%')) ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
-            "grok": {
-                "sql_query": "SELECT * FROM main_app_feast WHERE name LIKE '%L%' OR description LIKE '%L%';",
-                "predicted_output_path": "predicted_outputs/feasts/grok/f8.csv"
+            "gpt": {
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE name ILIKE '%l%' OR description ILIKE '%l%';",
+                "predicted_output_path": "predicted_outputs/feasts/gpt/f8.csv"
             },
             "claude": {
                 "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE LOWER(name) LIKE '%l%' OR LOWER(description) LIKE '%l%' ORDER BY name;",
                 "predicted_output_path": "predicted_outputs/feasts/claude/f8.csv"
+            },
+            "grok": {
+                "sql_query": "SELECT * FROM main_app_feast WHERE name LIKE '%L%' OR description LIKE '%L%';",
+                "predicted_output_path": "predicted_outputs/feasts/grok/f8.csv"
             }
         },
         "gold_output_path": "gold_outputs/feasts/f8.csv",
-        "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix, LOWER(main_app_feast.name) FROM main_app_feast WHERE (UPPER(main_app_feast.name::text) LIKE UPPER('%L%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%L%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%L%')) ORDER BY LOWER(main_app_feast.name) ASC"
+        "natural_language_inputs": [
+            "Given this database schema, generate a SQL query to show all feasts that contain the letter 'L' in the feast name or description. Format your response without any formatting or newlines."
+        ]
     },
     {
         "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix, LOWER(main_app_feast.name) FROM main_app_feast WHERE ((UPPER(main_app_feast.name::text) LIKE UPPER('%Ad%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%Ad%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%Ad%')) AND (UPPER(main_app_feast.name::text) LIKE UPPER('%aspersionem%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%aspersionem%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%aspersionem%'))) ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE name LIKE '%Ad aspersionem%' OR description LIKE '%Ad aspersionem%';",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f9.csv"
             },
             "claude": {
@@ -188,7 +192,7 @@
         "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix, LOWER(main_app_feast.name) FROM main_app_feast WHERE ((UPPER(main_app_feast.name::text) LIKE UPPER('%ii%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%ii%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%ii%')) AND main_app_feast.prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17')) ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM main_app_feast WHERE feast_code = 'Temporale' AND (name ILIKE '%ii%' OR description ILIKE '%ii%');",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f10.csv"
             },
             "claude": {
@@ -209,7 +213,7 @@
         "sql_query": "SELECT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix FROM main_app_feast WHERE main_app_feast.month = 5 ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE month = 5;",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f11.csv"
             },
             "claude": {
@@ -223,14 +227,14 @@
         },
         "gold_output_path": "gold_outputs/feasts/f11.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts for the month 'May'. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts for the Month 'May'. Format your response without any formatting or newlines."
         ]
     },
     {
         "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix FROM main_app_feast WHERE (UPPER(main_app_feast.name::text) LIKE UPPER('%01%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%01%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%01%')) ORDER BY main_app_feast.feast_code ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE feast_code LIKE '%01%' OR name LIKE '%01%' OR description LIKE '%01%' ORDER BY feast_code;",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f12.csv"
             },
             "claude": {
@@ -251,7 +255,7 @@
         "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix, LOWER(main_app_feast.name) FROM main_app_feast WHERE (UPPER(main_app_feast.name::text) LIKE UPPER('%,%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%,%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%,%')) ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE name LIKE '%,%' OR description LIKE '%,%';",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f13.csv"
             },
             "claude": {
@@ -272,7 +276,7 @@
         "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix FROM main_app_feast WHERE (UPPER(main_app_feast.name::text) LIKE UPPER('%8%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%8%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%8%')) ORDER BY main_app_feast.feast_code ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE name LIKE '%8%' OR description LIKE '%8%' OR feast_code LIKE '%8%' ORDER BY feast_code;",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f14.csv"
             },
             "claude": {
@@ -293,7 +297,7 @@
         "sql_query": "SELECT DISTINCT main_app_feast.id, main_app_feast.date_created, main_app_feast.date_updated, main_app_feast.created_by_id, main_app_feast.last_updated_by_id, main_app_feast.name, main_app_feast.description, main_app_feast.feast_code, main_app_feast.notes, main_app_feast.month, main_app_feast.day, main_app_feast.prefix, LOWER(main_app_feast.name) FROM main_app_feast WHERE ((UPPER(main_app_feast.name::text) LIKE UPPER('%Easter%') OR UPPER(main_app_feast.description::text) LIKE UPPER('%Easter%') OR UPPER(main_app_feast.feast_code::text) LIKE UPPER('%Easter%')) AND main_app_feast.prefix IN ('12', '13', '14', '15')) ORDER BY LOWER(main_app_feast.name) ASC;",
         "predicted_sql_query": {
             "gpt": {
-                "sql_query": "SQL",
+                "sql_query": "SELECT * FROM public.main_app_feast WHERE feast_code = 'Sanctorale' AND (name ILIKE '%Easter%' OR description ILIKE '%Easter%');",
                 "predicted_output_path": "predicted_outputs/feasts/gpt/f15.csv"
             },
             "claude": {
