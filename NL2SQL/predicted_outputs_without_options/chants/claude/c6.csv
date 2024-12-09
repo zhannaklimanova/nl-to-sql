@@ -1,3 +1,3 @@
-id,title,volpiano,genre_name,institution_siglum
-230071,,1---f--fed-f--d---dfe--f--fg---g-fe---de--efEe--e---dh---hg---hk--h---g--hF--g---f---gE--dc---de--e--e--ef7---gE--de--fg--e---efg--dc--gE--e---4---h--g--h--k--g--e---3,A,CH-E
-619914,,1---kj--hJ---j---k--hg--gfe--e---fD--g---h--kjh--j---m--lkjh--jkl--kj---jkl--lkjk--hg---gfe--e---fe--d--ef---gfe--e---g7---kj--h--jkl--kj--j---l--m--hL--kj--j---ef---ghg--fe--e---jk--h--g---kjhgF--d---f--ghg--fe--e77---4,A,D-KA
+type,id,title,mode,position,volpiano,source_id,siglum
+chant,230071,,4,12,1---f--fed-f--d---dfe--f--fg---g-fe---de--efEe--e---dh---hg---hk--h---g--hF--g---f---gE--dc---de--e--e--ef7---gE--de--fg--e---efg--dc--gE--e---4---h--g--h--k--g--e---3,123606,CH-E
+chant,619914,,4,12,1---kj--hJ---j---k--hg--gfe--e---fD--g---h--kjh--j---m--lkjh--jkl--kj---jkl--lkjk--hg---gfe--e---fe--d--ef---gfe--e---g7---kj--h--jkl--kj--j---l--m--hL--kj--j---ef---ghg--fe--e---jk--h--g---kjhgF--d---f--ghg--fe--e77---4,123612,D-KA
