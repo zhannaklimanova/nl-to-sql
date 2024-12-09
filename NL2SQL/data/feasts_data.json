@@ -17,7 +17,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f1.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all the feasts. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all the feasts sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -38,7 +38,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f2.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Temporale'. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Temporale' sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -59,7 +59,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f3.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Temporale' for the Month 'December'. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Temporale' for the Month 'December' sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -80,7 +80,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f4.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' for the Month 'December'. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' for the Month 'December' sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -101,7 +101,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f5.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts that have contain the word 'Thomas' in the name or description. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts that have contain the word 'Thomas' in the name or description sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -122,7 +122,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f6.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' for the Month 'March' that have the letters 'aq' in either the name or description. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' for the Month 'March' that have the letters 'aq' in either the name or description sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -164,7 +164,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f8.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts that contain the letter 'L' in the feast name or description. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts that contain the letter 'L' in the feast name or description sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -185,7 +185,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f9.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts that contain the phrase 'Ad aspersionem' in the name or description. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts that contain the phrase 'Ad aspersionem' in the name or description sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -206,7 +206,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f10.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Temporale' that contain 'ii' in either name or description. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Temporale' that contain 'ii' in either name or description sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -227,7 +227,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f11.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts for the Month 'May'. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts for the Month 'May' sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -269,7 +269,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f13.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts with a comma in the name or description. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts with a comma in the name or description sorted by feast name. Format your response without any formatting or newlines."
         ]
     },
     {
@@ -311,7 +311,7 @@
         },
         "gold_output_path": "gold_outputs/feasts/f15.csv",
         "natural_language_inputs": [
-            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' that have the word 'Easter' in either name or description. Format your response without any formatting or newlines."
+            "Given this database schema, generate a SQL query to show all feasts where Temp/Sanc is 'Sanctorale' that have the word 'Easter' in either name or description sorted by feast name. Format your response without any formatting or newlines."
         ]
     }
 ]
