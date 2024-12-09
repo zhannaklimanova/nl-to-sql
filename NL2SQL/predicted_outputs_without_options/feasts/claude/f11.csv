@@ -1,0 +1,80 @@
+id,name,month,day,feast_code,description
+2286,Orientii,5,1,14050120,"Orientius (Orens), Bishop"
+2295,Sigismundi,5,1,14050140,"Sigismund, King of Burgundy, Martyr"
+2289,"Philippi, Jacobi",5,1,14050100,"Philip and James, Apostles"
+2258,Amatoris,5,1,14050130,"Amator (Amatre), Bishop of Auxerre"
+2303,Transl. Walburgae,5,1,14050150,Moving of Walburga's relics
+2267,Elev. Elis. Hung.,5,2,14050210,Elevation of Elizabeth's relics
+2310,Wiboradae,5,2,14050220,"Wiborada, Virgin Martyr"
+2260,Athanasii,5,2,14050200,"Athanasius, Archbishop of Alexandria"
+4331,Mafaldae Reginae,5,2,14050230,Portuguese princess and queen; nun (Cistercian order) in the Convent of Arouca
+2276,Inventio Crucis,5,3,14050300,Finding of the Cross
+2279,Juvenalis,5,3,14050320,"Juvenal, Bishop of Narni"
+2257,Alexandri et sociorum,5,3,14050310,"Alexander and Eventius, Martyrs"
+4616,De corona domini,5,4,14050430,Crown of the Lord
+2273,Godehardi,5,4,14050410,"Godehard (Gothard), Bishop of Hildesheim"
+2278,Judae Quiriaci,5,4,14050420,"Judas Quiriacus (Cyriacus), Bishop"
+2283,Monicae,5,4,14050440,"Monica, Mother of Augustine"
+2972,Monicae Viduae,5,4,,
+4585,"Vincentii, transl. in Brachara",5,4,14050450,Moving of Vincent of Saragossa's relics to Braga
+2270,Floriani,5,4,14050400,"Florian, Martyr"
+4318,Hilarii Arelatensis,5,5,14050500,"Hilary (Hilarius or Hilarus), Archbishop of Arles, Confessor"
+4528,"Augustini, conv.",5,5,14050510,"Conversion of Augustine, Bishop and Doctor"
+2277,Joannis Port. Lat.,5,6,14050600,John before the Latin Gate
+2296,Stanislai,5,7,14050710,"Stanislaus, Bishop of Krakow"
+2300,Transl. Stephani,5,7,14050700,Moving of Stephen's rellics
+2307,Wironi,5,8,14050840,"Wiro, ""Apostle"" of southern Netherlands"
+2259,Appar. Michaelis,5,8,14050800,Appearing of Michael the Archangel
+4535,Petri de Tarentasia,5,8,14050820,"Peter II of Tarentaise, Archbishop"
+2284,"Oct. Philippi,Jacobi",5,8,14050830,"Octave of Philip and James, Apostles"
+2306,Victoris Mauri,5,8,14050810,"Victor Maurus, Martyr"
+2299,Transl. Nicolai,5,9,14050900,Moving of Nicholas's relics
+2274,"Gordiani, Epimachi",5,10,14051000,"Gordian and Epimachus, Martyrs"
+4177,Antonini Episcopi,5,10,14051010,"Antoninus, Archbishop of Florence"
+2281,Mamerti,5,11,14051100,"Mamertus, Bishop of Vienne"
+2309,Octava Floriani,5,11,14051120,Octave of Florian
+2271,Gangulfi,5,11,14051110,"Gangulfus (Gengoul, Gangulf, Gengulf, Gangulphus, Gangolfus, Gengulfus), Martyred Knight"
+2293,Rictrudis,5,12,14051200,"Rictrudis, Widow"
+2298,Transl. Mauritii,5,12,14051230,Moving of Maurice's relics
+4346,"Nerei, Achillei",5,12,14051240,"Nereus and Achilleus, Roman Martyrs"
+2297,Subventio Martini,5,12,14051220,Hiding of Martin's relics
+2287,Pancratii et Soc.,5,12,14051210,"Pancras and Companions, Martyrs"
+4573,Petri Regalati,5,13,14051330,"Peter Regalado, Franciscan friar"
+2294,Servatii,5,13,14051300,"Servais (Servatius), Bishop of Tongres"
+4454,In dedicatione S. Mariae,5,13,14051310,"Commemoration of the date when Boniface IV dedicated the Pantheon in Rome to the service of God in the name of ""S. Mariae semper Virginis et omnium Martyrum"""
+4566,"Basilicae BMV de Martyribus Ulyssipponensis, in dedicatione",5,13,14051320,"Dedication of the Basilica of Our Lady of the Martyrs, Lisbon"
+2290,Pontii,5,14,14051400,"Pontius, Martyr"
+2826,Bonifatii Martyris,5,14,,
+2302,Transl. Udalrici,5,14,14051410,Moving of Ulric's relics
+2265,Coronae,5,14,14051420,"Corona, Martyr"
+4203,Ruperti Bingensis,5,15,14051510,Rupert of Bingen
+4441,Translatio Wigberti,5,15,14051520,Moving of Wigbert's relics
+2269,Euticii,5,15,14051500,"Euticius (Eutice, Euthycius), Martyr"
+2301,Transl. Syri,5,17,14051700,Moving of Syrus's relics
+4541,Paschalis Baylon,5,17,14051720,"Pascual Baylón, Confessor"
+4534,"Bernardini Senensis, transl.",5,17,14051710,Moving of relics of Bernardinus degl' Albizzeschi of Siena
+2268,Erici,5,18,14051800,"Eric IX of Sweden, King and Martyr"
+2291,"Pudentianae,Pudentis",5,19,14051910,"Pudentiana and Pudens, Martyrs"
+2266,Dunstani,5,19,14051920,"Dunstan, Archbishop of Canterbury"
+4538,Ivonis de Kermartin,5,19,14051930,"Ivo of Kermartin (Yves Hélory, Yvo, Ives)"
+2275,Hadulfi,5,19,14051900,"Hadulf, Abbot and Bishop of Arras"
+2285,Octava Servatii,5,20,14052000,Octave of Servatius
+4497,Desiderii Lingon,5,23,14052300,"Desiderius (Didier), Martyr, Bishop of Langres"
+2099,Transl. Dominici,5,24,14052400,Moving of Dominic's relics
+2304,Tres Mariae,5,25,14052520,"Mary, Mary Cleophae, Mary Salome"
+2308,Zenobii,5,25,14052500,"Zenobius, Bishop of Florence"
+2880,Gregorii VII Papae Confessoris,5,25,,
+2305,Urbani,5,25,14052510,"Urban I, Pope and Martyr"
+4412,Transl. Francisci,5,25,14052530,The moving of Francis's relics
+2261,Augustini Cant.,5,26,14052610,"Augustine (Austin), of Canterbury"
+2262,Bedae,5,26,14052600,"The Venerable Bede, Doctor"
+4366,Philippi Nerii,5,26,14052620,"Philip Neri, Confessor, Apostle of Rome and founder of the ""Oratory"""
+2292,Ragnulfi,5,27,14052700,"Ragnulf (Rainulf, Renon), Martyr, father of Hadulf (Bishop of Arras)"
+2264,Carauni,5,28,14052810,"Caraunus, Deacon and Martyr"
+2272,Germani Parisien.,5,28,14052800,"Germanus (Germain), Bishop of Paris"
+2282,Maximini,5,29,14052900,"Maximinus, Bishop of Trier"
+4191,"Felicis, Pont.",5,30,14053000,"Felix I, Martyr and Pope"
+2263,Cantiorum,5,31,14053100,"Cantius, Cantianus and Cantianilla, Martyrs"
+2288,Petronillae,5,31,14053110,"Petronilla, Virgin"
+4394,Reginae Mariae,5,31,14053130,The Queenship of Mary
+4173,Angelae Mericiae,5,31,14053120,"Angela Merici, Virgin, Foundress of the Ursuline Order of Nuns"
