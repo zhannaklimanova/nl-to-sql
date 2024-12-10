@@ -441,8 +441,8 @@
                 "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
             },
             "claude": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/object_output_filex.csv"
+                "sql_query": "SELECT c.id, c.title, c.image_link, g.name AS genre_name, 'Chant' AS source_type FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id WHERE g.name = '[?]' UNION SELECT s.id, s.title, s.image_link, g.name AS genre_name, 'Sequence' AS source_type FROM main_app_sequence s JOIN main_app_genre g ON s.genre_id = g.id WHERE g.name = '[?]' ORDER BY image_link DESC, id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c13.csv"
             },
             "grok": {
                 "sql_query": "",
@@ -476,8 +476,8 @@
                 "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
             },
             "claude": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/object_output_filex.csv"
+                "sql_query": "SELECT c.id, c.title, c.siglum, c.incipit, 'Chant' AS source_type FROM main_app_chant c WHERE c.incipit LIKE '%Gaude mater luminis%' OR c.manuscript_full_text LIKE '%Gaude mater luminis%' OR c.manuscript_syllabized_full_text LIKE '%Gaude mater luminis%' UNION SELECT s.id, s.title, s.siglum, s.incipit, 'Sequence' AS source_type FROM main_app_sequence s WHERE s.incipit LIKE '%Gaude mater luminis%' OR s.manuscript_full_text LIKE '%Gaude mater luminis%' OR s.manuscript_syllabized_full_text LIKE '%Gaude mater luminis%' ORDER BY siglum ASC, id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c14.csv"
             },
             "grok": {
                 "sql_query": "",
@@ -511,8 +511,8 @@
                 "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
             },
             "claude": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/object_output_filex.csv"
+                "sql_query": "SELECT c.id, c.title, c.siglum, c.cantus_id, 'Chant' AS source_type FROM main_app_chant c JOIN main_app_service s ON c.service_id = s.id WHERE s.name = 'X' AND c.cantus_id = 'ah54007' UNION SELECT s.id, s.title, s.siglum, s.cantus_id, 'Sequence' AS source_type FROM main_app_sequence s JOIN main_app_service sv ON s.service_id = sv.id WHERE sv.name = 'X' AND s.cantus_id = 'ah54007' ORDER BY siglum ASC, id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c15.csv"
             },
             "grok": {
                 "sql_query": "",
