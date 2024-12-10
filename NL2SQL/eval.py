@@ -56,28 +56,25 @@ def get_paths(item) -> Paths:
     return Paths(item["gold_output_path"], item["predicted_sql_query"])
 
 
+def evaluate_data(data_path: str) -> dict:
+    """Evaluate data from a given path and return counts."""
+    data = load_data_as_json(data_path)
+    counts = {}
+
+    for item in data:
+        paths: Paths = get_paths(item)
+        for llm, predicted_path in paths.predicted.items():
+            counts[llm] = counts.get(llm, 0) + evaluate(paths.expected, predicted_path)
+
+    return counts
+
+
 if __name__ == "__main__":
-    chants: list[dict] = load_data_as_json(CHANTS_DATA_PATH)
     data_paths = {
         "chants": CHANTS_DATA_PATH,
         "feasts": FEASTS_DATA_PATH,
         "sources": SOURCES_DATA_PATH,
     }
-    all_counts = dict()
 
-    for k in data_paths.keys():
-        all_counts[k] = dict()
-
-    for name, data_path in data_paths.items():
-        data = load_data_as_json(data_path)
-        counts = dict()
-        for item in data:
-            paths: Paths = get_paths(item)
-            for llm, predicted_path in paths.predicted.items():
-                if llm not in counts:
-                    counts[llm] = 0
-                actual_matches_expected: bool = evaluate(paths.expected, predicted_path)
-                if actual_matches_expected:
-                    counts[llm] += 1
-        all_counts[name] = counts
+    all_counts = {name: evaluate_data(path) for name, path in data_paths.items()}
     print(all_counts)
