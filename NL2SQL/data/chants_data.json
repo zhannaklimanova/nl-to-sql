@@ -1,6 +1,20 @@
 [
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant INNER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (main_app_chant.genre_id = 122 AND (UPPER(main_app_chant.manuscript_full_text::text) LIKE UPPER('%alle%') OR UPPER(main_app_chant.manuscript_full_text_std_spelling::text) LIKE UPPER('%alle%') OR UPPER(main_app_chant.incipit::text) LIKE UPPER('%alle%')))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence INNER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (main_app_sequence.genre_id = 122 AND (UPPER(main_app_sequence.manuscript_full_text::text) LIKE UPPER('%alle%') OR UPPER(main_app_sequence.manuscript_full_text_std_spelling::text) LIKE UPPER('%alle%') OR UPPER(main_app_sequence.incipit::text) LIKE UPPER('%alle%')))) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.manuscript_full_text, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id JOIN main_app_genre g ON ch.genre_id = g.id WHERE g.name = 'A' AND ch.manuscript_full_text ILIKE '%alle%' UNION SELECT 'sequence' as type, sq.id, sq.title, sq.manuscript_full_text, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id JOIN main_app_genre g ON sq.genre_id = g.id WHERE g.name = 'A' AND sq.manuscript_full_text ILIKE '%alle%') c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c2.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "SELECT 'chant' AS type, c.id, c.title, c.incipit, i.siglum FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE g.name = 'A' AND (c.incipit ILIKE '%alle%' OR c.manuscript_full_text ILIKE '%alle%') UNION SELECT 'sequence' AS type, seq.id, seq.title, seq.incipit, i2.siglum FROM main_app_sequence seq JOIN main_app_genre g2 ON seq.genre_id = g2.id JOIN main_app_source s2 ON seq.source_id = s2.id JOIN main_app_institution i2 ON s2.holding_institution_id = i2.id WHERE g2.name = 'A' AND (seq.incipit ILIKE '%alle%' OR seq.manuscript_full_text ILIKE '%alle%') ORDER BY siglum ASC, id ASC;",
@@ -15,20 +29,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c1.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.manuscript_full_text, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id JOIN main_app_genre g ON ch.genre_id = g.id WHERE g.name = 'A' AND ch.manuscript_full_text ILIKE '%alle%' UNION SELECT 'sequence' as type, sq.id, sq.title, sq.manuscript_full_text, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id JOIN main_app_genre g ON sq.genre_id = g.id WHERE g.name = 'A' AND sq.manuscript_full_text ILIKE '%alle%') c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c2.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c1.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query shows me all the Chants and Sequences in the database belonging to the 'A' Genre that contain the word 'alle', sorted by institution siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -36,6 +36,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (UPPER(main_app_chant.manuscript_full_text::text) LIKE UPPER('domine%') OR UPPER(main_app_chant.manuscript_full_text_std_spelling::text) LIKE UPPER('domine%') OR UPPER(main_app_chant.incipit::text) LIKE UPPER('domine%'))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (UPPER(main_app_sequence.manuscript_full_text::text) LIKE UPPER('domine%') OR UPPER(main_app_sequence.manuscript_full_text_std_spelling::text) LIKE UPPER('domine%') OR UPPER(main_app_sequence.incipit::text) LIKE UPPER('domine%'))) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.manuscript_full_text, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id WHERE ch.manuscript_full_text ILIKE 'domine%' UNION SELECT 'sequence' as type, sq.id, sq.title, sq.manuscript_full_text, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id WHERE sq.manuscript_full_text ILIKE 'domine%') c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c1.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "SELECT * FROM ((SELECT 'Chant' AS type, c.id, c.incipit, i.siglum FROM main_app_chant c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE c.incipit ILIKE 'domine%') UNION ALL (SELECT 'Sequence' AS type, seq.id, seq.incipit, i.siglum FROM main_app_sequence seq JOIN main_app_source s ON seq.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE seq.incipit ILIKE 'domine%')) AS combined_results ORDER BY siglum ASC, id ASC;",
@@ -50,20 +64,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c2.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.manuscript_full_text, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id WHERE ch.manuscript_full_text ILIKE 'domine%' UNION SELECT 'sequence' as type, sq.id, sq.title, sq.manuscript_full_text, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id WHERE sq.manuscript_full_text ILIKE 'domine%') c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c1.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c2.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that start with 'domine', sorted by institution siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -71,6 +71,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant INNER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (main_app_chant.service_id = 4163 AND UPPER(main_app_chant.cantus_id::text) LIKE UPPER('%002321%'))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence INNER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (main_app_sequence.service_id = 4163 AND UPPER(main_app_sequence.cantus_id::text) LIKE UPPER('%002321%'))) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.cantus_id, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id JOIN main_app_service sv ON ch.service_id = sv.id WHERE sv.name = 'H' AND ch.cantus_id = '002321' UNION SELECT 'sequence' as type, sq.id, sq.title, sq.cantus_id, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id JOIN main_app_service sv ON sq.service_id = sv.id WHERE sv.name = 'H' AND sq.cantus_id = '002321') c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c3.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "(SELECT 'chant' AS type, main_app_chant.id AS id, main_app_institution.siglum AS institution_siglum FROM main_app_chant JOIN main_app_service ON main_app_chant.service_id = main_app_service.id JOIN main_app_source ON main_app_chant.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_service.name = 'H' AND main_app_chant.cantus_id = '002321') UNION ALL (SELECT 'sequence' AS type, main_app_sequence.id AS id, main_app_institution.siglum AS institution_siglum FROM main_app_sequence JOIN main_app_service ON main_app_sequence.service_id = main_app_service.id JOIN main_app_source ON main_app_sequence.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_service.name = 'H' AND main_app_sequence.cantus_id = '002321') ORDER BY institution_siglum ASC, id ASC;",
@@ -85,20 +99,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c3.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.cantus_id, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id JOIN main_app_service sv ON ch.service_id = sv.id WHERE sv.name = 'H' AND ch.cantus_id = '002321' UNION SELECT 'sequence' as type, sq.id, sq.title, sq.cantus_id, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id JOIN main_app_service sv ON sq.service_id = sv.id WHERE sv.name = 'H' AND sq.cantus_id = '002321') c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c3.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c3.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that have the 'H' Service with a Cantus ID of '002321', sorted by institution siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -106,6 +106,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (main_app_chant.mode = '2' AND main_app_chant.volpiano IS NOT NULL)) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (main_app_sequence.mode = '2' AND main_app_sequence.volpiano IS NOT NULL)) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.mode, ch.volpiano, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id WHERE ch.mode = '2' AND ch.volpiano IS NOT NULL UNION SELECT 'sequence' as type, sq.id, sq.title, sq.mode, sq.volpiano, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id WHERE sq.mode = '2' AND sq.volpiano IS NOT NULL) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c4.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "SELECT * FROM (SELECT main_app_chant.*, main_app_institution.siglum AS institution_siglum FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_chant.mode = '2' AND main_app_chant.volpiano IS NOT NULL UNION ALL SELECT main_app_sequence.*, main_app_institution.siglum AS institution_siglum FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_sequence.mode = '2' AND main_app_sequence.volpiano IS NOT NULL) AS combined ORDER BY institution_siglum ASC, id ASC;",
@@ -120,20 +134,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c4.csv"
             }
         },        
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.mode, ch.volpiano, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id WHERE ch.mode = '2' AND ch.volpiano IS NOT NULL UNION SELECT 'sequence' as type, sq.id, sq.title, sq.mode, sq.volpiano, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id WHERE sq.mode = '2' AND sq.volpiano IS NOT NULL) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c4.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c4.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that have Mode '2' and that have volpiano, sorted by institution siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -141,6 +141,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant INNER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) WHERE (UPPER(main_app_chant.cantus_id::text) LIKE UPPER('%909000%') AND UPPER(main_app_feast.name::text) LIKE UPPER('%Dominici%'))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence INNER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) WHERE (UPPER(main_app_sequence.cantus_id::text) LIKE UPPER('%909000%') AND UPPER(main_app_feast.name::text) LIKE UPPER('%Dominici%'))) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.cantus_id, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id JOIN main_app_feast f ON ch.feast_id = f.id WHERE f.name ILIKE '%Dominici%' AND ch.cantus_id = '909000' UNION SELECT 'sequence' as type, sq.id, sq.title, sq.cantus_id, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id JOIN main_app_feast f ON sq.feast_id = f.id WHERE f.name ILIKE '%Dominici%' AND sq.cantus_id = '909000') c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c5.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "(SELECT 'chant' AS type, main_app_chant.*, main_app_institution.siglum AS institution_siglum FROM main_app_chant JOIN main_app_feast ON main_app_chant.feast_id = main_app_feast.id JOIN main_app_source ON main_app_chant.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_feast.name ILIKE '%Dominici%' AND main_app_chant.cantus_id = '909000') UNION ALL (SELECT 'sequence' AS type, main_app_sequence.*, main_app_institution.siglum AS institution_siglum FROM main_app_sequence JOIN main_app_feast ON main_app_sequence.feast_id = main_app_feast.id JOIN main_app_source ON main_app_sequence.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_feast.name ILIKE '%Dominici%' AND main_app_sequence.cantus_id = '909000') ORDER BY institution_siglum ASC, id ASC;",
@@ -155,20 +169,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c5.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.cantus_id, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id JOIN main_app_feast f ON ch.feast_id = f.id WHERE f.name ILIKE '%Dominici%' AND ch.cantus_id = '909000' UNION SELECT 'sequence' as type, sq.id, sq.title, sq.cantus_id, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id JOIN main_app_feast f ON sq.feast_id = f.id WHERE f.name ILIKE '%Dominici%' AND sq.cantus_id = '909000') c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c5.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c5.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database from feasts search 'Dominici' and have a Cantus ID of '909000', sorted by institution siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -176,6 +176,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant INNER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (main_app_chant.genre_id = 122 AND main_app_chant.mode = '4' AND main_app_chant.position = '12' AND main_app_chant.volpiano IS NOT NULL)) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence INNER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (main_app_sequence.genre_id = 122 AND main_app_sequence.mode = '4' AND main_app_sequence.position = '12' AND main_app_sequence.volpiano IS NOT NULL)) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.mode, ch.position, ch.volpiano, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id JOIN main_app_genre g ON ch.genre_id = g.id WHERE g.name = 'A' AND ch.mode = '4' AND ch.position = '12' AND ch.volpiano IS NOT NULL UNION SELECT 'sequence' as type, sq.id, sq.title, sq.mode, sq.position, sq.volpiano, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id JOIN main_app_genre g ON sq.genre_id = g.id WHERE g.name = 'A' AND sq.mode = '4' AND sq.position = '12' AND sq.volpiano IS NOT NULL) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c6.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "SELECT combined.id, combined.siglum, combined.type FROM (SELECT main_app_chant.id, main_app_institution.siglum, 'chant' AS type FROM main_app_chant JOIN main_app_genre ON main_app_chant.genre_id = main_app_genre.id JOIN main_app_source ON main_app_chant.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_genre.name = 'A' AND main_app_chant.mode = '4' AND main_app_chant.position = '12' AND main_app_chant.volpiano IS NOT NULL AND main_app_chant.volpiano <> '' UNION ALL SELECT main_app_sequence.id, main_app_institution.siglum, 'sequence' AS type FROM main_app_sequence JOIN main_app_genre ON main_app_sequence.genre_id = main_app_genre.id JOIN main_app_source ON main_app_sequence.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE main_app_genre.name = 'A' AND main_app_sequence.mode = '4' AND main_app_sequence.position = '12' AND main_app_sequence.volpiano IS NOT NULL AND main_app_sequence.volpiano <> '') AS combined ORDER BY combined.siglum ASC, combined.id ASC;",
@@ -190,20 +204,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c6.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.mode, ch.position, ch.volpiano, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id JOIN main_app_genre g ON ch.genre_id = g.id WHERE g.name = 'A' AND ch.mode = '4' AND ch.position = '12' AND ch.volpiano IS NOT NULL UNION SELECT 'sequence' as type, sq.id, sq.title, sq.mode, sq.position, sq.volpiano, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id JOIN main_app_genre g ON sq.genre_id = g.id WHERE g.name = 'A' AND sq.mode = '4' AND sq.position = '12' AND sq.volpiano IS NOT NULL) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c6.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c6.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database with Genre 'A', Mode '4', Position '12' and that contain volpiano, sorted by institution siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -211,6 +211,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant INNER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) INNER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) WHERE (main_app_chant.service_id = 4153 AND main_app_chant.mode = '?' AND UPPER(main_app_feast.name::text) LIKE UPPER('%pro%'))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence INNER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) INNER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) WHERE (main_app_sequence.service_id = 4153 AND main_app_sequence.mode = '?' AND UPPER(main_app_feast.name::text) LIKE UPPER('%pro%'))) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT mc.*, i.siglum FROM (SELECT c.* FROM main_app_chant c UNION ALL SELECT s.* FROM main_app_sequence s) mc JOIN main_app_source src ON mc.source_id = src.id JOIN main_app_institution i ON src.holding_institution_id = i.id JOIN main_app_feast f ON mc.feast_id = f.id WHERE mc.service_id = (SELECT id FROM main_app_service WHERE name = 'M') AND mc.mode = '?' AND f.name ILIKE '%pro%' ORDER BY i.siglum ASC, mc.id ASC;",
+                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c7.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "(SELECT inst.siglum, c.id, 'chant' as type, c.title, c.incipit FROM main_app_chant c JOIN main_app_service s ON c.service_id = s.id JOIN main_app_feast f ON c.feast_id = f.id JOIN main_app_source src ON c.source_id = src.id JOIN main_app_institution inst ON src.holding_institution_id = inst.id WHERE s.name = 'M' AND c.mode = '?' AND f.name ILIKE '%pro%') UNION ALL (SELECT inst.siglum, seq.id, 'sequence' as type, seq.title, seq.incipit FROM main_app_sequence seq JOIN main_app_service s ON seq.service_id = s.id JOIN main_app_feast f ON seq.feast_id = f.id JOIN main_app_source src ON seq.source_id = src.id JOIN main_app_institution inst ON src.holding_institution_id = inst.id WHERE s.name = 'M' AND seq.mode = '?' AND f.name ILIKE '%pro%') ORDER BY 1, 2;",
@@ -225,20 +239,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c7.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT mc.*, i.siglum FROM (SELECT c.* FROM main_app_chant c UNION ALL SELECT s.* FROM main_app_sequence s) mc JOIN main_app_source src ON mc.source_id = src.id JOIN main_app_institution i ON src.holding_institution_id = i.id JOIN main_app_feast f ON mc.feast_id = f.id WHERE mc.service_id = (SELECT id FROM main_app_service WHERE name = 'M') AND mc.mode = '?' AND f.name ILIKE '%pro%' ORDER BY i.siglum ASC, mc.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/chants/claude/c7.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c7.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that have Service 'M', Mode '?', and search for Feast 'pro', sorted by institution siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -246,6 +246,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (UPPER(main_app_chant.manuscript_full_text::text) LIKE UPPER('%benedicte dominio%') OR UPPER(main_app_chant.manuscript_full_text_std_spelling::text) LIKE UPPER('%benedicte dominio%') OR UPPER(main_app_chant.incipit::text) LIKE UPPER('%benedicte dominio%'))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (UPPER(main_app_sequence.manuscript_full_text::text) LIKE UPPER('%benedicte dominio%') OR UPPER(main_app_sequence.manuscript_full_text_std_spelling::text) LIKE UPPER('%benedicte dominio%') OR UPPER(main_app_sequence.incipit::text) LIKE UPPER('%benedicte dominio%'))) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT DISTINCT c.*, s.name as institution_siglum FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c JOIN main_app_source src ON c.source_id = src.id JOIN main_app_institution s ON src.holding_institution_id = s.id WHERE c.manuscript_full_text ILIKE '%benedicte dominio%' OR c.manuscript_full_text_std_spelling ILIKE '%benedicte dominio%' OR c.incipit ILIKE '%benedicte dominio%' ORDER BY s.siglum ASC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c8.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "SELECT main_app_institution.siglum AS institution_siglum, main_app_chant.id AS id, 'chant' AS type, main_app_chant.title, main_app_chant.incipit, main_app_chant.manuscript_full_text_std_spelling FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE (main_app_chant.title ILIKE '%benedicte dominio%' OR main_app_chant.incipit ILIKE '%benedicte dominio%' OR main_app_chant.manuscript_full_text_std_spelling ILIKE '%benedicte dominio%' OR main_app_chant.manuscript_full_text ILIKE '%benedicte dominio%') UNION SELECT main_app_institution.siglum AS institution_siglum, main_app_sequence.id AS id, 'sequence' AS type, main_app_sequence.title, main_app_sequence.incipit, main_app_sequence.manuscript_full_text_std_spelling FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id = main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id = main_app_institution.id WHERE (main_app_sequence.title ILIKE '%benedicte dominio%' OR main_app_sequence.incipit ILIKE '%benedicte dominio%' OR main_app_sequence.manuscript_full_text_std_spelling ILIKE '%benedicte dominio%' OR main_app_sequence.manuscript_full_text ILIKE '%benedicte dominio%') ORDER BY institution_siglum ASC, id ASC;",
@@ -260,20 +274,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c8.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT DISTINCT c.*, s.name as institution_siglum FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c JOIN main_app_source src ON c.source_id = src.id JOIN main_app_institution s ON src.holding_institution_id = s.id WHERE c.manuscript_full_text ILIKE '%benedicte dominio%' OR c.manuscript_full_text_std_spelling ILIKE '%benedicte dominio%' OR c.incipit ILIKE '%benedicte dominio%' ORDER BY s.siglum ASC NULLS LAST, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/c8.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c8.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that contain a term like 'benedicte dominio', sorted by institution siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -281,6 +281,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (UPPER(main_app_chant.manuscript_full_text::text) LIKE UPPER('%lucas%') OR UPPER(main_app_chant.manuscript_full_text_std_spelling::text) LIKE UPPER('%lucas%') OR UPPER(main_app_chant.incipit::text) LIKE UPPER('%lucas%'))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (UPPER(main_app_sequence.manuscript_full_text::text) LIKE UPPER('%lucas%') OR UPPER(main_app_sequence.manuscript_full_text_std_spelling::text) LIKE UPPER('%lucas%') OR UPPER(main_app_sequence.incipit::text) LIKE UPPER('%lucas%'))) ORDER BY col5 DESC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT DISTINCT c.*, g.name as genre_name FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c LEFT JOIN main_app_genre g ON c.genre_id = g.id WHERE c.manuscript_full_text ILIKE '%lucas%' OR c.manuscript_full_text_std_spelling ILIKE '%lucas%' OR c.incipit ILIKE '%lucas%' ORDER BY genre_name DESC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c9.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, g.name AS genre_name FROM main_app_chant c LEFT JOIN main_app_genre g ON c.genre_id = g.id WHERE c.title ILIKE '%lucas%' OR c.incipit ILIKE '%lucas%' OR c.manuscript_full_text ILIKE '%lucas%' OR c.manuscript_full_text_std_spelling ILIKE '%lucas%' UNION ALL SELECT s.id, s.title, s.incipit, g.name AS genre_name FROM main_app_sequence s LEFT JOIN main_app_genre g ON s.genre_id = g.id WHERE s.title ILIKE '%lucas%' OR s.incipit ILIKE '%lucas%' OR s.manuscript_full_text ILIKE '%lucas%' OR s.manuscript_full_text_std_spelling ILIKE '%lucas%' ORDER BY genre_name DESC, id ASC;",
@@ -295,20 +309,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c9.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT DISTINCT c.*, g.name as genre_name FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c LEFT JOIN main_app_genre g ON c.genre_id = g.id WHERE c.manuscript_full_text ILIKE '%lucas%' OR c.manuscript_full_text_std_spelling ILIKE '%lucas%' OR c.incipit ILIKE '%lucas%' ORDER BY genre_name DESC NULLS LAST, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/c9.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c9.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that contain a term like 'lucas' sorted by Genre descending and ID ascending. Format your response without any formatting or newlines."
@@ -316,6 +316,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant INNER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (main_app_chant.service_id = 4159 AND (UPPER(main_app_chant.manuscript_full_text::text) LIKE UPPER('Beata%') OR UPPER(main_app_chant.manuscript_full_text_std_spelling::text) LIKE UPPER('Beata%') OR UPPER(main_app_chant.incipit::text) LIKE UPPER('Beata%')))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence INNER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (main_app_sequence.service_id = 4159 AND (UPPER(main_app_sequence.manuscript_full_text::text) LIKE UPPER('Beata%') OR UPPER(main_app_sequence.manuscript_full_text_std_spelling::text) LIKE UPPER('Beata%') OR UPPER(main_app_sequence.incipit::text) LIKE UPPER('Beata%')))) ORDER BY col12 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT DISTINCT c.*, g.name as genre_name FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c LEFT JOIN main_app_genre g ON c.genre_id = g.id WHERE (c.manuscript_full_text ILIKE 'Beata%' OR c.manuscript_full_text_std_spelling ILIKE 'Beata%' OR c.incipit ILIKE 'Beata%') AND c.service_id IN (SELECT id FROM main_app_service WHERE name = 'V2') ORDER BY c.mode ASC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c10.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "SELECT main_app_chant.id, main_app_chant.title, main_app_chant.incipit, main_app_chant.mode FROM main_app_chant JOIN main_app_service ON main_app_chant.service_id = main_app_service.id WHERE main_app_service.name = 'V2' AND (main_app_chant.title LIKE 'Beata%' OR main_app_chant.incipit LIKE 'Beata%') UNION SELECT main_app_sequence.id, main_app_sequence.title, main_app_sequence.incipit, main_app_sequence.mode FROM main_app_sequence JOIN main_app_service ON main_app_sequence.service_id = main_app_service.id WHERE main_app_service.name = 'V2' AND (main_app_sequence.title LIKE 'Beata%' OR main_app_sequence.incipit LIKE 'Beata%') ORDER BY mode ASC, id ASC;",
@@ -330,20 +344,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c10.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT DISTINCT c.*, g.name as genre_name FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c LEFT JOIN main_app_genre g ON c.genre_id = g.id WHERE (c.manuscript_full_text ILIKE 'Beata%' OR c.manuscript_full_text_std_spelling ILIKE 'Beata%' OR c.incipit ILIKE 'Beata%') AND c.service_id IN (SELECT id FROM main_app_service WHERE name = 'V2') ORDER BY c.mode ASC NULLS LAST, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/c10.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c10.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that have a term that starts with 'Beata', with Service 'V2', sorted by Mode ascending and ID ascending. Format your response without any formatting or newlines."
@@ -351,6 +351,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant INNER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (main_app_chant.service_id = 4154 AND UPPER(main_app_chant.cantus_id::text) LIKE UPPER('%001331%') AND (UPPER(main_app_chant.manuscript_full_text::text) LIKE UPPER('Alleluia%') OR UPPER(main_app_chant.manuscript_full_text_std_spelling::text) LIKE UPPER('Alleluia%') OR UPPER(main_app_chant.incipit::text) LIKE UPPER('Alleluia%')))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence INNER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (main_app_sequence.service_id = 4154 AND UPPER(main_app_sequence.cantus_id::text) LIKE UPPER('%001331%') AND (UPPER(main_app_sequence.manuscript_full_text::text) LIKE UPPER('Alleluia%') OR UPPER(main_app_sequence.manuscript_full_text_std_spelling::text) LIKE UPPER('Alleluia%') OR UPPER(main_app_sequence.incipit::text) LIKE UPPER('Alleluia%')))) ORDER BY col3 DESC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT DISTINCT c.*, COALESCE(c.manuscript_full_text, c.incipit) as sort_text FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c WHERE (c.manuscript_full_text ILIKE 'Alleluia%' OR c.manuscript_full_text_std_spelling ILIKE 'Alleluia%' OR c.incipit ILIKE 'Alleluia%') AND c.service_id IN (SELECT id FROM main_app_service WHERE name = 'L') AND c.cantus_id = '001331' ORDER BY sort_text DESC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c11.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "SELECT * FROM (SELECT c.* FROM main_app_chant c JOIN main_app_service s ON c.service_id = s.id WHERE s.name = 'L' AND c.cantus_id = '001331' AND (c.incipit ILIKE 'Alleluia%' OR c.manuscript_full_text ILIKE 'Alleluia%') UNION ALL SELECT seq.* FROM main_app_sequence seq JOIN main_app_service s ON seq.service_id = s.id WHERE s.name = 'L' AND seq.cantus_id = '001331' AND (seq.incipit ILIKE 'Alleluia%' OR seq.manuscript_full_text ILIKE 'Alleluia%')) AS combined ORDER BY COALESCE(incipit, manuscript_full_text) DESC, id ASC;",
@@ -365,20 +379,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c11.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT DISTINCT c.*, COALESCE(c.manuscript_full_text, c.incipit) as sort_text FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c WHERE (c.manuscript_full_text ILIKE 'Alleluia%' OR c.manuscript_full_text_std_spelling ILIKE 'Alleluia%' OR c.incipit ILIKE 'Alleluia%') AND c.service_id IN (SELECT id FROM main_app_service WHERE name = 'L') AND c.cantus_id = '001331' ORDER BY sort_text DESC NULLS LAST, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/c11.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c11.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that have a term that starts with 'Alleluia', with Service 'L', Cantus ID '001331', sorted by Incipit/Full Text descending and ID ascending. Format your response without any formatting or newlines."
@@ -386,6 +386,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (UPPER(main_app_chant.manuscript_full_text::text) LIKE UPPER('%custodit%') OR UPPER(main_app_chant.manuscript_full_text_std_spelling::text) LIKE UPPER('%custodit%') OR UPPER(main_app_chant.incipit::text) LIKE UPPER('%custodit%'))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (UPPER(main_app_sequence.manuscript_full_text::text) LIKE UPPER('%custodit%') OR UPPER(main_app_sequence.manuscript_full_text_std_spelling::text) LIKE UPPER('%custodit%') OR UPPER(main_app_sequence.incipit::text) LIKE UPPER('%custodit%'))) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT DISTINCT c.*, s.siglum as source_siglum FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c JOIN main_app_source s ON c.source_id = s.id WHERE c.manuscript_full_text ILIKE '%custodit%' OR c.manuscript_full_text_std_spelling ILIKE '%custodit%' OR c.incipit ILIKE '%custodit%' ORDER BY source_siglum ASC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c12.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "",
@@ -400,20 +414,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c12.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT DISTINCT c.*, s.siglum as source_siglum FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c JOIN main_app_source s ON c.source_id = s.id WHERE c.manuscript_full_text ILIKE '%custodit%' OR c.manuscript_full_text_std_spelling ILIKE '%custodit%' OR c.incipit ILIKE '%custodit%' ORDER BY source_siglum ASC NULLS LAST, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/c12.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c12.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that contains the term 'custodit' sorted by siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -421,6 +421,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant INNER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE main_app_chant.genre_id = 163) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence INNER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE main_app_sequence.genre_id = 163) ORDER BY col8 DESC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT c.id, c.title, c.image_link, g.name AS genre_name, 'Chant' AS source_type FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id WHERE g.name = '[?]' UNION SELECT s.id, s.title, s.image_link, g.name AS genre_name, 'Sequence' AS source_type FROM main_app_sequence s JOIN main_app_genre g ON s.genre_id = g.id WHERE g.name = '[?]' ORDER BY image_link DESC, id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c13.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "SELECT * FROM (SELECT 'chant' AS type, c.id, c.image_link FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id WHERE g.name = '[?]' UNION ALL SELECT 'sequence' AS type, s.id, s.image_link FROM main_app_sequence s JOIN main_app_genre g ON s.genre_id = g.id WHERE g.name = '[?]') t ORDER BY t.image_link DESC, t.id ASC;",
@@ -435,20 +449,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c13.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT c.id, c.title, c.image_link, g.name AS genre_name, 'Chant' AS source_type FROM main_app_chant c JOIN main_app_genre g ON c.genre_id = g.id WHERE g.name = '[?]' UNION SELECT s.id, s.title, s.image_link, g.name AS genre_name, 'Sequence' AS source_type FROM main_app_sequence s JOIN main_app_genre g ON s.genre_id = g.id WHERE g.name = '[?]' ORDER BY image_link DESC, id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/c13.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c13.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that have Genre '[?]', sorted by image link descending and ID ascending. Format your response without any formatting or newlines."
@@ -456,6 +456,20 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (UPPER(main_app_chant.manuscript_full_text::text) LIKE UPPER('%Gaude mater luminis%') OR UPPER(main_app_chant.manuscript_full_text_std_spelling::text) LIKE UPPER('%Gaude mater luminis%') OR UPPER(main_app_chant.incipit::text) LIKE UPPER('%Gaude mater luminis%'))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (UPPER(main_app_sequence.manuscript_full_text::text) LIKE UPPER('%Gaude mater luminis%') OR UPPER(main_app_sequence.manuscript_full_text_std_spelling::text) LIKE UPPER('%Gaude mater luminis%') OR UPPER(main_app_sequence.incipit::text) LIKE UPPER('%Gaude mater luminis%'))) ORDER BY col30 ASC, col1 ASC;",
+        "predicted_sql_query_without_options": {
+            "gpt": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT c.id, c.title, c.siglum, c.incipit, 'Chant' AS source_type FROM main_app_chant c WHERE c.incipit LIKE '%Gaude mater luminis%' OR c.manuscript_full_text LIKE '%Gaude mater luminis%' OR c.manuscript_syllabized_full_text LIKE '%Gaude mater luminis%' UNION SELECT s.id, s.title, s.siglum, s.incipit, 'Sequence' AS source_type FROM main_app_sequence s WHERE s.incipit LIKE '%Gaude mater luminis%' OR s.manuscript_full_text LIKE '%Gaude mater luminis%' OR s.manuscript_syllabized_full_text LIKE '%Gaude mater luminis%' ORDER BY siglum ASC, id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c14.csv"
+            },
+            "grok": {
+                "sql_query": "",
+                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+            }
+        },        
         "predicted_sql_query_with_options": {
             "gpt": {
                 "sql_query": "",
@@ -470,20 +484,6 @@
                 "predicted_output_path": "predicted_outputs_with_options/chants/grok/c14.csv"
             }
         },
-        "predicted_sql_query_without_options": {
-            "gpt": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT c.id, c.title, c.siglum, c.incipit, 'Chant' AS source_type FROM main_app_chant c WHERE c.incipit LIKE '%Gaude mater luminis%' OR c.manuscript_full_text LIKE '%Gaude mater luminis%' OR c.manuscript_syllabized_full_text LIKE '%Gaude mater luminis%' UNION SELECT s.id, s.title, s.siglum, s.incipit, 'Sequence' AS source_type FROM main_app_sequence s WHERE s.incipit LIKE '%Gaude mater luminis%' OR s.manuscript_full_text LIKE '%Gaude mater luminis%' OR s.manuscript_syllabized_full_text LIKE '%Gaude mater luminis%' ORDER BY siglum ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/c14.csv"
-            },
-            "grok": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
-            }
-        },
         "gold_output_path": "gold_outputs/chants/c14.csv",
         "natural_language_inputs": [
             "Given this database schema, generate a SQL query that will show me all the Chants and Sequences in the database that contain the term 'Gaude mater luminis', sorted by siglum ascending and ID ascending. Format your response without any formatting or newlines."
@@ -491,20 +491,6 @@
     },
     {
         "sql_query": "(SELECT main_app_chant.id AS col1, main_app_chant.title AS col2, main_app_chant.incipit AS col3, main_app_chant.folio AS col4, main_app_chant.genre_id AS col5, main_app_chant.source_id AS col6, main_app_chant.cantus_id AS col7, main_app_chant.image_link AS col8, main_app_chant.service_id AS col9, main_app_chant.position AS col10, main_app_chant.feast_id AS col11, main_app_chant.mode AS col12, main_app_chant.manuscript_full_text_std_spelling AS col13, main_app_chant.manuscript_full_text AS col14, main_app_chant.volpiano AS col15, main_app_chant.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_chant INNER JOIN main_app_service ON (main_app_chant.service_id = main_app_service.id) LEFT OUTER JOIN main_app_genre ON (main_app_chant.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_chant.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_feast ON (main_app_chant.feast_id = main_app_feast.id) WHERE (main_app_chant.service_id = 4161 AND UPPER(main_app_chant.cantus_id::text) LIKE UPPER('%ah54007%'))) UNION ALL (SELECT main_app_sequence.id AS col1, main_app_sequence.title AS col2, main_app_sequence.incipit AS col3, main_app_sequence.folio AS col4, main_app_sequence.genre_id AS col5, main_app_sequence.source_id AS col6, main_app_sequence.cantus_id AS col7, main_app_sequence.image_link AS col8, main_app_sequence.service_id AS col9, main_app_sequence.position AS col10, main_app_sequence.feast_id AS col11, main_app_sequence.mode AS col12, main_app_sequence.manuscript_full_text_std_spelling AS col13, main_app_sequence.manuscript_full_text AS col14, main_app_sequence.volpiano AS col15, main_app_sequence.search_vector AS col16, main_app_genre.id AS col17, main_app_genre.date_created AS col18, main_app_genre.date_updated AS col19, main_app_genre.created_by_id AS col20, main_app_genre.last_updated_by_id AS col21, main_app_genre.name AS col22, main_app_genre.description AS col23, main_app_genre.mass_office AS col24, main_app_source.id AS col25, main_app_source.holding_institution_id AS col26, main_app_source.shelfmark AS col27, main_app_institution.id AS col28, main_app_institution.name AS col29, main_app_institution.siglum AS col30, main_app_institution.city AS col31, main_app_service.id AS col32, main_app_service.date_created AS col33, main_app_service.date_updated AS col34, main_app_service.created_by_id AS col35, main_app_service.last_updated_by_id AS col36, main_app_service.name AS col37, main_app_service.description AS col38, main_app_feast.id AS col39, main_app_feast.name AS col40, main_app_feast.description AS col41 FROM main_app_sequence INNER JOIN main_app_service ON (main_app_sequence.service_id = main_app_service.id) LEFT OUTER JOIN main_app_genre ON (main_app_sequence.genre_id = main_app_genre.id) INNER JOIN main_app_source ON (main_app_sequence.source_id = main_app_source.id) LEFT OUTER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) LEFT OUTER JOIN main_app_feast ON (main_app_sequence.feast_id = main_app_feast.id) WHERE (main_app_sequence.service_id = 4161 AND UPPER(main_app_sequence.cantus_id::text) LIKE UPPER('%ah54007%'))) ORDER BY col30 ASC, col1 ASC;",
-        "predicted_sql_query_with_options": {
-            "gpt": {
-                "sql_query": "SELECT 'chant' AS record_type, main_app_chant.id, siglum, cantus_id FROM main_app_chant JOIN main_app_service ON main_app_chant.service_id = main_app_service.id WHERE main_app_service.name = 'X' AND main_app_chant.cantus_id = 'ah54007' UNION ALL SELECT 'sequence' AS record_type, main_app_sequence.id, siglum, cantus_id FROM main_app_sequence JOIN main_app_service ON main_app_sequence.service_id = main_app_service.id WHERE main_app_service.name = 'X' AND main_app_sequence.cantus_id = 'ah54007' ORDER BY siglum ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c15.csv"
-            },
-            "claude": {
-                "sql_query": "SELECT * FROM (SELECT * FROM main_app_chant WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007' UNION SELECT * FROM main_app_sequence WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007') AS combined_results ORDER BY siglum ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/chants/claude/c15.csv"
-            },
-            "grok": {
-                "sql_query": "SELECT * FROM main_app_chant WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007' UNION SELECT * FROM main_app_sequence WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007' ORDER BY siglum ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/chants/grok/c15.csv"
-            }
-        },
         "predicted_sql_query_without_options": {
             "gpt": {
                 "sql_query": "",
@@ -517,6 +503,20 @@
             "grok": {
                 "sql_query": "",
                 "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+            }
+        },        
+        "predicted_sql_query_with_options": {
+            "gpt": {
+                "sql_query": "SELECT 'chant' AS record_type, main_app_chant.id, siglum, cantus_id FROM main_app_chant JOIN main_app_service ON main_app_chant.service_id = main_app_service.id WHERE main_app_service.name = 'X' AND main_app_chant.cantus_id = 'ah54007' UNION ALL SELECT 'sequence' AS record_type, main_app_sequence.id, siglum, cantus_id FROM main_app_sequence JOIN main_app_service ON main_app_sequence.service_id = main_app_service.id WHERE main_app_service.name = 'X' AND main_app_sequence.cantus_id = 'ah54007' ORDER BY siglum ASC, id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c15.csv"
+            },
+            "claude": {
+                "sql_query": "SELECT * FROM (SELECT * FROM main_app_chant WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007' UNION SELECT * FROM main_app_sequence WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007') AS combined_results ORDER BY siglum ASC, id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/chants/claude/c15.csv"
+            },
+            "grok": {
+                "sql_query": "SELECT * FROM main_app_chant WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007' UNION SELECT * FROM main_app_sequence WHERE service_id = (SELECT id FROM main_app_service WHERE name = 'X') AND cantus_id = 'ah54007' ORDER BY siglum ASC, id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/chants/grok/c15.csv"
             }
         },
         "gold_output_path": "gold_outputs/chants/c15.csv",
