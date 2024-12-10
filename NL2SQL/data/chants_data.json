@@ -266,8 +266,8 @@
                 "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
             },
             "claude": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/object_output_filex.csv"
+                "sql_query": "SELECT DISTINCT c.*, s.name as institution_siglum FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c JOIN main_app_source src ON c.source_id = src.id JOIN main_app_institution s ON src.holding_institution_id = s.id WHERE c.manuscript_full_text ILIKE '%benedicte dominio%' OR c.manuscript_full_text_std_spelling ILIKE '%benedicte dominio%' OR c.incipit ILIKE '%benedicte dominio%' ORDER BY s.siglum ASC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c8.csv"
             },
             "grok": {
                 "sql_query": "",
@@ -301,8 +301,8 @@
                 "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
             },
             "claude": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/object_output_filex.csv"
+                "sql_query": "SELECT DISTINCT c.*, g.name as genre_name FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c LEFT JOIN main_app_genre g ON c.genre_id = g.id WHERE c.manuscript_full_text ILIKE '%lucas%' OR c.manuscript_full_text_std_spelling ILIKE '%lucas%' OR c.incipit ILIKE '%lucas%' ORDER BY genre_name DESC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c9.csv"
             },
             "grok": {
                 "sql_query": "",
@@ -336,8 +336,8 @@
                 "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
             },
             "claude": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/object_output_filex.csv"
+                "sql_query": "SELECT DISTINCT c.*, g.name as genre_name FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c LEFT JOIN main_app_genre g ON c.genre_id = g.id WHERE (c.manuscript_full_text ILIKE 'Beata%' OR c.manuscript_full_text_std_spelling ILIKE 'Beata%' OR c.incipit ILIKE 'Beata%') AND c.service_id IN (SELECT id FROM main_app_service WHERE name = 'V2') ORDER BY c.mode ASC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c10.csv"
             },
             "grok": {
                 "sql_query": "",
@@ -371,8 +371,8 @@
                 "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
             },
             "claude": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/object_output_filex.csv"
+                "sql_query": "SELECT DISTINCT c.*, COALESCE(c.manuscript_full_text, c.incipit) as sort_text FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c WHERE (c.manuscript_full_text ILIKE 'Alleluia%' OR c.manuscript_full_text_std_spelling ILIKE 'Alleluia%' OR c.incipit ILIKE 'Alleluia%') AND c.service_id IN (SELECT id FROM main_app_service WHERE name = 'L') AND c.cantus_id = '001331' ORDER BY sort_text DESC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c11.csv"
             },
             "grok": {
                 "sql_query": "",
@@ -406,8 +406,8 @@
                 "predicted_output_path": "predicted_outputs_with_options/object/gpt/object_output_filex.csv"
             },
             "claude": {
-                "sql_query": "",
-                "predicted_output_path": "predicted_outputs_with_options/object/claude/object_output_filex.csv"
+                "sql_query": "SELECT DISTINCT c.*, s.siglum as source_siglum FROM (SELECT 'chant' as type, ch.* FROM main_app_chant ch UNION SELECT 'sequence' as type, sq.* FROM main_app_sequence sq) c JOIN main_app_source s ON c.source_id = s.id WHERE c.manuscript_full_text ILIKE '%custodit%' OR c.manuscript_full_text_std_spelling ILIKE '%custodit%' OR c.incipit ILIKE '%custodit%' ORDER BY source_siglum ASC NULLS LAST, c.id ASC;",
+                "predicted_output_path": "predicted_outputs_with_options/object/claude/c12.csv"
             },
             "grok": {
                 "sql_query": "",
