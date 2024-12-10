@@ -1,3 +1,1 @@
-id,siglum,institution_siglum,shelfmark
-123935,D-AAd 13,D-AAd,13 (XII)
-123934,D-AAd 13,D-AAd,13 (XII)
+id,shelfmark,siglum

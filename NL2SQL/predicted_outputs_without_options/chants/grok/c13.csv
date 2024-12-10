@@ -1,13 +1,13 @@
-id,title,image_link
-638301,,
-645482,,
-672455,,
-675520,,
-675527,,
-706685,,
-712795,,
-588638,,https://lib.is/IE9129581/iiif/2/FL9131032/full/full/0/default.jpg
-588637,,https://lib.is/IE9129581/iiif/2/FL9131031/full/full/0/default.jpg
-588582,,https://hlbrm.digitale-sammlungen.hebis.de/handschriften-hlbrm/content/pageview/450592
-588581,,https://hlbrm.digitale-sammlungen.hebis.de/handschriften-hlbrm/content/pageview/450591
-710400,,http://www.ksbm.oeaw.ac.at/images/AT/5000/AT5000-1013/AT5000-1013_2v.jpg
+id,title,incipit,image_link
+638301,,Christus factus est*,
+645482,,Loquebantur*,
+672455,,Ibo mihi ad montem myrrhae ,
+675520,,Orate erigite vos dominus vobiscum,
+675527,,Humilitate vos*,
+706685,,-- --,
+712795,,(...) met illud in fidei,
+588638,,O pater omnium et o,https://lib.is/IE9129581/iiif/2/FL9131032/full/full/0/default.jpg
+588637,,O dulcissime amator o dulcissime,https://lib.is/IE9129581/iiif/2/FL9131031/full/full/0/default.jpg
+588582,,O pater omnium et o,https://hlbrm.digitale-sammlungen.hebis.de/handschriften-hlbrm/content/pageview/450592
+588581,,O dulcissime amator o dulcissime,https://hlbrm.digitale-sammlungen.hebis.de/handschriften-hlbrm/content/pageview/450591
+710400,,Qui venturus*,http://www.ksbm.oeaw.ac.at/images/AT/5000/AT5000-1013/AT5000-1013_2v.jpg

@@ -1,8 +1,8 @@
-id,title,genre_id,genre_name
-259054,,156,R
-264516,,156,R
-285228,,156,R
-303944,,156,R
-328491,,156,R
-334794,,156,R
-385029,,156,R
+id,title,incipit,name,siglum
+259054,,Hanc vero quam Lucas,R,D-FUl
+264516,,Hanc vero quam lucas peccatricem,R,TR-Itks
+285228,,Hanc vero quam Lucas peccatricem,R,A-KN
+303944,,Hanc vero quam Lucas,R,A-KN
+328491,,Hanc vero quam Lucas,R,PL-KIk
+334794,,Hanc vero quam lucas peccatricem ,R,D-KNd
+385029,,Hanc vero quam Lucas,R,GB-Ob

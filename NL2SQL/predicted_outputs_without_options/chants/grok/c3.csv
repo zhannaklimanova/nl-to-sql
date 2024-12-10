@@ -1,52 +1,52 @@
-id,title,cantus_id,source_name,institution_name,institution_siglum
-248197,,002321,,Universitätsbibliothek,A-Gu
-286673,,002321,,Augustiner-Chorherrenstift - Bibliothek,A-KN
-294466,,002321,,Augustiner-Chorherrenstift - Bibliothek,A-KN
-305260,,002321,,Augustiner-Chorherrenstift - Bibliothek,A-KN
-307343,,002321,,Benediktiner-Stift Kremsmünster - Musikarchiv,A-KR
-338263,,002321,,Oberösterreichische Landesbibliothek,A-LIb
-439773,,002321,,Augustiner-Chorherrenstift - Bibliothek und Musikarchiv,A-SF
-509150,,002321,,Stiftsbibliothek,A-VOR
-510686,,002321,,Diözesanarchiv,A-Wda
-534860,,002321,,Diözesanarchiv,A-Wda
-554093,,002321,,Österreichische Nationalbibliothek,A-Wn
-230638,,002321,,Stiftsbibliothek,CH-E
-181060,,002321,,Domarchiv,D-AAm
-199181,,002321,,Staatsbibliothek Preussischer Kulturbesitz,D-B
-187105,,002321,,Staatsbibliothek,D-BAs
-258045,,002321,,Hessische Landesbibliothek,D-FUl
-619119,,002321,,Badische Landesbibliothek - Musiksammlung,D-KA
-334012,,002321,,Erzbischöfliche Diözesan- und Dombibliothek,D-KNd
-348796,,002321,,Bischöfliches Dom- und Diözesanmuseum,D-MZb
-377095,,002321,,Bayerische Staatsbibliothek,D-Mbs
-435463,,002321,,Württembergische Landesbibliothek,D-Sl
-312686,,002321,,Det kongelige Bibliotek Slotsholmen,DK-Kk
-481724,,002321,,Catedral - Archivo y Biblioteca Capitulares,E-Tc
-487244,,002321,,Catedral - Archivo y Biblioteca Capitulares,E-Tc
-202384,,002321,,Bibliothèque municipale,F-CA
-395617,,002321,,Bibliothèque nationale,F-Pn
-395618,,002321,,Bibliothèque nationale,F-Pn
-401442,,002321,,Bibliothèque nationale,F-Pn
-407782,,002321,,Bibliothèque nationale,F-Pn
-418187,,002321,,Bibliothèque nationale,F-Pn
-450707,,002321,,Bibliothèque nationale,F-Pn
-500935,,002321,,Bibliothèque municipale,F-VAL
-382063,,002321,,Bodleian Library,GB-Ob
-386086,,002321,,Bodleian Library,GB-Ob
-275861,,002321,,Franjevacki samostan,HR-Dsmbb
-163573,,002321,,Seminario Maggiore - Biblioteca,I-AO
-174559,,002321,,Cattedrale San Rufino - Archivio e Biblioteca,I-Ad
-237639,,002321,,Arcivescovado - Biblioteca,I-Far
-370203,,002321,,Biblioteca Capitolare Feliniana e Biblioteca Arcivescovile,I-Lc
-355025,,002321,,Biblioteca capitolare,I-MZ
-428587,,002321,,Biblioteca Vallicelliana,I-Rv
-569375,,002321,,Biblioteca Capitolare,I-VCd
-576756,,002321,,Biblioteca Capitolare,I-VCd
-584410,,002321,,Biblioteca Capitolare,I-VCd
-326747,,002321,,Biblioteka Kapituły Katedralnej,PL-KIk
-563040,,002321,,Biblioteka Uniwersytecka,PL-WRu
-597655,,002321,,Biblioteka Uniwersytecka,PL-WRu
-356856,,002321,,Nadškofijski arhiv (Archiepiscopal Archives),SI-Lna
-263162,,002321,,Topkapı Sarayı Müzesi,TR-Itks
-218875,,002321,,Biblioteca Apostolica Vaticana,V-CVbav
-389017,,002321,,Print (Multiple Copies),XX-NN
+id,title,incipit,siglum
+248197,,Doleo super te frater mi,A-Gu 30
+286673,,Doleo super te frater mi,A-KN CCl 1012
+294466,,Doleo super te frater mi,A-KN CCl 1018
+305260,,Doleo super te frater mi,A-KN CCl 589
+307343,,Doleo super te frater mi,A-KR VI/258
+338263,,Doleo super te frater mi,A-LIb 290
+439773,,Doleo super te frater mi,A-SF XI 480
+509150,,Doleo super te frater mi,A-VOR 287
+510686,,Doleo super te frater mi,A-Wda C-10
+534860,,Doleo super te frater mi,A-Wda D-4
+554093,,Doleo super te frater mi ,A-Wn Cod. 1890
+230638,,Doleo super te frater mi,CH-E 611
+181060,,Doleo super te frater mi,D-AAm G 20
+199181,,Doleo super te frater mi,D-B Mus. 40047
+187105,,Doleo super te frater mi,D-BAs Msc.Lit.25
+258045,,Doleo super te frater mi,D-FUl Aa 55
+619119,,Doleo super te frater mi,D-KA Aug. LX
+334012,,Doleo super te frater mi ,D-KNd 215
+348796,,Doleo super te frater mi,D-MZb D
+377095,,Doleo super te frater mi,D-Mbs Clm 4306
+435463,,Doleo super te frater mi,D-Sl HB.I.55
+312686,,Doleo super te frater mi,DK-Kk 3449 8o [08] VIII
+481724,,Doleo super te frater mi,E-Tc 44.1
+487244,,Doleo super te frater mi,E-Tc 44.2
+202384,,Doleo super te frater mi,F-CA 38
+395617,,Doleo super te frater mi,F-Pn Lat. 1090
+395618,,Doleo super te frater mi,F-Pn Lat. 1090
+401442,,Doleo super te frater mi ,F-Pn Lat. 12044
+407782,,Doleo super te frater mi,F-Pn Lat. 12601
+418187,,Doleo super te frater mi,F-Pn NAL 1535
+450707,,Doleo super te*,F-Pn Lat. 1085
+500935,,Doleo super te frater mi,F-VAL 114
+382063,,Doleo super te frater mi,GB-Ob MS. Canon. Liturg. 202
+386086,,Doleo super te frater mi,GB-Ob MS. Laud Misc. 284
+275861,,Doleo super te frater mi,HR-Dsmbb III
+163573,,Doleo super te frater mi,I-AO 6
+174559,,Doleo super te frater mi,I-Ad 5
+237639,,Doleo super te frater mi,I-Far s.c.
+370203,,Doleo super te frater mi,I-Lc 601
+355025,,Doleo super te frater mi,I-MZ 15/79
+428587,,Doleo super te frater mi,I-Rv C.5
+569375,,Doleo super te frater mi,I-VCd LXII
+576756,,Doleo super te frater mi,I-VCd LXIV
+584410,,Doleo super te frater mi ,I-VCd LXXIX
+326747,,Doleo super te frater mi ,PL-KIk 1
+563040,,Doleo super te frater mi,PL-WRu R 503
+597655,,Doleo super te frater mi,PL-WRu I F 401
+356856,,Doleo super te frater mi,SI-Lna 19 (olim 18)
+263162,,Doleo super te frater mi,TR-Itks 42
+218875,,Doleo super te frater mi,V-CVbav B.79
+389017,,Doleo super te frater mi,MA Impr. 1537
