@@ -12,7 +12,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_genre g ON c.genre_id = g.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE g.name = 'A' AND (c.title ILIKE '%alle%' OR c.incipit ILIKE '%alle%') ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_without_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -47,7 +47,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE (c.title ILIKE 'domine%' OR c.incipit ILIKE 'domine%') ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_without_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -82,7 +82,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_service serv ON c.service_id = serv.id WHERE c.cantus_id = '002321' AND serv.name = 'H' ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_without_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -117,7 +117,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE c.mode = '2' AND c.volpiano IS NOT NULL ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_without_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -152,7 +152,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_feast f ON c.feast_id = f.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE f.name ILIKE '%Dominici%' AND c.cantus_id = '909000' ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_without_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -187,7 +187,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_genre g ON c.genre_id = g.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE g.name = 'A' AND c.mode = '4' AND c.position = '12' AND c.volpiano IS NOT NULL ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_without_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -222,7 +222,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_service serv ON c.service_id = serv.id JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_feast f ON c.feast_id = f.id WHERE serv.name = 'M' AND c.mode = '?' AND f.name ILIKE '%pro%' ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_without_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_without_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -257,7 +257,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE c.title ILIKE '%benedicte dominio%' OR c.incipit ILIKE '%benedicte dominio%' ORDER BY i.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_with_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -292,7 +292,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, g.name, i.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_genre g ON c.genre_id = g.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE c.title ILIKE '%lucas%' OR c.incipit ILIKE '%lucas%' ORDER BY g.name DESC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_with_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -327,7 +327,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_service serv ON c.service_id = serv.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE (c.title ILIKE 'Beata%' OR c.incipit ILIKE 'Beata%') AND serv.name = 'V2' ORDER BY c.mode ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_with_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -362,7 +362,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_service serv ON c.service_id = serv.id WHERE (c.title ILIKE 'Alleluia%' OR c.incipit ILIKE 'Alleluia%') AND serv.name = 'L' AND c.cantus_id = '001331' ORDER BY COALESCE(c.title, c.incipit) DESC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_with_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -397,7 +397,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE c.title ILIKE '%custodit%' OR c.incipit ILIKE '%custodit%' ORDER BY s.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_with_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -432,7 +432,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, c.image_link FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_genre g ON c.genre_id = g.id WHERE g.name = '[?]' ORDER BY c.image_link DESC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_with_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -467,7 +467,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE c.title ILIKE '%Gaude mater luminis%' OR c.incipit ILIKE '%Gaude mater luminis%' ORDER BY s.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_with_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
@@ -502,7 +502,7 @@
             },
             "grok": {
                 "sql_query": "SELECT c.id, c.title, c.incipit, s.siglum FROM (SELECT * FROM main_app_chant UNION SELECT * FROM main_app_sequence) c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_service serv ON c.service_id = serv.id WHERE serv.name = 'X' AND c.cantus_id = 'ah54007' ORDER BY s.siglum ASC, c.id ASC;",
-                "predicted_output_path": "predicted_outputs_with_options/object/grok/object_output_filex.csv"
+                "predicted_output_path": "predicted_outputs_with_options/grok/object_output_filex.csv"
             }
         },
         "predicted_sql_query_with_options": {
