@@ -1,52 +1,62 @@
-id,name,month,day,feast_code,description
-2734,Eligii,12,1,14120100,"Eligius (Eloi), Bishop of Noyon"
-4611,Attalae,12,3,14120310,"Attala (Atala, Attalia, Attale) of Strasbourg, first abbess of convent of St Stephen"
-4316,Francisci Xaverii,12,3,14120300,"Francis Xavier, Confessor, Apostle of India and Japan (canonized in 1622)"
-2724,Barbarae,12,4,14120400,"Barbara, Virgin Martyr"
-2758,Suscept. Reliquiarum,12,4,14120410,"Feast of Relics (Notre Dame, Paris)"
-4559,Geraldi Archiepiscopi Bracharensis,12,5,14120510,"Gerald (Girald), Archbishop of Braga"
-2755,Sabae,12,5,14120500,"Sabas, Abbot"
-2747,Nicolai,12,6,14120600,"Nicholas of Bari, Bishop of Myra"
-2751,Octava Saturnini,12,6,14120610,Octave of Saturninus
-2767,Victoris,12,7,14120700,"Victor, Bishop of Piacenza"
-2748,Octava Andreae,12,7,14120710,Octave of Andrew
-2762,Transl. Baboleni,12,7,14120720,Moving of Babolenus' relics
-2726,Conceptio Mariae,12,8,14120800,Immaculate Conception of Mary
-4189,Eucharii,12,8,14120810,"Eucharius, First Bishop of Trier"
-4349,Ordinatio Zenonis,12,8,14120820,"Ordination of Zeno, Bishop of Verona"
-2763,Transl. Patrocli,12,9,14120901,Moving of Patroclus' relics (Muenster)
-4591,Leocadiae,12,9,14120920,"Leocadia of Toledo, Virgin Martyr"
-2759,Syri,12,9,14120900,Syrus
-4557,Eulaliae Emeritensis,12,10,14121010,"Eulalia of Mérida, Virgin Martyr"
-2737,Gabrielis,12,10,14121000,Gabriel
-2727,Damasi,12,11,14121100,"Damasus, Pope"
-2736,"Fusciani, Gentiani",12,11,14121110,"Fuscian and Gentian, Martyrs"
-2765,Valeriae,12,12,14121200,"Valeria of Limoges, Virgin Martyr"
-4181,BMV de Guadalupe,12,12,14121210,Our Lady of Guadalupe
-4323,Inventio Francisci,12,12,14121220,The finding of Francis's relics
-2750,Octava Nicolai,12,13,14121320,Octave of Nicholas
-2752,Odiliae,12,13,14121340,"Odilia (Ottilia), Abbess"
-2741,Judoci,12,13,14121330,"Judoc, Prince and Hermit"
-2743,Luciae,12,13,14121300,"Lucy (Lucia), Virgin Martyr"
-2723,Auberti,12,13,14121310,"Aubert (Aubertus), Bishop of Cambrai"
-2735,Eustratii et Soc.,12,13,14121350,"Eustratius et al, Martyrs"
-2746,Nicasii,12,14,14121400,"Nicasius, Bishop Martyr of Reims"
-2754,Relatio Martini,12,14,14121410,Return of Martin's relics
-2749,Octava Concep.Mariae,12,15,14121500,Octave of the Conception of Mary
-2722,Adalheidae,12,16,14121600,"Adelaide, Empress"
-2742,Lazari,12,17,14121700,"Lazarus of Bethany, ""Bp."" Marseilles"
-2769,Exspectationis BMV,12,18,14121810,The Expectation of Mary (The Expectation of the Birth of Jesus)
-2738,Gatiani,12,18,14121800,"Gatian, Bishop of Tours"
-4216,Wunnibaldi,12,18,14121820,
-4618,Dominici Silensis,12,20,14122010,"Dominic of Silos, Abbot"
-4425,Vigilia Thomae Apost.,12,20,14122000,Eve of Thomas the Apostle
-2760,Thomae Apost.,12,21,14122100,"Thomas, Apostle"
-2766,"Victoriae, Anatoliae",12,23,14122300,"Victoria and Anatolia, Virgin Martyrs"
-2739,"Gregorii, Mart.",12,24,14122400,"Gregory of Spoleto, Martyr"
-2761,Thomae Cant.,12,29,14122900,"Thomas Becket, Bishop of Canterbury"
-2764,Trophimi,12,29,14122910,"Trophimus, Bishop of Arles"
-2753,Perpetui,12,30,14123010,"Perpetuus, Bishop of Tours"
-2086,Transl. Jacobi,12,30,14123020,Translation of James the Apostle
-2733,Egwini,12,30,14123000,"Egwin, Bishop of Worcester"
-2756,Silvestri,12,31,14123100,"Silvester I, Pope"
-2725,Columbae,12,31,14123110,"Columba of Sens, Virgin Martyr"
+id,name,feast_code
+2722,Adalheidae,14121600
+4611,Attalae,14120310
+2723,Auberti,14121310
+4181,BMV de Guadalupe,14121210
+2724,Barbarae,14120400
+2725,Columbae,14123110
+2726,Conceptio Mariae,14120800
+2727,Damasi,14121100
+2728,Die 3 a. Nat. Domini,02122300
+2729,Die 5 a. Nat. Domini,02122100
+2730,Die 5 p. Nat. Domini,02122900
+2731,Die 6 p. Nat. Domini,02123000
+2732,Die 7 p. Nat. Domini,02123100
+4618,Dominici Silensis,14122010
+2733,Egwini,14123000
+2734,Eligii,14120100
+4189,Eucharii,14120810
+4557,Eulaliae Emeritensis,14121010
+2735,Eustratii et Soc.,14121350
+2769,Exspectationis BMV,14121810
+4316,Francisci Xaverii,14120300
+2736,"Fusciani, Gentiani",14121110
+2737,Gabrielis,14121000
+2738,Gatiani,14121800
+4559,Geraldi Archiepiscopi Bracharensis,14120510
+2739,"Gregorii, Mart.",14122400
+4323,Inventio Francisci,14121220
+2740,Joannis Evang.,02122700
+2741,Judoci,14121330
+2742,Lazari,14121700
+4591,Leocadiae,14120920
+2743,Luciae,14121300
+2744,Nat. Innocentium,02122800
+2745,Nativitas Domini,02122500
+2746,Nicasii,14121400
+2747,Nicolai,14120600
+2748,Octava Andreae,14120710
+2749,Octava Concep.Mariae,14121500
+2750,Octava Nicolai,14121320
+2751,Octava Saturnini,14120610
+2752,Odiliae,14121340
+4349,Ordinatio Zenonis,14120820
+2753,Perpetui,14123010
+2754,Relatio Martini,14121410
+2755,Sabae,14120500
+2756,Silvestri,14123100
+2757,Stephani,02122600
+2758,Suscept. Reliquiarum,14120410
+2759,Syri,14120900
+2760,Thomae Apost.,14122100
+2761,Thomae Cant.,14122900
+2762,Transl. Baboleni,14120720
+2086,Transl. Jacobi,14123020
+2763,Transl. Patrocli,14120901
+2764,Trophimi,14122910
+2765,Valeriae,14121200
+2766,"Victoriae, Anatoliae",14122300
+2767,Victoris,14120700
+2768,Vigilia Nat. Domini,02122400
+4425,Vigilia Thomae Apost.,14122000
+4216,Wunnibaldi,14121820

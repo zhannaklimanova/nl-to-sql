@@ -1,11 +1,62 @@
-id,name,month,day,feast_code,description
-2729,Die 5 a. Nat. Domini,12,21,02122100,The fifth day before Christmas
-2728,Die 3 a. Nat. Domini,12,23,02122300,The third day before Christmas
-2768,Vigilia Nat. Domini,12,24,02122400,Christmas Eve
-2745,Nativitas Domini,12,25,02122500,Christmas Day
-2757,Stephani,12,26,02122600,Stephen the First Martyr
-2740,Joannis Evang.,12,27,02122700,John the Evangelist
-2744,Nat. Innocentium,12,28,02122800,Holy Innocents
-2730,Die 5 p. Nat. Domini,12,29,02122900,4th day after Christmas
-2731,Die 6 p. Nat. Domini,12,30,02123000,5th day after Christmas
-2732,Die 7 p. Nat. Domini,12,31,02123100,6th day after Christmas
+id,name,feast_code
+2722,Adalheidae,14121600
+4611,Attalae,14120310
+2723,Auberti,14121310
+4181,BMV de Guadalupe,14121210
+2724,Barbarae,14120400
+2725,Columbae,14123110
+2726,Conceptio Mariae,14120800
+2727,Damasi,14121100
+2728,Die 3 a. Nat. Domini,02122300
+2729,Die 5 a. Nat. Domini,02122100
+2730,Die 5 p. Nat. Domini,02122900
+2731,Die 6 p. Nat. Domini,02123000
+2732,Die 7 p. Nat. Domini,02123100
+4618,Dominici Silensis,14122010
+2733,Egwini,14123000
+2734,Eligii,14120100
+4189,Eucharii,14120810
+4557,Eulaliae Emeritensis,14121010
+2735,Eustratii et Soc.,14121350
+2769,Exspectationis BMV,14121810
+4316,Francisci Xaverii,14120300
+2736,"Fusciani, Gentiani",14121110
+2737,Gabrielis,14121000
+2738,Gatiani,14121800
+4559,Geraldi Archiepiscopi Bracharensis,14120510
+2739,"Gregorii, Mart.",14122400
+4323,Inventio Francisci,14121220
+2740,Joannis Evang.,02122700
+2741,Judoci,14121330
+2742,Lazari,14121700
+4591,Leocadiae,14120920
+2743,Luciae,14121300
+2744,Nat. Innocentium,02122800
+2745,Nativitas Domini,02122500
+2746,Nicasii,14121400
+2747,Nicolai,14120600
+2748,Octava Andreae,14120710
+2749,Octava Concep.Mariae,14121500
+2750,Octava Nicolai,14121320
+2751,Octava Saturnini,14120610
+2752,Odiliae,14121340
+4349,Ordinatio Zenonis,14120820
+2753,Perpetui,14123010
+2754,Relatio Martini,14121410
+2755,Sabae,14120500
+2756,Silvestri,14123100
+2757,Stephani,02122600
+2758,Suscept. Reliquiarum,14120410
+2759,Syri,14120900
+2760,Thomae Apost.,14122100
+2761,Thomae Cant.,14122900
+2762,Transl. Baboleni,14120720
+2086,Transl. Jacobi,14123020
+2763,Transl. Patrocli,14120901
+2764,Trophimi,14122910
+2765,Valeriae,14121200
+2766,"Victoriae, Anatoliae",14122300
+2767,Victoris,14120700
+2768,Vigilia Nat. Domini,02122400
+4425,Vigilia Thomae Apost.,14122000
+4216,Wunnibaldi,14121820

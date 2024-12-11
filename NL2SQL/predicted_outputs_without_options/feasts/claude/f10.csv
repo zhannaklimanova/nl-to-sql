@@ -1,7 +1,143 @@
-id,name,month,day,feast_code,description
-2238,In Letaniis maj.,4,25,08042500,The greater litany; The Major Rogation
-1727,Fer. 2 in Letaniis,,,08062000,Rogation Monday
-1756,Fer. 3 in Letaniis,,,08063000,Rogation Tuesday
-1786,Fer. 4 in Letaniis,,,08064000,Rogation Wednesday
-1926,In Letaniis,,,08068010,"General, Rogation Days"
-4503,"Iwigii, transl.",,,17009000,Moving of relics of Iwigius
+id,name,description
+2311,Acacii et sociorum,"Acacius and Companions, Martyrs"
+2517,Aegidii,"Aegidius (Giles), Abbot"
+4527,"Aemigdii, Episc. et Martyr","Emygdius (Emidius), Bishop Martyr"
+4170,Aloisii Gonzagae,"Aloysius (Luigi) Gonzaga, Confessor, Patron of youthful Catholic students"
+2229,Ambrosii,"Ambrose, Bishop of Milan, Doctor"
+2230,Ambrosii TP,"Ambrose, Eastertide"
+2118,Anastasii,"Anastasius the Persian, Martyr"
+2186,Ansgarii,"Anskar, Bishop and Confessor"
+2119,Antonii,"Antony, Abbot"
+4175,Antonii Mariae Claret,"Antonio Maria Claret y Clara, Bishop, Confessor, Spanish Prelate and Missionary"
+4176,Antonii Mariae Zaccaria,"Antonio Maria Zaccaria, Confessor, Founder of the Clerks Regular of St. Paul (Barnabites)"
+2313,Antonii Patavini,"Anthony of Padua, Doctor"
+4553,Aredii Nivernensis,"Aredius (Aregius, Arigius, Agricius, Aré) of Nevers, Bishop"
+2260,Athanasii,"Athanasius, Archbishop of Alexandria"
+4265,Austremonii,"Austremonius (Stremoine), Bishop, Martyr, Apostle of Auvergne"
+2122,Basilii,"Basil of Ancyra, Martyr"
+2317,"Basilii, Doct.","Basil the Great, Doctor"
+2188,Blasii,"Blaise, Bishop of Sebastea, Martyr"
+1496,"Blasii,8",In week after Blaise
+2318,Bonifacii,"Boniface, Archbishop and Martyr"
+2826,Bonifatii Martyris,
+4269,Bononii,"Bononius, Abbot, Disciple of Romuald"
+2664,Briccii,"Brice, Bishop of Tours"
+4271,"Briccii,8",In week after Brice
+4537,Caesarii Arelatensis,"Caesarius, Archbishop of Arles"
+2666,"Caesarii, Juliani","Caesarius and Julian, Martyrs"
+4273,"Caprasii, Abb.","Caprasius, Abbot of Lerins"
+4274,"Caprasii, Mart.","Caprasius, Martyr, of Agen"
+4490,"Claudii commentariensis, Symphoriani, Nicostrati et sociorum","Claudius, his sons Felicissimus and Symphorianus, his brother Victorinus, and Castor the brother of the jailer Nicostratus, Roman Martyrs"
+2115,Constantii,"Constantius, Bishop of Perugia"
+2525,"Cornelii, Cypriani","Cornelius and Cyprian, Martyrs"
+2594,Demetrii,"Demetrius, Martyr"
+4497,Desiderii Lingon,"Desiderius (Didier), Martyr, Bishop of Langres"
+2595,Dionysii,"Denis (Dionysius), Bishop of Paris"
+1580,"Dionysii,8","In week after Denis, Bishop of Paris"
+2734,Eligii,"Eligius (Eloi), Bishop of Noyon"
+4189,Eucharii,"Eucharius, First Bishop of Trier"
+2679,Eugenii,"Eugene, Martyr, Disciple of Denis"
+2459,"Eupli, Leucii","Euplus, Deacon Martyr; and Leucius, Bishop Confessor"
+2460,Eusebii,Eusebius of Rome
+4297,Eusebii Episcopi,"Eusebius, Bishop of Vercelli"
+2680,Eustachii,"Eustachius (Eustace), Martyr"
+4476,Eustachii,"Eustachius (Eustasius, Eustace), Martyr"
+2735,Eustratii et Soc.,"Eustratius et al, Martyrs"
+2269,Euticii,"Euticius (Eutice, Euthycius), Martyr"
+2233,Eutropii,"Eutropius, Bishop of Saintes, Martyr"
+2533,Evurtii,"Evurtius (Euvert), Bishop"
+1727,Fer. 2 in Letaniis,Rogation Monday
+1756,Fer. 3 in Letaniis,Rogation Tuesday
+1786,Fer. 4 in Letaniis,Rogation Wednesday
+4615,"Florentii, Episc.","Florentius, Bishop of Strasbourg"
+4315,Francisci Salesii,"Francis de Sales, Confessor, Bishop of Geneva and Doctor of the Church (canonized 1665)"
+4316,Francisci Xaverii,"Francis Xavier, Confessor, Apostle of India and Japan (canonized in 1622)"
+2773,Gaudentii,"Gaudentius, Bishop of Novara"
+2467,Genesii,"Genesius, Martyr"
+2234,Georgii,"George, Martyr"
+2325,"Georgii, Adalberti","George and Adalbert, Martyrs"
+4511,"Geruntii Italicensis, Epi.","Geruntius, Bishop of Italica (Talco), near Seville"
+2326,"Gervasii, Protasii","Gervase and Protase, Martyrs"
+2538,Gorgonii,"Gorgonius, Martyr"
+2219,Gregorii,"Gregory the Great, Pope and Doctor"
+2685,Gregorii Thauma.,"Gregory the Wonderworker, Bishop"
+2880,Gregorii VII Papae Confessoris,
+2739,"Gregorii, Mart.","Gregory of Spoleto, Martyr"
+2143,Hilarii,"Hilary, Bishop of Poitiers, Doctor"
+4318,Hilarii Arelatensis,"Hilary (Hilarius or Hilarus), Archbishop of Arles, Confessor"
+2193,Ignatii,"Ignatius, Bishop of Antioch, Martyr"
+4464,Imerii,"Imerius (Himerius) of Immertal, monk, hermit, and missionary in the Swiss Jura"
+1926,In Letaniis,"General, Rogation Days"
+2238,In Letaniis maj.,The greater litany; The Major Rogation
+2239,Inventio Dionysii,Finding of Denis's relics
+4325,Iwigii,"Iwigius (Ywi, Iwig, Ivi, Ywy, Ivy, Iwie), Deacon, Hermit, of Lindisfarne"
+4503,"Iwigii, transl.",Moving of relics of Iwigius
+2541,Januarii,Januarius of Benevento
+2609,Januarii et Soc.,"Januarius, Faustus, and Martialis, Martyrs (the ""Three Crowns of Cordova"")"
+2477,Laurentii,"Laurence, Martyr"
+1943,"Laurentii,8",In week after Laurence
+2611,Leodegarii,"Leodegarius (Leger), Bishop Martyr"
+2382,Liborii,"Liborius, Confessor and Bishop of Lemans"
+4330,Licinii,"Licinius, Confessor, Bishop of Angers"
+2149,Macarii,"Macarius the Elder, Hermit"
+2692,Maclovii,"Maclovius (Malo, Maclou, Machut, Maclow, Maloù, Mac'h Low, Maglovius, Machutus), Bishop of Aleth"
+2618,Maglorii,"Magloire (Maelor), Bishop of Dol"
+2619,"Marcelli, Apuleii","Marcellus and Apulejus, Martyrs"
+2151,"Marii, Marthae","Marius, Martha, et al., Martyrs"
+2556,Maurilii,"Maurilius, Bishop of Angers"
+2557,Mauritii,"Maurice and Companions, Martyrs"
+2775,Mercurii,
+2779,Nazarii,
+2393,"Nazarii, Celsi","Nazarius and Celsus, Martyrs"
+2746,Nicasii,"Nicasius, Bishop Martyr of Reims"
+2625,Nicasii et Soc.,"Nicasius of Rouen, alleged Bishop of Rouen"
+2199,Octava Blasii,Octave of Blaise
+2627,Octava Dionysii,"Octave of Denis, Bishop of Paris"
+2246,Octava Georgii,Octave of George
+2491,Octava Laurentii,Octave of Laurence
+2285,Octava Servatii,Octave of Servatius
+2630,Opilii,"Opilius, Deacon"
+2565,Ordin. Gregorii,Ordination of Gregory
+1968,"Ordin. Gregorii,8",In week after Gregory's Ordination
+2286,Orientii,"Orientius (Orens), Bishop"
+2287,Pancratii et Soc.,"Pancras and Companions, Martyrs"
+2495,Pelagii,"Pelagius, Martyr"
+4365,Philippi Benitii,"Philip Benitius (Filippo Benizzi), Confessor"
+4366,Philippi Nerii,"Philip Neri, Confessor, Apostle of Rome and founder of the ""Oratory"""
+2290,Pontii,"Pontius, Martyr"
+4390,Procopii Sázaviensis,"Procopius of Sázava, Abbot, Confessor, canonized 1204"
+4610,Procopii megalomartyris,"Procopius Megalomartyr, Procopius of Scythopolis, martyr of Caesarea of Palestine, the ascete and Roman general"
+2639,Remigii,"Remigius (Remi), Bishop of Reims"
+2168,"Remigii, Hilarii","Remigius, Bishop of Reims, Confessor & Hilary, Bishop of Poitiers, Doctor"
+2640,Richarii,"Richarius (Riquier), Abbot"
+4395,Ruperti Salisburgii,"Rupert (Rubert) of Salzburg, Bishop"
+3009,Rustici et Eleutherii Martyrum,
+4486,"Salvii, Epi.","Salvius, Bishop of Albi"
+2642,"Sergii, Bacchi","Sergius and Bacchus, Martyrs"
+2294,Servatii,"Servais (Servatius), Bishop of Tongres"
+2412,Simplicii et Soc.,"Simplicius and Companions, Martyrs"
+4401,Suff. Georgii,Memorial chants for George
+2040,Suff. Laurentii,Memorial chants for Laurence
+2049,Suff. Mauritii,Memorial chants for Maurice
+2173,Sulpicii Severi,"Sulpicius Severus, Bishop of Bourges"
+2251,"Sulpitii, Serviliani","Sulpitius (Sulpitianus, Simplicius) and Servilianus, Martyrs"
+4542,Tiburtii (filius Chromatii),"Tiburtius (son of Chromatius in Rome), Martyr"
+2508,"Tiburtii, Susannae","Tiburtius and Susanna, Martyrs"
+2252,"Tiburtii, Valeriani, Maximi","Tiburtius, Valerian and Maximus, Martyrs"
+2350,Transl. Eligii,Moving of Eligius's relics
+4411,Transl. Eustachii,"Moving of relics of Eustachius (Eustasius, Eustace), Martyr"
+2649,Transl. Januarii,Moving of Januarius of Benevento's relics
+2298,Transl. Mauritii,Moving of Maurice's relics
+2421,Transl. Servatii,Moving of Servatius's relics
+4581,"Valentini, Hylarii","Valentine (priest) and Hilary (deacon), at Viterbo"
+2177,Valerii,"Valerius, Bishop of Saragossa"
+2655,Venantii,"Venantius, Hermit"
+2785,Vigil. Dionysii,
+2514,Vigilia Laurentii,Eve of Laurence
+4426,Vigilii,"Vigilius, Martyr, Bishop of Trent"
+2179,Vincentii,"Vincent of Saragossa, Martyr"
+4583,"Vincentii, Orontii, Victoris","Vincentius, Orontius (brothers), and Victor, Martyrs, killed near Gerona"
+4584,"Vincentii, transl.",Moving of Vincent of Saragossa's relics to Lisbon
+4585,"Vincentii, transl. in Brachara",Moving of Vincent of Saragossa's relics to Braga
+2081,"Vincentii,8",In week after Vincent
+2308,Zenobii,"Zenobius, Bishop of Florence"

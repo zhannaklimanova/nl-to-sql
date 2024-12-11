@@ -1,3 +1,1 @@
-id,name,month,day,feast_code,description
-4579,Thomae de Aquino,3,7,14030700,"Thomas of Aquino, Doctor of the Church"
-2220,"Helari, Tatiani",3,16,14031600,"Hilary (Bishop of Aquileia) and Tatianus, Martyrs"
+id,name,description,feast_code
