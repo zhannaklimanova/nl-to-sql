@@ -1,6 +1,12 @@
 # MAC OS
 .DS_Store
 
+# LaTeX
+*.aux
+*.out
+*.synctex(busy)
+*.synctex.gz
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
