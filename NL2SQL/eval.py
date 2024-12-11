@@ -1,6 +1,8 @@
 import json
-from typing import Dict
+from typing import Dict, List
 import pandas as pd
+from scipy.stats import spearmanr
+from query_data import QueryData
 
 
 CHANTS_DATA_PATH = "data/chants_data.json"
@@ -8,73 +10,114 @@ FEASTS_DATA_PATH = "data/feasts_data.json"
 SOURCES_DATA_PATH = "data/sources_data.json"
 
 
-def evaluate(expected_data_path: str, actual_data_path: str, ordered=False) -> bool:
+class Paths:
+    def __init__(
+        self,
+        expected: str,
+        predicted_without_options: Dict[str, str],
+        predicted_with_options: Dict[str, str],
+    ):
+        self.expected: str = expected
+        self.predicted_without_options = predicted_without_options
+        self.predicted_with_options = predicted_with_options
+
+
+def load_data_as_json(json_path: str) -> List[QueryData]:
+    with open(json_path, "r") as file:
+        data = json.load(file)
+    return [QueryData.from_dict(item) for item in data]
+
+
+all_metrics = {
+    "unordered": lambda expected_ids, actual_ids: expected_ids.sort_values()
+    .reset_index(drop=True)
+    .equals(actual_ids.sort_values().reset_index(drop=True)),
+    "ordered": lambda expected_ids, actual_ids: expected_ids.equals(actual_ids),
+    "extra_items": lambda expected_ids, actual_ids: len(
+        set(actual_ids) - set(expected_ids)
+    ),
+    "missing_items": lambda expected_ids, actual_ids: len(
+        set(expected_ids) - set(actual_ids)
+    ),
+}
+
+
+def evaluate(
+    expected_data_path: str, actual_data_path: str, metric="unordered"
+) -> float:
     expected_data: pd.DataFrame = pd.read_csv(expected_data_path)
-    # For chants, the columns are renamed and the id column is always the first one
-    try:
-        expected_ids: pd.Series = expected_data["id"]
-    except:
-        expected_ids: pd.Series = expected_data["col1"]
+    actual_data: pd.DataFrame = pd.read_csv(actual_data_path)
 
-    # If actual data does not load, that means the predicted SQL query did not work
     try:
-        actual_data: pd.DataFrame = pd.read_csv(actual_data_path)
-    except:
-        return False
+        expected_ids = expected_data["id"]
+    except KeyError:
+        expected_ids = expected_data["col1"]
 
-    # If id does not exist, then the data is wrong since all the gold outputs look for ids
     try:
-        actual_ids: pd.Series = actual_data["id"]
-    except:
-        return False
+        actual_ids = actual_data["id"]
+    except KeyError:
+        return 0
 
-    if not ordered:
-        return (
-            expected_ids.sort_values()
-            .reset_index(drop=True)
-            .equals(actual_ids.sort_values().reset_index(drop=True))
+    return all_metrics[metric](expected_ids, actual_ids)
+
+
+def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
+    """
+    Evaluate data from a given path and return counts for each metric, organized by
+    "with_options" and "without_options".
+    """
+    data = load_data_as_json(data_path)
+    metrics = list(all_metrics.keys())
+
+    # Structure the result as a dictionary with categories for with_options and without_options
+    results = {
+        "with_options": {metric: {} for metric in metrics},
+        "without_options": {metric: {} for metric in metrics},
+    }
+
+    for query_data in data:
+        # Creating Paths object including both without and with options
+        paths = Paths(
+            query_data.gold_output_path,
+            {
+                k: v.predicted_output_path
+                for k, v in query_data.predicted_sql_query_without_options.__dict__.items()
+            },
+            {
+                k: v.predicted_output_path
+                for k, v in query_data.predicted_sql_query_with_options.__dict__.items()
+            },
         )
 
-    else:
-        raise NotImplementedError("Have not implemented ordered evaluation yet")
+        # Evaluate predictions without options separately
+        for llm, predicted_path in paths.predicted_without_options.items():
+            for metric in metrics:
+                results["without_options"][metric][f"{llm}"] = results[
+                    "without_options"
+                ][metric].get(f"{llm}", 0) + evaluate(
+                    paths.expected, predicted_path, metric=metric
+                )
 
+        # Evaluate predictions with options separately
+        for llm, predicted_path in paths.predicted_with_options.items():
+            for metric in metrics:
+                results["with_options"][metric][f"{llm}"] = results["with_options"][
+                    metric
+                ].get(f"{llm}", 0) + evaluate(
+                    paths.expected, predicted_path, metric=metric
+                )
 
-def load_data_as_json(json_path: str) -> list[dict]:
-    with open(json_path, "r") as file:
-        return json.load(file)
-
-
-class Paths:
-    def __init__(self, expected: str, predicted: dict):
-        self.expected: str = expected
-        self.predicted = dict()
-        for k, v in predicted.items():
-            self.predicted[k] = v["predicted_output_path"]
-
-
-def get_paths(item) -> Paths:
-    return Paths(item["gold_output_path"], item["predicted_sql_query"])
-
-
-def evaluate_data(data_path: str) -> dict:
-    """Evaluate data from a given path and return counts."""
-    data = load_data_as_json(data_path)
-    counts = {}
-
-    for item in data:
-        paths: Paths = get_paths(item)
-        for llm, predicted_path in paths.predicted.items():
-            counts[llm] = counts.get(llm, 0) + evaluate(paths.expected, predicted_path)
-
-    return counts
+    return results
 
 
 if __name__ == "__main__":
     data_paths = {
-        "chants": CHANTS_DATA_PATH,
+        # "chants": CHANTS_DATA_PATH,
         "feasts": FEASTS_DATA_PATH,
-        "sources": SOURCES_DATA_PATH,
+        # "sources": SOURCES_DATA_PATH,
     }
 
     all_counts = {name: evaluate_data(path) for name, path in data_paths.items()}
-    print(all_counts)
+
+    # Print or output the results in the desired structure
+    print(json.dumps(all_counts, indent=4))
