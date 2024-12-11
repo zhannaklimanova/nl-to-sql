@@ -35,10 +35,12 @@ all_metrics = {
     "ordered": lambda expected_ids, actual_ids: expected_ids.equals(actual_ids),
     "extra_items": lambda expected_ids, actual_ids: len(
         set(actual_ids) - set(expected_ids)
-    ),
+    )
+    / len(expected_ids),
     "missing_items": lambda expected_ids, actual_ids: len(
         set(expected_ids) - set(actual_ids)
-    ),
+    )
+    / len(expected_ids),
 }
 
 
@@ -106,6 +108,12 @@ def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
                 ].get(f"{llm}", 0) + evaluate(
                     paths.expected, predicted_path, metric=metric
                 )
+
+    # After accumulating counts, compute averages for "extra_items" and "missing_items"
+    for category in ["with_options", "without_options"]:
+        for metric in ["extra_items", "missing_items"]:
+            for llm, count in results[category][metric].items():
+                results[category][metric][llm] = count / len(data)  # Average per query
 
     return results
 
