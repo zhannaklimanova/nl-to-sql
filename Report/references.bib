@@ -1,0 +1,62 @@
+% This must be in the first 5 lines to tell arXiv to use pdfLaTeX, which is strongly recommended.
+\pdfoutput=1
+
+\documentclass[11pt]{article}
+
+% Standard package includes
+\usepackage[review]{ACL2023}
+% \usepackage{ACL2023}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{caption}
+
+\setlength\titlebox{5cm}
+
+\title{Instructions for ACL 2023 Proceedings}
+
+\author{Zhanna Klimanova \\
+  Department of Engineering \\
+  University of McGill \\
+  Montreal, Canada \\
+  \texttt{zhanna.klimanova@mcgill.ca} \\\And
+  Person 2 \\
+  Department of  \\
+  University of McGill \\
+  Montreal, Canada \\
+  \texttt{@} \\\And
+  Person 3 \\
+  Department of \\
+  University of McGill \\
+  Montreal, Canada \\
+  \texttt{@} \\}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+% Abstract: A short overview of the paper.
+
+This paper investigates the Text-to-SQL task, which translates natural language queries (NLQ) into SQL, has broad applications: it enables non-technical users to access databases, improves customer support efficiency, and aids developers in crafting precise SQL queries. Advances in pre-trained large language models (LLMs) have shown promise in managing the complexities of natural language understanding and SQL generation. Text-to-SQL could streamline interactions on database-driven websites by replacing input fields with direct language-based querying, especially when SQL is needed for data retrieval.
+[ZHANNA]
+
+**This abstract is a good introduction but should also summarize methods and findings (can finish this after the other sections)
+\end{abstract}
+
+\input{0_introduction}
+\input{1_related_work}
+\input{2_methodology}
+\input{3_results}
+\input{4_discussion}
+\input{5_conclusion}
+\input{6_contributions}
+\input{appendix}
+
+\bibliography{references}
+\bibliographystyle{acl_natbib}
+
+\end{document}
