@@ -7,7 +7,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f1.csv"
             },
             "claude": {
-                "sql_query": "SELECT id, name, month, day, feast_code, description, notes FROM main_app_feast ORDER BY month, day;",
+                "sql_query": "SELECT id, name, month, day, feast_code, description, notes FROM main_app_feast ORDER BY name ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f1.csv"
             },
             "grok": {
@@ -42,7 +42,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f2.csv"
             },
             "claude": {
-                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') ORDER BY month, day;",
+                "sql_query": "SELECT f.* FROM main_app_feast f WHERE f.prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') ORDER BY f.name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f2.csv"
             },
             "grok": {
@@ -77,7 +77,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f3.csv"
             },
             "claude": {
-                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE month = 12 AND prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') ORDER BY day;",
+                "sql_query": "SELECT f.* FROM main_app_feast f WHERE f.prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') AND f.month = 12 ORDER BY f.name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f3.csv"
             },
             "grok": {
@@ -112,7 +112,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f4.csv"
             },
             "claude": {
-                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE month = 12 AND prefix IN ('12', '13', '14', '15') ORDER BY day;",
+                "sql_query": "SELECT f.* FROM main_app_feast f WHERE f.prefix IN ('12', '13', '14', '15') AND f.month = 12 ORDER BY f.name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f4.csv"
             },
             "grok": {
@@ -147,7 +147,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f5.csv"
             },
             "claude": {
-                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE name ILIKE '%Thomas%' OR description ILIKE '%Thomas%' ORDER BY month, day;",
+                "sql_query": "SELECT * FROM main_app_feast WHERE name LIKE '%Thomas%' OR description LIKE '%Thomas%' ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f5.csv"
             },
             "grok": {
@@ -182,7 +182,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f6.csv"
             },
             "claude": {
-                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE month = 3 AND prefix IN ('12', '13', '14', '15') AND (name ILIKE '%aq%' OR description ILIKE '%aq%') ORDER BY day;",
+                "sql_query": "SELECT * FROM main_app_feast WHERE prefix IN ('12', '13', '14', '15') AND month = 3 AND (name LIKE '%aq%' OR description LIKE '%aq%') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f6.csv"
             },
             "grok": {
@@ -217,7 +217,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f7.csv"
             },
             "claude": {
-                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast ORDER BY feast_code;",
+                "sql_query": "SELECT * FROM main_app_feast ORDER BY feast_code;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f7.csv"
             },
             "grok": {
@@ -322,7 +322,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f10.csv"
             },
             "claude": {
-                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') AND (name ILIKE '%ii%' OR description ILIKE '%ii%') ORDER BY month, day;",
+                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE prefix IN ('01', '02', '03', '04', '05', '06', '07', '08', '09', '10', '11', '16', '17') AND (name ILIKE '%ii%' OR description ILIKE '%ii%') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f10.csv"
             },
             "grok": {
@@ -357,7 +357,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f11.csv"
             },
             "claude": {
-                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE month = 5 ORDER BY day;",
+                "sql_query": "SELECT id, name, month, day, feast_code, description FROM main_app_feast WHERE month = 5 ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f11.csv"
             },
             "grok": {
@@ -497,7 +497,7 @@
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f15.csv"
             },
             "claude": {
-                "sql_query": "SELECT * FROM main_app_feast WHERE (name LIKE '%Easter%' OR description LIKE '%Easter%') AND prefix IN ('12', '13', '14', '15');",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (name LIKE '%Easter%' OR description LIKE '%Easter%') AND prefix IN ('12', '13', '14', '15') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/claude/f15.csv"
             },
             "grok": {
