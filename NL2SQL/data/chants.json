@@ -17,7 +17,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_genre ON main_app_chant.genre_id=main_app_genre.id WHERE main_app_genre.name='A' AND main_app_chant.incipit ILIKE '%alle%' UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_genre ON main_app_sequence.genre_id=main_app_genre.id WHERE main_app_genre.name='A' AND main_app_sequence.incipit ILIKE '%alle%' ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c1.csv"
             },
             "claude": {
@@ -52,7 +52,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_chant.incipit ILIKE 'domine%' UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_sequence.incipit ILIKE 'domine%' ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c2.csv"
             },
             "claude": {
@@ -87,7 +87,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_service ON main_app_chant.service_id=main_app_service.id WHERE main_app_service.name='H' AND main_app_chant.cantus_id='002321' UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_service ON main_app_sequence.service_id=main_app_service.id WHERE main_app_service.name='H' AND main_app_sequence.cantus_id='002321' ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c3.csv"
             },
             "claude": {
@@ -122,7 +122,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_chant.mode='2' AND main_app_chant.volpiano IS NOT NULL UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_sequence.mode='2' AND main_app_sequence.volpiano IS NOT NULL ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c4.csv"
             },
             "claude": {
@@ -157,7 +157,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_feast ON main_app_chant.feast_id=main_app_feast.id WHERE main_app_feast.name ILIKE '%Dominici%' AND main_app_chant.cantus_id='909000' UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_feast ON main_app_sequence.feast_id=main_app_feast.id WHERE main_app_feast.name ILIKE '%Dominici%' AND main_app_sequence.cantus_id='909000' ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c5.csv"
             },
             "claude": {
@@ -192,7 +192,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_genre ON main_app_chant.genre_id=main_app_genre.id WHERE main_app_genre.name='A' AND main_app_chant.mode='4' AND main_app_chant.position='12' AND main_app_chant.volpiano IS NOT NULL UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_genre ON main_app_sequence.genre_id=main_app_genre.id WHERE main_app_genre.name='A' AND main_app_sequence.mode='4' AND main_app_sequence.position='12' AND main_app_sequence.volpiano IS NOT NULL ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c6.csv"
             },
             "claude": {
@@ -227,7 +227,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_service ON main_app_chant.service_id=main_app_service.id JOIN main_app_feast ON main_app_chant.feast_id=main_app_feast.id WHERE main_app_service.name='M' AND main_app_chant.mode='?' AND main_app_feast.name ILIKE '%pro%' UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_service ON main_app_sequence.service_id=main_app_service.id JOIN main_app_feast ON main_app_sequence.feast_id=main_app_feast.id WHERE main_app_service.name='M' AND main_app_sequence.mode='?' AND main_app_feast.name ILIKE '%pro%' ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c7.csv"
             },
             "claude": {
@@ -262,7 +262,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_chant.incipit ILIKE '%benedicte dominio%' UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_sequence.incipit ILIKE '%benedicte dominio%' ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c8.csv"
             },
             "claude": {
@@ -297,7 +297,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_genre.name AS genre_name,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_genre ON main_app_chant.genre_id=main_app_genre.id WHERE main_app_chant.incipit ILIKE '%lucas%' UNION SELECT 'sequence' AS type,main_app_genre.name AS genre_name,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_genre ON main_app_sequence.genre_id=main_app_genre.id WHERE main_app_sequence.incipit ILIKE '%lucas%' ORDER BY genre_name DESC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c9.csv"
             },
             "claude": {
@@ -332,7 +332,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_chant.mode,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_service ON main_app_chant.service_id=main_app_service.id WHERE main_app_chant.incipit ILIKE 'Beata%' AND main_app_service.name='V2' UNION SELECT 'sequence' AS type,main_app_sequence.mode,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_service ON main_app_sequence.service_id=main_app_service.id WHERE main_app_sequence.incipit ILIKE 'Beata%' AND main_app_service.name='V2' ORDER BY mode ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c10.csv"
             },
             "claude": {
@@ -367,7 +367,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_chant.incipit,main_app_chant.id FROM main_app_chant JOIN main_app_service ON main_app_chant.service_id=main_app_service.id WHERE main_app_chant.incipit ILIKE 'Alleluia%' AND main_app_service.name='L' AND main_app_chant.cantus_id='001331' UNION SELECT 'sequence' AS type,main_app_sequence.incipit,main_app_sequence.id FROM main_app_sequence JOIN main_app_service ON main_app_sequence.service_id=main_app_service.id WHERE main_app_sequence.incipit ILIKE 'Alleluia%' AND main_app_service.name='L' AND main_app_sequence.cantus_id='001331' ORDER BY incipit DESC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c11.csv"
             },
             "claude": {
@@ -402,7 +402,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_chant.incipit ILIKE '%custodit%' UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_sequence.incipit ILIKE '%custodit%' ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c12.csv"
             },
             "claude": {
@@ -437,7 +437,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_chant.id,main_app_chant.image_link FROM main_app_chant JOIN main_app_genre ON main_app_chant.genre_id=main_app_genre.id WHERE main_app_genre.name='[?]' UNION SELECT 'sequence' AS type,main_app_sequence.id,main_app_sequence.image_link FROM main_app_sequence JOIN main_app_genre ON main_app_sequence.genre_id=main_app_genre.id WHERE main_app_genre.name='[?]' ORDER BY image_link DESC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c13.csv"
             },
             "claude": {
@@ -472,7 +472,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_chant.incipit ILIKE '%Gaude mater luminis%' UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id WHERE main_app_sequence.incipit ILIKE '%Gaude mater luminis%' ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c14.csv"
             },
             "claude": {
@@ -507,7 +507,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT 'chant' AS type,main_app_institution.siglum,main_app_chant.id,main_app_chant.incipit FROM main_app_chant JOIN main_app_source ON main_app_chant.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_service ON main_app_chant.service_id=main_app_service.id WHERE main_app_service.name='X' AND main_app_chant.cantus_id='ah54007' UNION SELECT 'sequence' AS type,main_app_institution.siglum,main_app_sequence.id,main_app_sequence.incipit FROM main_app_sequence JOIN main_app_source ON main_app_sequence.source_id=main_app_source.id JOIN main_app_institution ON main_app_source.holding_institution_id=main_app_institution.id JOIN main_app_service ON main_app_sequence.service_id=main_app_service.id WHERE main_app_service.name='X' AND main_app_sequence.cantus_id='ah54007' ORDER BY siglum ASC,id ASC;",
                 "predicted_output_path": "predicted_outputs_with_options/chants/gpt/c15.csv"
             },
             "claude": {
