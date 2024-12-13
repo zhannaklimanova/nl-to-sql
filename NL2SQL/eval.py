@@ -41,6 +41,10 @@ all_metrics = {
         set(expected_ids) - set(actual_ids)
     )
     / len(expected_ids),
+    "intersection": lambda expected_ids, actual_ids: len(
+        set(expected_ids).intersection(set(actual_ids))
+    )
+    / len(expected_ids),
 }
 
 
@@ -111,7 +115,7 @@ def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
 
     # After accumulating counts, compute averages for "extra_items" and "missing_items"
     for category in ["with_options", "without_options"]:
-        for metric in ["extra_items", "missing_items"]:
+        for metric in ["extra_items", "missing_items", "intersection"]:
             for llm, count in results[category][metric].items():
                 results[category][metric][llm] = count / len(data)  # Average per query
 
