@@ -39,7 +39,7 @@
         "predicted_sql_query_without_options": {
             "gpt": {
                 "sql_query": "SELECT * FROM ((SELECT 'Chant' AS type, c.id, c.incipit, i.siglum FROM main_app_chant c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE c.incipit ILIKE 'domine%') UNION ALL (SELECT 'Sequence' AS type, seq.id, seq.incipit, i.siglum FROM main_app_sequence seq JOIN main_app_source s ON seq.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id WHERE seq.incipit ILIKE 'domine%')) AS combined_results ORDER BY siglum ASC, id ASC;",
-                "predicted_output_path": "predicted_outputs_without_optionschants/gpt/c2.csv"
+                "predicted_output_path": "predicted_outputs_without_options/chants/gpt/c2.csv"
             },
             "claude": {
                 "sql_query": "SELECT c.*, i.siglum FROM (SELECT 'chant' as type, ch.id, ch.title, ch.manuscript_full_text, s.id as source_id FROM main_app_chant ch JOIN main_app_source s ON ch.source_id = s.id WHERE ch.manuscript_full_text ILIKE 'domine%' UNION SELECT 'sequence' as type, sq.id, sq.title, sq.manuscript_full_text, s.id as source_id FROM main_app_sequence sq JOIN main_app_source s ON sq.source_id = s.id WHERE sq.manuscript_full_text ILIKE 'domine%') c JOIN main_app_source s ON c.source_id = s.id JOIN main_app_institution i ON s.holding_institution_id = i.id ORDER BY i.siglum ASC, c.id ASC;",
