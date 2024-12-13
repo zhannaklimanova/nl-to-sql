@@ -114,22 +114,54 @@ def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
                 )
 
     # After accumulating counts, compute averages for "extra_items" and "missing_items"
-    for category in ["with_options", "without_options"]:
-        for metric in ["extra_items", "missing_items", "intersection"]:
-            for llm, count in results[category][metric].items():
-                results[category][metric][llm] = count / len(data)  # Average per query
+    # for category in ["with_options", "without_options"]:
+    #    for metric in ["extra_items", "missing_items", "intersection"]:
+    #        for llm, count in results[category][metric].items():
+    #            results[category][metric][llm] = count / len(data)  # Average per query
 
     return results
 
 
-if __name__ == "__main__":
-    data_paths = {
-        # "chants": CHANTS_DATA_PATH,
-        "feasts": FEASTS_DATA_PATH,
-        # "sources": SOURCES_DATA_PATH,
+def aggregate_results(
+    data_paths: Dict[str, str]
+) -> Dict[str, Dict[str, Dict[str, float]]]:
+    """
+    Combine results of multiple datasets into a unified structure.
+    """
+    combined_results = {
+        "with_options": {metric: {} for metric in all_metrics.keys()},
+        "without_options": {metric: {} for metric in all_metrics.keys()},
     }
 
-    all_counts = {name: evaluate_data(path) for name, path in data_paths.items()}
+    for name, path in data_paths.items():
+        individual_results = evaluate_data(path)
 
-    # Print or output the results in the desired structure
-    print(json.dumps(all_counts, indent=4))
+        for category in ["with_options", "without_options"]:
+            for metric, llm_scores in individual_results[category].items():
+                for llm, score in llm_scores.items():
+                    if llm not in combined_results[category][metric]:
+                        combined_results[category][metric][llm] = 0
+                    combined_results[category][metric][llm] += score
+
+    # Normalize by the number of datasets
+    num_datasets = len(data_paths)
+    for category in ["with_options", "without_options"]:
+        for metric in ["extra_items", "missing_items", "intersection"]:
+            for llm in combined_results[category][metric]:
+                combined_results[category][metric][llm] /= num_datasets * 15
+                combined_results[category][metric][llm] *= 100
+
+    return combined_results
+
+
+if __name__ == "__main__":
+    data_paths = {
+        "chants": CHANTS_DATA_PATH,
+        "feasts": FEASTS_DATA_PATH,
+        "sources": SOURCES_DATA_PATH,
+    }
+
+    combined_counts = aggregate_results(data_paths)
+
+    # Print or output the combined results
+    print(json.dumps(combined_counts, indent=4))
