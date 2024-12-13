@@ -5,9 +5,9 @@ from scipy.stats import spearmanr
 from query_data import QueryData
 
 
-CHANTS_DATA_PATH = "data/chants_data.json"
-FEASTS_DATA_PATH = "data/feasts_data.json"
-SOURCES_DATA_PATH = "data/sources_data.json"
+CHANTS_DATA_PATH = "data/chants.json"
+FEASTS_DATA_PATH = "data/feasts.json"
+SOURCES_DATA_PATH = "data/sources.json"
 
 
 class Paths:
