@@ -17,7 +17,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id WHERE seg.name='CANTUS Database' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s1.csv"
             },
             "claude": {
@@ -52,7 +52,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id WHERE seg.name='CANTUS Database' AND i.country='Australia' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s2.csv"
             },
             "claude": {
@@ -87,7 +87,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id JOIN main_app_source_century sc ON s.id=sc.source_id JOIN main_app_century c ON sc.century_id=c.id WHERE seg.name='CANTUS Database' AND i.country='Australia' AND c.name='16th century (2nd half)' AND s.source_completeness=1 ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s3.csv"
             },
             "claude": {
@@ -122,7 +122,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id JOIN main_app_provenance p ON s.provenance_id=p.id WHERE seg.name='CANTUS Database' AND p.name='Kirnberg' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s4.csv"
             },
             "claude": {
@@ -157,7 +157,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id WHERE seg.name='CANTUS Database' AND s.source_completeness=2 ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s5.csv"
             },
             "claude": {
@@ -192,7 +192,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id WHERE seg.name='CANTUS Database' AND s.source_completeness=1 ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s6.csv"
             },
             "claude": {
@@ -227,7 +227,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id JOIN main_app_source_century sc ON s.id=sc.source_id JOIN main_app_century c ON sc.century_id=c.id WHERE seg.name='CANTUS Database' AND s.source_completeness=1 AND c.name='17th century' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s7.csv"
             },
             "claude": {
@@ -262,7 +262,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id JOIN main_app_provenance p ON s.provenance_id=p.id WHERE seg.name='CANTUS Database' AND s.source_completeness=1 AND i.country='Germany' AND p.name='Aachen' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s8.csv"
             },
             "claude": {
@@ -297,7 +297,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id JOIN main_app_provenance p ON s.provenance_id=p.id WHERE seg.name='Bower Sequence Database' AND s.source_completeness=1 AND i.country='Germany' AND p.name='Aachen' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s9.csv"
             },
             "claude": {
@@ -318,7 +318,7 @@
         "sql_query": "SELECT DISTINCT main_app_source.id, main_app_source.date_created, main_app_source.date_updated, main_app_source.created_by_id, main_app_source.last_updated_by_id, main_app_source.published, main_app_source.title, main_app_source.siglum, main_app_source.holding_institution_id, main_app_source.shelfmark, main_app_source.name, main_app_source.provenance_id, main_app_source.provenance_notes, main_app_source.source_completeness, main_app_source.full_source, main_app_source.date, main_app_source.cursus, main_app_source.segment_id, main_app_source.source_status, main_app_source.complete_inventory, main_app_source.summary, main_app_source.liturgical_occasions, main_app_source.description, main_app_source.selected_bibliography, main_app_source.image_link, main_app_source.indexing_notes, main_app_source.indexing_date, main_app_source.json_info, main_app_source.fragmentarium_id, main_app_source.dact_id, main_app_source.exists_on_cantus_ultimus, main_app_source.production_method, main_app_source.number_of_chants, main_app_source.number_of_melodies, main_app_institution.id, main_app_institution.date_created, main_app_institution.date_updated, main_app_institution.created_by_id, main_app_institution.last_updated_by_id, main_app_institution.name, main_app_institution.siglum, main_app_institution.is_private_collector, main_app_institution.is_private_collection, main_app_institution.city, main_app_institution.region, main_app_institution.country, main_app_institution.alternate_names, main_app_institution.former_sigla, main_app_institution.private_notes, main_app_institution.migrated_identifier, main_app_provenance.id, main_app_provenance.date_created, main_app_provenance.date_updated, main_app_provenance.created_by_id, main_app_provenance.last_updated_by_id, main_app_provenance.name, main_app_segment.id, main_app_segment.date_created, main_app_segment.date_updated, main_app_segment.created_by_id, main_app_segment.last_updated_by_id, main_app_segment.name FROM main_app_source INNER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) INNER JOIN main_app_segment ON (main_app_source.segment_id = main_app_segment.id) LEFT OUTER JOIN main_app_provenance ON (main_app_source.provenance_id = main_app_provenance.id) WHERE (UPPER(main_app_institution.country::text) LIKE UPPER('%Unknown%') AND main_app_source.segment_id = 4063) ORDER BY main_app_institution.siglum ASC, main_app_source.shelfmark ASC;",
         "predicted_sql_query_without_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_segment seg ON s.segment_id = seg.id WHERE seg.name = 'CANTUS Database' AND i.country = 'Unknown' ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_without_options/sources/gpt/s10.csv"
             },
             "claude": {
@@ -332,7 +332,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id = i.id JOIN main_app_segment seg ON s.segment_id = seg.id WHERE seg.name = 'CANTUS Database' AND i.country = 'Unknown' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id WHERE seg.name='CANTUS Database' AND i.country='Unknown' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s10.csv"
             },
             "claude": {
@@ -367,7 +367,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id JOIN main_app_provenance p ON s.provenance_id=p.id JOIN main_app_source_century sc ON s.id=sc.source_id JOIN main_app_century c ON sc.century_id=c.id WHERE seg.name='CANTUS Database' AND p.name='Burgos (?)' AND c.name='16th century' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s11.csv"
             },
             "claude": {
@@ -388,7 +388,7 @@
         "sql_query": "SELECT DISTINCT main_app_source.id, main_app_source.date_created, main_app_source.date_updated, main_app_source.created_by_id, main_app_source.last_updated_by_id, main_app_source.published, main_app_source.title, main_app_source.siglum, main_app_source.holding_institution_id, main_app_source.shelfmark, main_app_source.name, main_app_source.provenance_id, main_app_source.provenance_notes, main_app_source.source_completeness, main_app_source.full_source, main_app_source.date, main_app_source.cursus, main_app_source.segment_id, main_app_source.source_status, main_app_source.complete_inventory, main_app_source.summary, main_app_source.liturgical_occasions, main_app_source.description, main_app_source.selected_bibliography, main_app_source.image_link, main_app_source.indexing_notes, main_app_source.indexing_date, main_app_source.json_info, main_app_source.fragmentarium_id, main_app_source.dact_id, main_app_source.exists_on_cantus_ultimus, main_app_source.production_method, main_app_source.number_of_chants, main_app_source.number_of_melodies, main_app_institution.id, main_app_institution.date_created, main_app_institution.date_updated, main_app_institution.created_by_id, main_app_institution.last_updated_by_id, main_app_institution.name, main_app_institution.siglum, main_app_institution.is_private_collector, main_app_institution.is_private_collection, main_app_institution.city, main_app_institution.region, main_app_institution.country, main_app_institution.alternate_names, main_app_institution.former_sigla, main_app_institution.private_notes, main_app_institution.migrated_identifier, main_app_provenance.id, main_app_provenance.date_created, main_app_provenance.date_updated, main_app_provenance.created_by_id, main_app_provenance.last_updated_by_id, main_app_provenance.name, main_app_segment.id, main_app_segment.date_created, main_app_segment.date_updated, main_app_segment.created_by_id, main_app_segment.last_updated_by_id, main_app_segment.name FROM main_app_source INNER JOIN main_app_institution ON (main_app_source.holding_institution_id = main_app_institution.id) INNER JOIN main_app_source_century ON (main_app_source.id = main_app_source_century.source_id) INNER JOIN main_app_century ON (main_app_source_century.century_id = main_app_century.id) INNER JOIN main_app_segment ON (main_app_source.segment_id = main_app_segment.id) LEFT OUTER JOIN main_app_provenance ON (main_app_source.provenance_id = main_app_provenance.id) WHERE (UPPER(main_app_institution.country::text) LIKE UPPER('%United States%') AND UPPER(main_app_century.name::text) LIKE UPPER('%14th century (1350-1375)%') AND main_app_source.segment_id = 4063) ORDER BY main_app_institution.siglum ASC, main_app_source.shelfmark ASC;",
         "predicted_sql_query_without_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_source_segment_m2m s2m ON s.id = s2m.source_id JOIN main_app_segment seg ON seg.id = s2m.segment_id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON c.id = sc.century_id JOIN main_app_institution i ON i.id = s.holding_institution_id WHERE seg.name = 'CANTUS Database' AND i.country = 'United States' AND c.name = '14th century (1350-1375)' ORDER BY i.siglum, s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_without_options/sources/gpt/s12.csv"
             },
             "claude": {
@@ -402,7 +402,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_source_segment_m2m s2m ON s.id = s2m.source_id JOIN main_app_segment seg ON seg.id = s2m.segment_id JOIN main_app_source_century sc ON s.id = sc.source_id JOIN main_app_century c ON c.id = sc.century_id JOIN main_app_institution i ON i.id = s.holding_institution_id WHERE seg.name = 'CANTUS Database' AND i.country = 'United States' AND c.name = '14th century (1350-1375)' ORDER BY i.siglum, s.shelfmark;",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id JOIN main_app_source_century sc ON s.id=sc.source_id JOIN main_app_century c ON sc.century_id=c.id WHERE seg.name='CANTUS Database' AND i.country='United States' AND c.name='14th century (1350-1375)' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s12.csv"
             },
             "claude": {
@@ -437,7 +437,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id WHERE seg.name='CANTUS Database' AND i.country='Germany' AND s.indexing_notes ILIKE '%Clm 4501-4663 neu beschrieben%' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s13.csv"
             },
             "claude": {
@@ -472,7 +472,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id JOIN main_app_source_century sc ON s.id=sc.source_id JOIN main_app_century c ON sc.century_id=c.id WHERE seg.name='Bower Sequence Database' AND s.indexing_notes ILIKE '%Iowa City%' AND c.name='12th century (1125-1150)' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s14.csv"
             },
             "claude": {
@@ -507,7 +507,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT s.* FROM main_app_source s JOIN main_app_institution i ON s.holding_institution_id=i.id JOIN main_app_segment seg ON s.segment_id=seg.id JOIN main_app_provenance p ON s.provenance_id=p.id WHERE seg.name='CANTUS Database' AND p.name='Arras' AND s.indexing_notes ILIKE '%GB-Ojec MS. 4%' ORDER BY i.siglum,s.shelfmark;",
                 "predicted_output_path": "predicted_outputs_with_options/sources/gpt/s15.csv"
             },
             "claude": {
