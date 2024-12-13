@@ -17,7 +17,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f1.csv"
             },
             "claude": {
@@ -52,7 +52,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE LEFT(feast_code,2) IN ('01','02','03','04','05','06','07','08','09','10','11','16','17') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f2.csv"
             },
             "claude": {
@@ -87,7 +87,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE LEFT(feast_code,2) IN ('01','02','03','04','05','06','07','08','09','10','11','16','17') AND month=12 ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f3.csv"
             },
             "claude": {
@@ -122,7 +122,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE LEFT(feast_code,2) IN ('12','13','14','15') AND month=12 ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f4.csv"
             },
             "claude": {
@@ -157,7 +157,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (name ILIKE '%Thomas%' OR description ILIKE '%Thomas%') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f5.csv"
             },
             "claude": {
@@ -192,7 +192,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE LEFT(feast_code,2) IN ('12','13','14','15') AND month=3 AND (name ILIKE '%aq%' OR description ILIKE '%aq%') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f6.csv"
             },
             "claude": {
@@ -227,7 +227,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast ORDER BY feast_code;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f7.csv"
             },
             "claude": {
@@ -262,7 +262,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (name ILIKE '%L%' OR description ILIKE '%L%') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f8.csv"
             },
             "claude": {
@@ -297,7 +297,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (name ILIKE '%Ad aspersionem%' OR description ILIKE '%Ad aspersionem%') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f9.csv"
             },
             "claude": {
@@ -332,7 +332,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE LEFT(feast_code,2) IN ('01','02','03','04','05','06','07','08','09','10','11','16','17') AND (name ILIKE '%ii%' OR description ILIKE '%ii%') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f10.csv"
             },
             "claude": {
@@ -367,7 +367,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE month=5 ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f11.csv"
             },
             "claude": {
@@ -402,7 +402,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (feast_code ILIKE '%01%' OR name ILIKE '%01%' OR description ILIKE '%01%') ORDER BY feast_code;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f12.csv"
             },
             "claude": {
@@ -437,7 +437,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (name LIKE '%,%' OR description LIKE '%,%') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f13.csv"
             },
             "claude": {
@@ -472,7 +472,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE (feast_code LIKE '%8%' OR name ILIKE '%8%' OR description ILIKE '%8%') ORDER BY feast_code;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f14.csv"
             },
             "claude": {
@@ -507,7 +507,7 @@
         },
         "predicted_sql_query_with_options": {
             "gpt": {
-                "sql_query": "",
+                "sql_query": "SELECT * FROM main_app_feast WHERE LEFT(feast_code,2) IN ('12','13','14','15') AND (name ILIKE '%Easter%' OR description ILIKE '%Easter%') ORDER BY name;",
                 "predicted_output_path": "predicted_outputs_with_options/feasts/gpt/f15.csv"
             },
             "claude": {
