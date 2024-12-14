@@ -4,6 +4,7 @@ import pandas as pd
 from scipy.stats import spearmanr
 from query_data import QueryData
 
+
 CHANTS_DATA_PATH = "data/chants.json"
 FEASTS_DATA_PATH = "data/feasts.json"
 SOURCES_DATA_PATH = "data/sources.json"
@@ -27,14 +28,31 @@ def load_data_as_json(json_path: str) -> List[QueryData]:
     return [QueryData.from_dict(item) for item in data]
 
 
-def precision_recall(tp, fp, fn):
-    """
-    Calculate precision and recall.
-    """
-    precision = tp / (tp + fp) if (tp + fp) > 0 else 0
-    recall = tp / (tp + fn) if (tp + fn) > 0 else 0
-    f1 = (2 * precision * recall) / (precision + recall)
-    return precision, recall, f1
+def calculate_precision_recall_f1(expected_ids, actual_ids) -> Dict[str, float]:
+    expected_set = set(expected_ids)
+    actual_set = set(actual_ids)
+
+    true_positives = len(expected_set.intersection(actual_set))
+    false_positives = len(actual_set - expected_set)
+    false_negatives = len(expected_set - actual_set)
+
+    precision = (
+        true_positives / (true_positives + false_positives)
+        if (true_positives + false_positives) > 0
+        else 0
+    )
+    recall = (
+        true_positives / (true_positives + false_negatives)
+        if (true_positives + false_negatives) > 0
+        else 0
+    )
+    f1_score = (
+        2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
+    )
+
+    out = {"precision": precision, "recall": recall, "f1": f1_score}
+    print(out)
+    return out
 
 
 all_metrics = {
@@ -42,9 +60,15 @@ all_metrics = {
     .reset_index(drop=True)
     .equals(actual_ids.sort_values().reset_index(drop=True)),
     "ordered": lambda expected_ids, actual_ids: expected_ids.equals(actual_ids),
-    "tp": lambda expected_ids, actual_ids: len(set(expected_ids) & set(actual_ids)),
-    "fp": lambda expected_ids, actual_ids: len(set(actual_ids) - set(expected_ids)),
-    "fn": lambda expected_ids, actual_ids: len(set(expected_ids) - set(actual_ids)),
+    "precision": lambda expected_ids, actual_ids: calculate_precision_recall_f1(
+        expected_ids, actual_ids
+    )["precision"],
+    "recall": lambda expected_ids, actual_ids: calculate_precision_recall_f1(
+        expected_ids, actual_ids
+    )["recall"],
+    "f1": lambda expected_ids, actual_ids: calculate_precision_recall_f1(
+        expected_ids, actual_ids
+    )["f1"],
 }
 
 
@@ -82,6 +106,7 @@ def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
     }
 
     for query_data in data:
+        # Creating Paths object including both without and with options
         paths = Paths(
             query_data.gold_output_path,
             {
@@ -94,39 +119,28 @@ def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
             },
         )
 
-        # Evaluate predictions without options
+        # Evaluate predictions without options separately
         for llm, predicted_path in paths.predicted_without_options.items():
-            expected_data = pd.read_csv(paths.expected)
-            actual_data = pd.read_csv(predicted_path)
-
-            try:
-                expected_ids = expected_data["id"]
-                actual_ids = actual_data["id"]
-            except KeyError:
-                continue
-
             for metric in metrics:
-                score = all_metrics[metric](expected_ids, actual_ids)
-                results["without_options"][metric][llm] = (
-                    results["without_options"][metric].get(llm, 0) + score
+                results["without_options"][metric][f"{llm}"] = results[
+                    "without_options"
+                ][metric].get(f"{llm}", 0) + evaluate(
+                    paths.expected, predicted_path, metric=metric
                 )
 
-        # Evaluate predictions with options
+        # Evaluate predictions with options separately
         for llm, predicted_path in paths.predicted_with_options.items():
-            expected_data = pd.read_csv(paths.expected)
-            actual_data = pd.read_csv(predicted_path)
-
-            try:
-                expected_ids = expected_data["id"]
-                actual_ids = actual_data["id"]
-            except KeyError:
-                continue
-
             for metric in metrics:
-                score = all_metrics[metric](expected_ids, actual_ids)
-                results["with_options"][metric][llm] = (
-                    results["with_options"][metric].get(llm, 0) + score
+                results["with_options"][metric][f"{llm}"] = results["with_options"][
+                    metric
+                ].get(f"{llm}", 0) + evaluate(
+                    paths.expected, predicted_path, metric=metric
                 )
+
+    for category in ["with_options", "without_options"]:
+        for metric in ["precision", "recall", "f1"]:
+            for llm, count in results[category][metric].items():
+                results[category][metric][llm] = count / len(data)  # Average by the number of queries 
 
     return results
 
@@ -148,23 +162,17 @@ def aggregate_results(
         for category in ["with_options", "without_options"]:
             for metric, llm_scores in individual_results[category].items():
                 for llm, score in llm_scores.items():
-                    combined_results[category][metric][llm] = (
-                        combined_results[category][metric].get(llm, 0) + score
-                    )
+                    if llm not in combined_results[category][metric]:
+                        combined_results[category][metric][llm] = 0
+                    combined_results[category][metric][llm] += score
 
-    # Compute precision and recall
+    # Average by the number of datasets
+    num_datasets = len(data_paths)
     for category in ["with_options", "without_options"]:
-        combined_results[category]["precision"] = {}
-        combined_results[category]["recall"] = {}
-        combined_results[category]["f1"] = {}
-        for llm in combined_results[category]["tp"]:
-            tp = combined_results[category]["tp"].get(llm, 0)
-            fp = combined_results[category]["fp"].get(llm, 0)
-            fn = combined_results[category]["fn"].get(llm, 0)
-            precision, recall, f1 = precision_recall(tp, fp, fn)
-            combined_results[category]["precision"][llm] = precision
-            combined_results[category]["recall"][llm] = recall
-            combined_results[category]["f1"][llm] = f1
+        for metric in ["precision", "recall", "f1"]:
+            for llm in combined_results[category][metric]:
+                print(combined_results[category][metric][llm])
+                combined_results[category][metric][llm] /= num_datasets
 
     return combined_results
 
