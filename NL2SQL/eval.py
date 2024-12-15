@@ -137,10 +137,10 @@ def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
                     paths.expected, predicted_path, metric=metric
                 )
 
-    for category in ["with_options", "without_options"]:
-        for metric in ["precision", "recall", "f1"]:
-            for llm, count in results[category][metric].items():
-                results[category][metric][llm] = count / len(data)  # Average by the number of queries 
+    # for category in ["with_options", "without_options"]:
+    #     for metric in ["precision", "recall", "f1"]:
+    #         for llm, count in results[category][metric].items():
+    #             results[category][metric][llm] = count / len(data)  # Average by the number of queries
 
     return results
 
@@ -166,13 +166,13 @@ def aggregate_results(
                         combined_results[category][metric][llm] = 0
                     combined_results[category][metric][llm] += score
 
-    # Average by the number of datasets
+    # Average by the number of queries
     num_datasets = len(data_paths)
     for category in ["with_options", "without_options"]:
         for metric in ["precision", "recall", "f1"]:
             for llm in combined_results[category][metric]:
                 print(combined_results[category][metric][llm])
-                combined_results[category][metric][llm] /= num_datasets
+                combined_results[category][metric][llm] /= num_datasets * 15 # Divide by 15 since there are 15 queries per dataset
 
     return combined_results
 
