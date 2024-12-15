@@ -1,9 +1,6 @@
-from functools import cache
 import json
 from typing import Dict, List
 import pandas as pd
-from scipy.stats import spearmanr
-from sympy import false
 from query_data import QueryData
 
 
@@ -182,7 +179,6 @@ def aggregate_results(
     for category in ["with_options", "without_options"]:
         for metric in ["precision", "recall", "f1"]:
             for llm in combined_results[category][metric]:
-                print(combined_results[category][metric][llm])
                 combined_results[category][metric][llm] /= (
                     num_datasets * 15
                 )  # Divide by 15 since there are 15 queries per dataset
