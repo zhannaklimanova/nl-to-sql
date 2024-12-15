@@ -1,13 +1,21 @@
+from functools import cache
 import json
 from typing import Dict, List
 import pandas as pd
 from scipy.stats import spearmanr
+from sympy import false
 from query_data import QueryData
 
 
 CHANTS_DATA_PATH = "data/chants.json"
 FEASTS_DATA_PATH = "data/feasts.json"
 SOURCES_DATA_PATH = "data/sources.json"
+
+
+def load_data_as_json(json_path: str) -> List[QueryData]:
+    with open(json_path, "r") as file:
+        data = json.load(file)
+    return [QueryData.from_dict(item) for item in data]
 
 
 class Paths:
@@ -22,59 +30,61 @@ class Paths:
         self.predicted_with_options = predicted_with_options
 
 
-def load_data_as_json(json_path: str) -> List[QueryData]:
-    with open(json_path, "r") as file:
-        data = json.load(file)
-    return [QueryData.from_dict(item) for item in data]
+class MetricsCalculator:
+    @staticmethod
+    def _calculate_tp_fp_fn(expected_ids, actual_ids):
+        expected_set = set(expected_ids)
+        actual_set = set(actual_ids)
+
+        true_positives = len(expected_set & actual_set)
+        false_positives = len(actual_set - expected_set)
+        false_negatives = len(expected_set - actual_set)
+
+        return true_positives, false_positives, false_negatives
+
+    def __init__(self, expected_ids, actual_ids):
+        self.expected_ids = expected_ids
+        self.actual_ids = actual_ids
+        self.tp, self.fp, self.fn = MetricsCalculator._calculate_tp_fp_fn(
+            expected_ids, actual_ids
+        )
+
+    def precision(self):
+        return self.tp / (self.tp + self.fp) if (self.tp + self.fp) > 0 else 0
+
+    def recall(self):
+        return self.tp / (self.tp + self.fn) if (self.tp + self.fn) > 0 else 0
+
+    def f1(self):
+        p = self.precision()
+        r = self.recall()
+        return 2 * p * r / (p + r) if (p + r) > 0 else 0
+
+    def unordered_equals(self):
+        return (
+            self.expected_ids.sort_values()
+            .reset_index(drop=True)
+            .equals(self.actual_ids.sort_values().reset_index(drop=True))
+        )
+
+    def ordered_equals(self):
+        return self.expected_ids.equals(self.actual_ids)
+
+    all_metric_names = ["unordered", "ordered", "precision", "recall", "f1"]
+
+    def get_all_metrics(self):
+        return {
+            "unordered": self.unordered_equals(),
+            "ordered": self.ordered_equals(),
+            "precision": self.precision(),
+            "recall": self.recall(),
+            "f1": self.f1(),
+        }
 
 
-def calculate_precision_recall_f1(expected_ids, actual_ids) -> Dict[str, float]:
-    expected_set = set(expected_ids)
-    actual_set = set(actual_ids)
-
-    true_positives = len(expected_set.intersection(actual_set))
-    false_positives = len(actual_set - expected_set)
-    false_negatives = len(expected_set - actual_set)
-
-    precision = (
-        true_positives / (true_positives + false_positives)
-        if (true_positives + false_positives) > 0
-        else 0
-    )
-    recall = (
-        true_positives / (true_positives + false_negatives)
-        if (true_positives + false_negatives) > 0
-        else 0
-    )
-    f1_score = (
-        2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
-    )
-
-    out = {"precision": precision, "recall": recall, "f1": f1_score}
-    print(out)
-    return out
-
-
-all_metrics = {
-    "unordered": lambda expected_ids, actual_ids: expected_ids.sort_values()
-    .reset_index(drop=True)
-    .equals(actual_ids.sort_values().reset_index(drop=True)),
-    "ordered": lambda expected_ids, actual_ids: expected_ids.equals(actual_ids),
-    "precision": lambda expected_ids, actual_ids: calculate_precision_recall_f1(
-        expected_ids, actual_ids
-    )["precision"],
-    "recall": lambda expected_ids, actual_ids: calculate_precision_recall_f1(
-        expected_ids, actual_ids
-    )["recall"],
-    "f1": lambda expected_ids, actual_ids: calculate_precision_recall_f1(
-        expected_ids, actual_ids
-    )["f1"],
-}
-
-
-def evaluate(
-    expected_data_path: str, actual_data_path: str, metric="unordered"
-) -> float:
+def get_expected_and_actual_ids(
+    expected_data_path: str, actual_data_path: str
+) -> tuple[pd.Series, pd.Series]:
     expected_data: pd.DataFrame = pd.read_csv(expected_data_path)
     actual_data: pd.DataFrame = pd.read_csv(actual_data_path)
 
@@ -86,9 +96,9 @@ def evaluate(
     try:
         actual_ids = actual_data["id"]
     except KeyError:
-        return 0
+        actual_ids = pd.Series()
 
-    return all_metrics[metric](expected_ids, actual_ids)
+    return expected_ids, actual_ids
 
 
 def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
@@ -97,7 +107,7 @@ def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
     "with_options" and "without_options".
     """
     data = load_data_as_json(data_path)
-    metrics = list(all_metrics.keys())
+    metrics = MetricsCalculator.all_metric_names
 
     # Structure the result as a dictionary with categories for with_options and without_options
     results = {
@@ -121,26 +131,25 @@ def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
 
         # Evaluate predictions without options separately
         for llm, predicted_path in paths.predicted_without_options.items():
-            for metric in metrics:
-                results["without_options"][metric][f"{llm}"] = results[
-                    "without_options"
-                ][metric].get(f"{llm}", 0) + evaluate(
-                    paths.expected, predicted_path, metric=metric
+            expected_ids, actual_ids = get_expected_and_actual_ids(
+                paths.expected, predicted_path
+            )
+            metrics = MetricsCalculator(expected_ids, actual_ids).get_all_metrics()
+            for metric, value in metrics.items():
+                results["without_options"][metric][llm] = (
+                    results["without_options"][metric].get(llm, 0) + value
                 )
 
         # Evaluate predictions with options separately
         for llm, predicted_path in paths.predicted_with_options.items():
-            for metric in metrics:
-                results["with_options"][metric][f"{llm}"] = results["with_options"][
-                    metric
-                ].get(f"{llm}", 0) + evaluate(
-                    paths.expected, predicted_path, metric=metric
+            expected_ids, actual_ids = get_expected_and_actual_ids(
+                paths.expected, predicted_path
+            )
+            metrics = MetricsCalculator(expected_ids, actual_ids).get_all_metrics()
+            for metric, value in metrics.items():
+                results["with_options"][metric][llm] = (
+                    results["with_options"][metric].get(llm, 0) + value
                 )
-
-    # for category in ["with_options", "without_options"]:
-    #     for metric in ["precision", "recall", "f1"]:
-    #         for llm, count in results[category][metric].items():
-    #             results[category][metric][llm] = count / len(data)  # Average by the number of queries
 
     return results
 
@@ -152,11 +161,13 @@ def aggregate_results(
     Combine results of multiple datasets into a unified structure.
     """
     combined_results = {
-        "with_options": {metric: {} for metric in all_metrics.keys()},
-        "without_options": {metric: {} for metric in all_metrics.keys()},
+        "with_options": {metric: {} for metric in MetricsCalculator.all_metric_names},
+        "without_options": {
+            metric: {} for metric in MetricsCalculator.all_metric_names
+        },
     }
 
-    for name, path in data_paths.items():
+    for _, path in data_paths.items():
         individual_results = evaluate_data(path)
 
         for category in ["with_options", "without_options"]:
@@ -172,7 +183,9 @@ def aggregate_results(
         for metric in ["precision", "recall", "f1"]:
             for llm in combined_results[category][metric]:
                 print(combined_results[category][metric][llm])
-                combined_results[category][metric][llm] /= num_datasets * 15 # Divide by 15 since there are 15 queries per dataset
+                combined_results[category][metric][llm] /= (
+                    num_datasets * 15
+                )  # Divide by 15 since there are 15 queries per dataset
 
     return combined_results
 
