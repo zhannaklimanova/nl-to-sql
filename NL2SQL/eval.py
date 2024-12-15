@@ -108,8 +108,8 @@ def evaluate_data(data_path: str) -> Dict[str, Dict[str, Dict[str, int]]]:
 
     # Structure the result as a dictionary with categories for with_options and without_options
     results = {
-        "with_options": {metric: {} for metric in metrics},
         "without_options": {metric: {} for metric in metrics},
+        "with_options": {metric: {} for metric in metrics},
     }
 
     for query_data in data:
@@ -158,10 +158,10 @@ def aggregate_results(
     Combine results of multiple datasets into a unified structure.
     """
     combined_results = {
-        "with_options": {metric: {} for metric in MetricsCalculator.all_metric_names},
         "without_options": {
             metric: {} for metric in MetricsCalculator.all_metric_names
         },
+        "with_options": {metric: {} for metric in MetricsCalculator.all_metric_names},
     }
 
     for _, path in data_paths.items():
@@ -179,9 +179,10 @@ def aggregate_results(
     for category in ["with_options", "without_options"]:
         for metric in ["precision", "recall", "f1"]:
             for llm in combined_results[category][metric]:
-                combined_results[category][metric][llm] /= (
-                    num_datasets * 15
-                )  # Divide by 15 since there are 15 queries per dataset
+                # Divide by 15 since there are 15 queries per dataset
+                combined_results[category][metric][llm] = round(
+                    combined_results[category][metric][llm] / (num_datasets * 15), 2
+                )
 
     return combined_results
 
