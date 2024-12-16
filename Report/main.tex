@@ -4,8 +4,8 @@
 \documentclass[11pt]{article}
 
 % Standard package includes
-\usepackage[review]{ACL2023}
-% \usepackage{ACL2023}
+\usepackage{ACL2023}
+% \usepackage[review]{ACL2023}
 \usepackage{times}
 \usepackage{latexsym}
 \usepackage[T1]{fontenc}
@@ -14,26 +14,32 @@
 \usepackage{inconsolata}
 \usepackage{graphicx}
 \usepackage{caption}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+    basicstyle=\ttfamily\footnotesize, % Use a small, monospaced font
+    breaklines=true,                   % Allow line breaks
+    frame=single,                      % Add a frame around the code
+    backgroundcolor=\color{gray!10},   % Light gray background for the code block
+    tabsize=2,                         % Adjust tab width
+    columns=fullflexible,              % Prevent uneven spacing
+    keepspaces=true,                   % Keep spaces for indentation
+}
 
 \setlength\titlebox{5cm}
 
-\title{Instructions for ACL 2023 Proceedings}
+\title{Evaluating the Text-to-SQL Capabilities of Large Language Models on Cantus Database}
 
-\author{Zhanna Klimanova \\
-  Department of Engineering \\
+\author{ Zhanna Klimanova\\
   University of McGill \\
-  Montreal, Canada \\
-  \texttt{zhanna.klimanova@mcgill.ca} \\\And
-  Person 2 \\
-  Department of  \\
+  Montreal, Canada \\ \And
+  Lucas March \\
   University of McGill \\
-  Montreal, Canada \\
-  \texttt{@} \\\And
-  Person 3 \\
-  Department of \\
+  Montreal, Canada \And
+  Charles Blancas \\
   University of McGill \\
-  Montreal, Canada \\
-  \texttt{@} \\}
+  Montreal, Canada \\}
 
 \begin{document}
 \maketitle
@@ -41,10 +47,10 @@
 \begin{abstract}
 % Abstract: A short overview of the paper.
 
-This paper investigates the Text-to-SQL task, which translates natural language queries (NLQ) into SQL, has broad applications: it enables non-technical users to access databases, improves customer support efficiency, and aids developers in crafting precise SQL queries. Advances in pre-trained large language models (LLMs) have shown promise in managing the complexities of natural language understanding and SQL generation. Text-to-SQL could streamline interactions on database-driven websites by replacing input fields with direct language-based querying, especially when SQL is needed for data retrieval.
-[ZHANNA]
 
-**This abstract is a good introduction but should also summarize methods and findings (can finish this after the other sections)
+This study evaluates the performance of three large language models—GPT, Claude, and Grok—in generating SQL queries for Cantus Database, a specialized collection of Latin chant metadata. The models' capabilities were assessed through inference alone, without fine-tuning, using two schema configurations: one with predefined options and one without. Across 45 ground truth samples, GPT exhibited the highest performance, correctly generating 32 out of 45 queries (ignoring order) and achieving an F1 score of 0.88 when schema options were provided. It was also found that the inclusion of select schema values alongside natural language queries was found to significantly enhance the performance of all models. This research presents a novel approach to domain-specific Text-to-SQL tasks, demonstrating that high performance can be achieved without the computational overhead of fine-tuning.
+
+
 \end{abstract}
 
 \input{0_introduction}
@@ -54,8 +60,10 @@ This paper investigates the Text-to-SQL task, which translates natural language 
 \input{4_discussion}
 \input{5_conclusion}
 \input{6_contributions}
+\pagebreak
 \input{appendix}
 
+\nocite{python, postgresql, django, cantusdb, docker, json}
 \bibliography{references}
 \bibliographystyle{acl_natbib}
 

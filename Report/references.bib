@@ -1,62 +1,98 @@
-% This must be in the first 5 lines to tell arXiv to use pdfLaTeX, which is strongly recommended.
-\pdfoutput=1
+@article{rajkumar2022texttosql,
+  title={Evaluating the Text-to-SQL Capabilities of Large Language Models},
+  author={N. Rajkumar and R. Li and D. Bahdanau},
+  journal={arXiv preprint arXiv:2204.00498},
+  year={2022},
+  month={Mar.},
+  note={[Online]. Available: \url{https://doi.org/10.48550/arXiv.2204.00498}}
+}
 
-\documentclass[11pt]{article}
+@article{gao2023text2sql,
+  author    = {Dawei Gao and Haibin Wang and Yaliang Li and Xiuyu Sun and Yichen Qian and Bolin Ding and Jingren Zhou},
+  title     = {Text-to-{SQL} Empowered by Large Language Models: A Benchmark Evaluation},
+  journal   = {arXiv preprint arXiv:2308.15363},
+  year      = {2023},
+  month     = {Nov.},
+  url       = {https://doi.org/10.48550/arXiv.2308.15363}
+}
+@article{roberson2024analyzing,
+  title={Analyzing the Effectiveness of Large Language Models on Text-to-SQL Synthesis},
+  author={Roberson, Richard and Kaki, Gowtham and Trivedi, Ashutosh},
+  journal={arXiv preprint arXiv:2401.12379},
+  year={2024}
+}
 
-% Standard package includes
-\usepackage[review]{ACL2023}
-% \usepackage{ACL2023}
-\usepackage{times}
-\usepackage{latexsym}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{microtype}
-\usepackage{inconsolata}
-\usepackage{graphicx}
-\usepackage{caption}
+@misc{openai2024chatgpt,
+  author       = {OpenAI},
+  title        = {ChatGPT-o1},
+  year         = {2024},
+  howpublished = {\url{https://chat.openai.com/}},
+  note         = {Accessed: December 2024}
+}
 
-\setlength\titlebox{5cm}
+@online{grok2,
+  title   = {Grok-2 beta release},
+  author  = {xAI},
+  year    = {2024},
+  url     = {https://x.ai/blog/grok-2},
+  note    = {Accessed: December 2024}
+}
 
-\title{Instructions for ACL 2023 Proceedings}
+@misc{anthropic2023claude,
+  author       = {Anthropic},
+  title        = {Claude},
+  url          = {https://claude.ai/},
+  year         = {2023},
+  note         = {Accessed: December 2024}
+}
 
-\author{Zhanna Klimanova \\
-  Department of Engineering \\
-  University of McGill \\
-  Montreal, Canada \\
-  \texttt{zhanna.klimanova@mcgill.ca} \\\And
-  Person 2 \\
-  Department of  \\
-  University of McGill \\
-  Montreal, Canada \\
-  \texttt{@} \\\And
-  Person 3 \\
-  Department of \\
-  University of McGill \\
-  Montreal, Canada \\
-  \texttt{@} \\}
+@misc{cantusdatabase,
+  title = {Cantus: A Database for Latin Ecclesiastical Chant - Inventories of Chant Sources},
+  author = {{Cantus Team}},
+  year = {2024},
+  url = {https://cantusdatabase.org/},
+  note = {Accessed 2024}
+}
 
-\begin{document}
-\maketitle
+@misc{python,
+  title = {Python Programming Language},
+  author = {{Python Software Foundation}},
+  year = {2024},
+  url = {https://www.python.org/},
+  note = {Version \textsuperscript{$\wedge$}3.9}
+}
 
-\begin{abstract}
-% Abstract: A short overview of the paper.
+@misc{postgresql,
+  title = {PostgreSQL Database System},
+  author = {{PostgreSQL Global Development Group}},
+  year = {2024},
+  url = {https://www.postgresql.org/},
+  note = {Version 14.14}
+}
 
-This paper investigates the Text-to-SQL task, which translates natural language queries (NLQ) into SQL, has broad applications: it enables non-technical users to access databases, improves customer support efficiency, and aids developers in crafting precise SQL queries. Advances in pre-trained large language models (LLMs) have shown promise in managing the complexities of natural language understanding and SQL generation. Text-to-SQL could streamline interactions on database-driven websites by replacing input fields with direct language-based querying, especially when SQL is needed for data retrieval.
-[ZHANNA]
+@misc{django,
+  title = {Django Web Framework},
+  author = {{Django Software Foundation}},
+  year = {2024},
+  url = {https://www.djangoproject.com/},
+  note = {Version 4.2.16}
+}
 
-**This abstract is a good introduction but should also summarize methods and findings (can finish this after the other sections)
-\end{abstract}
+@misc{docker,
+  title = {Docker},
+  author = {{Docker, Inc.}},
+  year = {2024},
+  url = {https://www.docker.com/},
+  note = {Version 27.x}
+}
 
-\input{0_introduction}
-\input{1_related_work}
-\input{2_methodology}
-\input{3_results}
-\input{4_discussion}
-\input{5_conclusion}
-\input{6_contributions}
-\input{appendix}
+@misc{json,
+  title = {JavaScript Object Notation (JSON)},
+  author = {{ECMA International}},
+  year = {2024},
+  url = {https://www.json.org/},
+  note = {Data storage format}
+}
 
-\bibliography{references}
-\bibliographystyle{acl_natbib}
 
-\end{document}
+# VERY IMPORTANT TO INCLUDE ALL LLMs and absolutely all the other tools

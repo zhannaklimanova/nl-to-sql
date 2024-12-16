@@ -1,26 +1,36 @@
 \section{Results}
-% Results: Report the results of your experiment, and any general trends that you see. If the
-% evaluation measure used is not a standard one, be sure to define that as well.
+We evaluated the performance of three LLMs (GPT-o1, Claude, and Grok) in generating accurate SQL queries for the Cantus Database, comparing two scenarios: with and without a schema's predefined options. Results are reported as counts out of 45 for correct values with and without ordering, along with precision, recall, and F1 scores. Findings are shown in \textit{Table \ref{tab:schema_without_data}} and \textit{Table \ref{tab:schema_with_data}}.
 
-% Users of older versions of \LaTeX{} may encounter the following error during compilation:
-% \begin{quote}
-% \tt\verb|\pdfendlink| ended up in different nesting level than \verb|\pdfstartlink|.
-% \end{quote}
-% The evaluation metric
+\begin{table}[ht]
+\centering
+\begin{tabular}{lccc}
+\hline
+\textbf{Metric}             & \textbf{GPT} & \textbf{Claude} & \textbf{Grok}   \\
+\hline
+Unordered (count)                 & \textbf{23}  & \textbf{23}     & 16              \\
+Ordered (count)                      & \textbf{16}  & 15              & 11              \\
+Precision                   & 0.70        & \textbf{0.75}          & 0.56  \\
+Recall                      & 0.69        & \textbf{0.74}  & 0.47           \\
+F1                          & 0.68 &    \textbf{0.70}      & 0.48           \\
+\hline
+\end{tabular}
+\caption{Results for the schema without options. The unordered and ordered metrics display counts out of 45.}
+\label{tab:schema_without_data}
+\end{table}
 
-
-% SQL is Turing complete and this is the equivalence problem so, in the general case, it's not possible to know whether two queries will have the same output without running the SQL queries against sample data. This might be possible in limited, real-world cases but I believe you will quickly find it much trickier than expected.
-
-0. Results from different schemas were used: schema with database terms not included, schema without database terms. And what is excluded from the schema with database terms not included (chants)...
-1. INclude snippets of gold and predicted outputs sql.
-2. Include predicted vs. gold outputs
-3. three different metrics.
-
-Table 1. schema with data
-rows for each of the models
-columns are the 3 different metrics: 1. Percent correct values, 2. unordered evaluation (take all id values and ordering and comparing if its the same or not (order is not taken into account) 3. ordered evaluation (can only do it with the one that match identically - do some research and if not good method do our own way)
-
-Table 2. schema without data
-rows for each of the models
-columns are the 3 different metrics: 1. Percent correct values, 2. unordered evaluation (take all id values and ordering and comparing if its the same or not (order is not taken into account) 3. ordered evaluation (can only do it with the one that match identically - do some research and if not good method do our own way)
-(ZHANNA)
+\begin{table}[ht]
+\centering
+\begin{tabular}{lccc}
+\hline
+\textbf{Metric}             & \textbf{GPT} & \textbf{Claude} & \textbf{Grok}   \\
+\hline
+Unordered (count)                     & \textbf{32}  & 28              & 23              \\
+Ordered (count)                     & \textbf{23}  & 16              & 10              \\
+Precision                   & \textbf{0.92}       & 0.85          & 0.69  \\
+Recall                      & \textbf{0.88} & 0.78          & 0.60           \\
+F1                          & \textbf{0.88} & 0.78          & 0.61           \\
+\hline
+\end{tabular}
+\caption{Results for the schema with options. The unordered and ordered metrics display counts out of 45.}
+\label{tab:schema_with_data}
+\end{table}

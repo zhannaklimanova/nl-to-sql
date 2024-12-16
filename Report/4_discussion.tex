@@ -1,18 +1,23 @@
 \section{Discussion}
 
-% Discussion and conclusion: What conclusions can be drawn from your experiments? Was your
-% initial hypothesis verified? What are the limitations of your work, and how could it be extended?
+\subsection{Performance on Schema Without Options}
+For schemas without options (\textit{Table \ref{tab:schema_without_data}}), GPT and Claude achieve the highest unordered scores, each with 23 correct queries out of 45, while Grok trails with 16. For ordered results, GPT leads with 16 correct queries, followed by Claude with 15, and Grok with 11.
 
+Precision, recall, and F1 scores provide a better understanding of the models' performance. While GPT and Claude generate the same number of correct unordered queries, Claude outperforms GPT in overall metrics, achieving a precision of 0.75, a recall of 0.74, and an F1 score of 0.70. This suggests that Claude's incorrect queries are generally closer to being correct. GPT follows closely with a precision of 0.70, a recall of 0.69, and an F1 score of 0.68. Grok lags behind both, with a precision of 0.56, a recall of 0.47, and an F1 score of 0.48.
 
-% We encourage you to use the natbib styles.
-% You can use the command \verb|\citet| (cite in text) to get ``author (year)'' citations, like this citation to a paper by .
-% You can use the command \verb|\citep| (cite in parentheses) to get ``(author, year)'' citations .
+\subsection{Performance on Schema with Options}
+All models demonstrate improved performance when schemas include options (\textit{Table \ref{tab:schema_with_data}}). GPT leads with the highest unordered count of 32 and ordered count of 23, followed by Claude with unordered and ordered counts of 28 and 16, respectively. Grok shows the weakest performance, with unordered and ordered counts of 23 and 10, respectively.
 
+All models also show improved precision, recall, and F1 scores when provided with schema options. GPT achieved the most significant gains, leading with scores of 0.92 for precision and 0.88 for both recall and F1. Claude also improved, though less markedly, with scores of 0.85 for precision and 0.78 for recall and F1. Grok, while showing some progress, remained the weakest performer, with precision at 0.69, recall at 0.60, and F1 at 0.61.
 
+\subsection{Implications and Insights}
+The results indicate that GPT achieves the best outcomes when schema options are available, demonstrating its ability to leverage additional information to enhance performance. In contrast, Claude delivers stronger results without schema options, suggesting strength in handling more ambiguous contexts. Lastly, Grok consistently lags behind under both conditions.
 
-(CHARLES)
-1. Discussing the results using the different schemas.
-2. Where the snippets should be comparing different sql queries and the gold outputs.
-3. here we need to discuss that the results arent that great because haven't evaluated on a lot of data and after more data gathering it would be interesting to evaluate the same data on a open source model like lamma with fine tuning. Maybe others.
-4. Limitations of your work and how it could be extended.
-5. Future works. 1. models generates queries that website can do but the LLM cannot do (some of our results show this and we should figure out ways to improve it) 2. model can generate queries that website cannot do but still valid if issued in database 3) programatic of generating data (correctly (API, pipelined approach), we didn't wanna risk doing it incorrectly so did it manually), 3.5. explore multiple natural lnaguage inputs (but that's not really our research question so not doing it for now) 4. actually impelmenting this on the website that people can access and use (creme de la creme)
+\subsection{Limitations}
+One limitation of this research is that the CantusDB user interface limits the kinds of queries that can be generated. Addressing this presents an interesting opportunity for future research. However, it would require more effort, as the SQL queries would need to be written manually instead of generated automatically by the website.
+
+Another limitation is the reliance on metrics that evaluate query result matching rather than SQL correctness, potentially overlooking syntax validity, query complexity, and edge cases. Adding contextual relevance metrics could better assess how well generated queries reflect the intent of the natural language input, considering ambiguity and phrasing.
+
+The methodology could also be improved with greater automation. Manual updates to data files and results are prone to errors and labor-intensive. Automating this process with scripts would minimize errors and enable future iterations to handle larger datasets efficiently.
+
+Lastly, extraneous information adds noise and hinders performance, while missing details force models to make assumptions, leading to incorrect queries. Providing specific values in the prompt ensures the generated SQL queries align with the database. Future research is needed to refine the schema structure to optimize performance and better reflect user-based natural language queries.

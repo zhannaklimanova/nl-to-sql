@@ -1,10 +1,3 @@
 \section{Conclusion}
-% What conclusions can be drawn from your experiments? Was your initial hypothesis verified? What are the limitations of your work, and how could it be extended?
 
-% The \LaTeX{} and Bib\TeX{} style files provided roughly follow the American Psychological Association format.
-
-(LUCAS)
-
-Very short summary of hte work.
-1. Conclusions drawn from experiments.
-2. Intial hypothesis verified or not
+This research confirmed the hypothesis that large language models can generate SQL queries for the specialized Cantus Database without fine-tuning. GPT achieved the best performance with schema options, correctly generating 32 out of 45 queries (ignoring order) and reaching an F1 score of 0.88. In the absence of options, Claude outperformed the other models, generating 23 correct queries and achieving an F1 score of 0.70. Grok consistently performed the weakest in both scenarios. The study underscores that incorporating select schema values with natural language queries significantly enhances performance across all models, demonstrating that modern large language models can address domain-specific Text-to-SQL tasks through prompt engineering alone. This efficient approach provides a viable alternative to fine-tuning, and future work could explore broader query types beyond the current limitations of Cantus Database.
