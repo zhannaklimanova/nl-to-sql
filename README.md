@@ -74,7 +74,7 @@
 
    Observe that only one result is returned for this search.
 
-   ![alt text](image.png)
+   ![image](https://github.com/user-attachments/assets/4f5b6173-d12d-467b-9109-cc29961aeccd)
 
 2. Open the `*/CantusDB/django/cantusdb_project/nlq_sql.json` file and locate the query that matches the inputted search criteria. Look for:
    - A query starting with `SELECT DISTINCT`
