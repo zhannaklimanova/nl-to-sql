@@ -1,4 +1,16 @@
-# Repository Virtual Environment Setup
+# NL-to-SQL Project Instructions
+## Table of Contents
+
+1. [Repository Virtual Environment Setup](#repository-virtual-environment-setup)
+2. [CantusDB Setup](#cantusdb-setup)
+3. [Middleware Setup](#middleware-setup)
+4. [Text to SQL Data Collection Process](#text-to-sql-data-collection-process)
+   - [Obtaining Ground Truth Data](#obtaining-ground-truth-data)
+   - [Obtaining Predicted Data](#obtaining-predicted-data)
+5. [Evaluation Gold and Predicted Outputs](#evaluation-gold-and-predicted-outputs)
+6. [Links](#links)
+
+## Repository Virtual Environment Setup
 1. Ensure python3 is installed by typing the following into a terminal:
    ```bash
       python3
@@ -34,14 +46,14 @@
       deactivate
    ```
 
-# CantusDB Setup
+## CantusDB Setup
 1. Clone the [CantusDB repository](https://github.com/DDMAL/CantusDB) and ensure it is up to date by regularly pulling the latest changes.
 2. Follow the instructions on the [Deploying CantusDB Locally for Development](https://github.com/DDMAL/CantusDB/wiki/Deploying-CantusDB-locally-for-development#collecting-static-files) page to set up the website for local development.
 3. Obtain the `dev_env` file from the `CantusDB Resources` section. This file must be provided by a CantusDB developer.
 4. During the *Populating the Database* step, request the `cantus_dump.sql` file from a CantusDB developer and use it to populate the database.
 5. Verify that the setup is complete by confirming that the `Chants`, `Sources`, and `Feasts` sections are accessible via `localhost`.
 
-# Middleware Setup
+## Middleware Setup
 
 1. Confirm that the *CantusDB Setup* is complete and the website is functional.
 2. Place the `middleware.py` file into the `*/CantusDB/django/cantusdb_project/cantusdb/` directory.
@@ -51,8 +63,8 @@
 6. Note that not all SQL queries in these files are relevant. Focus on the query that matches the search results displayed on the website.
 7. Refer to the *SQL Output Extraction* section for additional instructions.
 
-# Text to SQL Data Collection Process
-## Obtaining Ground Truth Data
+## Text to SQL Data Collection Process
+### Obtaining Ground Truth Data
 1. On the localhost version of the website, navigate to the `Chants`, `Sources`, or `Feasts` pages and enter the desired search information. For example:
    - **Segment**: `CANTUS Database`
    - **General search**: `Montreal`
@@ -101,7 +113,7 @@
    - Values are enclosed in single quotes (e.g., `'Canada'`).
    - Attribute names are capitalized (e.g., `Country`).
 
-## Obtaining Predicted Data
+### Obtaining Predicted Data
 1. Prompt the chosen LLM with the `natural_language_inputs` and either `database-schema-with-options` or `database-schema-without-options`. Ensure that the input does not exceed the character limit of the selected LLM.
 
 2. If the LLM generates an SQL query with incorrect formatting, clean it up by:
@@ -121,7 +133,7 @@
 5. If everything is formatted correctly, the `object_output_filex.csv` file will be generated in the specified directory.
 6. Copy and paste the predicted SQL query and the predicted output path into the appropriate `chants.json`, `sources.json`, or `feasts.json` file. Add them under the `predicted_sql_query_with_options` or `predicted_sql_query_without_options` fields within the corresponding `llm` field.
 
-# Evaluation Gold and Predicted Outputs
+## Evaluation Gold and Predicted Outputs
 1. Navigate to the project repository in the terminal and ensure that you are in the `nl-to-sql/NL2SQL` directory:
    ```bash
       cd /Path-to-the-Repository/nl-to-sql/NL2SQL
@@ -190,7 +202,7 @@
 }
 ```
 
-# Links
+## Links
 - CantusDB: https://github.com/DDMAL/CantusDB
 - CantusDB Wiki: https://github.com/DDMAL/CantusDB/wiki/
 
