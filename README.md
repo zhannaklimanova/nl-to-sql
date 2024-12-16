@@ -1,15 +1,6 @@
-# nl-to-sql Project Setup
-1. Navigate to the project directory and sure that <directory-structure>:
-   ```bash
-   cd */nl-to-sql/NL2SQL
-   ```
-2. Run the script using the virtual environment:
-    ```bash
-   <path-to-venv>.venv/bin/python <directory-structure>/NL2SQL/main_pipeline.py
-   ```
+# Repository Virtual Environment Setup
 
 # CantusDB Setup
-
 1. Clone the [CantusDB repository](https://github.com/DDMAL/CantusDB) and ensure it is up to date by regularly pulling the latest changes.
 2. Follow the instructions on the [Deploying CantusDB Locally for Development](https://github.com/DDMAL/CantusDB/wiki/Deploying-CantusDB-locally-for-development#collecting-static-files) page to set up the website for local development.
 3. Obtain the `dev_env` file from the `CantusDB Resources` section. This file must be provided by a CantusDB developer.
@@ -95,6 +86,75 @@
    - Rename the file `object_output_filex.csv` to follow the appropriate naming convention, where `object` corresponds to `c` for `chants`, `s` for `sources`, or `f` for `feasts`, and `x` is the index number of the file.
 5. If everything is formatted correctly, the `object_output_filex.csv` file will be generated in the specified directory.
 6. Copy and paste the predicted SQL query and the predicted output path into the appropriate `chants.json`, `sources.json`, or `feasts.json` file. Add them under the `predicted_sql_query_with_options` or `predicted_sql_query_without_options` fields within the corresponding `llm` field.
+
+# Evaluation Gold and Predicted Outputs
+1. Navigate to the project repository in the terminal and ensure that you are in the `nl-to-sql/NL2SQL` directory:
+   ```bash
+      cd /Path-to-the-Repository/nl-to-sql/NL2SQL
+   ```
+2. Run the eval.py script using the Python interpreter from the previously set up virtual environment:
+   ```bash
+      python3 eval.py
+   ```
+3. The script will output results resembling the following structure:
+```json
+{
+    "without_options": {
+        "unordered": {
+            "gpt": 23,
+            "claude": 23,
+            "grok": 16
+        },
+        "ordered": {
+            "gpt": 16,
+            "claude": 15,
+            "grok": 11
+        },
+        "precision": {
+            "gpt": 0.7,
+            "claude": 0.75,
+            "grok": 0.56
+        },
+        "recall": {
+            "gpt": 0.69,
+            "claude": 0.74,
+            "grok": 0.47
+        },
+        "f1": {
+            "gpt": 0.68,
+            "claude": 0.7,
+            "grok": 0.48
+        }
+    },
+    "with_options": {
+        "unordered": {
+            "gpt": 32,
+            "claude": 28,
+            "grok": 23
+        },
+        "ordered": {
+            "gpt": 23,
+            "claude": 16,
+            "grok": 10
+        },
+        "precision": {
+            "gpt": 0.92,
+            "claude": 0.85,
+            "grok": 0.69
+        },
+        "recall": {
+            "gpt": 0.88,
+            "claude": 0.78,
+            "grok": 0.6
+        },
+        "f1": {
+            "gpt": 0.88,
+            "claude": 0.78,
+            "grok": 0.61
+        }
+    }
+}
+
 
 # Links
 - CantusDB: https://github.com/DDMAL/CantusDB
