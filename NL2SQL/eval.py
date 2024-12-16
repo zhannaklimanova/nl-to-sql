@@ -82,8 +82,8 @@ class MetricsCalculator:
 def get_expected_and_actual_ids(
     expected_data_path: str, actual_data_path: str
 ) -> tuple[pd.Series, pd.Series]:
-    expected_data: pd.DataFrame = pd.read_csv(expected_data_path)
-    actual_data: pd.DataFrame = pd.read_csv(actual_data_path)
+    expected_data: pd.DataFrame = pd.read_csv(expected_data_path, low_memory=False)
+    actual_data: pd.DataFrame = pd.read_csv(actual_data_path, low_memory=False)
 
     try:
         expected_ids = expected_data["id"]
