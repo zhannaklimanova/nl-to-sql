@@ -205,4 +205,3 @@
 ## Links
 - CantusDB: https://github.com/DDMAL/CantusDB
 - CantusDB Wiki: https://github.com/DDMAL/CantusDB/wiki/
-- Research Paper: https://github.com/zhannaklimanova/nl-to-sql/blob/main/Report/Klimanova_March_Blancas_Evaluating_2024.pdf
