@@ -1,4 +1,38 @@
 # Repository Virtual Environment Setup
+1. Ensure python3 is installed by typing the following into a terminal:
+   ```bash
+      python3
+   ```
+   Note the python version used for this project:
+   Python 3.11.3 (v3.11.3:f3909b8bc8, Apr  4 2023, 20:12:10) [Clang 13.0.0 (clang-1300.0.29.30)] on darwin
+2. Create a virtual environment in the project directory:
+   ```
+      python3 -m venv .venv
+   ```
+3. Activate the virtual environment:
+   ```
+      source .venv/bin/activate
+   ```
+4. Verify the Python executable being used:
+   ```
+      which python
+   ```
+5. Upgrade pip to the latest version:
+   ```
+      python3 -m pip install --upgrade pip
+   ```
+6. Confirm the pip version:
+   ```
+      python3 -m pip --version
+   ```
+7. Install project dependencies from the requirements.txt file:
+   ```
+      pip3 install -r requirements.txt
+   ```
+8. Deactivate the virtual environment when done:
+   ```
+      deactivate
+   ```
 
 # CantusDB Setup
 1. Clone the [CantusDB repository](https://github.com/DDMAL/CantusDB) and ensure it is up to date by regularly pulling the latest changes.
@@ -154,7 +188,7 @@
         }
     }
 }
-
+```
 
 # Links
 - CantusDB: https://github.com/DDMAL/CantusDB
