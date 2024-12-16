@@ -1,8 +1,0 @@
-$ python3
-$ python3 -m venv .venv
-$ source .venv/bin/activate
-(.venv) $ which python
-(.venv) $ python3 -m pip install --upgrade pip
-(.venv) $ python3 -m pip --version
-(.venv) $ pip3 install -r requirements.txt
-(.venv) $ python3 -m pip freeze > requirements.txt // save the dependencies when new ones are added
